@@ -1,5 +1,5 @@
-﻿## Surface Duo Drivers BSP - Version 2207.29
-**Released:** 7/9/2022 08:00 PM UTC+2
+﻿## Surface Duo Drivers BSP - Version 2207.32
+**Released:** 7/10/2022 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -35,7 +35,8 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version 2.30.** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version 2.31.** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
 - It is expected currently for the boot process to look very rough on the right panel, when the image will change on the left the panel will act normally. This is the beginning, so bear with us for now :) Your displays aren't broken, and won't get damaged.
 - It is also expected for some rendering glitches to happen right now, do not freak out, it's not going to damage anything, your gpu isn't dying, it's ok. Here's an example of a glitch you may be expecting:
 
@@ -49,25 +50,13 @@ ________________________________________________________________________________
 ### Changelog
 
 
-- Updates to the Qualcomm Subsystem driver to mask Security Processor Subsystem Interrupts and prevent a DPC deadlock in the OS
-- Updates to the QDSS driver
-- Updates to unattend directives for clean installations
-- Camera ISP enablement
-- Camera AVStream enablement
-- Camera Flash enablement
-- [WIP] Camera Sensor Enablement w/ CDSP
-- PMIC Apps driver updates to support the Flash without the PMIC charger existing
-- RTIC (RunTime Integrity Check) support
-- Security Processor Subsystem is now functional
-- Security Processor Unit is now functional
-- Security Processor Cryptographic and Asymetric Applets are now functional
-- Added the Connection Security Driver
-
-**NOTE: Modem remains disabled in this release despite changes being made in regards to the Modem!**
+- WiFi is now functional (2.5Ghz/5Ghz). Mac Address retrieval is not yet here however
+- Cellular Data is now functional (LTEA/LTE/HSDPA+/HSDPA/EDGE/GPRS)
+- Cellular Texts are now functional. Use the Chat application to send and get messages.
+- Calls, VoLTE, RCS, and more are coming soon in a later release
+- eSIM support is now enabled in this release
 
 **NOTE: Camera remains disabled in this release despite changes being made in regards to the Camera!**
-
-__This update brings feature parity with the June Surface Pro X Update as well as the March Qualcomm 8cx BSP update (1.7.600.0)__
 
 
 ### Sensor Calibration Provisioning (Mandatory)
