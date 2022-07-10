@@ -55,6 +55,7 @@ ________________________________________________________________________________
 - Cellular Texts are now functional. Use the Chat application to send and get messages.
 - Calls, VoLTE, RCS, and more are coming soon in a later release
 - eSIM support is now enabled in this release
+- GPS is now functional
 
 **NOTE: Camera remains disabled in this release despite changes being made in regards to the Camera!**
 
@@ -346,6 +347,10 @@ What works and what matters from an user point of view:
 - Vibration motor
 - Both Batteries (no charging)
 - 29 Sensors (see above)
+- Cellular Data
+- WiFi
+- GPS
+- SMS
 
 Nothing else works! You have been warned
 
