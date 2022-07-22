@@ -1,0 +1,54 @@
+;/*++
+;
+;Copyright (c) Microsoft Corporation All rights Reserved
+;
+;Module Name:
+;
+;    SurfaceCharger.inf
+;
+;Abstract:
+;
+;    INF file for installing Surface Charger driver.
+;
+;--*/
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Battery
+ClassGuid={72631e54-78a4-11d0-bcf7-00aa00b7b32a}
+Provider=%ProviderName%
+DriverVer = 07/22/2022,1.0.0.0
+CatalogFile=SurfaceCharger.cat
+PnpLockdown=1
+
+[SourceDisksNames]
+
+[SourceDisksFiles]
+
+;*****************************************
+; Surface Charger Install Section
+;*****************************************
+
+[Manufacturer]
+%ProviderName%=Standard,NTARM64
+
+[Standard.NTARM64]
+%SurfaceCharger.DeviceDesc% = SurfaceCharger_Device, ACPI\SMB1380
+
+[SurfaceCharger_Device.NT]
+Include=machine.inf
+Needs=NO_DRV
+
+;-------------- Service installation
+
+[SurfaceCharger_Device.NT.Services]
+Include=machine.inf
+Needs=NO_DRV.Services
+
+;*****************************************
+; Literals
+;*****************************************
+
+[Strings]
+ProviderName = "Surface"
+SurfaceCharger.DeviceDesc = "Surface Charger"
