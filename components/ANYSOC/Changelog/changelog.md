@@ -1,5 +1,5 @@
-﻿## Surface Duo Drivers BSP - Version 2207.32
-**Released:** 7/10/2022 11:00 PM UTC+2
+﻿## Surface Duo Drivers BSP - Version 2207.80
+**Released:** 7/24/2022 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -49,15 +49,34 @@ ________________________________________________________________________________
 
 ### Changelog
 
+**WARNING:** Upgrades are **once** again broken from the previous release to this one. You **will** have to reinstall. (or you might get lucky and it will work, but this probably will not go this way...)
 
-- WiFi is now functional (2.5Ghz/5Ghz). Mac Address retrieval is not yet here however
-- Cellular Data is now functional (LTEA/LTE/HSDPA+/HSDPA/EDGE/GPRS)
-- Cellular Texts are now functional. Use the Chat application to send and get messages.
-- Calls, VoLTE, RCS, and more are coming soon in a later release
-- eSIM support is now enabled in this release
-- GPS is now functional
+- Several improvements to Core System drivers
+- Several improvements to WLAN drivers (Wi-Fi)
+- Several improvements to WWAN drivers (Cellular)
+- Several improvements to the GPU driver
+- Preliminary support for GPU acceleration in WSLg/WSA (Needs Hyper-V)
+- China WLAN specific extension enablement
+- OS provided posture device sensor is now supported
+- Preliminary support for Battery Current Limiting
+- Addresses an issue with sensors not working under Windows 10
+- Preliminary support for Dolby Audio APO (Dolby Atmos OEM)
+- Rebase all drivers to version 1780
+- Addresses an issue with the Dialer app not starting properly on newer Windows 11 builds
+- Addresses an issue with the Mobile Networking Bridge not working when no audio sources are present on the system
+- Adds support for Cellular calls
+- Adds support for VoLTE
+- Adds support for RCS
+- Adds support for VoWiFi
+- Adds support for Video Call conferencing
+- Adds support for RIL
+- Adds support for the Microsoft Windows Phone Networking stack
+- You can now make calls using the Dialer application and answer calls*
+* Requires the use of a supported headset for now and/or speaker mode
+- Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
-**NOTE: Camera remains disabled in this release despite changes being made in regards to the Camera!**
+
+__Improvements to CPU core clock frequency and GPU will come in an upcoming release__
 
 
 ### Sensor Calibration Provisioning (Mandatory)
