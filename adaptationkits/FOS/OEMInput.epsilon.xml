@@ -49,7 +49,6 @@
       <Feature>SETTINGS_APP</Feature>
       <Feature>SHELL_BOOT</Feature>
       <Feature>STATESEPARATION_ON</Feature>
-      <Feature>STATESEPARATION_TALKMAN_EXEMPT</Feature>
       <Feature>TELEMETRY_OPT_OUT</Feature>
       <Feature>WCOS_ACCESSIBLITY_NARRATOR</Feature>
       <Feature>WCOS_APP_CENTENNIALRUNTIME</Feature>

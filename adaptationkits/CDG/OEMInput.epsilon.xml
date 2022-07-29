@@ -53,7 +53,6 @@
       <Feature>MODERNPC_POLICY</Feature>
       <Feature>RESOLUTION_1440X2560</Feature>
       <Feature>STATESEPARATION_ON</Feature>
-      <Feature>STATESEPARATION_845_EXEMPT</Feature>
       <Feature>WCOS_ACCESSIBLITY_NARRATOR</Feature>
       <Feature>WCOS_APP_CENTENNIALRUNTIME</Feature>
       <Feature>WCOS_APP_CONTAINERAPP</Feature>
