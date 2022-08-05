@@ -1,33 +1,14 @@
-﻿## Surface Duo Drivers BSP - Version 2207.80
-**Released:** 7/24/2022 11:00 PM UTC+2
+﻿## Surface Duo Drivers BSP - Version 2208.16
+**Released:** 8/05/2022 11:00 PM UTC+2
 
 **Quality:** Preview
 
 ![Surface Duo Dual Screen Windows](https://user-images.githubusercontent.com/3755345/170788230-a42e624a-d2ed-4070-b289-a9b34774bcd0.png)
 
-### Compatibility
+### General information
 
-| Operating System                                                          | Supported? |
-|---------------------------------------------------------------------------|------------|
-| Windows 10 Build 16299 (1709)                                             | ❌         |
-| Windows 10 Build 17134 (1803)                                             | ❌         |
-| Windows 10 Build 17763 (1809)                                             | ❌         |
-| Windows 10 Build 18362 (1903)                                             | ⚠️         |
-| Windows 10 Build 18363 (1909)                                             | ⚠️         |
-| Windows 10 Build 19041 (2004)                                             | ✅         |
-| Windows 10 Build 19042 (20h2)                                             | ✅         |
-| Windows 10 Build 19043 (21h1)                                             | ✅         |
-| Windows 10 Build 19044 (21h2)                                             | ✅         |
-| Windows 11 Build 22000 (21h2)                                             | ✅         |
-| Windows 11 Build 22621 (22h2)                                             | ✅         |
-| Windows 11 vNext (Copper Semester)                                        | ✅         |
+You can view compatibility for this release, along with important information and what works, and what doesn't at this link: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/73855f3b7ddd32fe1746f4398163fa545134cd78/Status.md
 
-
-❌: Not supported, important issues present
-
-⚠️: Not supported, minor issues present, not actively maintained anymore
-
-✅: Fully supported, known issues present but nothing impactful, actively maintained
 
 ### Release notes
 
@@ -35,43 +16,26 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version 2.31.** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version 2.32.** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: Make sure your Android firmware is up to date (at least should have the update released after the 15th of June installed)** ⚠️⚠️
 - ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
-- It is expected currently for the boot process to look very rough on the right panel, when the image will change on the left the panel will act normally. This is the beginning, so bear with us for now :) Your displays aren't broken, and won't get damaged.
-- It is also expected for some rendering glitches to happen right now, do not freak out, it's not going to damage anything, your gpu isn't dying, it's ok. Here's an example of a glitch you may be expecting:
-
-<details>
-
-![image](https://user-images.githubusercontent.com/3755345/166138815-bdc8d4f4-151b-4d37-aa7a-d68f75c259ce.png)
-
-</details>
 
 
 ### Changelog
 
 **WARNING:** Upgrades are **once** again broken from the previous release to this one. You **will** have to reinstall. (or you might get lucky and it will work, but this probably will not go this way...)
 
-- Several improvements to Core System drivers
-- Several improvements to WLAN drivers (Wi-Fi)
-- Several improvements to WWAN drivers (Cellular)
-- Several improvements to the GPU driver
-- Preliminary support for GPU acceleration in WSLg/WSA (Needs Hyper-V)
-- China WLAN specific extension enablement
-- OS provided posture device sensor is now supported
-- Preliminary support for Battery Current Limiting
-- Addresses an issue with sensors not working under Windows 10
-- Preliminary support for Dolby Audio APO (Dolby Atmos OEM)
-- Rebase all drivers to version 1780
-- Addresses an issue with the Dialer app not starting properly on newer Windows 11 builds
-- Addresses an issue with the Mobile Networking Bridge not working when no audio sources are present on the system
-- Adds support for Cellular calls
-- Adds support for VoLTE
-- Adds support for RCS
-- Adds support for VoWiFi
-- Adds support for Video Call conferencing
-- Adds support for RIL
-- Adds support for the Microsoft Windows Phone Networking stack
-- You can now make calls using the Dialer application and answer calls*
+- Updated Surface Duo remote processor firmwares (WLAN, Audio, Sensors, TrEE, Camera)
+- Updated Adaptation Kits for Surface Duo
+- NEW: Video Encoding/Decoding is now hardware accelerated by the GPU
+- NEW: Windows is now able to update some aspects of the device firmware by itself without needing android. Currently this is limited to the digitizer firmware.
+- NEW: Pen is now supported & working on the right display!
+- NEW: Better calibration is now available for both displays!
+- NEW ISSUE: Pen calibration on the left display might be slightly off on the left edge of the screen
+- NEW: Fixed an issue impacting correct recognition of some USB-C peripherals
+- NEW: The device is now properly detected as a phone instead of a tablet
+- NEW: Mitigated issues that lead to the device crashing/rebooting during sleep
+
 * Requires the use of a supported headset for now and/or speaker mode
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
