@@ -63,6 +63,7 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\DEVICE.SOC_QC8150.EPSILON\Drivers\Touch" Name="SurfacePenCfuOverBleLc.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\DEVICE.SOC_QC8150.EPSILON\Drivers\Touch" Name="SurfacePenWirelessChargerHotkey.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\DEVICE.SOC_QC8150.EPSILON\Drivers\Touch" Name="SurfaceSlimPenChargerFwUpdate.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\DEVICE.SOC_QC8150.EPSILON\Drivers\Touch" Name="SurfaceTouchFw.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\DEVICE.SOC_QC8150.EPSILON\Drivers\Touch" Name="SurfaceTouchPenProcessorUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\DEVICE.SOC_QC8150.EPSILON\Drivers\Touch" Name="SurfaceVirtualFunctionEnum.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\DEVICE.SOC_QC8150.EPSILON\Drivers\USB" Name="fsa4480.inf" />
