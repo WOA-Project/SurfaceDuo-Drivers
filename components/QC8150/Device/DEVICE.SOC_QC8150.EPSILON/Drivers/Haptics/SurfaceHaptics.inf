@@ -8,7 +8,7 @@ Class       = System
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
 Provider    = %ManufacturerName%
 CatalogFile = SurfaceHaptics.cat
-DriverVer = 05/22/2022,16.59.11.457
+DriverVer = 08/10/2022,14.10.44.789
 PnpLockdown = 1
 
 [DestinationDirs]
