@@ -1,5 +1,5 @@
-﻿## Surface Duo Drivers BSP - Version 2208.16
-**Released:** 8/05/2022 11:00 PM UTC+2
+﻿## Surface Duo Drivers BSP - Version 2208.54
+**Released:** 8/17/2022 00:00 AM UTC+2
 
 **Quality:** Preview
 
@@ -16,27 +16,20 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version 2.32.** ⚠️⚠️
-- ⚠️⚠️ **IMPORTANT: Make sure your Android firmware is up to date (at least should have the update released after the 15th of June installed)** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version 2.33.** ⚠️⚠️
 - ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
-
 
 ### Changelog
 
-**WARNING:** Upgrades are **once** again broken from the previous release to this one. You **will** have to reinstall. (or you might get lucky and it will work, but this probably will not go this way...)
+- NEW: WDDM 2.6 GPU Driver for Titanium (TI/19H1), Resolves a crash issue on OS build 18362/18363.
+- NEW: Work In Progress: WDDM 2.5 GPU Driver for RS5
+- NEW: Work In Progress: Camera Sensor support (Not yet fully functional)
+- NEW: Work In Progress: SAR Driver, the SAR Driver helps reduce the device radiations when in proximity of the user
+- NEW: Work In Progress: Audio Stack support. Currently only the main microphone is functional
+- NEW: Bluetooth audio devices are now hardware accelerated/supported by hardware encoders/decoders
+- Removed: Dolby Atmos stack (temporary)
+- FIX: Addresses an issue with FastRPC, Vibration motor, Panel not working under Windows 10 Vibranium (19H2) and lower.
 
-- Updated Surface Duo remote processor firmwares (WLAN, Audio, Sensors, TrEE, Camera)
-- Updated Adaptation Kits for Surface Duo
-- NEW: Video Encoding/Decoding is now hardware accelerated by the GPU
-- NEW: Windows is now able to update some aspects of the device firmware by itself without needing android. Currently this is limited to the digitizer firmware.
-- NEW: Pen is now supported & working on the right display!
-- NEW: Better calibration is now available for both displays!
-- NEW ISSUE: Pen calibration on the left display might be slightly off on the left edge of the screen
-- NEW: Fixed an issue impacting correct recognition of some USB-C peripherals
-- NEW: The device is now properly detected as a phone instead of a tablet
-- NEW: Mitigated issues that lead to the device crashing/rebooting during sleep
-
-* Requires the use of a supported headset for now and/or speaker mode
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
 
