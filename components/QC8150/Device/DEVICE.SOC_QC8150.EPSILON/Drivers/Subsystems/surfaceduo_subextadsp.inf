@@ -55,6 +55,24 @@ AudioSphereModule.so.1 = 13,\ADSP
 AudioContextDetection.so.1 = 13,\ADSP
 ApeDecoderModule.so.1 = 13,\ADSP
 AlacDecoderModule.so.1 = 13,\ADSP
+libVC1DecDsp_skel.so = 13,\ADSP
+libVC1Dec.so = 13,\ADSP
+libsns_low_lat_stream_skel.so = 13,\ADSP
+libsns_device_mode_skel.so = 13,\ADSP
+libscveT2T_skel.so = 13,\ADSP
+libscveObjectSegmentation_skel.so = 13,\ADSP
+libmorpho_defocus_face_bokeh_skel.so = 13,\ADSP
+libhexagon_nn_skel.so = 13,\ADSP
+libfastcvdsp_skel.so = 13,\ADSP
+libfastcvadsp.so = 13,\ADSP
+libdsp_streamer_skel.so = 13,\ADSP
+libdsp_streamer_binning.so = 13,\ADSP
+libdsp_streamer_add_constant.so = 13,\ADSP
+libdspCV_skel.so = 13,\ADSP
+libcvpdsp_skel.so = 13,\ADSP
+libcamera_nn_skel.so = 13,\ADSP
+libapps_mem_heap.so = 13,\ADSP
+capi_v2_aptX_CLHDAD_Encoder.so = 13,\ADSP
 SOFiles_ADSP = 13
 MBNFiles_ADSP = 13
 
@@ -96,6 +114,24 @@ AudioSphereModule.so.1 = 1,\ADSP
 AudioContextDetection.so.1 = 1,\ADSP
 ApeDecoderModule.so.1 = 1,\ADSP
 AlacDecoderModule.so.1 = 1,\ADSP
+libVC1DecDsp_skel.so = 1,\ADSP
+libVC1Dec.so = 1,\ADSP
+libsns_low_lat_stream_skel.so = 1,\ADSP
+libsns_device_mode_skel.so = 1,\ADSP
+libscveT2T_skel.so = 1,\ADSP
+libscveObjectSegmentation_skel.so = 1,\ADSP
+libmorpho_defocus_face_bokeh_skel.so = 1,\ADSP
+libhexagon_nn_skel.so = 1,\ADSP
+libfastcvdsp_skel.so = 1,\ADSP
+libfastcvadsp.so = 1,\ADSP
+libdsp_streamer_skel.so = 1,\ADSP
+libdsp_streamer_binning.so = 1,\ADSP
+libdsp_streamer_add_constant.so = 1,\ADSP
+libdspCV_skel.so = 1,\ADSP
+libcvpdsp_skel.so = 1,\ADSP
+libcamera_nn_skel.so = 1,\ADSP
+libapps_mem_heap.so = 1,\ADSP
+capi_v2_aptX_CLHDAD_Encoder.so = 1,\ADSP
 qcadsp8150.mbn = 1
 
 [ControlFlags]
@@ -125,7 +161,7 @@ ExcludeFromSelect = *
 %PIL.DeviceDesc%=PIL_Device_Ext_APQ, ACPI\VEN_QCOM&DEV_041B&SUBSYS_SCNM8150
 
 [SUBSYS_Device_ADSP_ext.NT]
-CopyFiles=WmaStdDecoderModule.so.1,WmaProDecoderModule.so.1,VorbisDecoderModule.so.1,VoiceWakeup_V2_Module.so.1,SVACmnModule.so.1,sm_fluence_sb_module.so.1,smecns_v2_module_fv9.so.1,SAPlusCmnModule.so.1,mm_fluence_sb_module.so.1,map_SHARED_LIBS_855.adsp.prodQ.txt,map_AVS_SHARED_LIBS_855.adsp.prodQ.txt,libsysmon_skel.so,libsysmonquery_skel.so,libsysmondomain_skel.so,libstabilitydomain_skel.so,LdacModule.so.1,HeaacDecoderModule.so.1,fluence_voiceplus_module.so.1,fluence_sm_module_fv9.so.1,fluence_pro_vr_module_fv9.so.1,fluence_pro_vc_module_fv9.so.1,fluence_ef_module_fv9.so.1,fluence_bs_module_fv9.so.1,FlacDecoderModule.so.1,ffv_module_fv9.so.1,ffns_module_fv9.so.1,fastrpc_shell_0,EtsiEaacPlusEncAndCmnModule.so.1,EtsiAmrWbPlusDecModule.so.1,CFCMModule.so.1,AudioSphereModule.so.1,AudioContextDetection.so.1,ApeDecoderModule.so.1,AlacDecoderModule.so.1,SOFiles_ADSP,MBNFiles_ADSP
+CopyFiles=WmaStdDecoderModule.so.1,WmaProDecoderModule.so.1,VorbisDecoderModule.so.1,VoiceWakeup_V2_Module.so.1,SVACmnModule.so.1,sm_fluence_sb_module.so.1,smecns_v2_module_fv9.so.1,SAPlusCmnModule.so.1,mm_fluence_sb_module.so.1,map_SHARED_LIBS_855.adsp.prodQ.txt,map_AVS_SHARED_LIBS_855.adsp.prodQ.txt,libsysmon_skel.so,libsysmonquery_skel.so,libsysmondomain_skel.so,libstabilitydomain_skel.so,LdacModule.so.1,HeaacDecoderModule.so.1,fluence_voiceplus_module.so.1,fluence_sm_module_fv9.so.1,fluence_pro_vr_module_fv9.so.1,fluence_pro_vc_module_fv9.so.1,fluence_ef_module_fv9.so.1,fluence_bs_module_fv9.so.1,FlacDecoderModule.so.1,ffv_module_fv9.so.1,ffns_module_fv9.so.1,fastrpc_shell_0,EtsiEaacPlusEncAndCmnModule.so.1,EtsiAmrWbPlusDecModule.so.1,CFCMModule.so.1,AudioSphereModule.so.1,AudioContextDetection.so.1,ApeDecoderModule.so.1,AlacDecoderModule.so.1,libVC1DecDsp_skel.so,libVC1Dec.so,libsns_low_lat_stream_skel.so,libsns_device_mode_skel.so,libscveT2T_skel.so,libscveObjectSegmentation_skel.so,libmorpho_defocus_face_bokeh_skel.so,libhexagon_nn_skel.so,libfastcvdsp_skel.so,libfastcvadsp.so,libdsp_streamer_skel.so,libdsp_streamer_binning.so,libdsp_streamer_add_constant.so,libdspCV_skel.so,libcvpdsp_skel.so,libcamera_nn_skel.so,libapps_mem_heap.so,capi_v2_aptX_CLHDAD_Encoder.so,SOFiles_ADSP,MBNFiles_ADSP
 AddReg=SUBSYSReg
 
 [SUBSYS_Device_ADSP_ext.NT.HW]
@@ -243,6 +279,42 @@ VorbisDecoderModule.so.1
 WmaProDecoderModule.so.1
 [WmaStdDecoderModule.so.1]
 WmaStdDecoderModule.so.1
+[libVC1DecDsp_skel.so]
+libVC1DecDsp_skel.so
+[libVC1Dec.so]
+libVC1Dec.so
+[libsns_low_lat_stream_skel.so]
+libsns_low_lat_stream_skel.so
+[libsns_device_mode_skel.so]
+libsns_device_mode_skel.so
+[libscveT2T_skel.so]
+libscveT2T_skel.so
+[libscveObjectSegmentation_skel.so]
+libscveObjectSegmentation_skel.so
+[libmorpho_defocus_face_bokeh_skel.so]
+libmorpho_defocus_face_bokeh_skel.so
+[libhexagon_nn_skel.so]
+libhexagon_nn_skel.so
+[libfastcvdsp_skel.so]
+libfastcvdsp_skel.so
+[libfastcvadsp.so]
+libfastcvadsp.so
+[libdsp_streamer_skel.so]
+libdsp_streamer_skel.so
+[libdsp_streamer_binning.so]
+libdsp_streamer_binning.so
+[libdsp_streamer_add_constant.so]
+libdsp_streamer_add_constant.so
+[libdspCV_skel.so]
+libdspCV_skel.so
+[libcvpdsp_skel.so]
+libcvpdsp_skel.so
+[libcamera_nn_skel.so]
+libcamera_nn_skel.so
+[libapps_mem_heap.so]
+libapps_mem_heap.so
+[capi_v2_aptX_CLHDAD_Encoder.so]
+capi_v2_aptX_CLHDAD_Encoder.so
 
 ;To configure refer PathMappingKeyName registry
 [HashMapping_ADSP]
@@ -382,6 +454,78 @@ hkr,mappings\fastrpc\default\6d73c2ab74b3d909968a4aca204ac8018dda7fc81bfa7c7f42f
 ; Updating registry of WmaStdDecoderModule.so.1 to remote path \ADSP\WmaStdDecoderModule.so.1
 HKR,Mappings\FASTRPC\Default\53b6f29b6d1a00597f170891f725df9e8f3bb4a78c8ed4064122a25ce862efcd,"Local",%REG_SZ%, %13%\ADSP\WmaStdDecoderModule.so.1
 hkr,mappings\fastrpc\default\53b6f29b6d1a00597f170891f725df9e8f3bb4a78c8ed4064122a25ce862efcd,"remote",%reg_sz%, \adsp\wmastddecodermodule.so.1
+
+; Updating registry of capi_v2_aptX_CLHDAD_Encoder.so to remote path \ADSP\capi_v2_aptX_CLHDAD_Encoder.so
+HKR,Mappings\FASTRPC\Default\c2665d41a30a4d16eb409a6c724f4c587e5176cba3a9f15bef3a87a43f1f5752,"Local",%REG_SZ%, %13%\ADSP\capi_v2_aptX_CLHDAD_Encoder.so
+hkr,mappings\fastrpc\default\c2665d41a30a4d16eb409a6c724f4c587e5176cba3a9f15bef3a87a43f1f5752,"remote",%reg_sz%, \adsp\capi_v2_aptx_clhdad_encoder.so
+
+; Updating registry of libapps_mem_heap.so to remote path \ADSP\libapps_mem_heap.so
+HKR,Mappings\FASTRPC\Default\c119dea33c7e9e7df56ea58f1cce1dc3b48f950bd05d3b26e8610e5933fdd865,"Local",%REG_SZ%, %13%\ADSP\libapps_mem_heap.so
+hkr,mappings\fastrpc\default\c119dea33c7e9e7df56ea58f1cce1dc3b48f950bd05d3b26e8610e5933fdd865,"remote",%reg_sz%, \adsp\libapps_mem_heap.so
+
+; Updating registry of libcamera_nn_skel.so to remote path \ADSP\libcamera_nn_skel.so
+HKR,Mappings\FASTRPC\Default\a088af356942625ed49e1de5bf98f87905ab213ccdb7da87956259dc01f3c2b2,"Local",%REG_SZ%, %13%\ADSP\libcamera_nn_skel.so
+hkr,mappings\fastrpc\default\a088af356942625ed49e1de5bf98f87905ab213ccdb7da87956259dc01f3c2b2,"remote",%reg_sz%, \adsp\libcamera_nn_skel.so
+
+; Updating registry of libcvpdsp_skel.so to remote path \ADSP\libcvpdsp_skel.so
+HKR,Mappings\FASTRPC\Default\d57d7f11bdf18fdb39849cb4ed585122d944bf72760bfeb2a09762f42f31145b,"Local",%REG_SZ%, %13%\ADSP\libcvpdsp_skel.so
+hkr,mappings\fastrpc\default\d57d7f11bdf18fdb39849cb4ed585122d944bf72760bfeb2a09762f42f31145b,"remote",%reg_sz%, \adsp\libcvpdsp_skel.so
+
+; Updating registry of libdspCV_skel.so to remote path \ADSP\libdspCV_skel.so
+HKR,Mappings\FASTRPC\Default\08b70d39a843404bc9e23fb37fc01fc0b6aeb192427b341c1b4b2729417804e2,"Local",%REG_SZ%, %13%\ADSP\libdspCV_skel.so
+hkr,mappings\fastrpc\default\08b70d39a843404bc9e23fb37fc01fc0b6aeb192427b341c1b4b2729417804e2,"remote",%reg_sz%, \adsp\libdspcv_skel.so
+
+; Updating registry of libdsp_streamer_add_constant.so to remote path \ADSP\libdsp_streamer_add_constant.so
+HKR,Mappings\FASTRPC\Default\9716e71ec7f8a0c4178c26b5b799b2b59d6e22bc9cf40ba17bc8664ab29661a3,"Local",%REG_SZ%, %13%\ADSP\libdsp_streamer_add_constant.so
+hkr,mappings\fastrpc\default\9716e71ec7f8a0c4178c26b5b799b2b59d6e22bc9cf40ba17bc8664ab29661a3,"remote",%reg_sz%, \adsp\libdsp_streamer_add_constant.so
+
+; Updating registry of libdsp_streamer_binning.so to remote path \ADSP\libdsp_streamer_binning.so
+HKR,Mappings\FASTRPC\Default\65adaa3d1daa91fcc74bd3ff680d71cb25bb374b1bf3067842668c7982fc2342,"Local",%REG_SZ%, %13%\ADSP\libdsp_streamer_binning.so
+hkr,mappings\fastrpc\default\65adaa3d1daa91fcc74bd3ff680d71cb25bb374b1bf3067842668c7982fc2342,"remote",%reg_sz%, \adsp\libdsp_streamer_binning.so
+
+; Updating registry of libdsp_streamer_skel.so to remote path \ADSP\libdsp_streamer_skel.so
+HKR,Mappings\FASTRPC\Default\4f2208cfe4d93ee0f0d7c1a981bc7fa450cc8c423fda319c37514e8da2573e9e,"Local",%REG_SZ%, %13%\ADSP\libdsp_streamer_skel.so
+hkr,mappings\fastrpc\default\4f2208cfe4d93ee0f0d7c1a981bc7fa450cc8c423fda319c37514e8da2573e9e,"remote",%reg_sz%, \adsp\libdsp_streamer_skel.so
+
+; Updating registry of libfastcvadsp.so to remote path \ADSP\libfastcvadsp.so
+HKR,Mappings\FASTRPC\Default\70ce07108903f973dfd6a7f51365d3a6096779420b61a04d39f2d1aa8a9a057a,"Local",%REG_SZ%, %13%\ADSP\libfastcvadsp.so
+hkr,mappings\fastrpc\default\70ce07108903f973dfd6a7f51365d3a6096779420b61a04d39f2d1aa8a9a057a,"remote",%reg_sz%, \adsp\libfastcvadsp.so
+
+; Updating registry of libfastcvdsp_skel.so to remote path \ADSP\libfastcvdsp_skel.so
+HKR,Mappings\FASTRPC\Default\81b71e789d950cfd5249ed677db027803651bcf640e25e06b8fa3fdff11c6f71,"Local",%REG_SZ%, %13%\ADSP\libfastcvdsp_skel.so
+hkr,mappings\fastrpc\default\81b71e789d950cfd5249ed677db027803651bcf640e25e06b8fa3fdff11c6f71,"remote",%reg_sz%, \adsp\libfastcvdsp_skel.so
+
+; Updating registry of libhexagon_nn_skel.so to remote path \ADSP\libhexagon_nn_skel.so
+HKR,Mappings\FASTRPC\Default\11d8f7e7b58a3f5351fd4eec17824a112a49a7f10a7eab470bba522538416877,"Local",%REG_SZ%, %13%\ADSP\libhexagon_nn_skel.so
+hkr,mappings\fastrpc\default\11d8f7e7b58a3f5351fd4eec17824a112a49a7f10a7eab470bba522538416877,"remote",%reg_sz%, \adsp\libhexagon_nn_skel.so
+
+; Updating registry of libmorpho_defocus_face_bokeh_skel.so to remote path \ADSP\libmorpho_defocus_face_bokeh_skel.so
+HKR,Mappings\FASTRPC\Default\b3f6a3d3666e3d6c12cd312018456f72176facfe8b03163378d882727f1f3ba8,"Local",%REG_SZ%, %13%\ADSP\libmorpho_defocus_face_bokeh_skel.so
+hkr,mappings\fastrpc\default\b3f6a3d3666e3d6c12cd312018456f72176facfe8b03163378d882727f1f3ba8,"remote",%reg_sz%, \adsp\libmorpho_defocus_face_bokeh_skel.so
+
+; Updating registry of libscveObjectSegmentation_skel.so to remote path \ADSP\libscveObjectSegmentation_skel.so
+HKR,Mappings\FASTRPC\Default\24dd5af13c8e5235c9615c7941dbedf596e012ac7c4a6994d7733add4b05032c,"Local",%REG_SZ%, %13%\ADSP\libscveObjectSegmentation_skel.so
+hkr,mappings\fastrpc\default\24dd5af13c8e5235c9615c7941dbedf596e012ac7c4a6994d7733add4b05032c,"remote",%reg_sz%, \adsp\libscveobjectsegmentation_skel.so
+
+; Updating registry of libscveT2T_skel.so to remote path \ADSP\libscveT2T_skel.so
+HKR,Mappings\FASTRPC\Default\a2b75cf487024a2f7783dca95e207cdd1ca9cd595d74b388f767d2ea08990d7f,"Local",%REG_SZ%, %13%\ADSP\libscveT2T_skel.so
+hkr,mappings\fastrpc\default\a2b75cf487024a2f7783dca95e207cdd1ca9cd595d74b388f767d2ea08990d7f,"remote",%reg_sz%, \adsp\libscvet2t_skel.so
+
+; Updating registry of libsns_device_mode_skel.so to remote path \ADSP\libsns_device_mode_skel.so
+HKR,Mappings\FASTRPC\Default\54819236a59ebba72525b7f032fe6a58c6dddfcc37737ffb00c2f39d13db31fe,"Local",%REG_SZ%, %13%\ADSP\libsns_device_mode_skel.so
+hkr,mappings\fastrpc\default\54819236a59ebba72525b7f032fe6a58c6dddfcc37737ffb00c2f39d13db31fe,"remote",%reg_sz%, \adsp\libsns_device_mode_skel.so
+
+; Updating registry of libsns_low_lat_stream_skel.so to remote path \ADSP\libsns_low_lat_stream_skel.so
+HKR,Mappings\FASTRPC\Default\45d6d6f9ba56925fce5b2362ea803cb283a288068dbda67c3c71d583b26a1fc1,"Local",%REG_SZ%, %13%\ADSP\libsns_low_lat_stream_skel.so
+hkr,mappings\fastrpc\default\45d6d6f9ba56925fce5b2362ea803cb283a288068dbda67c3c71d583b26a1fc1,"remote",%reg_sz%, \adsp\libsns_low_lat_stream_skel.so
+
+; Updating registry of libVC1Dec.so to remote path \ADSP\libVC1Dec.so
+HKR,Mappings\FASTRPC\Default\046d28f9a5c3c38cf64126b179afa95fcb2320ae7c5b36fabb76a8b109fbc6ee,"Local",%REG_SZ%, %13%\ADSP\libVC1Dec.so
+hkr,mappings\fastrpc\default\046d28f9a5c3c38cf64126b179afa95fcb2320ae7c5b36fabb76a8b109fbc6ee,"remote",%reg_sz%, \adsp\libvc1dec.so
+
+; Updating registry of libVC1DecDsp_skel.so to remote path \ADSP\libVC1DecDsp_skel.so
+HKR,Mappings\FASTRPC\Default\e61f768305dca147476d1e5bb3853a7dab15b3da5bb7484f874de20d7d0ab34e,"Local",%REG_SZ%, %13%\ADSP\libVC1DecDsp_skel.so
+hkr,mappings\fastrpc\default\e61f768305dca147476d1e5bb3853a7dab15b3da5bb7484f874de20d7d0ab34e,"remote",%reg_sz%, \adsp\libvc1decdsp_skel.so
 
 [Strings]
 ;Localizable Strings
