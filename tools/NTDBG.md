@@ -22,7 +22,7 @@
 # Debugging ACPI issues
 
 - On initial break: ```bp ACPI!DriverEntry;g;g```
-- ```!amli set verboseon spewnon traceon```
+- ```!amli set verboseon spewon traceon```
 - ```g```
 
 - On failure: ```!amli r```
