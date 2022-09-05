@@ -1,5 +1,5 @@
-﻿## Surface Duo Drivers BSP - Version 2208.54
-**Released:** 8/17/2022 00:00 AM UTC+2
+## Surface Duo Drivers BSP - Version 2208.67
+**Released:** 8/21/2022 00:00 AM UTC+2
 
 **Quality:** Preview
 
@@ -7,7 +7,7 @@
 
 ### General information
 
-You can view compatibility for this release, along with important information and what works, and what doesn't at this link: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/73855f3b7ddd32fe1746f4398163fa545134cd78/Status.md
+You can view compatibility for this release, along with important information and what works, and what doesn't at this link: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/b95e43f5b2e16ba715d9339012d7beb8f11926b6/Status.md
 
 
 ### Release notes
@@ -21,14 +21,9 @@ ________________________________________________________________________________
 
 ### Changelog
 
-- NEW: WDDM 2.6 GPU Driver for Titanium (TI/19H1), Resolves a crash issue on OS build 18362/18363.
-- NEW: Work In Progress: WDDM 2.5 GPU Driver for RS5
-- NEW: Work In Progress: Camera Sensor support (Not yet fully functional)
-- NEW: Work In Progress: SAR Driver, the SAR Driver helps reduce the device radiations when in proximity of the user
-- NEW: Work In Progress: Audio Stack support. Currently only the main microphone is functional
-- NEW: Bluetooth audio devices are now hardware accelerated/supported by hardware encoders/decoders
-- Removed: Dolby Atmos stack (temporary)
-- FIX: Addresses an issue with FastRPC, Vibration motor, Panel not working under Windows 10 Vibranium (19H2) and lower.
+- Addresses some USB C connectivity issues. Not externally powered USB C dongles will still behave incorrectly, a fix will come in a later release
+- Enables Mobile Cellular Stack for OS build 18363 or lower, enabling you to get an up to date ICan0 value among other missing functionalities on newer windows version (Visual Voicemail in Microsoft Phone)
+- Preparation for September (Lahaina)
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
@@ -303,32 +298,6 @@ int main()
 	catch (...) {}
 }
 ```
-
-____________________________________________________________________________________________________________________________
-
-
-Please note this is the beginning and barely anything will work currently.
-
-What works and what matters from an user point of view:
-
-- Side buttons
-- USB
-- Closing/Opening the device correctly puts it in sleep/awake
-- CPU frequency is working
-- Bluetooth
-- GPU
-- Both displays
-- Touch
-- Pen on the left screen
-- Vibration motor
-- Both Batteries (no charging)
-- 29 Sensors (see above)
-- Cellular Data
-- WiFi
-- GPS
-- SMS
-
-Nothing else works! You have been warned
 
 ____________________________________________________________________________________________________________________________
 
