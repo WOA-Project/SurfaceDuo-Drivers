@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2208.67
-**Released:** 8/21/2022 00:00 AM UTC+2
+## Surface Duo Drivers BSP - Version 2209.26
+**Released:** 9/08/2022 00:30 AM UTC+2
 
 **Quality:** Preview
 
@@ -16,19 +16,19 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version 2.33.** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2.38.** ⚠️⚠️
 - ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: Upgrades using DriverUpdater *may* lead under some rare cases to the GPU device not being loaded on next boot, to fix this, go to device manager and manually update the GPU device again.** ⚠️⚠️
 
 ### Changelog
 
-- Addresses some USB C connectivity issues. Not externally powered USB C dongles will still behave incorrectly, a fix will come in a later release
-- Enables Mobile Cellular Stack for OS build 18363 or lower, enabling you to get an up to date ICan0 value among other missing functionalities on newer windows version (Visual Voicemail in Microsoft Phone)
-- Preparation for September (Lahaina)
+- Performance and Stability improvements for the GPU driver (Bump to version 1840).
+- NOTE: In case you missed it, latest UEFI firmware updates fix the graphical glitches issue with the GPU device and enable 3D acceleration. Make sure you update to the latest UEFI!
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
 
-__Improvements to CPU core clock frequency and GPU will come in an upcoming release__
+__Improvements to CPU core clock frequency will come in an upcoming release__
 
 
 ### Sensor Calibration Provisioning (Mandatory)
