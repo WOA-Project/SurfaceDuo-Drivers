@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2209.26
-**Released:** 9/08/2022 00:30 AM UTC+2
+## Surface Duo Drivers BSP - Version 2209.56
+**Released:** 9/17/2022 00:30 AM UTC+2
 
 **Quality:** Preview
 
@@ -22,8 +22,11 @@ ________________________________________________________________________________
 
 ### Changelog
 
-- Performance and Stability improvements for the GPU driver (Bump to version 1840).
-- NOTE: In case you missed it, latest UEFI firmware updates fix the graphical glitches issue with the GPU device and enable 3D acceleration. Make sure you update to the latest UEFI!
+- Updated Audio DSP Subsystem to version ADSP.HT.5.0.1-00198.1-SM8150-1.452464.1.510359.1
+
+- Updated Modem Subsystem to version MPSS.HE.1.0.c11-00155-SM8150_GEN_PACK-3.510359.3.516397.2
+
+- Updated Image Build to version SM8150.WP.2.0.1-00092-STD.PROD-1.510359.5a.516397.4 / asic / 2022-08-09 12:29:14
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
