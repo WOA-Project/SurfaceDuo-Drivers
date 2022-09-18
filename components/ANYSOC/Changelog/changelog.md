@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2209.56
-**Released:** 9/17/2022 00:30 AM UTC+2
+## Surface Duo Drivers BSP - Version 2209.60
+**Released:** 9/18/2022 09:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -22,11 +22,21 @@ ________________________________________________________________________________
 
 ### Changelog
 
-- Updated Audio DSP Subsystem to version ADSP.HT.5.0.1-00198.1-SM8150-1.452464.1.510359.1
+- Addresses an issue with WiFi not working on certain Surface Duo devices.
 
-- Updated Modem Subsystem to version MPSS.HE.1.0.c11-00155-SM8150_GEN_PACK-3.510359.3.516397.2
+- Addresses an issue with the Dialer application not working anymore on Windows 11 vNext builds.
 
-- Updated Image Build to version SM8150.WP.2.0.1-00092-STD.PROD-1.510359.5a.516397.4 / asic / 2022-08-09 12:29:14
+- Addresses an issue with the Phone Settings application not retrieving information correctly on its first page.
+
+- Fixes an issue where the drop down to select the cellular SIM provider in the Dialer application would be blank.
+
+- [WIP] Charger IC bring up work, not yet finished (UEFI)
+
+- Addresses an issue where the device would unexpectedly charge, overcharge, or report incorrect fuel gauge values (UEFI)
+
+- Addresses an issue where some boot sessions would only have one battery pack connected at all times (UEFI)
+
+- Addresses an issue where battery packs may not be shared when being used under Windows (UEFI)
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
