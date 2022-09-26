@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2209.60
-**Released:** 9/18/2022 09:00 PM UTC+2
+## Surface Duo Drivers BSP - Version 2209.86
+**Released:** 9/26/2022 11:00 AM UTC+2
 
 **Quality:** Preview
 
@@ -22,21 +22,13 @@ ________________________________________________________________________________
 
 ### Changelog
 
-- Addresses an issue with WiFi not working on certain Surface Duo devices.
+- Addresses an issue where USB-C detection got broken with an earlier release. As a result, powered docks among other things stopped being detected correctly and did not work as expected
 
-- Addresses an issue with the Dialer application not working anymore on Windows 11 vNext builds.
+- Addresses an issue where unplugging an usb device other than another computer would not reflect in the port being disconnected from the Windows side on Surface Duo
 
-- Addresses an issue with the Phone Settings application not retrieving information correctly on its first page.
+- Addresses an issue where USB Power only cables would result in the USB-C detection state machine to get stuck while waiting for the missing charger code to start
 
-- Fixes an issue where the drop down to select the cellular SIM provider in the Dialer application would be blank.
-
-- [WIP] Charger IC bring up work, not yet finished (UEFI)
-
-- Addresses an issue where the device would unexpectedly charge, overcharge, or report incorrect fuel gauge values (UEFI)
-
-- Addresses an issue where some boot sessions would only have one battery pack connected at all times (UEFI)
-
-- Addresses an issue where battery packs may not be shared when being used under Windows (UEFI)
+- Lots of bug fixes and enhancements with USB-C
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
