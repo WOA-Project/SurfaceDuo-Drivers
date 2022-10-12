@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2209.86
-**Released:** 9/26/2022 11:00 AM UTC+2
+## Surface Duo Drivers BSP - Version 2210.41
+**Released:** 10/13/2022 01:00 AM UTC+2
 
 **Quality:** Preview
 
@@ -16,19 +16,21 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2.38.** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2210.38.** ⚠️⚠️
 - ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
 - ⚠️⚠️ **IMPORTANT: Upgrades using DriverUpdater *may* lead under some rare cases to the GPU device not being loaded on next boot, to fix this, go to device manager and manually update the GPU device again.** ⚠️⚠️
 
 ### Changelog
 
-- Addresses an issue where USB-C detection got broken with an earlier release. As a result, powered docks among other things stopped being detected correctly and did not work as expected
+- Addresses an issue with reboots and sleeps resulting in a BSOD when performing PSCI Memory Protection SMC calls (UEFI side)
 
-- Addresses an issue where unplugging an usb device other than another computer would not reflect in the port being disconnected from the Windows side on Surface Duo
+- Updated Surface Integration driver and Cellular provisioning packages
 
-- Addresses an issue where USB Power only cables would result in the USB-C detection state machine to get stuck while waiting for the missing charger code to start
+- Improvements to Qualcomm Peripheral Image Loader configuration settings
 
-- Lots of bug fixes and enhancements with USB-C
+- Started work on Qualcomm Aqstic Speaker Protection driver. A downside of this release is a regression in Mic availability which will be resolved in a future update
+
+- Started work on Dolby Access support for Surface Duo Audio stack.
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
