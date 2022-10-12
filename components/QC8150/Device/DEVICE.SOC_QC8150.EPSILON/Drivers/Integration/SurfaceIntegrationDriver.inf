@@ -9,7 +9,7 @@ Class=System
 ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
 Provider=%ManufacturerName%
 CatalogFile=SurfaceIntegrationDriver.cat
-DriverVer = 06/03/2021,35.5.139.0
+DriverVer = 07/15/2022,35.8.139.0
 PnpLockdown=1
 
 [DestinationDirs]
@@ -52,6 +52,10 @@ Surface.Cosa.ATT.SUPL.ppkg
 Surface_att.ppkg
 
 [SurfaceIntegrationDriver_Device.NT.HW]
+DelReg=LKD_Disable_Clear
+
+[LKD_Disable_Clear]
+HKLM,SYSTEM\CurrentControlSet\Control\CrashControl\FullLiveKernelReports,"FullLiveReportsMax"
 
 [SurfaceIntegrationDriver_Device_AddReg]
 ;;HKLM,System\CurrentControlSet\Services\SurfaceIntegrationDriver\Parameters, "ImageNameSID", %REG_SZ%, "(Image.Name)" ; Updated with post processing
@@ -71,12 +75,6 @@ HKLM,SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{4d36e968-e325-11ce-bfc1-
 HKLM,SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{4d36e968-e325-11ce-bfc1-08002be10318},,  %REG_SZ%, "Graphics"
 HKLM,SYSTEM\CurrentControlSet\Control\SafeBoot\Minimal\{e6f1aa1c-7f3b-4473-b2e8-c97d8ac71d53},,  %REG_SZ%, "UCM"
 HKLM,SYSTEM\CurrentControlSet\Control\SafeBoot\Network\{e6f1aa1c-7f3b-4473-b2e8-c97d8ac71d53},,  %REG_SZ%, "UCM"
-
-;
-; Live Dump off
-;
-HKLM,SYSTEM\CurrentControlSet\Control\CrashControl\FullLiveKernelReports, "FullLiveReportsMax", %REG_DWORD%, 0x0
-;
 
 ;-------------- Service installation
 [SurfaceIntegrationDriver_Device.NT.Services]
