@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Config xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <format_version value="1.0.4"/>
+    <format_version value="1.0.7"/>
 	<change_version value="6"/>
-	<change_date value="2019-11-20 13:08:00"/>
+	<change_date value="2021-09-14 15:00:00"/>
 	<source value="tool-1.0.4.0"/>
     <DefaultSettings>
         <APIState>
@@ -32,6 +32,7 @@
                 <Applications priority="3">
                     <APP name="microsoftedgecp.exe" profile="Dynamic" />
                     <APP name="microsoftedgebchost.exe" profile="Dynamic" />
+                    <APP name="msedge.exe" profile="Dynamic" />
                     <APP name="chrome.exe" profile="Dynamic" />
                     <APP name="iexplore.exe" profile="Dynamic" />
                     <APP name="facebook.exe" profile="Dynamic" />
@@ -48,6 +49,7 @@
                     <APP name="skypeapp.exe"/>
                     <APP name="skype4life.exe"/>
                     <APP name="teams.exe"/>
+                    <APP name="msteams.exe"/>
                 </Applications>
             </CaptureStream>
             <DolbyEnabled endpoint="internal_speaker" spatial_audio="on" value="true"/>
@@ -65,23 +67,38 @@
             <default_uitheme value="red"/>
             <full_dsp_support value="false"/>
             <bypass_stereo_virtualizer>
-                <movie value="0"/>
-                <music value="0"/>
-                <game value="0"/>
-                <game_shooter value="0"/>
-                <game_racing value="0"/>
-                <game_rts value="0"/>
-                <game_rpg value="0"/>
-                <voice value="0"/>
-                <dynamic value="0"/>
-                <personalize value="0"/>
-                <personalize_user1 value="0"/>
-                <personalize_user2 value="0"/>
-                <personalize_user3 value="0"/>
+                <movie value="false"/>
+                <music value="false"/>
+                <game value="false"/>
+                <game_shooter value="false"/>
+                <game_racing value="false"/>
+                <game_rts value="false"/>
+                <game_rpg value="false"/>
+                <voice value="false"/>
+                <dynamic value="false"/>
+                <personalize value="false"/>
+                <personalize_user1 value="false"/>
+                <personalize_user2 value="false"/>
+                <personalize_user3 value="false"/>
             </bypass_stereo_virtualizer>
-            <IsSupportOnlineCourse value="false"/>
+            <ns>
+                <load_ns_apo value="false"/>
+                <enabled_profiles endpoint="internal_speaker">
+                    <profile name="voice"/>
+                </enabled_profiles >
+            </ns>
+            <ShowOnlineCourseButton value="false"/>
+            <DabsAutoEnablement value="true" />
+            <DahpAutoEnablement value="true" />
+            <IsShowMirroringButton value="false" />
+            <volume_feedback_enable value="true" />
+            <AsSeparatedDevice value="false" />
         </APIState>
         <operator value="Default"/>
         <max_apo_instance_count value="5"/>
+        <DualScreenMultiMode value="0"/>
+        <volume_based_eq_enable value="false"/>
+        <low_volume_threshold value="40"/>
+        <high_volume_threshold value="80"/>
     </DefaultSettings>
 </Config>
