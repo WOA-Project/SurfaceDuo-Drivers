@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <format_version value="1.0.4" />
+    <change_version value="8" />
+    <change_date value="2019-12-04 02:53:12" />
+    <source value="1.0.4.0" />
+    <DefaultSettings>
+        <APIState>
+            <AutoProfile>
+                <ShowAutoProfileButton value="false" />
+                <AutoProfileEnabled value="false" />
+                <Applications priority="1">
+                    <APP name="bluejeans.exe" profile="Voice" />
+                    <APP name="skype.exe" profile="Voice" />
+                    <APP name="skypehost.exe" profile="Voice" />
+                    <APP name="lync.exe" profile="Voice" />
+                    <APP name="viber.exe" profile="Voice" />
+                </Applications>
+                <Applications priority="2">
+                    <APP name="wmplayer.exe" profile="Dynamic" />
+                    <APP name="music.ui.exe" profile="Music" />
+                    <APP name="video.ui.exe" profile="Movie" />
+                    <APP name="vlc.exe" profile="Dynamic" />
+                    <APP name="dolbyuwp.exe" profile="Movie" />
+                    <APP name="spotify.exe" profile="Music" />
+                    <APP name="hulu.gibson.exe" profile="Movie" />
+                    <APP name="95FE1D22.VUDUMoviesandTV_0wkekwh8d6p78!App" profile="Movie" />
+                    <APP name="PandoraMediaInc.29680B314EFC2_n619g4d5j0fnw!App" profile="Music" />
+                    <APP name="4DF9E0F8.Netflix_mcm4njqhnhss8!Netflix.App" profile="Movie" />
+                    <APP name="SmartRemote.exe" profile="Movie" />
+                </Applications>
+                <Applications priority="3">
+                    <APP name="microsoftedgecp.exe" profile="Dynamic" />
+                    <APP name="microsoftedgebchost.exe" profile="Dynamic" />
+                    <APP name="chrome.exe" profile="Dynamic" />
+                    <APP name="iexplore.exe" profile="Dynamic" />
+                    <APP name="facebook.exe" profile="Dynamic" />
+                </Applications>
+            </AutoProfile>
+            <CaptureStream>
+                <CaptureStreamDetectionEnable value="true" />
+                <Condition value="1" />
+                <Action value="0" />
+                <Applications>
+                    <APP name="skype.exe" />
+                    <APP name="skypehost.exe" />
+                    <APP name="lync.exe" />
+                    <APP name="skypeapp.exe" />
+                    <APP name="skype4life.exe" />
+                    <APP name="teams.exe" />
+                </Applications>
+            </CaptureStream>
+            <DolbyEnabled endpoint="internal_speaker" spatial_audio="on" value="true" />
+            <DolbyEnabled endpoint="internal_speaker" spatial_audio="off" value="true" />
+            <DolbyEnabled endpoint="headphone" spatial_audio="on" value="true" />
+            <DolbyEnabled endpoint="headphone" spatial_audio="off" value="false" />
+            <SeparateEndpointSetting value="true" />
+            <DisableVirtualizerWhenSpatialOff value="true" />
+            <ResetOnAccessUninstall value="true" />
+            <geq_maximum_range value="192" />
+            <default_profile endpoint="internal_speaker" spatial_audio="on" value="movie" />
+            <default_profile endpoint="internal_speaker" spatial_audio="off" value="music" />
+            <default_profile endpoint="headphone" spatial_audio="on" value="movie" />
+            <default_profile endpoint="headphone" spatial_audio="off" value="music" />
+            <default_uitheme value="red" />
+            <full_dsp_support value="true" />
+            <bypass_stereo_virtualizer>
+                <dynamic value="1" />
+                <movie value="1" />
+                <music value="1" />
+                <game value="1" />
+                <voice value="1" />
+                <personalize value="1" />
+                <game_shooter value="1" />
+                <game_racing value="1" />
+                <game_rpg value="1" />
+                <game_rts value="1" />
+                <personalize_user1 value="1" />
+                <personalize_user2 value="1" />
+                <personalize_user3 value="1" />
+                <off value="1" />
+            </bypass_stereo_virtualizer>
+        </APIState>
+        <operator value="Microsoft" />
+        <max_apo_instance_count value="5" />
+    </DefaultSettings>
+</Config>
