@@ -9,7 +9,7 @@ Class=SurfaceSystemManagement
 ClassGuid={DB07C471-C4AD-46D0-AFFF-06B56A65CCF4}
 Provider=%ManufacturerName%
 CatalogFile=SurfaceSystemManagementFrameworkDriver.cat
-DriverVer = 06/02/2021,3.139.139.0
+DriverVer = 05/20/2022,3.177.139.0
 PnpLockdown=1
 
 [DestinationDirs]

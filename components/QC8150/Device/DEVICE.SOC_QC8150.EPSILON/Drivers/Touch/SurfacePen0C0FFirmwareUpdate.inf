@@ -4,10 +4,10 @@
 ; Description:        Driver installation file for Surface Pen 0C0F Firmware Update Extension Package.
 ;
 ; Versions.begin   !DO NOT DELETE!
-; BLE-HI (11): Version 5.94.139 (0x05005E8B)
-; BLE-LO (11): Version 5.94.139 (0x05005E8B)
-; MCU-B0 (10): Version 5.96.139 (0x0500608B)
-; HAPTIC (13): Version 5.101.139 (0x0500658B)
+; BLE-HI (11): Version 5.131.139 (0x0500838B)
+; BLE-LO (11): Version 5.131.139 (0x0500838B)
+; MCU-B0 (10): Version 5.128.139 (0x0500808B)
+; HAPTIC (13): Version 5.117.139 (0x0500758B)
 ; Versions.end   !DO NOT DELETE!
 ;
 ; Copyright (C) Microsoft Corporation.  All Rights Reserved.
@@ -20,7 +20,7 @@ ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider=%ManufacturerName%
 ExtensionId = {33F65FDE-56B4-4F32-9B04-590C25E05081}
 CatalogFile=SurfacePen0C0FFirmwareUpdate.cat
-DriverVer = 06/21/2021,1.8.139.0
+DriverVer = 11/10/2021,1.16.139.0
 PnpLockDown=1
 
 [Manufacturer]

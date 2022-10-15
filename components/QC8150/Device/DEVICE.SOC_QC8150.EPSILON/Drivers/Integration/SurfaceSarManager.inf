@@ -11,7 +11,7 @@ Class=System
 ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
 Provider=%ManufacturerName%
 CatalogFile=SurfaceSarManager.cat
-DriverVer = 04/09/2021,3.50.139.0
+DriverVer = 06/28/2022,3.100.139.0
 PnPLockDown=1
 
 [SourceDisksNames]

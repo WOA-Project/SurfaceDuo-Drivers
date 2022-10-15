@@ -13,7 +13,7 @@ ClassGuid={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider=%ManufacturerName%
 CatalogFile=SurfaceHIDFriendlyNames.cat
 ExtensionId={9000149c-5878-4b1d-9cff-fbe218d311b2} 
-DriverVer = 02/04/2021,2.16.137.0
+DriverVer = 06/01/2022,2.23.137.0
 PnPLockDown=1
 
 [Manufacturer]
@@ -22,6 +22,12 @@ PnPLockDown=1
 [Extension.NTARM64]
 ; Generic support (friendly name only) no service added, no functionality added, just a name
 ; Blades TLCs
+%DeviceDesc% = MouseDesc, HID\VID_045E&UP:0001_U:0002 
+%DeviceDesc% = KeyboardDesc, HID\VID_045E&UP:0001_U:0006
+%DeviceDesc% = SystemControllerDesc, HID\VID_045E&UP:0001_U:0080
+%DeviceDesc% = ConsumerControlDesc, HID\VID_045E&UP:000C_U:0001
+%DeviceDesc% = TouchpadDesc, HID\VID_045E&UP:000D_U:0005
+%DeviceDesc% = DigitizerDeviceConfigDesc, HID\VID_045E&UP:000D_U:000E
 %DeviceDesc% = HIDColorDesc, HID\VID_045E&UP:FF05_U:0001
 %DeviceDesc% = HIDAccessoryDesc, HID\VID_045E&UP:FF05_U:0002
 %DeviceDesc% = HIDUSPDesc, HID\VID_045E&UP:FF05_U:0004
@@ -29,6 +35,8 @@ PnPLockDown=1
 
 ; Surface Navigation (Pens, Dials) TLCs
 %DeviceDesc% = SurfaceNavDesc, HID\VID_045E&UP:FF07_U:0001
+%DeviceDesc% = PenIdDesc, HID\VID_045E&UP:FF0F_U:0051
+%DeviceDesc% = PenBluetoothOobCouplingDesc, HID\VID_045E&UP:FFF4_U:000A
 
 ; Surface Dock TLCs
 %DeviceDesc% = DockUtilDesc, HID\VID_045E&UP:FF08_U:0050
@@ -75,23 +83,61 @@ DeviceDesc = HubCameraGenDesc, HID\VID_045E&UP:FF07_U:0210
 DeviceDesc = HubCameraComDesc, HID\VID_045E&UP:FF07_U:0212
 DeviceDesc = HubCameraGenDesc, HID\VID_045E&UP:FF07_U:020F
 
+; Surface Hub 2S Camera Telemetry
+DeviceDesc = HubCameraTelemetryDesc, HID\VID_045E&UP:FF0A_U:0040
+
 ; Surface Hub 2S Pen
 DeviceDesc = HubPenGenDesc, HID\VID_045E&UP:FF0B_U:0100
 
 ; Surface Button Driver
 DeviceDesc = ButtonVhfDesc, VHF\VID_045E&PID_F001
 DeviceDesc = ButtonVhfDesc, VHF\VID_045E&PID_F002
-DeviceDesc = ButtonPortableDesc, HID\VID_045E&UP:0001_U:000D
 DeviceDesc = ButtonConvertedDesc, ButtonConverter\ConvertedDevice
-DeviceDesc = ButtonControlDesc, HID\VID_045E&UP:000C_U:0001
-DeviceDesc = ButtonControllerDesc, HID\VID_045E&UP:0001_U:0080
-DeviceDesc = ButtonKeyboardDesc, HID\VID_045E&UP:0001_U:0006
+
+; Surface Laptop Go 2 Touch FW Update
+DeviceDesc = LaptopGoTouchFwUpdateDesc, HID\VID_1FD2&UP:FF00_U:00FF
 
 ; Microsoft Surface USB Link
 DeviceDesc = TeamsAspDesc, HID\VID_045E&UP:FF99_U:0001
 DeviceDesc = MicrosoftAccessoryCfu, HID\VID_045E&UP:FF0B_U:0104
 DeviceDesc = MicrosoftAccessoryConfigDesc, HID\VID_045E&UP:FF00_U:FF3B
 DeviceDesc = MicrosoftAccessoryConfigDesc, HID\VID_045E&UP:FF00_U:0212
+
+[MouseDesc]
+[MouseDesc.HW]
+AddReg = MouseDesc_AddReg
+[MouseDesc_AddReg]
+HKR,,FriendlyName,,"Surface HID Mouse"
+
+[KeyboardDesc]
+[KeyboardDesc.HW]
+AddReg = KeyboardDesc_AddReg
+[KeyboardDesc_AddReg]
+HKR,,FriendlyName,,"Surface HID Keyboard"
+
+[SystemControllerDesc]
+[SystemControllerDesc.HW]
+AddReg = SystemControllerDesc_AddReg
+[SystemControllerDesc_AddReg]
+HKR,,FriendlyName,,"Surface HID System Controller"
+
+[ConsumerControlDesc]
+[ConsumerControlDesc.HW]
+AddReg = ConsumerControlDesc_AddReg
+[ConsumerControlDesc_AddReg]
+HKR,,FriendlyName,,"Surface HID Consumer Control Device"
+
+[TouchpadDesc]
+[TouchpadDesc.HW]
+AddReg = TouchpadDesc_AddReg
+[TouchpadDesc_AddReg]
+HKR,,FriendlyName,,"Surface HID Touchpad"
+
+[DigitizerDeviceConfigDesc]
+[DigitizerDeviceConfigDesc.HW]
+AddReg = DigitizerDeviceConfigDesc_AddReg
+[DigitizerDeviceConfigDesc_AddReg]
+HKR,,FriendlyName,,"Surface HID Digitizer Device Configuration"
 
 [HIDColorDesc]
 [HIDColorDesc.HW]
@@ -122,6 +168,18 @@ HKR,,FriendlyName,,"Surface Component Firmware Update"
 AddReg = SurfaceNavDesc_AddReg
 [SurfaceNavDesc_AddReg]
 HKR,,FriendlyName,,"Surface Navigation Accessory"
+
+[PenIdDesc]
+[PenIdDesc.HW]
+AddReg = PenIdDesc_AddReg
+[PenIdDesc_AddReg]
+HKR,,FriendlyName,,"Surface HID Pen ID"
+
+[PenBluetoothOobCouplingDesc]
+[PenBluetoothOobCouplingDesc.HW]
+AddReg = PenBluetoothOobCouplingDesc_AddReg
+[PenBluetoothOobCouplingDesc_AddReg]
+HKR,,FriendlyName,,"Surface HID Pen Bluetooth OOB Coupling"
 
 [DockUtilDesc]
 [DockUtilDesc.HW]
@@ -267,6 +325,12 @@ AddReg = HubCameraGenDesc_AddReg
 [HubCameraGenDesc_AddReg]
 HKR,,FriendlyName,,"Surface Camera Generic Device"
 
+[HubCameraTelemetryDesc]
+[HubCameraTelemetryDesc.HW]
+AddReg = HubCameraTelemetryDesc_AddReg
+[HubCameraTelemetryDesc_AddReg]
+HKR,,FriendlyName,,"Surface Camera Telemetry Device"
+
 [HubPenGenDesc]
 [HubPenGenDesc.HW]
 AddReg = HubPenGenDesc_AddReg
@@ -279,35 +343,17 @@ AddReg = ButtonVhfDesc_AddReg
 [ButtonVhfDesc_AddReg]
 HKR,,FriendlyName,,"Surface Button VHF HID Device"
 
-[ButtonPortableDesc]
-[ButtonPortableDesc.HW]
-AddReg = ButtonPortableDesc_AddReg
-[ButtonPortableDesc_AddReg]
-HKR,,FriendlyName,,"Surface Button Portable Button Device"
-
 [ButtonConvertedDesc]
 [ButtonConvertedDesc.HW]
 AddReg = ButtonConvertedDesc_AddReg
 [ButtonConvertedDesc_AddReg]
 HKR,,FriendlyName,,"Surface Button Converted Portable Button Device"
 
-[ButtonControlDesc]
-[ButtonControlDesc.HW]
-AddReg = ButtonControlDesc_AddReg
-[ButtonControlDesc_AddReg]
-HKR,,FriendlyName,,"Surface Button HID Control Device"
-
-[ButtonControllerDesc]
-[ButtonControllerDesc.HW]
-AddReg = ButtonControllerDesc_AddReg
-[ButtonControllerDesc_AddReg]
-HKR,,FriendlyName,,"Surface Button HID System Controller"
-
-[ButtonKeyboardDesc]
-[ButtonKeyboardDesc.HW]
-AddReg = ButtonKeyboardDesc_AddReg
-[ButtonKeyboardDesc_AddReg]
-HKR,,FriendlyName,,"Surface Button HID Keyboard Device"
+[LaptopGoTouchFwUpdateDesc]
+[LaptopGoTouchFwUpdateDesc.HW]
+AddReg = LaptopGoTouchFwUpdateDesc_AddReg
+[LaptopGoTouchFwUpdateDesc_AddReg]
+HKR,,FriendlyName,,"Surface Touch Screen Accessory Firmware Update"
 
 [TeamsAspDesc]
 [TeamsAspDesc.HW]

@@ -13,7 +13,7 @@ Class=System
 ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
 Provider=%ManufacturerName%
 CatalogFile=SurfaceButton.cat
-DriverVer = 05/26/2021,4.28.139.0
+DriverVer = 05/13/2022,4.60.139.0
 PnpLockdown=1 
 
 [SourceDisksFiles]

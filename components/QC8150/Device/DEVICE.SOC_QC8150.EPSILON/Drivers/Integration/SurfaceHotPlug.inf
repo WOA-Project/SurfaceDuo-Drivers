@@ -9,7 +9,7 @@ Class=System
 ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
 Provider=%ManufacturerName%
 CatalogFile=SurfaceHotPlug.cat
-DriverVer = 06/01/2021,3.117.139.0
+DriverVer = 02/08/2022,3.160.139.0
 PnpLockdown=1
 
 [DestinationDirs]
