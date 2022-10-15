@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2210.41
-**Released:** 10/13/2022 01:00 AM UTC+2
+## Surface Duo Drivers BSP - Version 2210.48
+**Released:** 10/15/2022 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -16,21 +16,30 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2210.38.** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2210.48.** ⚠️⚠️
 - ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
-- ⚠️⚠️ **IMPORTANT: Upgrades using DriverUpdater *may* lead under some rare cases to the GPU device not being loaded on next boot, to fix this, go to device manager and manually update the GPU device again.** ⚠️⚠️
 
 ### Changelog
 
-- Addresses an issue with reboots and sleeps resulting in a BSOD when performing PSCI Memory Protection SMC calls (UEFI side)
+- Updates all Qualcomm device identifiers to reserved, Snapdragon 855 specific ones, to prevent conflicts with genuine 8cx drivers
 
-- Updated Surface Integration driver and Cellular provisioning packages
+- Resolves an issue impacting TSENS sensor discovery from PEP
 
-- Improvements to Qualcomm Peripheral Image Loader configuration settings
+- Adds preliminary support for notifying the audio dsp subsystem of the current device orientation to adjust the speaker output accordingly
 
-- Started work on Qualcomm Aqstic Speaker Protection driver. A downside of this release is a regression in Mic availability which will be resolved in a future update
+- Adds preliminary support for supporting USB-C Analog Audio dongles (the ones that do not act as an USB audio card)
 
-- Started work on Dolby Access support for Surface Duo Audio stack.
+- Updates to various Surface Integration drivers
+
+- Updates Surface Slim pen firmwares to the latest version
+
+- Updates to the Surface automatic pen bluetooth pairing
+
+- Partial updates to the touch driver stack
+
+- Improvements to USB XHCI support in Windows
+
+- Renames all device drivers to match the SOC part number
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
