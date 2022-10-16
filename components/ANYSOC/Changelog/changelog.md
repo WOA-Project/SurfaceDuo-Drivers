@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2210.48
-**Released:** 10/15/2022 11:00 PM UTC+2
+## Surface Duo Drivers BSP - Version 2210.51
+**Released:** 10/16/2022 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -21,25 +21,9 @@ ________________________________________________________________________________
 
 ### Changelog
 
-- Updates all Qualcomm device identifiers to reserved, Snapdragon 855 specific ones, to prevent conflicts with genuine 8cx drivers
+- Addresses an issue with device ids for PEP Provisioning Packages for Power Performance Tuning. This should resolve poor performance regressions with last update
 
-- Resolves an issue impacting TSENS sensor discovery from PEP
-
-- Adds preliminary support for notifying the audio dsp subsystem of the current device orientation to adjust the speaker output accordingly
-
-- Adds preliminary support for supporting USB-C Analog Audio dongles (the ones that do not act as an USB audio card)
-
-- Updates to various Surface Integration drivers
-
-- Updates Surface Slim pen firmwares to the latest version
-
-- Updates to the Surface automatic pen bluetooth pairing
-
-- Partial updates to the touch driver stack
-
-- Improvements to USB XHCI support in Windows
-
-- Renames all device drivers to match the SOC part number
+- Addresses an issue with Power Delivery PHY TX and RX Messaging Packets being incorrectly interpreted by the device under some rare occasions. This should improve Power Delivery compatibility over the device USB-C Port.
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
