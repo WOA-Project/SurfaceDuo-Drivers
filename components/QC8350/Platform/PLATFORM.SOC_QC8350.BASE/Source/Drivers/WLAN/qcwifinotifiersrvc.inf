@@ -1,0 +1,83 @@
+;*****************************************
+;
+;Copyright (c) 2020 by Qualcomm Technologies, Incorporated.  All Rights Reserved.
+;
+;Module Name:
+;    qcwifinotifiersrvc.inx
+;
+;Abstract:
+;    qcwifinotifiersrvc Component INX file
+;
+;QcWifinotifiersrvc Component INX file
+;*****************************************
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = SoftwareComponent
+ClassGuid   = {5c4c3332-344d-483c-8739-259e934c9cc8}
+Provider = %ProviderName%
+DriverVer = 05/19/2022,18.52.1.1
+CatalogFile=qcwifinotifiersrvc.cat
+PnpLockDown = 1
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+qcwifinotifiersrvc.exe = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64 
+
+[Standard.NTARM64]
+%QcWifinotifiersrvc.DeviceDesc%=QcWifinotifiersrvc_device, SWC\qcwifinotifiersrvc
+
+[QcWifinotifiersrvc_device.NT]
+CopyFiles=QcWifinotifiersrvc_device.NT.Copy
+
+[QcWifinotifiersrvc_device.NT.Copy]
+qcwifinotifiersrvc.exe
+
+[QcWifinotifiersrvc_device.NT.Services]
+AddService =,%SPSVCINST_ASSOCSERVICE%                        ; No driver service needed
+AddService = QcWifinotifierSrvc, %SPSVCSINST_STARTSERVICE%,QcWifinotifiersrvc_Install
+
+
+[QcWifinotifiersrvc_Install]
+DisplayName    = %qcwifinotifiersrvc_service.Name%
+Description    = %qcwifinotifiersrvc_service.Desc%
+ServiceType    = 0x10           ; SERVICE_WIN32_OWN_PROCESS
+StartType      = 3              ; SERVICE_DEMAND_START
+ErrorControl   = 1              ; SERVICE_ERROR_IGNORE
+ServiceBinary  = %13%\qcwifinotifiersrvc.exe
+AddTrigger	   = QcWifinotifiersrvc_Trigger
+
+[QcWifinotifiersrvc_Trigger]
+TriggerType = 1
+Action		= 1
+SubType		= %GUID_DEVINTERFACE_QMUX%
+DataItem 	= 2, "USB\VID_045E&PID_094A&MI_02"
+DataItem 	= 2, "{3a4d657c-0a42-4501-9627-ba1b76ffc39d}\QcQmux"
+DataItem	= 2, "USB\VID_05C6&PID_9085&MI_04"
+DataItem	= 2, "USB\VID_05C6&PID_90E2&MI_02"
+
+
+[Strings]
+ARCH="$ARCH$"
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SPSVCSINST_STARTSERVICE= 0x00000800
+ProviderName = "Qualcomm"
+ManufacturerName = "Microsoft"
+DiskName = "QcWifinotifiersrvc Disk"
+QcWifinotifiersrvc.DeviceDesc = "QcWifinotifiersrvc Service"
+qcwifinotifiersrvc_service.Desc = "QcWifinotifiersrvc Service"
+qcwifinotifiersrvc_service.Name = "qcwifinotifiersrvc"
+GUID_DEVINTERFACE_QMUX="{7714fa50-aa27-4a14-9ee8-d70f982b2511}"
+REG_SZ        = 0x00000000
+REG_MULTI_SZ  = 0x00010000
+REG_EXPAND_SZ = 0x00020000
+REG_DWORD     = 0x00010001
+REG_BINARY    = 0x00000001
+

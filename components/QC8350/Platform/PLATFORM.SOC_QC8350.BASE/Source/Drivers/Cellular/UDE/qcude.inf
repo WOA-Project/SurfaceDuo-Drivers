@@ -1,0 +1,84 @@
+;
+; qcude.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=USB
+ClassGuid={36FC9E60-C465-11CF-8056-444553540000}
+Provider=%QCOM%
+CatalogFile=qcude.cat
+DriverVer = 05/20/2022,1.0.40.2
+PnpLockdown=1
+
+[Manufacturer]
+%QCOM% = QCOM, NTARM64
+
+[QCOM.NTARM64]
+%qcude.DeviceDescSDX55% = qcude_Install, {3a4d657c-0a42-4501-9627-ba1b76ffc39d}\QcUde
+
+; =================== Qualcomm UDE Device ==================================
+
+[qcude_Install.NT]
+CopyFiles       = DriverCopy
+FeatureScore    = 0x20  
+AddReg          = qcudeAddReg
+
+[qcude_Install.NT.HW]
+AddReg          = DfxAddReg
+Include         = machine.inf
+
+[qcudeAddReg]
+; Disable QDSS HW channel usage
+HKR,, QdssHW , 0x00010001, 0x00000000
+
+; Support Muxing
+HKR,, MuxSupport, 0x00010001, 0x00000000
+; Number of Mux Interfaces
+HKR,, NumMuxIfaces, 0x00010001, 0x00000007
+; Number of NTB In Max size
+HKR,, NtbInMaxSize, 0x00010001, 0x00008000
+; Number of NTB Out Max size
+HKR,, NtbOutMaxSize, 0x00010001, 0x00008000
+; Number of NTB Out Max Datagrams
+HKR,, NtbOutMaxDatagrams, 0x00010001, 0x00000020
+; Make only MBIM Enumeration
+HKR,, SDX55, 0x00010001, 0x00000001
+; OS Version check
+HKR,, OsVersion, 0x00010001, 0x00004970
+; Enable RemoteWakeup
+HKR,, EnableRemoteWakeup, 0x00010001, 0x00000001
+
+[DfxAddReg]
+HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1
+
+[qcude_Install.NT.Services]
+AddService      = qcude,%SPSVCINST_ASSOCSERVICE%,qcude_ServiceInstall
+
+[qcude_ServiceInstall]
+DisplayName    = %qcude.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START 
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\qcude.sys
+Dependencies   = ucx01000, udecx
+
+[SourceDisksFiles]
+qcude.Sys               = 1
+
+[SourceDisksNames.ARM64]
+1 = %MediaDescription%,,,
+
+[DestinationDirs]
+DriverCopy                 = 12
+
+[DriverCopy]
+qcude.Sys
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+QCOM = "Qualcomm Incorporated"
+DiskName = "qcude Installation Disk"
+MediaDescription = "Qualcomm Bus Enumerator Installation Media"
+qcude.SVCDESC = "Qualcomm UDE Service"
+qcude.DeviceDescSDX55 = "Qualcomm UDE Device SDX55"
