@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2210.51
-**Released:** 10/16/2022 11:00 PM UTC+2
+## Surface Duo Drivers BSP - Version 2210.58
+**Released:** 10/18/2022 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -21,9 +21,9 @@ ________________________________________________________________________________
 
 ### Changelog
 
-- Addresses an issue with device ids for PEP Provisioning Packages for Power Performance Tuning. This should resolve poor performance regressions with last update
+- Introduces Core System drivers for Snapdragon 888: PMIC, PMICGLINK, PMICGPIO, PMICAPPS, RTC Clock, SoC GPIO, Side Band buttons, Device Lid Hall Sensor, Analog Digital Converter Hardware blocks, USB-C UCSI via Glink, Battery Miniclass via Glink, System Cache Controller, Inter Processor Communication Controller, Reset Power Controller, PDC, GPI Hardware Block, PCIe Platform Extensions, BAM, Modem Thermal MDM Sensors, ACPI Bridge Device, IPC Router, Modem Deep Standby, Crash Dump Injector for Subsystems, IOMMU, Peripheral Image Loader, PMIC Fuel Gauge Current Limiter, SOC Provisioning Partition Interface, Diagnostics Router, Secure Channel Manager, Security App, TFTP Subsystem file transfer, WLAN Sleep Manager, SPMI, USB XHCI Filter, USB FN Filter, PIL Filter
 
-- Addresses an issue with Power Delivery PHY TX and RX Messaging Packets being incorrectly interpreted by the device under some rare occasions. This should improve Power Delivery compatibility over the device USB-C Port.
+- Update is not required for Surface Duo 1 users
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
