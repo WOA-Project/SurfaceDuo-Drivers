@@ -17,12 +17,14 @@ mkdir SurfaceDuo-Drivers-Full\components
 mkdir SurfaceDuo-Drivers-Full\definitions
 xcopy /cheriky ..\components\ANYSOC SurfaceDuo-Drivers-Full\components\ANYSOC
 xcopy /cheriky ..\components\QC8150 SurfaceDuo-Drivers-Full\components\QC8150
+xcopy /cheriky ..\components\QC8350 SurfaceDuo-Drivers-Full\components\QC8350
 xcopy /cheriky ..\definitions\Desktop SurfaceDuo-Drivers-Full\definitions\Desktop
 
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Full.zip SurfaceDuo-Drivers-Full\*
 
 REM move SurfaceDuo-Drivers-Full\components\ANYSOC ..\components\ANYSOC
 REM move SurfaceDuo-Drivers-Full\components\QC8150 ..\components\QC8150
+REM move SurfaceDuo-Drivers-Full\components\QC8350 ..\components\QC8350
 REM move SurfaceDuo-Drivers-Full\definitions\Desktop ..\definitions\Desktop
 
 rmdir /Q /S SurfaceDuo-Drivers-Full
