@@ -1,0 +1,73 @@
+﻿;/*++
+;
+;Copyright (c) 2015 by QUALCOMM, Incorporated.  All Rights Reserved.
+;Copyright (c) 2022 by Microsoft Corp. All Rights Reserved.
+;Module Name:
+;    surfaceduo2_fgbclext8350.INF
+;
+;Abstract:
+;    Extension INF file for installing the FGBCL Driver
+;
+;--*/
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Extension
+ClassGuid={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+
+ExtensionId = {25EA4967-C4C9-47CA-BFE5-9AC7B4F67C0C}
+
+Provider=%COMP%
+DriverVer = 04/12/2022,1.0.3464.7300
+CatalogFile=surfaceduo2_fgbclext8350.cat
+PnPLockdown=1
+
+
+;*****************************************
+; pmic fgbcl driver Install Section
+;*****************************************
+
+[Manufacturer]
+%COMP%=Surface,NTARM64
+
+[Surface.NTARM64]
+%DeviceDesc%=PMIC_Ext_Inst,ACPI\VEN_QCOM&DEV_0677&SUBSYS_MTP08350
+%DeviceDesc%=PMIC_Ext_Inst,ACPI\VEN_QCOM&DEV_0677&SUBSYS_CLS08350
+%DeviceDesc%=PMIC_Ext_Inst,ACPI\VEN_QCOM&DEV_0677&SUBSYS_QRD08350
+
+
+[PMIC_Ext_Inst.NT]
+
+[PMIC_Ext_Inst.NT.HW]
+Addreg=PlatformSettings_AddReg
+
+
+[PlatformSettings_AddReg]
+HKR,FGBCL,"BCLCapability",%REG_DWORD%,7 ;0: BCL disabled, 1: vph_pwr bcl enabled, 2: fg vbatt enabled, 4: fg ibatt enabled
+HKR,FGBCL,"OCPCurrent",%REG_DWORD%,10000 ;battery ocp current
+HKR,FGBCL,"IBATTHi",%REG_DWORD%,90      ;when ibatt is above OCPCurrent * IBATTHi / 100, level_1 notification
+HKR,FGBCL,"IBATTTooHi",%REG_DWORD%,95   ;when ibatt is above OCPCurrent * IBATTTooHi / 100, level_2 notification
+HKR,FGBCL,"PollTimer",%REG_DWORD%,600   ;poll timer for battery soc, in seconds
+HKR,FGBCL,"BattPercentEn",%REG_DWORD%,1 ;battery percent notification 0: disabled, 1: enabled
+HKR,FGBCL,"LowBattPercent",%REG_DWORD%,10   ;when batt percent below this threshold, send low battery notification
+HKR,FGBCL,"NormalBattPercent",%REG_DWORD%,12  ;when batt percent above this threshold, send normal battery notification
+HKR,FGBCL,"FasterTimerPercent",%REG_DWORD%,20  ;below this battery percentage, the poll timer will be PollTimer/10
+
+[Strings]
+;Localizable Strings
+COMP                  = "Surface"
+FGBCL.SvcDesc         = "Surface Duo 2 Power Management FGBCL Device"
+DeviceDesc            = "Surface Duo 2 Power Management FGBCL Device"
+DiskId                = "Surface Duo 2 FGBCL Installation Disk"
+REG_DWORD             = 0x00010001
+
+;Non-Localizable Strings
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SERVICE_KERNEL_DRIVER  = 1
+SERVICE_DEMAND_START   = 3
+SERVICE_ERROR_NORMAL   = 1
+
+
+
+
+

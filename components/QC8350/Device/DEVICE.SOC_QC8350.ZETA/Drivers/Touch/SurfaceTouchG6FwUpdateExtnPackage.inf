@@ -1,0 +1,73 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File:               SurfaceTouchG6FwUpdateExtnPackage.inf
+;
+; Description:        Driver installation file for Surface G6 Touch Firmware Update Extension Package.
+;
+; Versions.begin   !DO NOT DELETE!
+; Versions.end   !DO NOT DELETE!
+;
+; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+Class = Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider=%ManufacturerName%
+ExtensionId = {2ECD61DD-2CA6-46C6-AFE7-79F002CC0BF9}
+CatalogFile=SurfaceTouchG6FwUpdateExtnPackage.cat
+DriverVer = 06/29/2022,1.1511.137.0
+PnpLockdown=1
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64
+
+[Standard.NTARM64]
+%SurfaceTouchG6FwUpdateExtnPackage.ExtensionDesc%=SurfaceTouchG6FwUpdateExtnPackage, HID\VEN_MSHW&DEV_0274&Col06
+
+; =================== UMDF Device ==================================
+
+[SurfaceTouchG6FwUpdateExtnPackage.NT]
+CopyFiles=SurfaceTouchG6FwUpdateExtnPackage.CopyFiles
+
+[SurfaceTouchG6FwUpdateExtnPackage.NT.HW]
+AddReg = SurfaceTouchG6FwUpdateExtnPackage_HWAddReg
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[DestinationDirs]
+SurfaceTouchG6FwUpdateExtnPackage.CopyFiles=13
+
+; =================== FW Information ===========================
+[SurfaceTouchG6FwUpdateExtnPackage_HWAddReg]
+HKR,,FriendlyName,,%FwUpdateFriendlyName%
+HKR,,HidTargetInStack,0x00010001, 1
+HKR,,Protocol,0x00010001, 1
+HKR,,UsageTableIndex, 0x00010001, 0
+
+; SurfaceTouchG6_FirmwareAddReg.begin   !DO NOT DELETE!
+HKR,CFU\FW_MSHW0274,Offer, 0x00000000, %13%\G6_FW_PKG_Zeta.offer.bin
+HKR,CFU\FW_MSHW0274,Payload, 0x00000000, %13%\G6_FW_PKG_Zeta.cfu
+; SurfaceTouchG6_FirmwareAddReg.end   !DO NOT DELETE!
+
+[SourceDisksFiles]
+; SourceDisksFiles.begin   !DO NOT DELETE!
+G6_FW_PKG_Zeta.offer.bin=1 
+G6_FW_PKG_Zeta.cfu=1 
+; SourceDisksFiles.end   !DO NOT DELETE!
+
+[SurfaceTouchG6FwUpdateExtnPackage.CopyFiles]
+; SurfaceTouchG6_CopyFiles.begin   !DO NOT DELETE!
+G6_FW_PKG_Zeta.offer.bin
+G6_FW_PKG_Zeta.cfu
+; SurfaceTouchG6_CopyFiles.end   !DO NOT DELETE!
+
+; =================== Generic ==================================
+
+[Strings]
+ManufacturerName="Surface"
+SurfaceTouchG6FwUpdateExtnPackage.ExtensionDesc="Surface G6 Touch Firmware Update"
+DiskName = "Surface G6 Touch Firmware Update Installation Disk"
+FwUpdateFriendlyName= "Surface Touch G6 Firmware Update"
+
