@@ -12,7 +12,7 @@ PnpLockdown = 1
 %IHV% = DeviceExtensions,NTarm64
 
 [DeviceExtensions.NTarm64]
-%SurfaceDisplayConfigurator.DeviceDesc% = DeviceExtension_Install, ACPI\VEN_QCOM&DEV_063A
+%SurfaceDisplayConfigurator.DeviceDesc% = DeviceExtension_Install, ACPI\VEN_QCOM&DEV_1A36
 
 [DeviceExtension_Install.NT]
 
@@ -20,7 +20,7 @@ PnpLockdown = 1
 AddComponent = SurfaceDisplayConfigurator,, SurfaceDisplayConfigurator_Install
 
 [SurfaceDisplayConfigurator_Install]
-ComponentIDs = VEN_QCOM&DEV_063A&SWC_QCDC8350
+ComponentIDs = VEN_QCOM&DEV_1A36&SWC_QCDC8350
 
 [Strings]
 IHV                                   = "LumiaWoA authors"

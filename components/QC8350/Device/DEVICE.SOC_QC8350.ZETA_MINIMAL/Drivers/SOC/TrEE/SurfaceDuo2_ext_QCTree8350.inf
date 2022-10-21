@@ -1,0 +1,179 @@
+﻿;/*++
+;
+;Copyright (c) 2021 Qualcomm Technologies, Inc.  All Rights Reserved.
+;
+;Module Name:
+;
+;    surfacepro_ext_QCTree8350.inf
+;
+;Abstract:
+;   Extension INF file for installing Qualcomm related Trusted Apps
+;
+;--*/
+[Version]
+Signature="$WINDOWS NT$"
+Class=Extension
+ClassGuid={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+ExtensionId={50AC78DB-B4DF-4F61-B6C9-03CF80D1A8EE}
+Provider=%Surface%
+DriverVer = 06/09/2022,1.0.3510.7600
+CatalogFile=surfaceduo2_ext_QCTree8350.cat
+PnpLockDown = 1
+[DestinationDirs]
+DefaultDestDir = 13
+;*****************************************
+; Qcom secure service mbn files Install Section
+;*****************************************
+[Manufacturer]
+%Surface%=Extension,NTARM64
+[Extension.NTARM64]
+; DisplayName  Section  DeviceId
+; -----------  -------  --------
+%QcTrEE.DeviceDesc%=QcTrEE_Qcom_ext, ACPI\VEN_QCOM&DEV_04DE&SUBSYS_MTP08350
+%QcTrEE.DeviceDesc%=QcTrEE_Qcom_ext, ACPI\VEN_QCOM&DEV_04DE&SUBSYS_QRD08350
+%QcTrEE.DeviceDesc%=QcTrEE_Qcom_ext, ACPI\VEN_QCOM&DEV_04DE&SUBSYS_CDP08350
+[QcTrEE_Qcom_ext.NT]
+CopyFiles=QcTrEE_Qcom_ext.NT.Copy
+[QcTrEE_Qcom_ext.NT.HW]
+AddReg=QcTrEE_Qcom_ext_SecureServiceReg
+[QcTrEE_Qcom_ext.NT.Copy]
+
+rtic.mbn
+hdcpsrm.mbn
+hdcp2p2.mbn
+hdcp1.mbn
+fpcrel.mbn
+
+[QcTrEE_Qcom_ext_SecureServiceReg]
+; APTTESTAPP SECURE APP SERVICE 
+HKR,%AptTestAppService.RegKey%,Enabled,%REG_DWORD%,0
+HKR,%AptTestAppService.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%AptTestAppService.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%AptTestAppService.RegKey%,AppName,%REG_SZ%,"qcom.tz.apttestapp"
+HKR,%AptTestAppService.RegKey%,FileName,%REG_SZ%,"%13%\apttestapp.mbn"
+HKR,%AptTestAppService.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%AptTestAppService.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%AptTestAppService.RegKey%,OSDependencies,%REG_MULTI_SZ%,%RpmbOsService%,%TzAppsOsService%
+; FIPSTESTAPP SECURE APP SERVICE 
+HKR,%FipsTestAppService.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%FipsTestAppService.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%FipsTestAppService.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%FipsTestAppService.RegKey%,AppName,%REG_SZ%,"fipstestapp"
+HKR,%FipsTestAppService.RegKey%,FileName,%REG_SZ%,"%13%\fipstestapp.mbn"
+HKR,%FipsTestAppService.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%FipsTestAppService.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%FipsTestAppService.RegKey%,OSDependencies,%REG_MULTI_SZ%,%RpmbOsService%,%TzAppsOsService%
+; FIPSTESTAPP64 SECURE APP SERVICE 
+HKR,%FipsTestApp64Service.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%FipsTestApp64Service.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%FipsTestApp64Service.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%FipsTestApp64Service.RegKey%,AppName,%REG_SZ%,"fipstestapp64"
+HKR,%FipsTestApp64Service.RegKey%,FileName,%REG_SZ%,"%13%\fipstestapp64.mbn"
+HKR,%FipsTestApp64Service.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%FipsTestApp64Service.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%FipsTestApp64Service.RegKey%,OSDependencies,%REG_MULTI_SZ%,%RpmbOsService%,%TzAppsOsService%
+; QWES SECURE APP SERVICE 
+HKR,%QWESService.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%QWESService.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%QWESService.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%QWESService.RegKey%,AppName,%REG_SZ%,"qwes"
+HKR,%QWESService.RegKey%,FileName,%REG_SZ%,"%13%\qwes.mbn"
+HKR,%QWESService.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%QWESService.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%QWESService.RegKey%,OSDependencies,%REG_MULTI_SZ%,%RpmbOsService%,%TzAppsOsService%
+; RTIC SECURE APP SERVICE 
+HKR,%RTICService.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%RTICService.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%RTICService.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%RTICService.RegKey%,AppName,%REG_SZ%,"rtic"
+HKR,%RTICService.RegKey%,FileName,%REG_SZ%,"%13%\rtic.mbn"
+HKR,%RTICService.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%RTICService.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%RTICService.RegKey%,OSDependencies,%REG_MULTI_SZ%,%RpmbOsService%,%TzAppsOsService%
+; TZSC SECURE APP SERVICE 
+HKR,%TZSCService.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%TZSCService.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%TZSCService.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%TZSCService.RegKey%,AppName,%REG_SZ%,"tzsc"
+HKR,%TZSCService.RegKey%,FileName,%REG_SZ%,"%13%\tzsc.mbn"
+HKR,%TZSCService.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%TZSCService.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%TZSCService.RegKey%,OSDependencies,%REG_MULTI_SZ%,%TzAppsOsService%
+; PLAYREADY SECURE APP SERVICE 
+HKR,%PlayReadyService.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%PlayReadyService.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%PlayReadyService.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%PlayReadyService.RegKey%,AppName,%REG_SZ%,"playread"
+HKR,%PlayReadyService.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%PlayReadyService.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%PlayReadyService.RegKey%,OSDependencies,%REG_MULTI_SZ%,%TzAppsOsService%
+HKR,%PlayReadyService.RegKey%,FileName,%REG_SZ%,"%13%\pr_3_wp.mbn"
+; HDCP v2.2 SECURE APP SERVICE
+HKR,%Hdcp2p2Service.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%Hdcp2p2Service.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%Hdcp2p2Service.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%Hdcp2p2Service.RegKey%,AppName,%REG_SZ%,"qcom.tz.hdcp2p2"
+HKR,%Hdcp2p2Service.RegKey%,FileName,%REG_SZ%,"%13%\hdcp2p2.mbn"
+HKR,%Hdcp2p2Service.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%Hdcp2p2Service.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%Hdcp2p2Service.RegKey%,OSDependencies,%REG_MULTI_SZ%,%RpmbOsService%,%TzAppsOsService%
+; HDCP v1 SECURE APP SERVICE
+HKR,%Hdcp1Service.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%Hdcp1Service.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%Hdcp1Service.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%Hdcp1Service.RegKey%,AppName,%REG_SZ%,"hdcp1"
+HKR,%Hdcp1Service.RegKey%,FileName,%REG_SZ%,"%13%\hdcp1.mbn"
+HKR,%Hdcp1Service.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%Hdcp1Service.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%Hdcp1Service.RegKey%,OSDependencies,%REG_MULTI_SZ%,%RpmbOsService%,%TzAppsOsService%
+; HDCP SRM SECURE APP SERVICE
+HKR,%HdcpSrmService.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%HdcpSrmService.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%HdcpSrmService.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%HdcpSrmService.RegKey%,AppName,%REG_SZ%,"hdcpsrm"
+HKR,%HdcpSrmService.RegKey%,FileName,%REG_SZ%,"%13%\hdcpsrm.mbn"
+HKR,%HdcpSrmService.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%HdcpSrmService.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%HdcpSrmService.RegKey%,OSDependencies,%REG_MULTI_SZ%,%RpmbOsService%,%TzAppsOsService%
+; BIOMETRIC SECURE APP SERVICE
+HKR,%BiometricService.RegKey%,Enabled,%REG_DWORD%,1
+HKR,%BiometricService.RegKey%,SecureApp,%REG_DWORD%,1
+HKR,%BiometricService.RegKey%,LoadApp,%REG_DWORD%,1
+HKR,%BiometricService.RegKey%,AppName,,"fpcrel"
+HKR,%BiometricService.RegKey%,FileName,,"%13%\fpcrel.mbn"
+HKR,%BiometricService.RegKey%,MajorVersion,%REG_DWORD%,1
+HKR,%BiometricService.RegKey%,MinorVersion,%REG_DWORD%,0
+HKR,%BiometricService.RegKey%,OSDependencies,%REG_MULTI_SZ%,%RpmbOsService%,%TzAppsOsService%
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+[SourceDisksFiles]
+
+rtic.mbn = 1,
+hdcpsrm.mbn = 1,
+hdcp2p2.mbn = 1,
+hdcp1.mbn = 1,
+fpcrel.mbn = 1,
+
+[Strings]
+Surface = "Surface"
+DiskId1 = "Surface Duo 2 QcTrEE Installation Disk #2"
+QcTrEE.DeviceDesc = "Qualcomm(R) System Manager Qcom Device"
+AptTestAppService.RegKey = "AdditionalSecureServices\{B6902B2E-44C7-43C5-B840-FF3A406B08FA}"
+FipsTestAppService.RegKey = "AdditionalSecureServices\{23CF3780-EE68-48d1-8BDF-F33709761D08}"
+FipsTestApp64Service.RegKey = "AdditionalSecureServices\{02FE9435-D0EB-41dc-9C80-270BEE724D68}"
+QWESService.RegKey = "AdditionalSecureServices\{8BE4A356-67D3-425F-88E2-B45E37F405F0}"
+RTICService.RegKey = "AdditionalSecureServices\{FEC1DC88-9EE3-4E0D-953F-4DE2C419FEB9}"
+TZSCService.RegKey = "AdditionalSecureServices\{F2CCED69-6182-453F-A69A-6B761AB748C6}"
+PlayReadyService.RegKey = "AdditionalSecureServices\{F4637010-03C3-42CD-B932-B48ADF3A6A54}"
+Hdcp2p2Service.RegKey = "AdditionalSecureServices\{F5AEA618-0649-49F4-81EF-F2E0F9EAFFCC}"
+Hdcp1Service.RegKey = "AdditionalSecureServices\{D08CBE90-96EA-4031-9EBD-DA11FC8A8319}"
+HdcpSrmService.RegKey = "AdditionalSecureServices\{72F6EF56-CF28-4D19-A027-1C3EC5E7DF4B}"
+BiometricService.RegKey = "AdditionalSecureServices\{2A51AA84-2dFF-468C-9629-B50103B969D9}"
+RpmbOsService = "{27447C21-BCC3-4D07-A05B-A3395BB4EEE7}"
+TzAppsOsService = "{1CFE8948-E8FE-43b4-A5C5-DB9802278947}"
+REG_DWORD = 0x00010001
+REG_QWORD = 0x000B0001
+REG_MULTI_SZ = 0x00010008
+REG_SZ = 0x00000000
+REG_KEY_ONLY = 0x00000010
+SPSVCINST_ASSOCSERVICE = 0x00000002

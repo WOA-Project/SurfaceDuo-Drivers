@@ -71,7 +71,7 @@ qcthermalmdm.sys  = 1,,
 %ThermalMDM_MBS3.DeviceDesc%=ThermalMDM_MBS3, ACPI\QCOM04BD
 %ThermalMDM_MSKN.DeviceDesc%=ThermalMDM_MSKN, ACPI\QCOM04BE
 %ThermalMDM_MJCT.DeviceDesc%=ThermalMDM_MJCT, ACPI\QCOM04BF
-%ThermalMDM_MBCL.DeviceDesc%=ThermalMDM_MBCL, ACPI\QCOM06D4
+%ThermalMDM_MBCL.DeviceDesc%=ThermalMDM_MBCL, ACPI\QCOM1AD4
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;TS1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;-------------- Registry Definition
