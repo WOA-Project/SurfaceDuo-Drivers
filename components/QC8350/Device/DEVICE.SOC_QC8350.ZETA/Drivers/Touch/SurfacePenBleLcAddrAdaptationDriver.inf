@@ -13,7 +13,7 @@ Class=HIDClass
 ClassGUID={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
 Provider=%ManufacturerName%
 CatalogFile=SurfacePenBleLcAddrAdaptationDriver.cat
-DriverVer = 06/16/2021,3.22.139.0
+DriverVer = 07/12/2022,3.38.139.0
 PnpLockdown=1
 
 [DestinationDirs]
