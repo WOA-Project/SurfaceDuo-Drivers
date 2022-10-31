@@ -1,13 +1,13 @@
-## Surface Duo Drivers BSP - Version 2210.58
-**Released:** 10/18/2022 11:00 PM UTC+2
+## Surface Duo Drivers BSP - Version 2211.1
+**Released:** 11/01/2022 00:00 AM UTC+1
 
 **Quality:** Preview
 
-![Surface Duo Dual Screen Windows](https://user-images.githubusercontent.com/3755345/170788230-a42e624a-d2ed-4070-b289-a9b34774bcd0.png)
+![Surface Duo Dual Screen Windows](https://user-images.githubusercontent.com/3755345/197420866-d3bb0534-c848-4cc2-a242-04dae48b0f6e.png)
 
 ### General information
 
-You can view compatibility for this release, along with important information and what works, and what doesn't at this link: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/b95e43f5b2e16ba715d9339012d7beb8f11926b6/Status.md
+You can view compatibility for this release, along with important information and what works, and what doesn't at this link: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Status.md
 
 
 ### Release notes
@@ -16,20 +16,31 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2210.48.** ⚠️⚠️
+- This release is mainly for Surface Duo 2 users
+
+- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2211.01.** ⚠️⚠️
 - ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
+- ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+- ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️**You cannot update an older installation to this update. A reinstall is required**⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+- ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
 ### Changelog
 
-- Introduces Core System drivers for Snapdragon 888: PMIC, PMICGLINK, PMICGPIO, PMICAPPS, RTC Clock, SoC GPIO, Side Band buttons, Device Lid Hall Sensor, Analog Digital Converter Hardware blocks, USB-C UCSI via Glink, Battery Miniclass via Glink, System Cache Controller, Inter Processor Communication Controller, Reset Power Controller, PDC, GPI Hardware Block, PCIe Platform Extensions, BAM, Modem Thermal MDM Sensors, ACPI Bridge Device, IPC Router, Modem Deep Standby, Crash Dump Injector for Subsystems, IOMMU, Peripheral Image Loader, PMIC Fuel Gauge Current Limiter, SOC Provisioning Partition Interface, Diagnostics Router, Secure Channel Manager, Security App, TFTP Subsystem file transfer, WLAN Sleep Manager, SPMI, USB XHCI Filter, USB FN Filter, PIL Filter
-
-- Update is not required for Surface Duo 1 users
+#### Surface Duo 1
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
-
 __Improvements to CPU core clock frequency will come in an upcoming release__
 
+#### Surface Duo 2
+
+- PEP, PMIC LEICA, GPU, Touch, Buttons, FLASH Light, USB C, XHCI, USBFN, ADC, GLINK, PMICGLINK, GPU, Panel, NFC (WIP), TrEE, IPA, GSI, REMOTEFS, Subsys, PIL, SK, TSENS, QUP, GPI, SPI, UART, BT, I2C enablement
+- Some Subsystems start on Surface Duo 2 now as well (Sensors, Camera DSP, Neural Processing Unit, Secure Processor)
+- GPU device is now exposed to the OS. GPU Driver is work in progress.
+- Touch is now exposed to the OS but not yet functional (Work in progress)
+- Complete overhaul of the thermal sensor / management subsystem
+
+- Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
 ### Sensor Calibration Provisioning (Mandatory)
 
