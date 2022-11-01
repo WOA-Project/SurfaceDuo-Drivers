@@ -1,0 +1,558 @@
+;===================================================================
+; Dolby DAX APO driver package
+; Copyright (c)2020, Dolby Laboratories, INC.
+;===================================================================
+[Version]
+Signature 	= "$Windows NT$"
+Class       = Extension
+ClassGuid   = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider 	= %ManufacturerName%
+ExtensionId = {7508A3DA-29D5-49BC-A323-43E48D4C035B}
+CatalogFile = dax3_ext_qc.cat
+DriverVer = 06/26/2022,7.627.400.0
+
+[Manufacturer]
+%ManufacturerName% = DeviceExtensions,NTARM64
+
+[DeviceExtensions.NTARM64]
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAtmos,
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAtmosSpeakerSystem,
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAudio,
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAudioPremium,
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAudioSpeakerSystem,
+; %Device.ExtensionDesc% = DeviceExtension_Install_Gaming,
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAtmosSpeakerSystemForGaming,
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAccessNoGaming,
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAccessGaming,
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAccessOEMNoGaming,
+%Device.ExtensionDesc% = DeviceExtension_Install_DolbyAccessOEMNoGaming,AUCD\VEN_QCOM&DEV_1A29&SUBSYS_MTP08350
+; %Device.ExtensionDesc% = DeviceExtension_Install_DolbyAccessOEMGaming,
+; %Device.ExtensionDesc% = DeviceExtension_Install_NoUINoGaming,
+; %Device.ExtensionDesc% = DeviceExtension_Install_NoUIGaming,
+
+[DeviceExtension_Install_DolbyAtmos.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_DolbyAtmosSpeakerSystem.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_DolbyAudio.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_DolbyAudioPremium.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_DolbyAudioSpeakerSystem.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_Gaming.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_DolbyAtmosSpeakerSystemForGaming.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_DolbyAccessNoGaming.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_DolbyAccessGaming.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_DolbyAccessOEMNoGaming.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_DolbyAccessOEMGaming.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_NoUINoGaming.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DeviceExtension_Install_NoUIGaming.NT]
+AddReg   = DolbyExt_AddReg
+CopyFiles = DolbyAPO_CopyFiles_OEM, DolbyAPO_CopyFiles_Tuning
+
+[DolbyExt_AddReg]
+HKR, , DaxExtFolder,         ,%13%
+
+[DeviceExtension_Install_DolbyAtmos.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_DolbyAtmosSpeakerSystem.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_DolbyAudio.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_DolbyAudioPremium.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_DolbyAudioSpeakerSystem.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_Gaming.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_DolbyAtmosSpeakerSystemForGaming.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_DolbyAccessNoGaming.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_DolbyAccessGaming.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_DolbyAccessOEMNoGaming.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_DolbyAccessOEMGaming.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_NoUINoGaming.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DeviceExtension_Install_NoUIGaming.NT.Interfaces]
+;
+; Interfaces for speaker (internal) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeaker%, DolbyAPO_Install
+
+;
+; Interfaces for speaker (external: Headset) render endpoint.
+;
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_RENDER%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_REALTIME%, %KSNAME_WaveSpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_AUDIO%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+AddInterface=%KSCATEGORY_TOPOLOGY%, %KSNAME_TopologySpeakerHeadset%, DolbyAPO_Install
+
+[DolbyAPO_Install]
+AddReg   = DolbyAPO_AddReg,AudioEngine_AddReg
+
+[DolbyAPO_AddReg]
+; Add Dolby enabled device indicator string here.
+HKR, "EP\\0", "{6CA6A085-3041-482B-9113-C61E7F250356},0",         ,"0.4.0"
+
+[AudioEngine_AddReg]
+;; APO CLSID registration for render endpoints
+HKR, "FX\\0", %PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%
+HKR, "FX\\0", %PKEY_FX_StreamEffectClsid%,,%FX_DolbyAPO_WrapperSFX_CLSID%
+HKR, "FX\\0", %PKEY_FX_ModeEffectClsid%,,%FX_DolbyAPO_WrapperMFX_CLSID%
+HKR, "FX\\0", %PKEY_FX_Offload_StreamEffectClsid%,,%FX_DolbyAPO_WrapperOSFX_CLSID%
+HKR, "FX\\0", %PKEY_FX_Offload_ModeEffectClsid%,,%FX_DolbyAPO_WrapperOMFX_CLSID%
+HKR, "FX\\0", %PKEY_SFX_ProcessingModes_Supported_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MEDIA%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATION%
+HKR, "FX\\0", %PKEY_MFX_ProcessingModes_Supported_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MEDIA%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATION%,%AUDIO_SIGNALPROCESSINGMODE_RAW%
+HKR, "FX\\0", %PKEY_SFX_Offload_ProcessingModes_Supported_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MEDIA%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATION%
+HKR, "FX\\0", %PKEY_MFX_Offload_ProcessingModes_Supported_For_Streaming%,%REG_MULTI_SZ%,%AUDIO_SIGNALPROCESSINGMODE_DEFAULT%,%AUDIO_SIGNALPROCESSINGMODE_MEDIA%,%AUDIO_SIGNALPROCESSINGMODE_MOVIE%,%AUDIO_SIGNALPROCESSINGMODE_COMMUNICATION%,%AUDIO_SIGNALPROCESSINGMODE_RAW%
+
+; AddComponent definition for all SKUs
+[DeviceExtension_Install_DolbyAtmos.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAtmos,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAtmos
+
+[DeviceExtension_Install_DolbyAtmosSpeakerSystem.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAtmosSpeakerSystem,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAtmosSpeakerSystem
+
+[DeviceExtension_Install_DolbyAudio.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAudio,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAudio
+
+[DeviceExtension_Install_DolbyAudioPremium.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAudioPremium,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAudioPremium
+
+[DeviceExtension_Install_DolbyAudioSpeakerSystem.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAudioSpeakerSystem,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAudioSpeakerSystem
+
+[DeviceExtension_Install_Gaming.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_Gaming,, DolbyAPO_ComponentInstall_DAX3HSA_Gaming
+
+[DeviceExtension_Install_DolbyAtmosSpeakerSystemForGaming.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAtmosSpeakerSystemForGaming,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAtmosSpeakerSystemForGaming
+
+[DeviceExtension_Install_DolbyAccessNoGaming.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAccess,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAccess
+
+[DeviceExtension_Install_DolbyAccessGaming.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAccess,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAccess
+
+[DeviceExtension_Install_DolbyAccessOEMNoGaming.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAccessOEM,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAccessOEM
+
+[DeviceExtension_Install_DolbyAccessOEMGaming.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+AddComponent = DolbyAPO_DAX3HSA_DolbyAccessOEM,, DolbyAPO_ComponentInstall_DAX3HSA_DolbyAccessOEM
+
+[DeviceExtension_Install_NoUINoGaming.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+
+[DeviceExtension_Install_NoUIGaming.NT.Components]
+AddComponent = DolbyAPO_DAX3APOSVC,, DolbyAPO_ComponentInstall_DAX3APOSVC
+
+; APOSVC component
+[DolbyAPO_ComponentInstall_DAX3APOSVC]
+ComponentIds = VEN_DOLBY&PID_DAX3APOSVC  ; Matches with SWC\VEN_DOLBY&PID_DAX3APOSVC
+
+; HSA component definition for all SKUs
+[DolbyAPO_ComponentInstall_DAX3HSA_DolbyAtmos]
+ComponentIds = VEN_DOLBY&PID_DAX3HSA_DolbyAtmos ; Matches with SWC\VEN_DOLBY&PID_DAX3HSA_DolbyAtmos
+
+[DolbyAPO_ComponentInstall_DAX3HSA_DolbyAtmosSpeakerSystem]
+ComponentIds = VEN_DOLBY&PID_DAX3HSA_DolbyAtmosSpeakerSystem ; Matches with SWC\VEN_DOLBY&PID_DAX3HSA_DolbyAtmosSpeakerSystem
+
+[DolbyAPO_ComponentInstall_DAX3HSA_DolbyAudio]
+ComponentIds = VEN_DOLBY&PID_DAX3HSA_DolbyAudio ; Matches with SWC\VEN_DOLBY&PID_DAX3HSA_DolbyAudio
+
+[DolbyAPO_ComponentInstall_DAX3HSA_DolbyAudioPremium]
+ComponentIds = VEN_DOLBY&PID_DAX3HSA_DolbyAudioPremium ; Matches with SWC\VEN_DOLBY&PID_DAX3HSA_DolbyAudioPremium
+
+[DolbyAPO_ComponentInstall_DAX3HSA_DolbyAudioSpeakerSystem]
+ComponentIds = VEN_DOLBY&PID_DAX3HSA_DolbyAudioSpeakerSystem ; Matches with SWC\VEN_DOLBY&PID_DAX3HSA_DolbyAudioSpeakerSystem
+
+[DolbyAPO_ComponentInstall_DAX3HSA_Gaming]
+ComponentIds = VEN_DOLBY&PID_DAX3HSA_Gaming ; Matches with SWC\VEN_DOLBY&PID_DAX3HSA_Gaming
+
+[DolbyAPO_ComponentInstall_DAX3HSA_DolbyAtmosSpeakerSystemForGaming]
+ComponentIds = VEN_DOLBY&PID_DAX3HSA_DolbyAtmosSpeakerSystemForGaming ; Matches with SWC\VEN_DOLBY&PID_DAX3HSA_DolbyAtmosSpeakerSystemForGaming
+
+[DolbyAPO_ComponentInstall_DAX3HSA_DolbyAccess]
+ComponentIds = VEN_DOLBY&PID_DAX3HSA_DolbyAccess ; Matches with SWC\VEN_DOLBY&PID_DAX3HSA_DolbyAccess
+
+[DolbyAPO_ComponentInstall_DAX3HSA_DolbyAccessOEM]
+ComponentIds = VEN_DOLBY&PID_DAX3HSA_DolbyAccessOEM ; Matches with SWC\VEN_DOLBY&PID_DAX3HSA_DolbyAccessOEM
+
+[SourceDisksNames]
+222="APO Installation Disk",,,
+
+[SourceDisksFiles]
+; OEM xml
+operator_settings.xml = 222
+operator_DolbyAudioPremium_settings.xml = 222
+; Tuning xml
+AUCD_DEV_1A29_SUBSYS_MTP08350_ADCM_SUBSYS_MTP08350.xml = 222
+AUCD_DEV_1A29_SUBSYS_MTP08350_ADCM_SUBSYS_MTP08350_settings.xml = 222
+Headphone_Default_Generic_Small_Atmos3.5.xml = 222
+Headphone_Default_Generic_Medium_Atmos3.5.xml = 222
+Headphone_Default_Generic_Large_Atmos3.5.xml = 222
+Headphone_Default_Generic_Default_Atmos3.5.xml = 222
+
+[DestinationDirs]
+DolbyAPO_CopyFiles_OEM = 13
+DolbyAPO_CopyFiles_Tuning = 13
+
+[DolbyAPO_CopyFiles_OEM]
+operator_settings.xml
+operator_DolbyAudioPremium_settings.xml
+
+[DolbyAPO_CopyFiles_Tuning]
+AUCD_DEV_1A29_SUBSYS_MTP08350_ADCM_SUBSYS_MTP08350.xml
+AUCD_DEV_1A29_SUBSYS_MTP08350_ADCM_SUBSYS_MTP08350_settings.xml
+Headphone_Default_Generic_Small_Atmos3.5.xml
+Headphone_Default_Generic_Medium_Atmos3.5.xml
+Headphone_Default_Generic_Large_Atmos3.5.xml
+Headphone_Default_Generic_Default_Atmos3.5.xml
+
+[Strings]
+ManufacturerName 	= "Dolby"
+Device.ExtensionDesc = "Dolby Device Extension"
+
+REG_MULTI_SZ_APPEND                           = 0x00010008
+
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_REALTIME ="{EB115FFC-10C8-4964-831D-6DCB02E6F23F}"
+KSCATEGORY_TOPOLOGY = "{DDA54A40-1E4C-11D1-A050-405705C10000}"
+
+KSNAME_WaveSpeaker="WaveSpeaker"
+KSNAME_TopologySpeaker="TopologySpeaker"
+
+KSNAME_WaveSpeakerHeadset="WaveSpeakerHeadset"
+KSNAME_TopologySpeakerHeadset="TopologySpeakerHeadset"
+
+KSNAME_WaveCellular="WaveCellular"
+KSNAME_TopologyCellular="TopologyCellular"
+
+KSNAME_WaveFmRx="WaveFmRx"
+KSNAME_TopologyFmRx="TopologyFmRx"
+
+KSNAME_WaveMicHeadset="WaveMicHeadset"
+KSNAME_TopologyMicHeadset="TopologyMicHeadset"
+
+KSNAME_WaveHdmi="WaveHdmi"
+KSNAME_TopologyHdmi= "TopologyHdmi"
+
+KSNAME_WaveMicIn="WaveMicIn"
+KSNAME_TopologyMicIn="TopologyMicIn"
+
+KSNAME_WaveMicArray1="WaveMicArray1"
+KSNAME_TopologyMicArray1="TopologyMicArray1"
+
+KSNAME_WaveBthHfpSpeaker="WaveBthHfpSpeaker"
+KSNAME_TopologyBthHfpSpeaker="TopologyBthHfpSpeaker"
+
+KSNAME_WaveBthHfpMic="WaveBthHfpMic"
+KSNAME_TopologyBthHfpMic="TopologyBthHfpMic"
+
+KSNAME_WaveBthHfpSpeakerWB="WaveBthHfpSpeakerWB"
+KSNAME_TopologyBthHfpSpeakerWB="TopologyBthHfpSpeakerWB"
+
+KSNAME_WaveBthHfpMicWB="WaveBthHfpMicWB"
+KSNAME_TopologyBthHfpMicWB="TopologyBthHfpMicWB"
+
+KSNAME_WaveHandsetSpeaker="WaveHandsetSpeaker"
+KSNAME_TopologyHandsetSpeaker="TopologyHandsetSpeaker"
+
+KSNAME_WaveHandsetMic="WaveHandsetMic"
+KSNAME_TopologyHandsetMic="TopologyHandsetMic"
+
+PKEY_SYSFX_Association          = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},0"
+PKEY_SYSFX_LFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},1"
+PKEY_SYSFX_GFXClsid             = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},2"
+PKEY_SYSFX_UserInterfaceClsid   = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},3"
+PKEY_FX_StreamEffectClsid                = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},5"
+PKEY_FX_ModeEffectClsid                  = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},6"
+PKEY_FX_EndpointEffectClsid              = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},7"
+PKEY_FX_Offload_StreamEffectClsid        = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},11"
+PKEY_FX_Offload_ModeEffectClsid          = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},12"
+PKEY_CompositeFX_StreamEffectClsid       = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},13"  
+PKEY_CompositeFX_ModeEffectClsid         = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},14"
+PKEY_CompositeFX_EndpointEffectClsid     = "{D04E05A6-594B-4fb6-A80D-01AF5EED7D1D},15"
+PKEY_SFX_ProcessingModes_Supported_For_Streaming         = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},5"
+PKEY_MFX_ProcessingModes_Supported_For_Streaming         = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},6"
+PKEY_EFX_ProcessingModes_Supported_For_Streaming         = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},7"
+PKEY_SFX_Offload_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},11"
+PKEY_MFX_Offload_ProcessingModes_Supported_For_Streaming = "{D3993A3F-99C2-4402-B5EC-A92A0367664B},12"
+
+
+AUDIO_SIGNALPROCESSINGMODE_DEFAULT = "{C18E2F7E-933D-4965-B7D1-1EEF228D2AF3}"
+AUDIO_SIGNALPROCESSINGMODE_SPEECH = "{FC1CFC9B-B9D6-4CFA-B5E0-4BB2166878B2}"
+AUDIO_SIGNALPROCESSINGMODE_COMMUNICATION = "{98951333-B9CD-48B1-A0A3-FF40682D73F7}"
+AUDIO_SIGNALPROCESSINGMODE_MEDIA = "{4780004E-7133-41D8-8C74-660DADD2C0EE}"
+AUDIO_SIGNALPROCESSINGMODE_MOVIE = "{B26FEB0D-EC94-477C-9494-D1AB8E753F6E}"
+AUDIO_SIGNALPROCESSINGMODE_NOTIFICATION = "{9CF2A70B-F377-403B-BD6B-360863E0355C}"
+AUDIO_SIGNALPROCESSINGMODE_RAW = "{9E90EA20-B493-4FD1-A1A8-7E1361A956CF}"
+
+KSNODETYPE_ANY = "{00000000-0000-0000-0000-000000000000}"
+
+REG_BINARY = 0x00000001
+REG_DWORD = 0x00010001
+REG_MULTI_SZ = 0x00010000
+
+FX_DolbyAPO_WrapperSFX_CLSID                    = "{0EBD8505-17BB-4AE7-AD76-E86F99A425E9}"
+FX_DolbyAPO_WrapperMFX_CLSID                    = "{0EBD8506-17BB-4AE7-AD76-E86F99A425E9}"
+FX_DolbyAPO_WrapperOSFX_CLSID                    = "{0EBD8511-17BB-4AE7-AD76-E86F99A425E9}"
+FX_DolbyAPO_WrapperOMFX_CLSID                    = "{0EBD8512-17BB-4AE7-AD76-E86F99A425E9}"
