@@ -1,4 +1,4 @@
-# Non exhaustive list of ETW providers
+# Non exhaustive list of ETW providers for Snapdragon 855 (SM8150)
 
 This list is for debugging purposes. Many drivers use ETW Tracing for logging. This table will help finding out which GUID you want for which driver along with commands for WinDBG and autologger snippets.
 

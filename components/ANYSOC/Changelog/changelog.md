@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2211.1
-**Released:** 11/01/2022 00:00 AM UTC+1
+## Surface Duo Drivers BSP - Version 2211.16
+**Released:** 11/05/2022 02:00 PM UTC-7
 
 **Quality:** Preview
 
@@ -18,11 +18,8 @@ ________________________________________________________________________________
 
 - This release is mainly for Surface Duo 2 users
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2211.01.** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2211.16.** ⚠️⚠️
 - ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
-- ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
-- ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️**You cannot update an older installation to this update. A reinstall is required**⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
-- ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
 ### Changelog
 
@@ -34,11 +31,7 @@ __Improvements to CPU core clock frequency will come in an upcoming release__
 
 #### Surface Duo 2
 
-- PEP, PMIC LEICA, GPU, Touch, Buttons, FLASH Light, USB C, XHCI, USBFN, ADC, GLINK, PMICGLINK, GPU, Panel, NFC (WIP), TrEE, IPA, GSI, REMOTEFS, Subsys, PIL, SK, TSENS, QUP, GPI, SPI, UART, BT, I2C enablement
-- Some Subsystems start on Surface Duo 2 now as well (Sensors, Camera DSP, Neural Processing Unit, Secure Processor)
-- GPU device is now exposed to the OS. GPU Driver is work in progress.
-- Touch is now exposed to the OS but not yet functional (Work in progress)
-- Complete overhaul of the thermal sensor / management subsystem
+- Initial supported release (more documentation update is to come)
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
