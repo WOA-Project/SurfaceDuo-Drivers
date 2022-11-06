@@ -8,10 +8,8 @@ Class       = System
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
 Provider    = %IHV%
 DriverVer   = 03/18/2021,1.0.0.0
+CatalogFile = oled.cat
 PnpLockdown = 1
-
-CatalogFile.NTarm   = oled.arm.cat
-CatalogFile.NTarm64 = oled.arm64.cat
 
 ;*****************************************
 ; oeminfo  Install Section

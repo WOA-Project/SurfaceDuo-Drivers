@@ -8,10 +8,8 @@ Class       = System
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
 Provider    = %IHV%
 DriverVer   = 05/12/2022,1.0.0.2
+CatalogFile = MultiScreenExperience.cat
 PnpLockdown = 1
-
-CatalogFile.NTarm   = MultiScreenExperience.arm.cat
-CatalogFile.NTarm64 = MultiScreenExperience.arm64.cat
 
 ;*****************************************
 ; oeminfo  Install Section
