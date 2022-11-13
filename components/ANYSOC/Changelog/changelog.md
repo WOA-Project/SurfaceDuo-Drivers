@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2211.20
-**Released:** 11/06/2022 01:00 PM UTC-7
+## Surface Duo Drivers BSP - Version 2211.43
+**Released:** 11/13/2022 12:30 PM UTC-7
 
 **Quality:** Preview
 
@@ -23,21 +23,7 @@ ________________________________________________________________________________
 
 #### Surface Duo 1
 
-- Enables the Secure Processing Unit, you will be able to find it under Device Manager -> Security Devices
-
-- Preliminary work to Enable WiFi AX
-
-- Addresses an issue with WLAN Extension settings for China not being applied correctly
-
-- Renames a few drivers in Device Manager for better readability
-
-- Improvements to the USB-C Driver Stack: Addresses an issue with the Display Port Phy reg settings not being applied, addresses an issue leading to the state machine often getting stuck. Addresses an issue with the interface between PEP and the TypeC port manager being broken. (External displays do not work still)
-
-- Enables basic USB functionality when the device has no driver installed
-
-- Enables the device to boot into Windows with no driver installed
-
-- Updates Device IDs when plugging in the device into a PC to match Surface Duo device product identifier
+- Addresses all known issues currently known with the Device crashing during sleep with a workaround built into the Power Engine Plugin driver.
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
@@ -45,9 +31,7 @@ __Improvements to CPU core clock frequency will come in an upcoming release__
 
 #### Surface Duo 2
 
-- Enables the Secure Processing Unit, you will be able to find it under Device Manager -> Security Devices
-
-- Updates Device IDs when plugging in the device into a PC to match Surface Duo device product identifier
+- Addresses an issue preventing first boot from working. (Disables UCSI USB stack for now)
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
@@ -72,7 +56,7 @@ It may also be possible to provision it using data from the SFPD partition expos
 - Digitizers will not react to the device being folded over
 - Displays will not react to the device being folded over most of the time
 - Physical device data is incorrect
-- Graphical Rendering Issues
+- Digitizers aren't calibrated correctly
 
 
 ### Accessing Foldable Sensors from your applications
