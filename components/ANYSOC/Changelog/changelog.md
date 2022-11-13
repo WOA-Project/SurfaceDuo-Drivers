@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2211.16
-**Released:** 11/05/2022 02:00 PM UTC-7
+## Surface Duo Drivers BSP - Version 2211.20
+**Released:** 11/06/2022 01:00 PM UTC-7
 
 **Quality:** Preview
 
@@ -16,8 +16,6 @@ ________________________________________________________________________________
 
 #### Important information
 
-- This release is mainly for Surface Duo 2 users
-
 - ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2211.16.** ⚠️⚠️
 - ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
 
@@ -25,13 +23,31 @@ ________________________________________________________________________________
 
 #### Surface Duo 1
 
+- Enables the Secure Processing Unit, you will be able to find it under Device Manager -> Security Devices
+
+- Preliminary work to Enable WiFi AX
+
+- Addresses an issue with WLAN Extension settings for China not being applied correctly
+
+- Renames a few drivers in Device Manager for better readability
+
+- Improvements to the USB-C Driver Stack: Addresses an issue with the Display Port Phy reg settings not being applied, addresses an issue leading to the state machine often getting stuck. Addresses an issue with the interface between PEP and the TypeC port manager being broken. (External displays do not work still)
+
+- Enables basic USB functionality when the device has no driver installed
+
+- Enables the device to boot into Windows with no driver installed
+
+- Updates Device IDs when plugging in the device into a PC to match Surface Duo device product identifier
+
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
 __Improvements to CPU core clock frequency will come in an upcoming release__
 
 #### Surface Duo 2
 
-- Initial supported release (more documentation update is to come)
+- Enables the Secure Processing Unit, you will be able to find it under Device Manager -> Security Devices
+
+- Updates Device IDs when plugging in the device into a PC to match Surface Duo device product identifier
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
