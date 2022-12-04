@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2211.43
-**Released:** 11/13/2022 12:30 PM UTC-7
+## Surface Duo Drivers BSP - Version 2212.12
+**Released:** 12/4/2022 07:00 PM UTC+1
 
 **Quality:** Preview
 
@@ -16,14 +16,54 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2211.16.** ⚠️⚠️
-- ⚠️⚠️ **IMPORTANT: If you get a BSOD/Bugcheck "SOC_SUBSYSTEM_FAILURE" when upgrading, you will have to reinstall Windows** ⚠️⚠️
+- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2212.12.** ⚠️⚠️
+- The issue affecting broken installations using Driver Updater has finally been fixed! Please make sure you download the latest version of driver updater released on 12/4/2022!
 
 ### Changelog
 
 #### Surface Duo 1
 
-- Addresses all known issues currently known with the Device crashing during sleep with a workaround built into the Power Engine Plugin driver.
+What's new?
+
+![Screenshot (43)](https://user-images.githubusercontent.com/3755345/205504984-7d01670a-84fc-49e6-b33e-79dc15283f08.png)
+
+- Charging finally works under Windows! This is a first version of the charging stack, as a result a few things are currently limited. The charging input is limited to low current for safety measures while work is ongoing. Big thanks to @MollySophia for helping in this area!
+
+![image](https://user-images.githubusercontent.com/3755345/205505394-8db8fba0-4ffd-49ad-a9df-82e33c58eae2.png)
+
+- Adds a driver for the Qualcomm SMB1380 Secondary Charger
+
+- Adds a driver for the Qualcomm PM8150B Fuel Gauge and Primary Charger
+
+![CABL](https://user-images.githubusercontent.com/3755345/205505010-256dbac0-4db3-499e-9564-3d197f762ea2.png)
+
+- Enables Content Adaptive Brightness Level. For more information about CABL please see the following article: https://support.microsoft.com/en-us/windows/content-adaptive-brightness-control-in-windows-292d1f7f-9e02-4b37-a9c8-dab3e1727e78
+
+![image](https://user-images.githubusercontent.com/3755345/205505177-0f89352a-102b-4310-aa13-84d706d5baff.png)
+
+- Adds support for Duo's Pedometer Sensor.
+
+- Adds support for Duo's Light Fusion Sensor.
+
+![New Tablet Experience FRE](https://user-images.githubusercontent.com/3755345/205505040-1bdaa28b-757b-4509-a002-5ceb5e00b0af.png)
+
+![Tablet Settings](https://user-images.githubusercontent.com/3755345/205505059-578f64ce-a9cd-4369-b10f-a05d959dbdc6.png)
+
+![New Tablet Experience](https://user-images.githubusercontent.com/3755345/205505062-0d0de6d6-6c5e-448d-b5e8-fdd49983dd79.png)
+
+- The new Tablet Posture experience is now enabled for Surface Duo by default. Expect a more tablet optimized taskbar, bigger hit targets in Microsoft Edge/File Explorer, and more. For more information about tablet posture experiences, please visit the following link: https://blogs.windows.com/windows-insider/2022/02/24/announcing-windows-11-insider-preview-build-22563/
+
+- Addresses a few issues with duplicated sensors.
+
+- Enables smooth brightness control for both panels.
+
+![MTP](https://user-images.githubusercontent.com/3755345/205505115-6bd15ae7-4271-4eae-a714-04fe8d739821.png)
+
+- Addresses an issue preventing USB Function Mode from working. This issue mainly affected USB File Transfers using a computer.
+
+- Updates Surface Duo firmware to the latest Android OTA release of November
+
+- Long forgotten bug fixes & enhancements
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
@@ -31,7 +71,9 @@ __Improvements to CPU core clock frequency will come in an upcoming release__
 
 #### Surface Duo 2
 
-- Addresses an issue preventing first boot from working. (Disables UCSI USB stack for now)
+- Addresses an issue preventing USB Function Mode from working. This issue mainly affected USB File Transfers using a computer.
+
+- Updates Surface Duo 2 firmware to the latest Android OTA release of November
 
 - Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
@@ -39,7 +81,7 @@ __Improvements to CPU core clock frequency will come in an upcoming release__
 
 
 In order to get most sensors currently working, some manual steps are required.
-Please follow the steps described at https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows.md#temporary-copy-over-calibration-filesconfiguration-files-for-the-sensors
+Please follow the steps described at https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows-SurfaceDuo1.md#temporary-and-optional-copy-over-calibration-filesconfiguration-files-for-the-sensors
 
 
 It may also be possible to provision it using data from the SFPD partition exposed in windows. This manual step will not be required in future releases.
