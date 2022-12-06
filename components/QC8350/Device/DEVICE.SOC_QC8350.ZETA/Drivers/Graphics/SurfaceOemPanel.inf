@@ -7,7 +7,7 @@ Signature   = "$Windows NT$"
 Provider    = %ManufacturerName%
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
 Class       = System
-DriverVer = 11/25/2022,19.15.11.879
+DriverVer = 12/05/2022,23.46.32.64
 CatalogFile = SurfaceOemPanel.cat
 PnpLockdown = 1
 

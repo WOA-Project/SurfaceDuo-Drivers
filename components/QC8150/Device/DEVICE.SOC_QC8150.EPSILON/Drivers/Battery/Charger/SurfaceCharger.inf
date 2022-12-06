@@ -17,13 +17,18 @@ Signature="$WINDOWS NT$"
 Class=Battery
 ClassGuid={72631e54-78a4-11d0-bcf7-00aa00b7b32a}
 Provider=%ProviderName%
-DriverVer = 07/22/2022,1.0.0.0
+DriverVer = 11/25/2022,19.16.2.172
 CatalogFile=SurfaceCharger.cat
 PnpLockdown=1
 
+[DestinationDirs]
+DefaultDestDir = 13
+
 [SourceDisksNames]
+1 = %DiskId1%,,,""
 
 [SourceDisksFiles]
+SurfaceCharger.sys  = 1,,
 
 ;*****************************************
 ; Surface Charger Install Section
@@ -36,19 +41,32 @@ PnpLockdown=1
 %SurfaceCharger.DeviceDesc% = SurfaceCharger_Device, ACPI\SMB1380
 
 [SurfaceCharger_Device.NT]
-Include=machine.inf
-Needs=NO_DRV
+CopyFiles=SurfaceCharger_Device_Drivers
+
+[SurfaceCharger_Device_Drivers]
+SurfaceCharger.sys
 
 ;-------------- Service installation
 
 [SurfaceCharger_Device.NT.Services]
-Include=machine.inf
-Needs=NO_DRV.Services
+AddService = SurfaceCharger,%SPSVCINST_ASSOCSERVICE%,SurfaceCharger_Service_Inst
+
+; -------------- SurfaceCharger driver install sections
+
+[SurfaceCharger_Service_Inst]
+DisplayName    = %SurfaceCharger.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SurfaceCharger.sys
 
 ;*****************************************
 ; Literals
 ;*****************************************
 
 [Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
 ProviderName = "Surface"
+DiskId1 = "Surface Charger Installation Disk"
 SurfaceCharger.DeviceDesc = "Surface Charger"
+SurfaceCharger.SVCDESC = "Surface Charger"
