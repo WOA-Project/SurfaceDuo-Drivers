@@ -1,15 +1,13 @@
 ;
-; MTPOEM.inf
+; SurfaceDuo_MTPOEM.inf
 ;
 [Version]
 Signature   = "$WINDOWS NT$"
 Class       = SYSTEM
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
-Provider    = "LumiaWoA authors"
+Provider    = "DuoWoA authors"
 DriverVer   = 05/27/2022,1.0.0.1
-
-CatalogFile.NTarm   = MTPOEM.arm.cat
-CatalogFile.NTarm64 = MTPOEM.arm64.cat
+CatalogFile = SurfaceDuo_MTPOEM.cat
 
 [SourceDisksNames]
 0 = "Disk"

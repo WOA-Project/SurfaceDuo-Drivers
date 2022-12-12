@@ -1,0 +1,36 @@
+;
+; SurfaceDuo2_MTPOEM.inf
+;
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = SYSTEM
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = "DuoWoA authors"
+DriverVer   = 05/27/2022,1.0.0.1
+CatalogFile = SurfaceDuo2_MTPOEM.cat
+
+[SourceDisksNames]
+0 = "Disk"
+
+[DestinationDirs]
+MTP_System32_CopyFiles     = 11 ; System32
+
+[SourceDisksFiles]
+DevIcon_SurfaceDuo2.ico = 0,,
+OEMAvatar_SurfaceDuo2.cab = 0,,
+
+[DefaultInstall.NTARM64]
+CopyFiles = MTP_System32_CopyFiles
+AddReg    = MTP_Registry
+
+[MTP_System32_CopyFiles]
+DevIcon_SurfaceDuo2.ico
+OEMAvatar_SurfaceDuo2.cab,,,0x00000800       ; COPYFLG_NODECOMP
+
+[MTP_System32_CopyFiles.Security]
+D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;WD)
+
+[MTP_Registry]
+HKLM, "SOFTWARE\Microsoft\MTP", "OEMAVATAR", 0x00000000, "C:\Windows\System32\OEMAvatar_SurfaceDuo2.cab"
+HKLM, "SOFTWARE\Microsoft\MTP", "OEMICON", 0x00000000, "C:\Windows\System32\DevIcon_SurfaceDuo2.ico"
+
