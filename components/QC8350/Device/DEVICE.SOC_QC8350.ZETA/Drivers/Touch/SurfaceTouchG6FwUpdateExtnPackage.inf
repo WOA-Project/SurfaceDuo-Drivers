@@ -23,7 +23,7 @@ PnpLockdown=1
 %ManufacturerName%=Standard,NTARM64
 
 [Standard.NTARM64]
-%SurfaceTouchG6FwUpdateExtnPackage.ExtensionDesc%=SurfaceTouchG6FwUpdateExtnPackage, HID\VEN_MSHW&DEV_0274&Col06
+%SurfaceTouchG6FwUpdateExtnPackage.ExtensionDesc%=SurfaceTouchG6FwUpdateExtnPackage, HID\VEN_MSHW&DEV_0274&Col0A
 
 ; =================== UMDF Device ==================================
 

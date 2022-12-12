@@ -46,6 +46,7 @@ PnPLockDown=1
 
 ; Digitizer TLCs
 %DeviceDesc% = DigitizerUtilDesc, HID\VID_045E&UP:FF0F_U:0050
+%DeviceDesc% = DigitizerHeartbeatDesc, HID\VID_045E&UP:FF0F_U:0060
 %DeviceDesc% = InkDesc, HID\VID_045E&UP:FF0F_U:0100
 %DeviceDesc% = ColorProfileDesc, HID\VID_045E&UP:FF0F_U:0200
 %DeviceDesc% = TouchUtilityDesc, HID\VID_045E&UP:FFFF_U:0001
@@ -198,6 +199,12 @@ HKR,,FriendlyName,,"Surface Integration Firmware Update"
 AddReg = DigitizerUtilDesc_AddReg
 [DigitizerUtilDesc_AddReg]
 HKR,,FriendlyName,,"Surface Digitizer Utility"
+
+[DigitizerHeartbeatDesc]
+[DigitizerHeartbeatDesc.HW]
+AddReg = DigitizerHeartbeatDesc_AddReg
+[DigitizerHeartbeatDesc_AddReg]
+HKR,,FriendlyName,,"Surface Digitizer Heartbeat"
 
 [InkDesc]
 [InkDesc.HW]
