@@ -1,0 +1,75 @@
+;
+; ssde.inf
+;
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %ManufacturerName%
+DriverVer = 01/15/2023,16.55.13.474
+CatalogFile = ssde.cat
+PnPLockdown = 1
+
+[SourceDisksNames]
+1 = %DiskId1%
+
+[SourceDisksFiles]
+ssde.sys = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[ControlFlags]
+ExcludeFromSelect = *
+
+[Manufacturer]
+%ManufacturerName% = Standard, NTARM64
+
+[Standard.NTARM64]
+%DeviceDesc% = SSDE_Inst, Root\SSDE
+
+[SSDE_Inst.NT]
+Copyfiles = SSDECopyFiles
+
+[SSDE_Inst.NT.HW]
+Addreg = SSDEACL, SSDE_OS_Configuration
+
+[SSDEACL]
+HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)" ;built in admin and local sys access
+
+[SSDE_OS_Configuration]
+HKLM, "SYSTEM\CurrentControlSet\Control\CI\Protected", "Licensed", %REG_DWORD%, 0x00000001
+
+[SSDECopyFiles]
+ssde.sys
+
+[SSDE_Inst.NT.Services]
+AddService = ssde, %SPSVCINST_ASSOCSERVICE%, SSDE_Service_Inst
+
+[SSDE_Service_Inst]
+DisplayName    = %SSDE.SvcDesc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_BOOT_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %13%\ssde.sys
+
+[SSDE_Inst.NT.Wdf]
+KmdfService = ssde, SSDE_wdfsect
+
+[SSDE_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+ManufacturerName = "OEMA0 Corporation"
+DiskId1          = "OEMA0 Self-Signed Driver Enabler Installation Disk"
+SSDE.SvcDesc     = "OEMA0 Self-Signed Driver Enabler Device"
+DeviceDesc       = "OEMA0 Self-Signed Driver Enabler Device"
+
+SPSVCINST_ASSOCSERVICE = 0x00000002
+SERVICE_KERNEL_DRIVER  = 1
+SERVICE_BOOT_START     = 0
+SERVICE_ERROR_NORMAL   = 1
+
+REG_DWORD = 0x00010001
+
