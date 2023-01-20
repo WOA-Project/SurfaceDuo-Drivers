@@ -31,6 +31,6 @@ CopyFiles = PstDrv.Files
 DuoWOA.SurfaceApp_btf4vqatnxdpt.msixbundle
 
 [Strings]
-IHV     = "LumiaWoA authors"
+IHV     = "DuoWoA authors"
 DiskId1 = "OEM Applications Installation Disk #1"
 

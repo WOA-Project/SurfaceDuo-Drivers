@@ -25,7 +25,7 @@ Addreg    = MultiScreenExperienceReg
 HKLM, SYSTEM\CurrentControlSet\Control\GraphicsDrivers, SupportMultipleIntegratedDisplays, %REG_DWORD%, 1
 
 [Strings]
-IHV     = "LumiaWoA authors"
+IHV     = "DuoWoA authors"
 DiskId1 = "Multiple Screen Experience Installation Disk #1"
 
 REG_SZ        = 0x00000000

@@ -23,5 +23,5 @@ AddComponent = SurfaceDisplayConfigurator,, SurfaceDisplayConfigurator_Install
 ComponentIDs = VEN_QCOM&DEV_053A&SWC_QCDC8150
 
 [Strings]
-IHV                                   = "LumiaWoA authors"
+IHV                                   = "DuoWoA authors"
 SurfaceDisplayConfigurator.DeviceDesc = "Surface Display Configurator Extension"

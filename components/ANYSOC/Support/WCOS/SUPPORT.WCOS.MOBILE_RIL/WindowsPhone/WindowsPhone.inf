@@ -3057,7 +3057,7 @@ MobileNetworkingService.exe
 ;
 ; Localizable
 ;
-IHV            = "LumiaWoA authors"
+IHV            = "DuoWoA authors"
 IHV.DeviceDesc = "Microsoft Windows Phone Networking Stack"
 DiskId1        = "Microsoft Windows Phone Networking Stack Installation Disk #1"
 

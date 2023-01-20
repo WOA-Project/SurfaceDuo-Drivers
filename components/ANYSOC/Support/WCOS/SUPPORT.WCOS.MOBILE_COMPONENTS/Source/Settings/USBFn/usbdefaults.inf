@@ -138,5 +138,5 @@ HKLM, "SYSTEM\CurrentControlSet\Control\USBFN\settings", "PromptForDataConnectio
 "D:P(A;;GA;;;SY)(A;;GA;;;BA)(A;;GA;;;AU)(A;;GA;;;BG)(A;;GA;;;S-1-15-2-1)(A;;GA;;;WD)"
 
 [Strings]
-IHV                    = "LumiaWoA authors"
+IHV                    = "DuoWoA authors"
 

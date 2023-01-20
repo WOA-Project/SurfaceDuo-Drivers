@@ -249,6 +249,6 @@ Netmon.DeviceDescription                    = "Cellular filter driver used to tr
 Netmon.ServiceDisplayName                   = "Cellular Netmon Filter Driver"
 Netmon.ServiceDescription                   = "Filter driver for cellular netmon"
 
-Msft                                        = "LumiaWoA authors"
+Msft                                        = "DuoWoA authors"
 
 

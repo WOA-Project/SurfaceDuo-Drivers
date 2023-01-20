@@ -1941,6 +1941,6 @@ WiFiConnected.wav
 WiFiDisconnected.wav
 
 [Strings]
-IHV     = "LumiaWoA authors"
+IHV     = "DuoWoA authors"
 DiskId1 = "Microsoft(R) Windows(R) Phone Audio Files Installation Disk #1"
 

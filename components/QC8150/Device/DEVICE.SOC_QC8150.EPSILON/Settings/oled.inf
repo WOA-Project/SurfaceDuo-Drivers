@@ -25,5 +25,5 @@ Addreg    = OledReg
 HKLM, "Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced", "UseOLEDTaskbarTransparency", 0x00010001,  0x1
 
 [Strings]
-IHV     = "LumiaWoA authors"
+IHV     = "DuoWoA authors"
 DiskId1 = "OLED Installation Disk #1"

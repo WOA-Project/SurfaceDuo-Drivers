@@ -29,5 +29,5 @@ HKLM,%RunOnce%,"FirstLogonCmds",,"cmd.exe /c \Windows\OEM\SilentProvisionerL.exe
 
 [Strings]
 RunOnce = "SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
-IHV     = "LumiaWoA authors"
+IHV     = "DuoWoA authors"
 

@@ -33,6 +33,6 @@ CopyFiles = Drivers_Dir_24
 2c73f5c3-e950-42e2-9a5d-86da50c117b3.devicemetadata-ms,,,0x00000800 ;COPYFLG_NODECOMP
 
 [Strings]
-IHV     = "LumiaWoA authors"
+IHV     = "DuoWoA authors"
 DiskId1 = "Cell Core Installation Disk #1"
 
