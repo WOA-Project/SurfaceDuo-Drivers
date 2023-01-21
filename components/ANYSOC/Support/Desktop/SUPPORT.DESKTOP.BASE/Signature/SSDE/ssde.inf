@@ -39,7 +39,8 @@ Addreg = SSDEACL, SSDE_OS_Configuration
 HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)" ;built in admin and local sys access
 
 [SSDE_OS_Configuration]
-HKLM, "SYSTEM\CurrentControlSet\Control\CI\Protected", "Licensed", %REG_DWORD%, 0x00000001
+HKLM, "SYSTEM\CurrentControlSet\Control\CI\Policy",    "WhqlSettings", %REG_DWORD%, 0x00000001
+HKLM, "SYSTEM\CurrentControlSet\Control\CI\Protected", "Licensed",     %REG_DWORD%, 0x00000001
 
 [SSDECopyFiles]
 ssde.sys
