@@ -7,7 +7,7 @@ Signature   = "$WINDOWS NT$"
 Class       = System
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
 Provider    = %ManufacturerName%
-DriverVer = 01/15/2023,16.55.13.474
+DriverVer = 01/22/2023,23.53.5.853
 CatalogFile = ssde.cat
 PnPLockdown = 1
 
@@ -16,9 +16,19 @@ PnPLockdown = 1
 
 [SourceDisksFiles]
 ssde.sys = 1
+ssde.cmd = 1
+ssde_enable.exe = 1
 
 [DestinationDirs]
 DefaultDestDir = 13
+
+; 13 = Driver Store
+SSDECopyFiles        = 13
+
+; 10 = Windows
+OOBECmd.Files        = 10,OEM\Setup\OOBE
+SpecializeCmd.Files  = 10,OEM\Setup\Specialize
+FirstLogonCmd.Files  = 10,OEM\Setup\FirstLogon
 
 [ControlFlags]
 ExcludeFromSelect = *
@@ -30,7 +40,7 @@ ExcludeFromSelect = *
 %DeviceDesc% = SSDE_Inst, Root\SSDE
 
 [SSDE_Inst.NT]
-Copyfiles = SSDECopyFiles
+Copyfiles = SSDECopyFiles, OOBECmd.Files, SpecializeCmd.Files, FirstLogonCmd.Files
 
 [SSDE_Inst.NT.HW]
 Addreg = SSDEACL, SSDE_OS_Configuration
@@ -39,11 +49,21 @@ Addreg = SSDEACL, SSDE_OS_Configuration
 HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)" ;built in admin and local sys access
 
 [SSDE_OS_Configuration]
-HKLM, "SYSTEM\CurrentControlSet\Control\CI\Policy",    "WhqlSettings", %REG_DWORD%, 0x00000001
-HKLM, "SYSTEM\CurrentControlSet\Control\CI\Protected", "Licensed",     %REG_DWORD%, 0x00000001
+HKLM, "SYSTEM\CurrentControlSet\Control\CI\Policy",    "WhqlSettings",     %REG_DWORD%, 0x00000001
+HKLM, "SYSTEM\CurrentControlSet\Control\CI\Protected", "Licensed",         %REG_DWORD%, 0x00000001
+HKLM, "SYSTEM\CurrentControlSet\Control\SecureBoot",   "AvailableUpdates", %REG_DWORD%, 0x00000000 ; Workaround for Mu Memory Protection Support Bug
 
 [SSDECopyFiles]
 ssde.sys
+
+[OOBECmd.Files]
+
+; Windows/OEM
+[SpecializeCmd.Files]
+ssde.cmd
+ssde_enable.exe
+
+[FirstLogonCmd.Files]
 
 [SSDE_Inst.NT.Services]
 AddService = ssde, %SPSVCINST_ASSOCSERVICE%, SSDE_Service_Inst
