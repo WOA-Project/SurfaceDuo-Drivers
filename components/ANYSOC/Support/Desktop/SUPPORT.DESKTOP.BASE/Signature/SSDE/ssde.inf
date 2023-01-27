@@ -7,7 +7,7 @@ Signature   = "$WINDOWS NT$"
 Class       = System
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
 Provider    = %ManufacturerName%
-DriverVer = 01/22/2023,23.53.5.853
+DriverVer = 01/27/2023,22.41.57.9
 CatalogFile = ssde.cat
 PnPLockdown = 1
 
@@ -16,19 +16,9 @@ PnPLockdown = 1
 
 [SourceDisksFiles]
 ssde.sys = 1
-ssde.cmd = 1
-ssde_enable.exe = 1
 
 [DestinationDirs]
 DefaultDestDir = 13
-
-; 13 = Driver Store
-SSDECopyFiles        = 13
-
-; 10 = Windows
-OOBECmd.Files        = 10,OEM\Setup\OOBE
-SpecializeCmd.Files  = 10,OEM\Setup\Specialize
-FirstLogonCmd.Files  = 10,OEM\Setup\FirstLogon
 
 [ControlFlags]
 ExcludeFromSelect = *
@@ -37,10 +27,10 @@ ExcludeFromSelect = *
 %ManufacturerName% = Standard, NTARM64
 
 [Standard.NTARM64]
-%DeviceDesc% = SSDE_Inst, Root\SSDE
+%DeviceDesc% = SSDE_Inst, ACPI\SSDE
 
 [SSDE_Inst.NT]
-Copyfiles = SSDECopyFiles, OOBECmd.Files, SpecializeCmd.Files, FirstLogonCmd.Files
+Copyfiles = SSDECopyFiles
 
 [SSDE_Inst.NT.HW]
 Addreg = SSDEACL, SSDE_OS_Configuration
@@ -55,15 +45,6 @@ HKLM, "SYSTEM\CurrentControlSet\Control\SecureBoot",   "AvailableUpdates", %REG_
 
 [SSDECopyFiles]
 ssde.sys
-
-[OOBECmd.Files]
-
-; Windows/OEM
-[SpecializeCmd.Files]
-ssde.cmd
-ssde_enable.exe
-
-[FirstLogonCmd.Files]
 
 [SSDE_Inst.NT.Services]
 AddService = ssde, %SPSVCINST_ASSOCSERVICE%, SSDE_Service_Inst
