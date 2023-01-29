@@ -7,7 +7,7 @@ Signature   = "$WINDOWS NT$"
 Class       = System
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
 Provider    = %ManufacturerName%
-DriverVer = 01/27/2023,22.41.57.9
+DriverVer   = 01/29/2023,15.1.43.836
 CatalogFile = ssde.cat
 PnPLockdown = 1
 
@@ -27,6 +27,7 @@ ExcludeFromSelect = *
 %ManufacturerName% = Standard, NTARM64
 
 [Standard.NTARM64]
+%DeviceDesc% = SSDE_Inst, Root\SSDE
 %DeviceDesc% = SSDE_Inst, ACPI\SSDE
 
 [SSDE_Inst.NT]
@@ -74,4 +75,3 @@ SERVICE_BOOT_START     = 0
 SERVICE_ERROR_NORMAL   = 1
 
 REG_DWORD = 0x00010001
-
