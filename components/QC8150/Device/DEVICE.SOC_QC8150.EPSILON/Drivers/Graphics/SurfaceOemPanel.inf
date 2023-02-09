@@ -7,7 +7,7 @@ Signature   = "$Windows NT$"
 Provider    = %ManufacturerName%
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
 Class       = System
-DriverVer = 12/17/2022,18.7.21.933
+DriverVer   = 02/09/2023,23.22.47.342
 CatalogFile = SurfaceOemPanel.cat
 PnpLockdown = 1
 
@@ -45,9 +45,9 @@ LoadOrderGroup = Extended Base
 
 [Strings]
 ManufacturerName = "Surface"
-DiskName         = "Surface OEM Panel Installation Disk"
-DeviceName       = "Surface OEM Panel Device"
-SvcDesc          = "Surface OEM Panel Device"
+DiskName         = "Surface Duo OEM Panel Installation Disk"
+DeviceName       = "Surface Duo OEM Panel Device"
+SvcDesc          = "Surface Duo OEM Panel Device"
 
 SPSVCINST_ASSOCSERVICE = 0x00000002
 SERVICE_KERNEL_DRIVER  = 1
