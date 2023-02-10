@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2212.12
-**Released:** 12/4/2022 07:00 PM UTC+1
+## Surface Duo Drivers BSP - Version 2302.35
+**Released:** 02/10/2023 11:00 PM UTC+1
 
 **Quality:** Preview
 
@@ -16,8 +16,13 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️⚠️ **IMPORTANT: This version of the drivers needs to be paired with UEFI version greater or equal to 2212.12.** ⚠️⚠️
-- The issue affecting broken installations using Driver Updater has finally been fixed! Please make sure you download the latest version of driver updater released on 12/4/2022!
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2302.35.
+
+- ⚠️ For users that are updating from an earlier release than version 2301.93, please follow the following migration guidance https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest driverupdater release as well!: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.8.0.0
+
+- ⚠️ If you need dual boot, you will have to make your own image, please follow this guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/DualBoot.md
+
+- ⚠️ You need to backup your original boot image for OTAs to work with Android. When you'll get an OTA, you will want to revert your boot image for the update to work or you'll have to use an official OTA recovery package.
 
 ### Changelog
 
@@ -25,57 +30,36 @@ ________________________________________________________________________________
 
 What's new?
 
-![Screenshot (43)](https://user-images.githubusercontent.com/3755345/205504984-7d01670a-84fc-49e6-b33e-79dc15283f08.png)
+- Glitches on the right display on bootup or during setup are now fixed
 
-- Charging finally works under Windows! This is a first version of the charging stack, as a result a few things are currently limited. The charging input is limited to low current for safety measures while work is ongoing. Big thanks to @MollySophia for helping in this area!
+- Startup improvements were made resulting in the device booting faster
 
-![image](https://user-images.githubusercontent.com/3755345/205505394-8db8fba0-4ffd-49ad-a9df-82e33c58eae2.png)
+- General improvements to the Content Adaptive Brightness algorithm introduced back in January. This will lead to a better experience when using this feature, however the calibration work remains to be done
 
-- Adds a driver for the Qualcomm SMB1380 Secondary Charger
+- Automatic rotation for both displays is now supported, same for basic posture functionality
 
-- Adds a driver for the Qualcomm PM8150B Fuel Gauge and Primary Charger
+- You can now fold over the device to only use a single screen. Note: the screen picked will always be the right unless you do a flip gesture. This remains work in progress. Touch also may misbehave due to work in progress communication code with the heat processor.
 
-![CABL](https://user-images.githubusercontent.com/3755345/205505010-256dbac0-4db3-499e-9564-3d197f762ea2.png)
+- Updated INFs to use UTF-16 LE encoding as recommended by Microsoft.
 
-- Enables Content Adaptive Brightness Level. For more information about CABL please see the following article: https://support.microsoft.com/en-us/windows/content-adaptive-brightness-control-in-windows-292d1f7f-9e02-4b37-a9c8-dab3e1727e78
+- The startup process is now much smoother compared to before.
 
-![image](https://user-images.githubusercontent.com/3755345/205505177-0f89352a-102b-4310-aa13-84d706d5baff.png)
 
-- Adds support for Duo's Pedometer Sensor.
+#### Known issues
 
-- Adds support for Duo's Light Fusion Sensor.
+- Calling is not working under Windows 11 Version 22H2 and higher
 
-![New Tablet Experience FRE](https://user-images.githubusercontent.com/3755345/205505040-1bdaa28b-757b-4509-a002-5ceb5e00b0af.png)
+- Flipping the device however is not smooth
 
-![Tablet Settings](https://user-images.githubusercontent.com/3755345/205505059-578f64ce-a9cd-4369-b10f-a05d959dbdc6.png)
+- Charging remains unavailable in Windows, please charge in Android
 
-![New Tablet Experience](https://user-images.githubusercontent.com/3755345/205505062-0d0de6d6-6c5e-448d-b5e8-fdd49983dd79.png)
+- Users upgrading from releases older than the January ones may want to clean install again.
 
-- The new Tablet Posture experience is now enabled for Surface Duo by default. Expect a more tablet optimized taskbar, bigger hit targets in Microsoft Edge/File Explorer, and more. For more information about tablet posture experiences, please visit the following link: https://blogs.windows.com/windows-insider/2022/02/24/announcing-windows-11-insider-preview-build-22563/
-
-- Addresses a few issues with duplicated sensors.
-
-- Enables smooth brightness control for both panels.
-
-![MTP](https://user-images.githubusercontent.com/3755345/205505115-6bd15ae7-4271-4eae-a714-04fe8d739821.png)
-
-- Addresses an issue preventing USB Function Mode from working. This issue mainly affected USB File Transfers using a computer.
-
-- Updates Surface Duo firmware to the latest Android OTA release of November
-
-- Long forgotten bug fixes & enhancements
-
-- Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
-
-__Improvements to CPU core clock frequency will come in an upcoming release__
 
 #### Surface Duo 2
 
-- Addresses an issue preventing USB Function Mode from working. This issue mainly affected USB File Transfers using a computer.
+- Support for Surface Duo 2 is not provided with this release. We are trying to get an update for Surface Duo 2 as part of the next release as soon as we can.
 
-- Updates Surface Duo 2 firmware to the latest Android OTA release of November
-
-- Call provisioning is work in progress, if calls do not work for you at the moment, you may need to provision the call functionality manually. (Same as on Lumia 950s: https://woa-project.github.io/LumiaWOA/guides/ican0/, value is not different between 950s and Duo either, so if you already have such value, you're good to go, this is temporary!)
 
 ### Sensor Calibration Provisioning (Mandatory)
 
@@ -90,7 +74,6 @@ It may also be possible to provision it using data from the SFPD partition expos
 ### Known issues
 
 
-- Automatic Orientation only works for the left panel, using the right panel orientation sensor
 - USB Dongles that are not externally powered may not currently work
 - USB C Billboard devices will not currently work
 - External Display Stream support will not currently work
@@ -109,7 +92,7 @@ In order to currently access the sensor data given by the foldable sensors, you 
 
 - Windows.Devices.Sensors.HingeAngleSensor*
 - Windows.Internal.Devices.Sensors.FlipSensor* (2)
-- Windows.Internal.System.TwoPanelHingeFolioPostureDevice* (2)
+- Windows.Internal.System.TwoPanelHingePostureDevice* (2)
 
 
 (2): These apis require the use of an externally sourced winmd available from https://github.com/ADeltaX/InternalWinMD/blob/master/%23winmd/Windows.Internal.Devices.Sensors.winmd
@@ -196,7 +179,7 @@ VOID OnFoldSensorReadingChanged(FoldSensor const&, FoldSensorReadingChangedEvent
 	catch (...) {}
 }
 
-VOID PrintFolioDetails(TwoPanelFolioHingeDevicePostureReading const& args)
+VOID PrintDetails(TwoPanelHingedDevicePostureReading const& args)
 {
 	try {
 		std::cout << "Panel1 " << args.Panel1Id().c_str() << "\n" << std::endl;
@@ -205,7 +188,7 @@ VOID PrintFolioDetails(TwoPanelFolioHingeDevicePostureReading const& args)
 		std::cout << "Panel1 Orientation " << (int)args.Panel1Orientation() << "\n" << std::endl;
 		std::cout << "Panel2 Orientation " << (int)args.Panel2Orientation() << "\n" << std::endl;
 
-		switch (args.Hinge1State())
+		switch (args.HingeState())
 		{
 		case Windows::Internal::System::HingeState::Unknown:
 			std::cout << "Hinge1State Unknown\n" << std::endl;
@@ -226,37 +209,15 @@ VOID PrintFolioDetails(TwoPanelFolioHingeDevicePostureReading const& args)
 			std::cout << "Hinge1State Full\n" << std::endl;
 			break;
 		}
-
-		switch (args.Hinge2State())
-		{
-		case Windows::Internal::System::HingeState::Unknown:
-			std::cout << "Hinge2State Unknown\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Closed:
-			std::cout << "Hinge2State Closed\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Concave:
-			std::cout << "Hinge2State Concave\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Flat:
-			std::cout << "Hinge2State Flat\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Convex:
-			std::cout << "Hinge2State Convex\n" << std::endl;
-			break;
-		case Windows::Internal::System::HingeState::Full:
-			std::cout << "Hinge2State Full\n" << std::endl;
-			break;
-		}
 	}
 	catch (...) {}
 }
 
-VOID OnFolioPostureChanged(TwoPanelFolioHingeDevicePosture const&, TwoPanelFolioHingeDevicePostureReadingChangedEventArgs const& args)
+VOID OnPostureChanged(TwoPanelHingedDevicePosture const&, TwoPanelHingedDevicePostureReadingChangedEventArgs const& args)
 {
 	try {
-		printf("Folio posture sensor state changed.\n");
-		PrintFolioDetails(args.Reading());
+		printf("Posture sensor state changed.\n");
+		PrintDetails(args.Reading());
 	}
 	catch (...) {}
 }
@@ -304,22 +265,22 @@ int main()
 	}
 	catch (...) {}
 
-	printf("Trying to get folio posture sensor.\n");
+	printf("Trying to get posture sensor.\n");
 	try {
-		TwoPanelFolioHingeDevicePosture folioPosture = TwoPanelFolioHingeDevicePosture::GetDefaultAsync().get();
-		if (folioPosture == nullptr)
+		TwoPanelHingedDevicePosture Posture = TwoPanelHingedDevicePosture::GetDefaultAsync().get();
+		if (Posture == nullptr)
 		{
-			printf("Folio Posture sensor not found.\n");
+			printf("Posture sensor not found.\n");
 		}
 		else
 		{
-			auto curpst = folioPosture.GetCurrentPostureAsync().get();
+			auto curpst = Posture.GetCurrentPostureAsync().get();
 			if (curpst != nullptr)
 			{
-				PrintFolioDetails(curpst);
+				PrintDetails(curpst);
 			}
-			printf("Starting listening session for Folio Posture sensor.\n");
-			folioPosture.PostureChanged(OnFolioPostureChanged);
+			printf("Starting listening session for Posture sensor.\n");
+			Posture.PostureChanged(OnPostureChanged);
 		}
 		printf("Press any key to stop\n");
 		std::cin.get();
