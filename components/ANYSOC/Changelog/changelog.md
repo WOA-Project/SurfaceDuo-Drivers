@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2302.35
-**Released:** 02/10/2023 11:00 PM UTC+1
+## Surface Duo Drivers BSP - Version 2302.39
+**Released:** 02/11/2023 06:00 PM UTC+1
 
 **Quality:** Preview
 
@@ -30,19 +30,11 @@ ________________________________________________________________________________
 
 What's new?
 
-- Glitches on the right display on bootup or during setup are now fixed
+- Fixes an issue where rotation was unexpectedly missing in the 2302.35 update
 
-- Startup improvements were made resulting in the device booting faster
+- Addresses some issues reported by Microsoft INF Verification tool.
 
-- General improvements to the Content Adaptive Brightness algorithm introduced back in January. This will lead to a better experience when using this feature, however the calibration work remains to be done
-
-- Automatic rotation for both displays is now supported, same for basic posture functionality
-
-- You can now fold over the device to only use a single screen. Note: the screen picked will always be the right unless you do a flip gesture. This remains work in progress. Touch also may misbehave due to work in progress communication code with the heat processor.
-
-- Updated INFs to use UTF-16 LE encoding as recommended by Microsoft.
-
-- The startup process is now much smoother compared to before.
+- NOTE: Due to some specific changes sensor functionality may only work on upgraded devices from earlier driver versions to newer driver versions after doing a manual driver update on the device itself, using Device Manager. If this issue affects you, and it should if you upgraded from an older driver release, open device manager, right click each "Qualcomm Sensor" device, select "Update Device", then select "Pick from a list", then select "Manually select from list", then select the first Qualcomm device offered, and click next. Repeat this for all sensor devices, and then reboot the device. Sensors should now work flawlessly.
 
 
 #### Known issues

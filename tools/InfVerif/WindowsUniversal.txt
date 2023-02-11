@@ -447,7 +447,7 @@ ERROR(1304) in \components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\WindowsPh
 ERROR(1304) in \components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Customizations\SurfaceDuo_MTPOEM.inf, line 34: Found legacy AddReg operation using non-relative key (HKLM\SOFTWARE\Microsoft\MTP).
 ERROR(1304) in \components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Settings\oled.inf, line 21: Found legacy AddReg operation using non-relative key (HKLM\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced).
 ERROR(1304) in \components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Settings\SurfaceDuo_DeviceInfo.inf, line 21: Found legacy AddReg operation using non-relative key (HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OEMInformation).
-ERROR(1304) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 55: Found legacy AddReg operation using non-relative key (HKLM\Software\Microsoft\Windows NT\CurrentVersion\SvcHost).
+ERROR(1304) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 59: Found legacy AddReg operation using non-relative key (HKLM\Software\Microsoft\Windows NT\CurrentVersion\SvcHost).
 ERROR(1304) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Libraries\Cellular\qcWMRil8150.inf, line 81: Found legacy AddReg operation using non-relative key (HKLM\Software\Qualcomm\Ril\Common\Timeout\Request).
 ERROR(1304) in \components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Customizations\SurfaceDuo2_MTPOEM.inf, line 34: Found legacy AddReg operation using non-relative key (HKLM\SOFTWARE\Microsoft\MTP).
 ERROR(1304) in \components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Settings\oled.inf, line 21: Found legacy AddReg operation using non-relative key (HKLM\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced).
@@ -491,12 +491,12 @@ ERROR(1431) in \components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\WindowsPh
 ERROR(1431) in \components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\WindowsPhone\WindowsPhone.inf, line 471: Registry value 'ObjectName' not allowed under 'HKR(Service)\'.
 ERROR(1431) in \components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\WindowsPhone\WindowsPhone.inf, line 477: Registry value 'RequiredPrivileges' not allowed under 'HKR(Service)\'.
 ERROR(1431) in \components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Graphics\SurfaceDisplayConfiguratorService.inf, line 44: Registry value 'Type' not allowed under 'HKR(Service)\'.
-ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 56: Registry value 'DisplayName' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
-ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 57: Registry value 'Description' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
-ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 58: Registry value 'ObjectName' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
-ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 60: Registry value 'Type' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
-ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 61: Registry value 'Start' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
-ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 62: Registry value 'ErrorControl' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
+ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 60: Registry value 'DisplayName' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
+ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 61: Registry value 'Description' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
+ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 62: Registry value 'ObjectName' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
+ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 64: Registry value 'Type' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
+ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 65: Registry value 'Start' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
+ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 66: Registry value 'ErrorControl' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
 ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Cellular\RemoteAT\qcremoteat8150.inf, line 71: Registry value 'ObjectName' not allowed under 'HKR(Service)\'.
 ERROR(1431) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Cellular\RevRmnet\qcrevrmnet8150.inf, line 93: Registry value 'ObjectName' not allowed under 'HKR(Service)\'.
 ERROR(1431) in \components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Graphics\SurfaceDisplayConfiguratorService.inf, line 44: Registry value 'Type' not allowed under 'HKR(Service)\'.
@@ -568,7 +568,7 @@ ERROR(2661) in \components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drive
 ERROR(2661) in \components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Miniport\qcaudminiport_Base8350.inf, line 85: Only a device with AudioProcessingObject class is allowed to write to AudioEngine\AudioProcessingObjects\{7B51F67F-7354-481D-8D44-DE3E3818839A} registry subkey.
 
 WARNING(1432) in \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Services\MTP\MTPDesktop.inf, line 2209: Registry value 'ImagePath' not allowed under 'HKLM\SYSTEM\CurrentControlset\Services\MtpUserService'.
-WARNING(1432) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 59: Registry value 'ImagePath' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
+WARNING(1432) in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Audio\Orientation\AudioService8150.inf, line 63: Registry value 'ImagePath' not allowed under 'HKLM\SYSTEM\CurrentControlSet\Services\AudioService'.
 
 WARNING(2083) in \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\WindowsPhone\WindowsPhone.inf, line 1490: Section [rcspresence.addreg] not referenced or used.
 WARNING(2083) in \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\WindowsPhone\WindowsPhone.inf, line 165: Section [utkservice_service] not referenced or used.
