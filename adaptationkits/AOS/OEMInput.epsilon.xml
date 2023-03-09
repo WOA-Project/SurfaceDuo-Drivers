@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OEMInput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2019/06/ImageUpdate">
+  <Description>AndromedaOS Andromeda855 Selfhost FFU generated with arm64.fre on rs_prerelease. Built at 20160101-0000 by WindowsDeveloper</Description>
+  <Product>Andromeda OS</Product>
+  <SV>Microsoft</SV>
+  <SOC>ANDROMEDA855</SOC>
+  <Device>Andromeda855</Device>
+  <ReleaseType>Test</ReleaseType>
+  <SupportedLanguages>
+    <UserInterface>
+        <Language>en-US</Language>
+    </UserInterface>
+    <Keyboard>
+        <Language>en-US</Language>
+    </Keyboard>
+    <Speech>
+        <Language>en-US</Language>
+    </Speech>
+  </SupportedLanguages>
+  <BootUILanguage>en-US</BootUILanguage>
+  <BootLocale>en-US</BootLocale>
+  <BuildType>fre</BuildType>
+  <Resolutions>
+    <Resolution>1350x1800</Resolution>
+  </Resolutions>
+  <AdditionalFMs>
+    <!-- Microsoft -->
+    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\AOS\FMs\MobileDeviceSpaceFM.xml</AdditionalFM>
+    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\AOS\FMs\AndromedaAppsFM.xml</AdditionalFM>
+    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\AOS\FMs\AOSNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\AOS\FMs\AndromedaSelfHostFM.xml</AdditionalFM>
+    <!-- OEM -->
+    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\AOS\FMs\OEM\Andromeda855DeviceFM.xml</AdditionalFM>
+    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\AOS\FMs\OEM\Andromeda855DeviceDriversFM.xml</AdditionalFM>
+  </AdditionalFMs>
+  <Features>
+    <Microsoft>
+        <Feature>RESOLUTION_1350x1800</Feature>
+        <Feature>CAD_CHARGING</Feature>
+        <Feature>BOOTTYPE_STATESEPARATED</Feature>
+        <Feature>SELFHOST</Feature>
+        <Feature>TELEMETRY_PRODUCTION</Feature>
+    </Microsoft>
+  </Features>
+  <AppXOptionalPackages>
+    <AppXID>Microsoft.WindowsAlarms_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.WindowsCalculator_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.WindowsCamera_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.Office.Excel_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.ZuneMusic_8wekyb3d8bbwe</AppXID>
+    <AppXID>35258MuslinApps.Jamdani_0fg48w502reqc</AppXID>
+    <AppXID>Microsoft.WindowsMaps_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.ZuneVideo_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.Office.OneNote_8wekyb3d8bbwe</AppXID>
+    <AppXID>microsoft.microsoftskydrive_8wekyb3d8bbwe</AppXID>
+    <AppXID>microsoft.windowscommunicationsapps_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.Windows.Photos_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.Office.PowerPoint_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.SkypeApp_kzf8qxf38zg5c</AppXID>
+    <AppXID>Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.BingWeather_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.BingNews_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.Office.Word_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.XboxApp_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.WindowsStore_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.CommsPhone_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.BlockandFilterglobal_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.Messaging_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.People_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.Colorie_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.zGamesTwoGo_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.Wallet_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.StorePurchaseApp_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.XboxIdentityProvider_8wekyb3d8bbwe</AppXID>
+  </AppXOptionalPackages>
+</OEMInput>
