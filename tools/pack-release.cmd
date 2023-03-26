@@ -13,6 +13,7 @@ mkdir ..\..\SurfaceDuo-Drivers-Release
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\GRAPHICS.SOC_QC8150.EPSILON_WCOS_WDDM25.zip ..\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_WCOS_WDDM25
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\GRAPHICS.SOC_QC8150.EPSILON_WCOS_WDDM26.zip ..\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_WCOS_WDDM26
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\PLATFORM.SOC_QC8150.BASE.zip ..\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE
+"%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\PLATFORM.SOC_QC8150.BATTERY.zip ..\components\QC8150\Platform\PLATFORM.SOC_QC8150.BATTERY
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\PLATFORM.SOC_QC8150.BASE_MINIMAL.zip ..\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\DEVICE.SOC_QC8350.ZETA.zip ..\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\DEVICE.SOC_QC8350.ZETA_MINIMAL.zip ..\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL
