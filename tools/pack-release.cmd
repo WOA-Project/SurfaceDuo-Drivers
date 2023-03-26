@@ -3,6 +3,8 @@ REM rmdir /Q /S ..\..\SurfaceDuo-Drivers-Release
 mkdir ..\..\SurfaceDuo-Drivers-Release
 
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\DEVICE.SOC_QC8150.EPSILON.zip ..\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON
+"%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\DEVICE.SOC_QC8150.EPSILON_TITANIUM.zip ..\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_TITANIUM
+"%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\DEVICE.SOC_QC8150.EPSILON_VIBRANIUM.zip ..\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_VIBRANIUM
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\DEVICE.SOC_QC8150.EPSILON_MINIMAL.zip ..\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\GRAPHICS.SOC_QC8150.EPSILON_DESKTOP.zip ..\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_DESKTOP
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\GRAPHICS.SOC_QC8150.EPSILON_DESKTOP_WDDM25.zip ..\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_DESKTOP_WDDM25
@@ -10,8 +12,6 @@ mkdir ..\..\SurfaceDuo-Drivers-Release
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\GRAPHICS.SOC_QC8150.EPSILON_WCOS.zip ..\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_WCOS
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\GRAPHICS.SOC_QC8150.EPSILON_WCOS_WDDM25.zip ..\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_WCOS_WDDM25
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\GRAPHICS.SOC_QC8150.EPSILON_WCOS_WDDM26.zip ..\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_WCOS_WDDM26
-"%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\PANELS.SOC_QC8150.EPSILON.zip ..\components\QC8150\Graphics\PANELS.SOC_QC8150.EPSILON
-"%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\PANELS.SOC_QC8150.EPSILON_WDDM26.zip ..\components\QC8150\Graphics\PANELS.SOC_QC8150.EPSILON_WDDM26
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\PLATFORM.SOC_QC8150.BASE.zip ..\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\PLATFORM.SOC_QC8150.BASE_MINIMAL.zip ..\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL
 "%ProgramFiles%\7-zip\7z.exe" a -tzip -r ..\..\SurfaceDuo-Drivers-Release\DEVICE.SOC_QC8350.ZETA.zip ..\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA
