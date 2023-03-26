@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2302.39
-**Released:** 02/11/2023 06:00 PM UTC+1
+## Surface Duo Drivers BSP - Version 2302.83
+**Released:** 03/26/2023 10:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -16,7 +16,7 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2302.35.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2303.83.
 
 - ⚠️ For users that are updating from an earlier release than version 2301.93, please follow the following migration guidance https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest driverupdater release as well!: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.8.0.0
 
@@ -30,42 +30,64 @@ ________________________________________________________________________________
 
 What's new?
 
-- Fixes an issue where rotation was unexpectedly missing in the 2302.35 update
+- **_New!_** Windows 10 18362/18363 is bootable again (more details below in fixed issues). Currently, it is only bootable using UEFI variants with Secure Boot disabled. This should help users get the value needed to configure calling functionality. Please note calling functionality may work but because of broken audio speaker support currently, you will not ear anything at all through the phone. Including with external audio sources.
 
-- Addresses some issues reported by Microsoft INF Verification tool.
+In order to use Windows 10 18362/18363, please use the ```\definitions\Desktop\ARM64\epsilon_ti.txt``` definition file with Driver Updater instead of the ```epsilon.txt``` definition file.
 
-- NOTE: Due to some specific changes sensor functionality may only work on upgraded devices from earlier driver versions to newer driver versions after doing a manual driver update on the device itself, using Device Manager. If this issue affects you, and it should if you upgraded from an older driver release, open device manager, right click each "Qualcomm Sensor" device, select "Update Device", then select "Pick from a list", then select "Manually select from list", then select the first Qualcomm device offered, and click next. Repeat this for all sensor devices, and then reboot the device. Sensors should now work flawlessly.
+- **_New!_** Battery Charging is now an optional component. The reasoning behind this is including it from clean installations is going to lead to a broken install in 100% of all cases. Further more, having this functionality currently will lead to unstability during sleep that will cause the device to randomly reboot.
 
+If you understand the risks behind enabling this feature, and are **not** performing a clean installation, please use the ```\definitions\Desktop\ARM64\epsilon_battery.txt``` definition file with Driver Updater instead of the ```epsilon.txt``` definition file.
 
-#### Known issues
+Please note sleep issues or crash issues with such configuration are unsupported and this functionality is only offered for Windows 11 and higher.
 
-- Calling is not working under Windows 11 Version 22H2 and higher
+- **_New!_** USB Host is not forced anymore, this means OTG dongles requiring external power from the device will once again be misdetected. The reasoning behind this is the "fix" for this particular issue broke more than it helped with. The user can however get such functionality back and out with the help of a simple reg commands:
 
-- Flipping the device however is not smooth
+```batch
+REM Force USB Host mode (identical to the older driver release of this month):
+REG ADD "HKLM\SYSTEM\CurrentControlSet\Enum\ACPI\QCOM0597\0\Device Parameters" /v RoleSwitchMode /t REG_DWORD /d 1
+```
 
-- Charging remains unavailable in Windows, please charge in Android
+```batch
+REM Restore default auto detection functionality (default behavior):
+REG ADD "HKLM\SYSTEM\CurrentControlSet\Enum\ACPI\QCOM0597\0\Device Parameters" /v RoleSwitchMode /t REG_DWORD /d 3
+```
 
-- Users upgrading from releases older than the January ones may want to clean install again.
-
-
-#### Surface Duo 2
-
-- Support for Surface Duo 2 is not provided with this release. We are trying to get an update for Surface Duo 2 as part of the next release as soon as we can.
-
-
-### Sensor Calibration Provisioning (Mandatory)
-
-
-In order to get most sensors currently working, some manual steps are required.
-Please follow the steps described at https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows-SurfaceDuo1.md#temporary-and-optional-copy-over-calibration-filesconfiguration-files-for-the-sensors
+- **_New!_** Introduces the USB NCM Function driver, allowing a shared network connection via USB FN from Surface Duo to the computer it is connected to. This is part of an ongoing work designed to enable local deployment of applications from Visual Studio to the device. This is not yet finished.
 
 
-It may also be possible to provision it using data from the SFPD partition exposed in windows. This manual step will not be required in future releases.
+Fixed issues
+
+- Addresses an issue where Microphones were not functional anymore with recent driver updates
+- Addresses an issue where clean installations would often result in a bugcheck (BAD_IMAGE_BOUNDS_CHECK)
+- Addresses an issue where plug detection was hardcoded to inserted, leading to issues with usb.
+- Addresses an issue where Windows 10 18362/18363 was not bootable anymore
+- Addresses an issue where the sensor driver would not expose the goemagnetic sensor correctly
+- Addresses an issue where the Surface Display Configuration service would fail to start on downlevel versions of Windows
+- Addresses an issue where the Audio driver would not work correctly anymore under Windows 10 18362/18363
+- Addresses an issue where the sTPM driver would not function correctly under Windows 10 18362/18363 and would prevent a successful boot of the operating system. TPM still remains broken under that operating system and will get fully fixed, at a later time.
+- Addresses an issue where the USB FN/Gadget configuration was outdated for modern versions of Windows
+- Addresses an issue where the device would fail during sleep, eventually leading to a spontaneous reboot due to an issue in CPU Core 0 sleep power management
+- Addresses an issue where the device would fail during sleep, eventually leading to a spontaneous reboot due to an issue with battery management
+- Addresses an issue where the reported driver stack version was not correct for the past few releases
+- Addresses multiple issues preventing correct handling of USB TypeC PHY notification events from the device PMIC. In other words a few USB C detection issues should now be resolved in this release.
+- Addresses an issue where the display name of the SAR device driver was malformed.
+- Addresses an issue where DRP USB role was not available anymore
+- Addresses an issue where a few UMDF drivers, notably, the AT&T remote shutdown device, the Connection Security Manager, the Surface Firmware updater were not loading correctly anymore under Windows 10
 
 
-### Known issues
+Known issues
 
-
+- Booting Windows 10 18362/18363 will lead to "static screen" effects on the right display much like driver releases from last year did on any version of Windows. A fix is being worked on for the next release.
+- The TPM driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
+- The Posture driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
+- Enhanced auto rotation is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
+- Brightness control is glitchy on both displays
+- Audio speakers are not functional
+- Dongles are not detected correctly when plugged into the USB Type C port
+- Battery charging remains unstable and not recommended
+- Updating drivers may lead to weird configurations if done on old driver releases
+- MAC Addresses do not reflect the real addresses asigned to the device
+- Bitlocker drive encryption is not available
 - USB Dongles that are not externally powered may not currently work
 - USB C Billboard devices will not currently work
 - External Display Stream support will not currently work
@@ -74,6 +96,18 @@ It may also be possible to provision it using data from the SFPD partition expos
 - Displays will not react to the device being folded over most of the time
 - Physical device data is incorrect
 - Digitizers aren't calibrated correctly
+- Flipping the device however is not smooth
+- Charging remains unavailable in Windows, please charge in Android
+- Users upgrading from releases older than the January ones may want to clean install again.
+- Booting Windows 10 18362/18363 with Secure Boot enabled is not currently supported and will result in a broken installation.
+- In some cases booting the UEFI image may lead to static screen effects on the left display. Please do not force reboot the device as it may interrupt the installation process, if ongoing, and instead please wait a few minutes
+- Windows Recovery environment lacks drivers unless Windows has performed a Feature Update at least once.
+- sRGB is not available currently, and displays will not react to ICC profiles being applied.
+
+
+#### Surface Duo 2
+
+- Support for Surface Duo 2 is not provided with this release. We are trying to get an update for Surface Duo 2 as part of the next release as soon as we can.
 
 
 ### Accessing Foldable Sensors from your applications
