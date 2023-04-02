@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FeatureManifest 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-  xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" Revision="1" SchemaVersion="1.3">
+<FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Revision="1" SchemaVersion="1.3" ReleaseType="Production" OwnerType="OEM" ID="MODERNPCANDDEV" BuildInfo="fe_release_10x.20279.1002.201214-1532" BuildID="42bb36b7-9aee-f77e-289a-158efbe711a3" OwnerName="OEM" OSVersion="10.0.20279.1002" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
     <BasePackages>
-        <!-- Include OEM universal packages, built with wm.xml files and pkggen.exe, here. -->
-        <!-- OEM Packages and related collateral should go under $(WSKWorkspaceRoot)\UniversalPackages -->
-        <!-- If used, you must run FeatureMerger on this file and use the merged FM and packages in your image! -->
         <!-- Enable Rotation support -->
         <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-Composable-ModernUX-SystemSupportedOrientations-All-Package" />
         <!-- FIP -->
