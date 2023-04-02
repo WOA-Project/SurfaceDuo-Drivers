@@ -8,8 +8,7 @@
 
       set SIGN_OEM=1
       set DIR=%CD%
-      cd "C:\Program Files (x86)\Windows Kits\10\tools\bin\i386"
-      c:
+      cd /d "C:\Program Files (x86)\Windows Kits\10\tools\bin\i386"
 
       mkdir "%DIR%\Image_%dtStamp%_Epsilon"
       imggen "%DIR%\Image_%dtStamp%_Epsilon\Flash.vhdx" "%DIR%\OEMInput.Epsilon.xml" "%DIR%" ARM64

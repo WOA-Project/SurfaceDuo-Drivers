@@ -31,19 +31,19 @@
   </Languages>
   <AdditionalFMs>
     <!-- Microsoft -->
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\WindowsCoreProductionFM.xml</AdditionalFM>
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\WindowsCoreNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\WindowsCoreInternalOnlyFM.xml</AdditionalFM>
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\ModernPCAppsFM.xml</AdditionalFM>
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\ModernPCSelfhostFM.xml</AdditionalFM>
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\ModernPCNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\WCOSCDGFM.xml</AdditionalFM>
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\MobileDeviceSpaceFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\WindowsCoreProductionFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\WindowsCoreNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\WindowsCoreInternalOnlyFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\ModernPCAppsFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\ModernPCSelfhostFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\ModernPCNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\WCOSCDGFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\MobileDeviceSpaceFM.xml</AdditionalFM>
     <!-- OEM -->
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\OEM\Andromeda855DeviceFM.xml</AdditionalFM>
-    <AdditionalFM>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\FMs\OEM\Andromeda855DeviceDriversFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\OEM\Andromeda855DeviceFM.xml</AdditionalFM>
+    <AdditionalFM>E:\FMs\OEM\Andromeda855DeviceDriversFM.xml</AdditionalFM>
   </AdditionalFMs>
-  <MachineInfoFile>F:\SurfaceDuo-Drivers-main\adaptationkits\CDG\machineinfo.epsilon.xml</MachineInfoFile>
+  <MachineInfoFile>E:\machineinfo.epsilon.xml</MachineInfoFile>
   <Features>
     <Microsoft>
       <Feature>ALLOW_CONNECTEDSTANDBY</Feature>
@@ -79,7 +79,6 @@
       <Feature>WCOS_TIMESYNC_MOBILE</Feature>
       <Feature>WCOS_TIMESYNC_NETWORK_WOW</Feature>
       <Feature>WCOS_XBOX_AUTHENTICATION</Feature>
-      <Feature>MANUFACTURING_ENABLEBASICDISPLAYFALLBACK</Feature>
     </Microsoft>
   </Features>
   <AppXOptionalPackages>

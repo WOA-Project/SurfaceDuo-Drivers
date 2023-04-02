@@ -1,7 +1,7 @@
 @echo off
-set EFIESP=I:
-set MainOS=J:
-set VIRT_EFIESP=K:
+set EFIESP=F:
+set MainOS=G:
+set VIRT_EFIESP=H:
 
 bcdedit /store %EFIESP%\efi\Microsoft\Boot\BCD /set {01de5a27-8705-40db-bad6-96fa5187d4a6} enablebootdebugpolicy   No
 bcdedit /store %EFIESP%\efi\Microsoft\Boot\BCD /set {01de5a27-8705-40db-bad6-96fa5187d4a6} enablebootorderclean    No
