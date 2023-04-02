@@ -17,10 +17,7 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FFirmwareUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Settings\Version" Name="phonereleaseversion.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Signature\DesktopSignature" Name="desktopsignature.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Signature\SSDE" Name="ssde.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\MobileBridgeUser" Name="MobileHapticsService.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_COMPONENTS\Source\Drivers\sTPM" Name="mismptf.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_COMPONENTS\Source\Settings\USBFn" Name="usbdefaults.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\EMB" Name="emb.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Customizations" Name="SurfaceDuo_MTPOEM.inf" />
@@ -178,7 +175,6 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\System" Name="qcsyscache8150.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\Transports" Name="QcTftpKmdf.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\VoltageCurrentMonitoring" Name="qcadc8150.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BATTERY" Name="qcbattminiclass8150.inf" />
     </BaseDriverPackages>
   </Drivers>
 </FeatureManifest>
