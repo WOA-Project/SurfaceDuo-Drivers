@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <OEMInput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2019/06/ImageUpdate">
   <Description>ModernPC WCOSCDG_Internal_Andromeda855 en-us image. ANDROMEDA855 OEMInput for Epsilon on arm64</Description>
   <DeviceLayoutType>ANDROMEDA855</DeviceLayoutType>
@@ -7,18 +7,10 @@
     <DevicePlatformID>Microsoft Corporation.Surface.Surface Duo.1930</DevicePlatformID>
     <DevicePlatformID>OEMB1.*.OEMB1 Product.*</DevicePlatformID>
   </DevicePlatformIDs>
-  <DeviceTargeting>
-    <DeviceTargetInfo>
-      <Manufacturer>Microsoft Corporation</Manufacturer>
-      <Family>Surface</Family>
-      <ProductName>Surface Duo</ProductName>
-      <SKUNumber>Surface_Duo_1930</SKUNumber>
-    </DeviceTargetInfo>
-  </DeviceTargeting>
   <ReleaseType>Test</ReleaseType>
   <BuildType>fre</BuildType>
   <Languages>
-    <Language Default="true">en-US</Language>
+    <Language Default="true">en-us</Language>
     <Language>da-DK</Language>
     <Language>de-DE</Language>
     <Language>en-GB</Language>
@@ -41,62 +33,55 @@
     <Language>zh-TW</Language>
   </Languages>
   <AdditionalFMs>
-    <AdditionalFM>E:\FMs\WindowsCoreProductionFM.xml</AdditionalFM>
-    <AdditionalFM>E:\FMs\WindowsCoreNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>E:\FMs\WindowsCoreInternalOnlyFM.xml</AdditionalFM>
-    <AdditionalFM>E:\FMs\ModernPCAppsFM.xml</AdditionalFM>
-    <AdditionalFM>E:\FMs\ModernPCSelfhostFM.xml</AdditionalFM>
-    <AdditionalFM>E:\FMs\ModernPCNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>E:\FMs\WCOSCDGFM.xml</AdditionalFM>
-    <AdditionalFM>E:\FMs\MobileDeviceSpaceFM.xml</AdditionalFM>
-    <!-- Add OEM FMs here. -->
-    <AdditionalFM>E:\FMs\OEM\Andromeda855DeviceFM.xml</AdditionalFM>
-    <AdditionalFM>E:\FMs\OEM\Andromeda855DeviceDriversFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WindowsCoreProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WindowsCoreNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WindowsCoreInternalOnlyFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\ModernPCAppsFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\ModernPCSelfhostFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\ModernPCNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WCOSCDGFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\MobileDeviceSpaceFM.xml</AdditionalFM>
+    <AdditionalFM>E:\Andromeda855DeviceFM.xml</AdditionalFM>
+    <AdditionalFM>E:\Andromeda855DeviceDriversFM.xml</AdditionalFM>
   </AdditionalFMs>
+  <MachineInfoFile>E:\machineinfo.epsilon.xml</MachineInfoFile>
   <Features>
     <Microsoft>
-      <Feature>ALLOW_CONNECTEDSTANDBY</Feature>
-      <Feature>CAD_CHARGING</Feature>
-      <Feature>CONTAINERHOST_TESTTOOLS</Feature>
-      <Feature>INPUT_COMPANION_COMPOSER</Feature>
-      <Feature>MODERNPC_POLICY</Feature>
-      <Feature>RESOLUTION_1440X2560</Feature>
-      <Feature>STATESEPARATION_ON</Feature>
-      <Feature>WCOS_ACCESSIBLITY_NARRATOR</Feature>
-      <Feature>WCOS_APP_CENTENNIALRUNTIME</Feature>
-      <Feature>WCOS_APP_CONTAINERAPP</Feature>
-      <Feature>WCOS_AUDIO_MMESUPPORT</Feature>
-      <Feature>WCOS_CLOUD_FILES</Feature>
-      <Feature>WCOS_CONTAINERS</Feature>
-      <Feature>WCOS_DEVICEPORTAL</Feature>
-      <Feature>WCOS_DEVICEPORTAL_WOW</Feature>
-      <Feature>WCOS_DIAGHOST_HOST</Feature>
-      <Feature>WCOS_DISPLAY_ENHANCEMENT_SERVICE</Feature>
-      <Feature>WCOS_EVENTLOG_SERVICE</Feature>
-      <Feature>WCOS_FEEDBACKHUB_DXDIAG</Feature>
-      <Feature>WCOS_MTP</Feature>
-      <Feature>WCOS_NET_CELLULAR_DATA</Feature>
-      <Feature>WCOS_NET_PROXIMITY_SERVICE</Feature>
-      <Feature>WCOS_NET_RADIO_MANAGEMENT</Feature>
-      <Feature>WCOS_OPENSSH_AUTOSTART</Feature>
-      <Feature>WCOS_POWERSHELL</Feature>
-      <Feature>WCOS_PNP_RUNTIMEDEVICEINSTALL</Feature>
-      <Feature>WCOS_SPEECH_VOICEAGENT_SUPPORT</Feature>
-      <Feature>WCOS_TESTSIGNING_ON</Feature>
-      <Feature>WCOS_TERMINAL_INTERNAL</Feature>
-      <Feature>WCOS_TIMESYNC_NETWORK</Feature>
-      <Feature>WCOS_TIMESYNC_MOBILE</Feature>
-      <Feature>WCOS_TIMESYNC_NETWORK_WOW</Feature>
-      <Feature>WCOS_XBOX_AUTHENTICATION</Feature>
+        <Feature>ALLOW_CONNECTEDSTANDBY</Feature>
+        <Feature>CAD_CHARGING</Feature>
+        <Feature>MODERNPC_POLICY</Feature>
+        <Feature>RESOLUTION_1350X1800</Feature>
+        <Feature>STATESEPARATION_ON</Feature>
+        <Feature>WCOS_ACCESSIBLITY_NARRATOR</Feature>
+        <Feature>WCOS_APP_CENTENNIALRUNTIME</Feature>
+        <Feature>WCOS_APP_WIN32SUPPORT</Feature>
+        <Feature>WCOS_AUDIO_MMESUPPORT</Feature>
+        <Feature>WCOS_CLOUD_FILES</Feature>
+        <Feature>WCOS_CONTAINERS</Feature>
+        <Feature>WCOS_DEVICEPORTAL_WOW</Feature>
+        <Feature>WCOS_DEVICEPORTAL</Feature>
+        <Feature>WCOS_DIAGHOST_HOST</Feature>
+        <Feature>WCOS_DISPLAY_ENHANCEMENT_SERVICE</Feature>
+        <Feature>WCOS_EVENTLOG_SERVICE</Feature>
+        <Feature>WCOS_FEEDBACKHUB_DXDIAG</Feature>
+        <Feature>WCOS_MTP</Feature>
+        <Feature>WCOS_NET_CELLULAR_DATA</Feature>
+        <Feature>WCOS_NET_PROXIMITY_SERVICE</Feature>
+        <Feature>WCOS_NET_RADIO_MANAGEMENT</Feature>
+        <Feature>WCOS_SPEECH_VOICEAGENT_SUPPORT</Feature>
+        <Feature>WCOS_TESTSIGNING_ON</Feature>
+        <Feature>WCOS_TIMESYNC_MOBILE</Feature>
+        <Feature>WCOS_TIMESYNC_NETWORK_WOW</Feature>
+        <Feature>WCOS_TIMESYNC_NETWORK</Feature>
+        <Feature>WCOS_XBOX_AUTHENTICATION</Feature>
     </Microsoft>
   </Features>
   <AppXOptionalPackages>
-    <AppXID>Microsoft.RemoteDesktop_8wekyb3d8bbwe</AppXID>
-    <AppXID>Microsoft.AV1VideoExtension_8wekyb3d8bbwe</AppXID>
     <AppXID>Microsoft.HEVCVideoExtension_8wekyb3d8bbwe</AppXID>
-    <AppXID>Microsoft.OneConnect_8wekyb3d8bbwe</AppXID>
-    <AppXID>Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe</AppXID>
     <AppXID>Microsoft.Messaging_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.OneConnect_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.RemoteDesktop_8wekyb3d8bbwe</AppXID>
   </AppXOptionalPackages>
   <Product>ModernPC</Product>
 </OEMInput>

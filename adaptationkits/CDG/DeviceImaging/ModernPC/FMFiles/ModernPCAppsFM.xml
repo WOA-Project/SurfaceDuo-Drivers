@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Revision="1" SchemaVersion="1.3" ReleaseType="Production" OwnerType="Microsoft" ID="MODERNPCAPPXFM" BuildInfo="fe_release_10x.20279.1002.201214-1532" BuildID="42bb36b7-9aee-f77e-289a-158efbe711a3" OwnerName="Microsoft" OSVersion="10.0.20279.1002" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+  <BasePackages>
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.ModernPCAppsFM~31bf3856ad364e35~ARM64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.ModernPCAppsFM" />
+  </BasePackages>
+  <AppX>
+    <AppXPackages>
+      <PackageFile Path="$(mspackageroot)\appx\Alarms" Name="Microsoft.WindowsAlarms_8wekyb3d8bbwe.appxbundle" ID="Microsoft.WindowsAlarms_8wekyb3d8bbwe" LicenseFile="Microsoft.WindowsAlarms_8wekyb3d8bbwe.xml" PreferStub="true" />
+      <PackageFile Path="$(mspackageroot)\appx\Calculator" Name="Microsoft.WindowsCalculator_8wekyb3d8bbwe.appxbundle" ID="Microsoft.WindowsCalculator_8wekyb3d8bbwe" LicenseFile="Microsoft.WindowsCalculator_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\Camera" Name="Microsoft.WindowsCamera_8wekyb3d8bbwe.appxbundle" ID="Microsoft.WindowsCamera_8wekyb3d8bbwe" LicenseFile="Microsoft.WindowsCamera_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\DesktopAppInstaller" Name="Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle" ID="Microsoft.DesktopAppInstaller_8wekyb3d8bbwe" LicenseFile="Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\Edge" Name="EdgeStable.msix" CPUType="amd64" ID="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe" LicenseFile="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\Edge" Name="EdgeStable_ARM64.msix" CPUType="arm64" ID="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe" LicenseFile="Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\FeedbackHub" Name="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe.appxbundle" ID="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe" LicenseFile="Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\GetHelp" Name="Microsoft.GetHelp_8wekyb3d8bbwe.appxbundle" ID="Microsoft.GetHelp_8wekyb3d8bbwe" LicenseFile="Microsoft.GetHelp_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\GrooveMusic" Name="Microsoft.ZuneMusic_8wekyb3d8bbwe.appxbundle" ID="Microsoft.ZuneMusic_8wekyb3d8bbwe" LicenseFile="Microsoft.ZuneMusic_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\HEIFExtensionArm" Name="Microsoft.HEIFImageExtension_8wekyb3d8bbwe.arm.appx" CPUType="arm;arm64" ID="Microsoft.HEIFImageExtension_8wekyb3d8bbwe" LicenseFile="Microsoft.HEIFImageExtension_8wekyb3d8bbwe.arm.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\HEIFExtensionX64" Name="Microsoft.HEIFImageExtension_8wekyb3d8bbwe.x64.appx" CPUType="amd64" ID="Microsoft.HEIFImageExtension_8wekyb3d8bbwe" LicenseFile="Microsoft.HEIFImageExtension_8wekyb3d8bbwe.x64.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\Maps" Name="Microsoft.WindowsMaps_8wekyb3d8bbwe.appxbundle" ID="Microsoft.WindowsMaps_8wekyb3d8bbwe" LicenseFile="Microsoft.WindowsMaps_8wekyb3d8bbwe.xml" PreferStub="true" />
+      <PackageFile Path="$(mspackageroot)\appx\MoviesTV" Name="Microsoft.ZuneVideo_8wekyb3d8bbwe.appxbundle" ID="Microsoft.ZuneVideo_8wekyb3d8bbwe" LicenseFile="Microsoft.ZuneVideo_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\News" Name="Microsoft.BingNews_8wekyb3d8bbwe.appxbundle" ID="Microsoft.BingNews_8wekyb3d8bbwe" LicenseFile="Microsoft.BingNews_8wekyb3d8bbwe.xml" PreferStub="true" />
+      <PackageFile Path="$(mspackageroot)\appx\OneDriveSyncClient" Name="Microsoft.OneDriveSyncClient_8wekyb3d8bbwe.msix" CPUType="amd64" ID="Microsoft.OneDriveSyncClient_8wekyb3d8bbwe" LicenseFile="Microsoft.OneDriveSyncClient_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\People" Name="Microsoft.People_8wekyb3d8bbwe.appxbundle" ID="Microsoft.People_8wekyb3d8bbwe" LicenseFile="Microsoft.People_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\Photos" Name="Microsoft.Windows.Photos_8wekyb3d8bbwe.appxbundle" ID="Microsoft.Windows.Photos_8wekyb3d8bbwe" LicenseFile="Microsoft.Windows.Photos_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\PurchaseApp" Name="Microsoft.StorePurchaseApp_8wekyb3d8bbwe.appxbundle" ID="Microsoft.StorePurchaseApp_8wekyb3d8bbwe" LicenseFile="Microsoft.StorePurchaseApp_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\RemoteDesktop" Name="Microsoft.RemoteDesktop.appxbundle" ID="Microsoft.RemoteDesktop_8wekyb3d8bbwe" LicenseFile="microsoft.remotedesktop.xml" Optional="true" />
+      <PackageFile Path="$(mspackageroot)\appx\ScreenSketch" Name="Microsoft.ScreenSketch_8wekyb3d8bbwe.appxbundle" ID="Microsoft.ScreenSketch_8wekyb3d8bbwe" LicenseFile="Microsoft.ScreenSketch_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\Tips" Name="Microsoft.Getstarted_8wekyb3d8bbwe.appxbundle" ID="Microsoft.Getstarted_8wekyb3d8bbwe" LicenseFile="Microsoft.Getstarted_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\Todos" Name="Microsoft.Todos_8wekyb3d8bbwe.appxbundle" ID="Microsoft.Todos_8wekyb3d8bbwe" LicenseFile="Microsoft.Todos_8wekyb3d8bbwe.xml" PreferStub="true" />
+      <PackageFile Path="$(mspackageroot)\appx\VoiceRecorder" Name="Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe.appxbundle" ID="Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe" LicenseFile="Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe.xml" PreferStub="true" />
+      <PackageFile Path="$(mspackageroot)\appx\VP9ExtensionsArm" Name="Microsoft.VP9VideoExtensions_8wekyb3d8bbwe.arm.appx" CPUType="arm;arm64" ID="Microsoft.VP9VideoExtensions_8wekyb3d8bbwe" LicenseFile="Microsoft.VP9VideoExtensions_8wekyb3d8bbwe.arm.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\VP9ExtensionsX64" Name="Microsoft.VP9VideoExtensions_8wekyb3d8bbwe.x64.appx" CPUType="amd64" ID="Microsoft.VP9VideoExtensions_8wekyb3d8bbwe" LicenseFile="Microsoft.VP9VideoExtensions_8wekyb3d8bbwe.x64.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\Weather" Name="Microsoft.BingWeather_8wekyb3d8bbwe.appxbundle" ID="Microsoft.BingWeather_8wekyb3d8bbwe" LicenseFile="Microsoft.BingWeather_8wekyb3d8bbwe.xml" PreferStub="true" />
+      <PackageFile Path="$(mspackageroot)\appx\WebMediaExtensions" Name="Microsoft.WebMediaExtensions_8wekyb3d8bbwe.appxbundle" ID="Microsoft.WebMediaExtensions_8wekyb3d8bbwe" LicenseFile="Microsoft.WebMediaExtensions_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\WebpExtensionArm" Name="Microsoft.WebpImageExtension_8wekyb3d8bbwe.arm.appx" CPUType="arm;arm64" ID="Microsoft.WebpImageExtension_8wekyb3d8bbwe" LicenseFile="Microsoft.WebpImageExtension_8wekyb3d8bbwe.arm.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\WebpExtensionX64" Name="Microsoft.WebpImageExtension_8wekyb3d8bbwe.x64.appx" CPUType="amd64" ID="Microsoft.WebpImageExtension_8wekyb3d8bbwe" LicenseFile="Microsoft.WebpImageExtension_8wekyb3d8bbwe.x64.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\WinStore" Name="Microsoft.WindowsStore_8wekyb3d8bbwe.appxbundle" ID="Microsoft.WindowsStore_8wekyb3d8bbwe" LicenseFile="Microsoft.WindowsStore_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\XBoxIdentityProvider" Name="Microsoft.XboxIdentityProvider_8wekyb3d8bbwe.appxbundle" ID="Microsoft.XboxIdentityProvider_8wekyb3d8bbwe" LicenseFile="Microsoft.XboxIdentityProvider_8wekyb3d8bbwe.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\AV1ExtensionX64" Name="Microsoft.AV1VideoExtension_8wekyb3d8bbwe.x64.appx" CPUType="amd64" ID="Microsoft.AV1VideoExtension_8wekyb3d8bbwe" LicenseFile="Microsoft.AV1VideoExtension_8wekyb3d8bbwe.x64.xml" Optional="true" />
+      <PackageFile Path="$(mspackageroot)\appx\HEVCExtensionArm" Name="Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.arm.appx" CPUType="arm;arm64" ID="Microsoft.HEVCVideoExtension_8wekyb3d8bbwe" LicenseFile="Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.arm.xml" Optional="true" />
+      <PackageFile Path="$(mspackageroot)\appx\HEVCExtensionX64" Name="Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.appx" CPUType="amd64" ID="Microsoft.HEVCVideoExtension_8wekyb3d8bbwe" LicenseFile="Microsoft.HEVCVideoExtension_8wekyb3d8bbwe.x64.xml" Optional="true" />
+      <PackageFile Path="$(mspackageroot)\appx\OneConnect" Name="Microsoft.OneConnect_8wekyb3d8bbwe.appxbundle" ID="Microsoft.OneConnect_8wekyb3d8bbwe" LicenseFile="Microsoft.OneConnect_8wekyb3d8bbwe.xml" Optional="true" />
+      <PackageFile Path="$(mspackageroot)\appx\MPEG2ExtensionArm" Name="Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe.arm.appx" CPUType="arm;arm64" ID="Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe" LicenseFile="Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe.arm.xml" Optional="true" />
+      <PackageFile Path="$(mspackageroot)\appx\MPEG2ExtensionX64" Name="Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe.x64.appx" CPUType="amd64" ID="Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe" LicenseFile="Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe.x64.xml" Optional="true" />
+      <PackageFile Path="$(mspackageroot)\appx\Messaging_Desktop" Name="Microsoft.Messaging_8wekyb3d8bbwe.appxbundle" ID="Microsoft.Messaging_8wekyb3d8bbwe" LicenseFile="Microsoft.Messaging_8wekyb3d8bbwe.xml" Optional="true" />
+      <PackageFile Path="$(mspackageroot)\appx\microsoftwindowsuxcdginbox" Name="MicrosoftWindows.Windows10X.CBS.appx" ID="MicrosoftWindows.Windows10X_cw5n1h2txyewy" LicenseFile="6ddf9d19e2484569a0fabbaa7455e2c8_License1.xml" />
+      <PackageFile Path="$(mspackageroot)\appx\Edge" Name="WebView2RuntimeStable.msix" CPUType="amd64" ID="Microsoft.WebView2Runtime.Stable_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\Edge" Name="WebView2RuntimeStable_ARM64.msix" CPUType="arm64" ID="Microsoft.WebView2Runtime.Stable_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.VCLibs.x86.14.00.appx" CPUType="x86;amd64" ID="Microsoft.VCLibs.140.00_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.VCLibs.arm.14.00.appx" CPUType="arm;arm64" ID="Microsoft.VCLibs.140.00_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.VCLibs.x64.14.00.appx" CPUType="amd64" ID="Microsoft.VCLibs.140.00_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.VCLibs.arm64.14.00.appx" CPUType="arm64" ID="Microsoft.VCLibs.140.00_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.VCLibs.x86.14.00.Desktop.appx" CPUType="x86;amd64" ID="Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.VCLibs.arm.14.00.Desktop.appx" CPUType="arm;arm64" ID="Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.VCLibs.x64.14.00.Desktop.appx" CPUType="amd64" ID="Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.VCLibs.arm64.14.00.Desktop.appx" CPUType="arm64" ID="Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x86.1.3.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Framework.1.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.arm.1.3.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Framework.1.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x64.1.3.appx" CPUType="amd64" ID="Microsoft.NET.Native.Framework.1.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x86.1.6.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Framework.1.6_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.arm.1.6.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Framework.1.6_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x64.1.6.appx" CPUType="amd64" ID="Microsoft.NET.Native.Framework.1.6_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x86.1.7.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Framework.1.7_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.arm.1.7.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Framework.1.7_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x64.1.7.appx" CPUType="amd64" ID="Microsoft.NET.Native.Framework.1.7_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x86.2.1.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Framework.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.arm.2.1.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Framework.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x86.2.2.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Framework.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.arm.2.2.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Framework.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x64.2.2.appx" CPUType="amd64" ID="Microsoft.NET.Native.Framework.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.arm64.2.2.appx" CPUType="arm64" ID="Microsoft.NET.Native.Framework.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x86.1.3.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Runtime.1.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.arm.1.3.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Runtime.1.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x64.1.3.appx" CPUType="amd64" ID="Microsoft.NET.Native.Runtime.1.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x86.1.4.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Runtime.1.4_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.arm.1.4.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Runtime.1.4_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x64.1.4.appx" CPUType="amd64" ID="Microsoft.NET.Native.Runtime.1.4_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x86.1.6.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Runtime.1.6_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.arm.1.6.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Runtime.1.6_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x64.1.6.appx" CPUType="amd64" ID="Microsoft.NET.Native.Runtime.1.6_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x86.1.7.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Runtime.1.7_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.arm.1.7.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Runtime.1.7_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x64.1.7.appx" CPUType="amd64" ID="Microsoft.NET.Native.Runtime.1.7_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Framework.x64.2.1.appx" CPUType="amd64" ID="Microsoft.NET.Native.Framework.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x86.2.1.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Runtime.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.arm.2.1.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Runtime.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x86.2.2.appx" CPUType="x86;amd64" ID="Microsoft.NET.Native.Runtime.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.arm.2.2.appx" CPUType="arm;arm64" ID="Microsoft.NET.Native.Runtime.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x64.2.1.appx" CPUType="amd64" ID="Microsoft.NET.Native.Runtime.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.x64.2.2.appx" CPUType="amd64" ID="Microsoft.NET.Native.Runtime.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.NET.Native.Runtime.arm64.2.2.appx" CPUType="arm64" ID="Microsoft.NET.Native.Runtime.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.Advertising.Xaml.x86.appx" CPUType="x86;amd64" ID="Microsoft.Advertising.Xaml_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.Advertising.Xaml.arm.appx" CPUType="arm;arm64" ID="Microsoft.Advertising.Xaml_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.Advertising.Xaml.x64.appx" CPUType="amd64" ID="Microsoft.Advertising.Xaml_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x86.2.0.appx" CPUType="x86;amd64" ID="Microsoft.UI.Xaml.2.0_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm.2.0.appx" CPUType="arm;arm64" ID="Microsoft.UI.Xaml.2.0_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x64.2.0.appx" CPUType="amd64" ID="Microsoft.UI.Xaml.2.0_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm64.2.0.appx" CPUType="arm64" ID="Microsoft.UI.Xaml.2.0_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x86.2.1.appx" CPUType="x86;amd64" ID="Microsoft.UI.Xaml.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm.2.1.appx" CPUType="arm;arm64" ID="Microsoft.UI.Xaml.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x64.2.1.appx" CPUType="amd64" ID="Microsoft.UI.Xaml.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm64.2.1.appx" CPUType="arm64" ID="Microsoft.UI.Xaml.2.1_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x86.2.2.appx" CPUType="x86;amd64" ID="Microsoft.UI.Xaml.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm.2.2.appx" CPUType="arm;arm64" ID="Microsoft.UI.Xaml.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x64.2.2.appx" CPUType="amd64" ID="Microsoft.UI.Xaml.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm64.2.2.appx" CPUType="arm64" ID="Microsoft.UI.Xaml.2.2_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x86.2.3.appx" CPUType="x86;amd64" ID="Microsoft.UI.Xaml.2.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm.2.3.appx" CPUType="arm;arm64" ID="Microsoft.UI.Xaml.2.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x64.2.3.appx" CPUType="amd64" ID="Microsoft.UI.Xaml.2.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm64.2.3.appx" CPUType="arm64" ID="Microsoft.UI.Xaml.2.3_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x86.2.4.appx" CPUType="x86;amd64" ID="Microsoft.UI.Xaml.2.4_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm.2.4.appx" CPUType="arm;arm64" ID="Microsoft.UI.Xaml.2.4_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.x64.2.4.appx" CPUType="amd64" ID="Microsoft.UI.Xaml.2.4_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" Name="Microsoft.UI.Xaml.arm64.2.4.appx" CPUType="arm64" ID="Microsoft.UI.Xaml.2.4_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\RemoteDesktop" Name="Microsoft.VCLibs.x86.12.00.Universal.appx" CPUType="x86;amd64" ID="Microsoft.VCLibs.120.00.Universal_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\RemoteDesktop" Name="Microsoft.VCLibs.arm.12.00.Universal.appx" CPUType="arm;arm64" ID="Microsoft.VCLibs.120.00.Universal_8wekyb3d8bbwe" />
+      <PackageFile Path="$(mspackageroot)\appx\RemoteDesktop" Name="Microsoft.VCLibs.x64.12.00.Universal.appx" CPUType="amd64" ID="Microsoft.VCLibs.120.00.Universal_8wekyb3d8bbwe" />
+    </AppXPackages>
+    <ConditionalAppXPackages>
+      <ConditionalAppXPackage UpdateAction="Remove" FMID="MODERNPCAPPXFM" FamilyName="MicrosoftWindows.FileExplorer.Proto_cw5n1h2txyewy">
+        <Condition Type="AppX" Name="MicrosoftWindows.FileExplorer.Proto_cw5n1h2txyewy" FMID="MODERNPCAPPXFM" />
+      </ConditionalAppXPackage>
+      <ConditionalAppXPackage UpdateAction="Remove" FMID="MODERNPCAPPXFM" FamilyName="MicrosoftWindows.WCOSCDG.Proto_cw5n1h2txyewy">
+        <Condition Type="AppX" Name="MicrosoftWindows.WCOSCDG.Proto_cw5n1h2txyewy" FMID="MODERNPCAPPXFM" />
+      </ConditionalAppXPackage>
+      <ConditionalAppXPackage UpdateAction="Add" FMID="MODERNPCAPPXFM" FamilyName="MicrosoftWindows.Windows10X_cw5n1h2txyewy">
+        <Condition Type="AppX" FeatureStatus="NotInstalled" Name="MicrosoftWindows.Windows10X_cw5n1h2txyewy" FMID="MODERNPCAPPXFM" />
+      </ConditionalAppXPackage>
+    </ConditionalAppXPackages>
+  </AppX>
+</FeatureManifest>
