@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2302.83
-**Released:** 03/26/2023 10:00 PM UTC+2
+## Surface Duo Drivers BSP - Version 2305.25
+**Released:** 05/08/2023 10:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -16,7 +16,7 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2303.83.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2305.25.
 
 - ⚠️ For users that are updating from an earlier release than version 2301.93, please follow the following migration guidance https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest driverupdater release as well!: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.8.0.0
 
@@ -30,49 +30,56 @@ ________________________________________________________________________________
 
 What's new?
 
-- **_New!_** Windows 10 18362/18363 is bootable again (more details below in fixed issues). Currently, it is only bootable using UEFI variants with Secure Boot disabled. This should help users get the value needed to configure calling functionality. Please note calling functionality may work but because of broken audio speaker support currently, you will not ear anything at all through the phone. Including with external audio sources.
+- **_New!_** Updated a bunch of drivers with stability and enhancements. Notably, you will now notice the GPU driver and Display stack is much more stable, brightness issues are gone, and OpenGL based applications run much better than they used to.
 
-In order to use Windows 10 18362/18363, please use the ```\definitions\Desktop\ARM64\epsilon_ti.txt``` definition file with Driver Updater instead of the ```epsilon.txt``` definition file.
+- **_New!_** Started reworking Camera Subsystem. No new apparent functionality is enabled as of this release yet.
 
-- **_New!_** Battery Charging is now an optional component. The reasoning behind this is including it from clean installations is going to lead to a broken install in 100% of all cases. Further more, having this functionality currently will lead to unstability during sleep that will cause the device to randomly reboot.
+- **_New!_** Started reworking Sensors subsystem. No new apparent functionality is enabled as of this release yet.
 
-If you understand the risks behind enabling this feature, and are **not** performing a clean installation, please use the ```\definitions\Desktop\ARM64\epsilon_battery.txt``` definition file with Driver Updater instead of the ```epsilon.txt``` definition file.
+- **_New!_** Started reworking Audio subsystem. No new apparent functionality is enabled as of this release yet.
 
-Please note sleep issues or crash issues with such configuration are unsupported and this functionality is only offered for Windows 11 and higher.
+- **_New!_** Started reworking Battery subsystem. No new apparent functionality is enabled as of this release yet.
 
-- **_New!_** USB Host is not forced anymore, this means OTG dongles requiring external power from the device will once again be misdetected. The reasoning behind this is the "fix" for this particular issue broke more than it helped with. The user can however get such functionality back and out with the help of a simple reg commands:
+- **_New!_** Added a debounce delay for the power button to prevent accidental quick wake ups of the display continuously.
 
-```batch
-REM Force USB Host mode (identical to the older driver release of this month):
-REG ADD "HKLM\SYSTEM\CurrentControlSet\Enum\ACPI\QCOM0597\0\Device Parameters" /v RoleSwitchMode /t REG_DWORD /d 1
-```
+- **_New!_** You can now transfer files in and out of the device again using USB MTP.
 
-```batch
-REM Restore default auto detection functionality (default behavior):
-REG ADD "HKLM\SYSTEM\CurrentControlSet\Enum\ACPI\QCOM0597\0\Device Parameters" /v RoleSwitchMode /t REG_DWORD /d 3
-```
+- **_New!_** The display scaling now defaults to 250% for your eye comfort.
 
-- **_New!_** Introduces the USB NCM Function driver, allowing a shared network connection via USB FN from Surface Duo to the computer it is connected to. This is part of an ongoing work designed to enable local deployment of applications from Visual Studio to the device. This is not yet finished.
+- **_New!_** Applications such as Phone Link will now work again under Windows Zinc Semester builds (ZN_RELEASE).
+
+- **_New!_** Windows Zinc Semester builds are now installable again.
+
+- **_New!_** This update resolves some issues impacting WiFi connectivity and reliability on WiFi 6 networks.
+
+- **_New!_** This update resolves a crash issue under Windows 11 Build 22000 and lower.
+
+- **_New!_** Further Enhancements to Audio Listener Voice activation models for voice assistants such as Alexa or Cortana.
+
+- **_New!_** This update resolves display refresh rate and syncing issues with both screens in tandem.
+
+- **_New!_** This update resolves key issues with Windows Core OS support.
+
+- **_Important!_** Some changes/bug fixes had to be delayed for this release, a newer version will be released mid this week alongside a new flashing method and WCOS ffus. Stay tuned!
+
+- **_Important!_** Surface Duo 2 is now supported again but was untested. Make sure everything is up to date beforehand (UEFI notably)
+
+- **_Important!_** Charging has been permanently removed until further notice. Installing it will not do anything anymore.
+
+- **_Important!_** Sensor functionality and/or calls may be affected under ZN_RELEASE Currently, we're working on a fix.
+
+- **_Important!_** New definition files are present, here's a summary of how to proceed:
 
 
-Fixed issues
+I am running a build < 17763, you are unsupported.
 
-- Addresses an issue where Microphones were not functional anymore with recent driver updates
-- Addresses an issue where clean installations would often result in a bugcheck (BAD_IMAGE_BOUNDS_CHECK)
-- Addresses an issue where plug detection was hardcoded to inserted, leading to issues with usb.
-- Addresses an issue where Windows 10 18362/18363 was not bootable anymore
-- Addresses an issue where the sensor driver would not expose the goemagnetic sensor correctly
-- Addresses an issue where the Surface Display Configuration service would fail to start on downlevel versions of Windows
-- Addresses an issue where the Audio driver would not work correctly anymore under Windows 10 18362/18363
-- Addresses an issue where the sTPM driver would not function correctly under Windows 10 18362/18363 and would prevent a successful boot of the operating system. TPM still remains broken under that operating system and will get fully fixed, at a later time.
-- Addresses an issue where the USB FN/Gadget configuration was outdated for modern versions of Windows
-- Addresses an issue where the device would fail during sleep, eventually leading to a spontaneous reboot due to an issue in CPU Core 0 sleep power management
-- Addresses an issue where the device would fail during sleep, eventually leading to a spontaneous reboot due to an issue with battery management
-- Addresses an issue where the reported driver stack version was not correct for the past few releases
-- Addresses multiple issues preventing correct handling of USB TypeC PHY notification events from the device PMIC. In other words a few USB C detection issues should now be resolved in this release.
-- Addresses an issue where the display name of the SAR device driver was malformed.
-- Addresses an issue where DRP USB role was not available anymore
-- Addresses an issue where a few UMDF drivers, notably, the AT&T remote shutdown device, the Connection Security Manager, the Surface Firmware updater were not loading correctly anymore under Windows 10
+I am running a build < 18362, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_rs5.txt```
+
+I am running a build < 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ti.txt```
+
+I am running a build < 25346, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_vb.txt```
+
+I am running a build >= 25346, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_zn.txt```
 
 
 Known issues
