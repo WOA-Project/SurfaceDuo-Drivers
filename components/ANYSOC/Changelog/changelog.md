@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2305.25
-**Released:** 05/08/2023 10:00 PM UTC+2
+## Surface Duo Drivers BSP - Version 2305.45
+**Released:** 05/14/2023 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -16,7 +16,7 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2305.25.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2305.45.
 
 - ⚠️ For users that are updating from an earlier release than version 2301.93, please follow the following migration guidance https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest driverupdater release as well!: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.8.0.0
 
@@ -30,43 +30,31 @@ ________________________________________________________________________________
 
 What's new?
 
-- **_New!_** Updated a bunch of drivers with stability and enhancements. Notably, you will now notice the GPU driver and Display stack is much more stable, brightness issues are gone, and OpenGL based applications run much better than they used to.
+- **_New!_** Surface Integration System Service and Drivers are now functional under Windows. Expect more soon with these. (You can already download the Surface App from the store)
 
-- **_New!_** Started reworking Camera Subsystem. No new apparent functionality is enabled as of this release yet.
+- **_New!_** Enables More temperature sensors to be accessible from Windows, including the ones in both battery packs
 
-- **_New!_** Started reworking Sensors subsystem. No new apparent functionality is enabled as of this release yet.
+- **_New!_** Reworked Audio Topology to enable Cellular audio channels
 
-- **_New!_** Started reworking Audio subsystem. No new apparent functionality is enabled as of this release yet.
+- **_New!_** Improved stability regarding Lid Angle sensor events when the device is closed
 
-- **_New!_** Started reworking Battery subsystem. No new apparent functionality is enabled as of this release yet.
+- **_Fix!_** Addresses an issue impacting Surface Thunderbolt(TM) 4 Dock functionality with Surface Duo first Generation devices
 
-- **_New!_** Added a debounce delay for the power button to prevent accidental quick wake ups of the display continuously.
+- **_Fix!_** Addresses an issue where touch would stop working after a few minutes of inactivity 
 
-- **_New!_** You can now transfer files in and out of the device again using USB MTP.
+- **_Fix!_** Addresses an issue where device internal topology was incorrect leading to issues with displays
 
-- **_New!_** The display scaling now defaults to 250% for your eye comfort.
+- **_Fix!_** Addresses an issue where auto rotation stopped working in the past two releases
 
-- **_New!_** Applications such as Phone Link will now work again under Windows Zinc Semester builds (ZN_RELEASE).
+- **_Fix!_** Addresses an issue where fold/flip/posture sensors stopped working in the past two releases
 
-- **_New!_** Windows Zinc Semester builds are now installable again.
+- **_Soon!_** More work going on with Audio/Camera/Battery, still nothing to share
 
-- **_New!_** This update resolves some issues impacting WiFi connectivity and reliability on WiFi 6 networks.
-
-- **_New!_** This update resolves a crash issue under Windows 11 Build 22000 and lower.
-
-- **_New!_** Further Enhancements to Audio Listener Voice activation models for voice assistants such as Alexa or Cortana.
-
-- **_New!_** This update resolves display refresh rate and syncing issues with both screens in tandem.
-
-- **_New!_** This update resolves key issues with Windows Core OS support.
-
-- **_Important!_** Some changes/bug fixes had to be delayed for this release, a newer version will be released mid this week alongside a new flashing method and WCOS ffus. Stay tuned!
+- **_Important!_** Some changes/bug fixes had to be delayed for this release, a newer version will be released mid next week alongside a new flashing method and WCOS ffus. Stay tuned!
 
 - **_Important!_** Surface Duo 2 is now supported again but was untested. Make sure everything is up to date beforehand (UEFI notably)
 
 - **_Important!_** Charging has been permanently removed until further notice. Installing it will not do anything anymore.
-
-- **_Important!_** Sensor functionality and/or calls may be affected under ZN_RELEASE Currently, we're working on a fix.
 
 - **_Important!_** New definition files are present, here's a summary of how to proceed:
 
@@ -77,9 +65,7 @@ I am running a build < 18362, use Driver Updater with ```\definitions\Desktop\AR
 
 I am running a build < 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ti.txt```
 
-I am running a build < 25346, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_vb.txt```
-
-I am running a build >= 25346, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_zn.txt```
+I am running a build >= 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_vb.txt```
 
 
 Known issues
