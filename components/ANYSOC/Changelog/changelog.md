@@ -18,7 +18,7 @@ ________________________________________________________________________________
 
 - ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2305.45.
 
-- ⚠️ For users that are updating from an earlier release than version 2301.93, please follow the following migration guidance https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest driverupdater release as well!: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.8.0.0
+- ⚠️ For users that are updating from an earlier release than version 2301.93, please follow the following migration guidance https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest driverupdater release as well!: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0
 
 - ⚠️ If you need dual boot, you will have to make your own image, please follow this guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/DualBoot.md
 
@@ -65,7 +65,7 @@ I am running a build < 18362, use Driver Updater with ```\definitions\Desktop\AR
 
 I am running a build < 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ti.txt```
 
-I am running a build >= 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_vb.txt```
+I am running a build >= 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon.txt```
 
 
 Known issues
