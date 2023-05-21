@@ -1,0 +1,95 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File:               SurfaceTouchPanelAlignment.inf
+;
+; Description:        Driver installation file for SurfaceFwUpdate.
+;
+; Copyright (C) 2018 Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+Class = Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider=%ManufacturerName%
+ExtensionId = {D27D6EC8-AD5C-4A9A-A3F8-F115EA49797B}
+CatalogFile=SurfaceTouchPanelAlignment.cat
+DriverVer = 05/21/2023,1.0.0.0
+PnPLockDown=1
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+;SurfaceTouchPanelAlignment.sys=1
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTarm64
+
+[Standard.NTarm64]
+%SurfaceTouchPanelAlignment.DeviceDesc%=SurfaceTouchPanelAlignment, HID\MSHW0162&Col02
+%SurfaceTouchPanelAlignment.DeviceDesc%=SurfaceTouchPanelAlignment, HID\MSHW0162&Col03
+
+; =================== UMDF Device ==================================
+
+[SurfaceTouchPanelAlignment.NT]
+CopyFiles=SurfaceTouchPanelAlignment.CopyFiles
+
+[SurfaceTouchPanelAlignment.CopyFiles]
+;SurfaceTouchPanelAlignment.sys
+
+[DestinationDirs]
+SurfaceTouchPanelAlignment.CopyFiles=13 ; copy to DriverStore
+
+
+[SurfaceTouchPanelAlignment.NT.HW]
+AddReg=SurfaceTouchPanelAlignment_HWAddReg
+
+[SurfaceTouchPanelAlignment_HWAddReg]
+HKR,Heat\VendorSpecific,LeftShift,REG_SZ,"11"
+HKR,Heat,RightShift,REG_SZ,"22"
+
+
+[SurfaceTouchPanelAlignment.NT.Services]
+;AddService=SurfaceTouchPanelAlignment,0x000001f8,SurfaceTouchPanelAlignment_ServiceInstall
+
+
+[SurfaceTouchPanelAlignment_ServiceInstall]
+UmdfLibraryVersion=$UMDFVERSION$ 
+DisplayName   = %ServiceDisplayName%
+Description   = %SurfaceTouchPanelAlignment.DeviceDesc%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %13%\SurfaceTouchPanelAlignment.sys
+
+;[SurfacePenBleLcAddrAdaptationDriver_Device.NT.Wdf]
+;KmdfService =  SurfaceTouchPanelAlignment
+
+[SurfaceTouchPanelAlignment.NT.Filters]
+AddFilter=SurfaceTouchPanelAlignment,,SurfaceTouchPanelAlignment_Filter
+
+[SurfaceTouchPanelAlignment_Filter]
+FilterPosition = Upper
+
+; =================== Generic ==================================
+
+[Strings]
+ManufacturerName="Surface"
+DiskName = "SurfaceTouchPanelAlignment Driver Installation Disk"
+WudfRdDisplayName="Windows Driver Foundation - User-mode Driver Framework Reflector"
+ServiceDisplayName="Surface Touch Panel alignment driver"
+SurfaceTouchPanelAlignment.DeviceDesc= "Surface Touch Panel Alignment Driver"
+
+;
+; Non-localizable
+;
+NULL_DRIVER                 = 2
+SPSVCINST_ASSOCSERVICE      = 0x00000002
+SERVICE_KERNEL_DRIVER       = 1
+SERVICE_BOOT_START          = 0
+SERVICE_SYSTEM_START        = 1
+SERVICE_AUTO_START          = 2
+SERVICE_DEMAND_START        = 3
+SERVICE_ERROR_NORMAL        = 1
+SERVICE_ERROR_IGNORE        = 0
+SERVICE_WIN32_SHARE_PROCESS = 0x00000020
