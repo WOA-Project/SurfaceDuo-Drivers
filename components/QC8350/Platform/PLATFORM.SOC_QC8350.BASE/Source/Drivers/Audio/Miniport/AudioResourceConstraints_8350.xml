@@ -15,7 +15,15 @@
       <Consumption>2</Consumption> <!-- Global limitation on MLHWRestrictions streams -->
     </Resource>	
   </Limits>
- 
+  
+  <ExclusiveEndpoints>
+    <Endpoint>
+      <HWID>AUCD\QCOM1A29</HWID>
+      <TopologyName>TopologyExternalDisplay*</TopologyName>
+      <PinId>1</PinId>
+    </Endpoint>
+  </ExclusiveEndpoints>
+  
   <ResourceConsumer>
     <!-- Active Phone call -->
     <ConsumerInfo>
