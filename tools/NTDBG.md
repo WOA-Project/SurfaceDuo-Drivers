@@ -2,7 +2,7 @@
 
 ## Requirements:
 
-- UEFI complicant firmware
+- UEFI compliant firmware
 - SecureBoot off in the UEFI firmware
 - ACPI 5.0 compliant firmware
 - Windows installed on the UFS
@@ -31,7 +31,7 @@
 
 ## Requirements:
 
-- UEFI complicant firmware
+- UEFI compliant firmware
 - SecureBoot off in the UEFI firmware
 - ACPI 5.0 compliant firmware
 - Windows installed on the UFS
