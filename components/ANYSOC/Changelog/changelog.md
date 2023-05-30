@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2305.45
-**Released:** 05/14/2023 11:00 PM UTC+2
+## Surface Duo Drivers BSP - Version 2305.90 (Paracheirodon innesi)
+**Released:** 05/31/2023 00:00 PM UTC+1
 
 **Quality:** Preview
 
@@ -16,7 +16,7 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2305.45.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2305.90.
 
 - ⚠️ For users that are updating from an earlier release than version 2301.93, please follow the following migration guidance https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest driverupdater release as well!: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0
 
@@ -30,31 +30,9 @@ ________________________________________________________________________________
 
 What's new?
 
-- **_New!_** Surface Integration System Service and Drivers are now functional under Windows. Expect more soon with these. (You can already download the Surface App from the store)
+- This update contains a lot of changes that would be too long to explain. Notably more fixes for postures not working after sleep, further stability improvements, and as another os would put it:
 
-- **_New!_** Enables More temperature sensors to be accessible from Windows, including the ones in both battery packs
-
-- **_New!_** Reworked Audio Topology to enable Cellular audio channels
-
-- **_New!_** Improved stability regarding Lid Angle sensor events when the device is closed
-
-- **_Fix!_** Addresses an issue impacting Surface Thunderbolt(TM) 4 Dock functionality with Surface Duo first Generation devices
-
-- **_Fix!_** Addresses an issue where touch would stop working after a few minutes of inactivity 
-
-- **_Fix!_** Addresses an issue where device internal topology was incorrect leading to issues with displays
-
-- **_Fix!_** Addresses an issue where auto rotation stopped working in the past two releases
-
-- **_Fix!_** Addresses an issue where fold/flip/posture sensors stopped working in the past two releases
-
-- **_Soon!_** More work going on with Audio/Camera/Battery, still nothing to share
-
-- **_Important!_** Some changes/bug fixes had to be delayed for this release, a newer version will be released mid next week alongside a new flashing method and WCOS ffus. Stay tuned!
-
-- **_Important!_** Surface Duo 2 is now supported again but was untested. Make sure everything is up to date beforehand (UEFI notably)
-
-- **_Important!_** Charging has been permanently removed until further notice. Installing it will not do anything anymore.
+- General system stability improvements to enhance the user's experience.
 
 - **_Important!_** New definition files are present, here's a summary of how to proceed:
 
@@ -100,7 +78,7 @@ Known issues
 
 #### Surface Duo 2
 
-- Support for Surface Duo 2 is not provided with this release. We are trying to get an update for Surface Duo 2 as part of the next release as soon as we can.
+- A lot. Too long to list, Surface Duo 2 is still a Proof of Concept (PoC), don't expect much.
 
 
 ### Accessing Foldable Sensors from your applications
