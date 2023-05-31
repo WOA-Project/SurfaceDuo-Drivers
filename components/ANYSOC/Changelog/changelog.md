@@ -16,13 +16,13 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater or equal to 2305.90.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2305.90.
 
-- ⚠️ For users that are updating from an earlier release than version 2301.93, please follow the following migration guidance https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest driverupdater release as well!: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0
+- ⚠️ For users who are updating from an earlier release than version 2301.93, please follow the following migration guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest DriverUpdater release as well: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0
 
-- ⚠️ If you need dual boot, you will have to make your own image, please follow this guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/DualBoot.md
+- ⚠️ If you need dual boot, you will have to make your own image. Please follow this guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/DualBoot.md
 
-- ⚠️ You need to backup your original boot image for OTAs to work with Android. When you'll get an OTA, you will want to revert your boot image for the update to work or you'll have to use an official OTA recovery package.
+- ⚠️ You need to backup your original boot image for OTAs to work with Android. When you get an OTA, you will want to revert your boot image for the update to work, or you'll have to use an official OTA recovery package.
 
 ### Changelog
 
@@ -48,30 +48,30 @@ I am running a build >= 19041, use Driver Updater with ```\definitions\Desktop\A
 
 Known issues
 
-- Booting Windows 10 18362/18363 will lead to "static screen" effects on the right display much like driver releases from last year did on any version of Windows. A fix is being worked on for the next release.
+- Booting Windows 10 18362/18363 will lead to "static screen" effects on the right display, much like driver releases from last year did on any version of Windows. A fix is being worked on for the next release.
 - The TPM driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
 - The Posture driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
 - Enhanced auto rotation is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
-- Brightness control is glitchy on both displays
-- Audio speakers are not functional
-- Dongles are not detected correctly when plugged into the USB Type C port
-- Battery charging remains unstable and not recommended
-- Updating drivers may lead to weird configurations if done on old driver releases
-- MAC Addresses do not reflect the real addresses asigned to the device
-- Bitlocker drive encryption is not available
-- USB Dongles that are not externally powered may not currently work
-- USB C Billboard devices will not currently work
-- External Display Stream support will not currently work
-- Additional information provided by the posture sensor is currently not available for public consumption, this includes peek events.
-- Digitizers will not react to the device being folded over
-- Displays will not react to the device being folded over most of the time
-- Physical device data is incorrect
-- Digitizers aren't calibrated correctly
-- Flipping the device however is not smooth
-- Charging remains unavailable in Windows, please charge in Android
+- Brightness control is glitchy on both displays.
+- Audio speakers are not functional.
+- Dongles are not detected correctly when plugged into the USB Type-C port.
+- Battery charging remains unstable and not recommended.
+- Updating drivers may lead to weird configurations if done on old driver releases.
+- MAC addresses do not reflect the real addresses asigned to the device.
+- BitLocker drive encryption is not available.
+- USB dongles that are not externally powered may not currently work.
+- USB-C Billboard devices will not currently work.
+- External Display Stream support will not currently work.
+- Additional information provided by the posture sensor is currently not available for public consumption. This includes peek events.
+- Digitizers will not react to the device being folded over.
+- Displays will not react to the device being folded over most of the time.
+- Physical device data is incorrect.
+- Digitizers aren't calibrated correctly.
+- Flipping the device, however, is not smooth.
+- Charging remains unavailable in Windows. Please charge in Android.
 - Users upgrading from releases older than the January ones may want to clean install again.
 - Booting Windows 10 18362/18363 with Secure Boot enabled is not currently supported and will result in a broken installation.
-- In some cases booting the UEFI image may lead to static screen effects on the left display. Please do not force reboot the device as it may interrupt the installation process, if ongoing, and instead please wait a few minutes
+- In some cases, booting the UEFI image may lead to "static screen" effects on the left display. Please do not force reboot the device as it may interrupt the installation process, if ongoing, and instead please wait a few minutes.
 - Windows Recovery environment lacks drivers unless Windows has performed a Feature Update at least once.
 - sRGB is not available currently, and displays will not react to ICC profiles being applied.
 
