@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OEMInput xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2019/06/ImageUpdate">
+  <Description>ModernPC WCOSCDG_Internal_Andromeda888 en-us image. ANDROMEDA888 OEMInput for Zeta on arm64</Description>
+  <DeviceLayoutType>ANDROMEDA888</DeviceLayoutType>
+  <Device>Andromeda888</Device>
+  <DevicePlatformIDs>
+    <DevicePlatformID>Microsoft Corporation.Surface.Surface Duo 2.1995</DevicePlatformID>
+    <DevicePlatformID>OEMC1.*.OEMC1 Product.*</DevicePlatformID>
+  </DevicePlatformIDs>
+  <ReleaseType>Test</ReleaseType>
+  <BuildType>fre</BuildType>
+  <Languages>
+    <Language Default="true">en-us</Language>
+    <Language>da-DK</Language>
+    <Language>de-DE</Language>
+    <Language>en-GB</Language>
+    <Language>es-ES</Language>
+    <Language>es-MX</Language>
+    <Language>fi-FI</Language>
+    <Language>fr-CA</Language>
+    <Language>fr-FR</Language>
+    <Language>it-IT</Language>
+    <Language>ja-JP</Language>
+    <Language>ko-KR</Language>
+    <Language>nb-NO</Language>
+    <Language>nl-NL</Language>
+    <Language>pl-PL</Language>
+    <Language>pt-PT</Language>
+    <Language>ru-RU</Language>
+    <Language>sv-SE</Language>
+    <Language>th-TH</Language>
+    <Language>zh-CN</Language>
+    <Language>zh-TW</Language>
+  </Languages>
+  <AdditionalFMs>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WindowsCoreProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WindowsCoreNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WindowsCoreInternalOnlyFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\ModernPCAppsFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\ModernPCSelfhostFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\ModernPCNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WCOSCDGFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\MobileDeviceSpaceFM.xml</AdditionalFM>
+    <AdditionalFM>E:\Andromeda888DeviceFM.xml</AdditionalFM>
+    <AdditionalFM>E:\Andromeda888DeviceDriversFM.xml</AdditionalFM>
+  </AdditionalFMs>
+  <MachineInfoFile>E:\machineinfo.zeta.xml</MachineInfoFile>
+  <Features>
+    <Microsoft>
+        <Feature>ALLOW_CONNECTEDSTANDBY</Feature>
+        <Feature>CAD_CHARGING</Feature>
+        <Feature>MODERNPC_POLICY</Feature>
+        <Feature>RESOLUTION_1350X1800</Feature>
+        <Feature>STATESEPARATION_ON</Feature>
+        <Feature>WCOS_ACCESSIBLITY_NARRATOR</Feature>
+        <Feature>WCOS_APP_CENTENNIALRUNTIME</Feature>
+        <Feature>WCOS_APP_WIN32SUPPORT</Feature>
+        <Feature>WCOS_AUDIO_MMESUPPORT</Feature>
+        <Feature>WCOS_CLOUD_FILES</Feature>
+        <Feature>WCOS_CONTAINERS</Feature>
+        <Feature>WCOS_DEVICEPORTAL_WOW</Feature>
+        <Feature>WCOS_DEVICEPORTAL</Feature>
+        <Feature>WCOS_DIAGHOST_HOST</Feature>
+        <Feature>WCOS_DISPLAY_ENHANCEMENT_SERVICE</Feature>
+        <Feature>WCOS_EVENTLOG_SERVICE</Feature>
+        <Feature>WCOS_FEEDBACKHUB_DXDIAG</Feature>
+        <Feature>WCOS_MTP</Feature>
+        <Feature>WCOS_NET_CELLULAR_DATA</Feature>
+        <Feature>WCOS_NET_PROXIMITY_SERVICE</Feature>
+        <Feature>WCOS_NET_RADIO_MANAGEMENT</Feature>
+        <Feature>WCOS_SPEECH_VOICEAGENT_SUPPORT</Feature>
+        <Feature>WCOS_TESTSIGNING_ON</Feature>
+        <Feature>WCOS_TIMESYNC_MOBILE</Feature>
+        <Feature>WCOS_TIMESYNC_NETWORK_WOW</Feature>
+        <Feature>WCOS_TIMESYNC_NETWORK</Feature>
+        <Feature>WCOS_XBOX_AUTHENTICATION</Feature>
+    </Microsoft>
+  </Features>
+  <AppXOptionalPackages>
+    <AppXID>Microsoft.HEVCVideoExtension_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.Messaging_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.OneConnect_8wekyb3d8bbwe</AppXID>
+    <AppXID>Microsoft.RemoteDesktop_8wekyb3d8bbwe</AppXID>
+  </AppXOptionalPackages>
+  <Product>ModernPC</Product>
+</OEMInput>
