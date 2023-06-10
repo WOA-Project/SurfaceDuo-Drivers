@@ -2,6 +2,24 @@
 <FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" Revision="1" SchemaVersion="1.3">
   <Drivers>
     <BaseDriverPackages>
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\BleLc" Name="SurfacePenBleLcAddrAdaptationDriver.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfaceCFUOverHid.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfacePenCfuOverBleLc.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Firmware" Name="SurfacePen217FwUpdate.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen" Name="SurfacePen217Integration.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Virtual" Name="SurfaceVirtualFunctionEnum.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceHIDFriendlyNames.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\PenWirelessCharger" Name="SurfacePenWirelessChargerHotkey.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Charger" Name="SurfaceSlimPenChargerFwUpdate.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FCfuOverBleLcExtnPackage.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FFirmwareUpdate.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953CfuOverBleLcExtnPackage.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953FirmwareUpdate.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Settings\Version" Name="phonereleaseversion.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Signature\DesktopSignature" Name="desktopsignature.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\MobileBridgeUser" Name="MobileHapticsService.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\EMB" Name="emb.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="QcTreeExtOem8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="SurfaceDuo2_ext_QcTree8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Customizations" Name="SurfaceDuo2_MTPOEM.inf" />
