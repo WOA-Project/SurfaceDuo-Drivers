@@ -19,9 +19,6 @@ PnPLockDown=1
 [SourceDisksNames]
 1 = %DiskName%
 
-[SourceDisksFiles]
-;SurfaceTouchPanelAlignment.sys=1
-
 [Manufacturer]
 %ManufacturerName%=Standard,NTarm64
 
@@ -31,45 +28,14 @@ PnPLockDown=1
 
 ; =================== UMDF Device ==================================
 
-[SurfaceTouchPanelAlignment.NT]
-CopyFiles=SurfaceTouchPanelAlignment.CopyFiles
-
-[SurfaceTouchPanelAlignment.CopyFiles]
-;SurfaceTouchPanelAlignment.sys
-
-[DestinationDirs]
-SurfaceTouchPanelAlignment.CopyFiles=13 ; copy to DriverStore
-
 
 [SurfaceTouchPanelAlignment.NT.HW]
 AddReg=SurfaceTouchPanelAlignment_HWAddReg
 
 [SurfaceTouchPanelAlignment_HWAddReg]
-HKR,Heat\VendorSpecific,LeftShift,REG_SZ,"11"
-HKR,Heat,RightShift,REG_SZ,"22"
+HKR,Heat\VendorSpecific,LeftShift,0x00000000,"11"
+HKR,Heat,RightShift,0x00000000,"22"
 
-
-[SurfaceTouchPanelAlignment.NT.Services]
-;AddService=SurfaceTouchPanelAlignment,0x000001f8,SurfaceTouchPanelAlignment_ServiceInstall
-
-
-[SurfaceTouchPanelAlignment_ServiceInstall]
-UmdfLibraryVersion=$UMDFVERSION$ 
-DisplayName   = %ServiceDisplayName%
-Description   = %SurfaceTouchPanelAlignment.DeviceDesc%
-ServiceType   = %SERVICE_KERNEL_DRIVER%
-StartType     = %SERVICE_DEMAND_START%
-ErrorControl  = %SERVICE_ERROR_NORMAL%
-ServiceBinary = %13%\SurfaceTouchPanelAlignment.sys
-
-;[SurfacePenBleLcAddrAdaptationDriver_Device.NT.Wdf]
-;KmdfService =  SurfaceTouchPanelAlignment
-
-[SurfaceTouchPanelAlignment.NT.Filters]
-AddFilter=SurfaceTouchPanelAlignment,,SurfaceTouchPanelAlignment_Filter
-
-[SurfaceTouchPanelAlignment_Filter]
-FilterPosition = Upper
 
 ; =================== Generic ==================================
 
