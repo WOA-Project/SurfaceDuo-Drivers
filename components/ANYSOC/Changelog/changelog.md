@@ -49,6 +49,8 @@ What's new?
 
 - Mitigates an issue temporarily with Gallium Semester Windows Insider Builds
 
+- Addresses an issue where Miracast was not functional in the past driver releases
+
 - General system stability improvements to enhance the user's experience.
 
 
@@ -67,6 +69,7 @@ I am running a build >= 25905, use Driver Updater with ```\definitions\Desktop\A
 
 Known issues
 
+- Sensors are temporarily unavailable on Windows 11 Canary Channel Insider Builds (Gallium)
 - Booting Windows 10 18362/18363 will lead to "static screen" effects on the right display, much like driver releases from last year did on any version of Windows. A fix is being worked on for the next release.
 - The TPM driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
 - The Posture driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
