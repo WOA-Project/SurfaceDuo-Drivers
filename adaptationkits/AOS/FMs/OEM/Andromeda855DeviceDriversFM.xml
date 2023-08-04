@@ -49,7 +49,7 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Integration" Name="SurfaceServiceNullDriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\SecurityProcessor" Name="surfaceduo_sp.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Sensors\Posture" Name="PostureSensor.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Sensors\SSC" Name="SurfaceDuo_sensors.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_SENSORS\Drivers\Sensors\SSC" Name="SurfaceDuo_sensors.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Touch" Name="SurfaceTouchPanelAlignment.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Touch" Name="SurfaceTouchPenProcessorUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\USB" Name="fsa4480.inf" />
