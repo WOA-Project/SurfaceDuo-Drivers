@@ -97,7 +97,7 @@ Known issues
 
 #### Surface Duo 2
 
-- A lot. Too long to list, Surface Duo 2 is still a Proof of Concept (PoC), don't expect much.
+- Nothing New. Surface Duo 2 is still a Proof of Concept (PoC), don't expect much.
 
 
 ### Accessing Foldable Sensors from your applications
