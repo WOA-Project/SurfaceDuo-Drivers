@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2305.90 (Paracheirodon innesi)
-**Released:** 05/31/2023 00:00 PM UTC+1
+## Surface Duo Drivers BSP - Version 2307.6 (Hooting cats)
+**Released:** 07/04/2023 00:00 PM UTC+0
 
 **Quality:** Preview
 
@@ -16,7 +16,7 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2305.90.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2307.6.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please follow the following migration guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest DriverUpdater release as well: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0
 
@@ -30,7 +30,7 @@ ________________________________________________________________________________
 
 What's new?
 
-- This update contains a lot of changes that would be too long to explain. Notably more fixes for postures not working after sleep, further stability improvements, and as another os would put it:
+- Updates Qualcomm Firmware for Surface Duo 1 devices
 
 - General system stability improvements to enhance the user's experience.
 
