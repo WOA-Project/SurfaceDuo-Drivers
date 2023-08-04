@@ -56,7 +56,7 @@ What's new?
 - General system stability improvements to enhance the user's experience.
 
 <details>
-  <summary>**_Important!_** New definition files are present, here's a summary of how to proceed:</summary>
+  <summary><b><i>Important!</i></b> New definition files are present, here's a summary of how to proceed:</summary>
   <p>
 - I am running a build < 17763, you are unsupported.
 
@@ -394,6 +394,8 @@ Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Gu
 This release is a Preview release. Bug exists and may happen. If you notice a bug not present in the following bug list, please report them on our Telegram Group.
   </p>
 </details>
+
+---
 
 Seems Faster(TM)
 
