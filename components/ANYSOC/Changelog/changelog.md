@@ -1,5 +1,5 @@
-## Surface Duo Drivers BSP - Version 2307.6 (Hooting cats)
-**Released:** 07/04/2023 00:00 PM UTC+0
+## Surface Duo Drivers BSP - Version 2308.12 (Rainbow Road)
+**Released:** 08/04/2023 11:00 PM UTC+0
 
 **Quality:** Preview
 
@@ -16,7 +16,7 @@ ________________________________________________________________________________
 
 #### Important information
 
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2307.6.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2308.12.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please follow the following migration guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest DriverUpdater release as well: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0
 
@@ -30,12 +30,29 @@ ________________________________________________________________________________
 
 What's new?
 
-- Updates Qualcomm Firmware for Surface Duo 1 devices
+- Updates Qualcomm Drivers to version 1.0.1980.0000, this includes updates to:
+
+	- Qualcomm Adreno 640
+	- Qualcomm Aqstic Audio Miniport
+	- Qualcomm Atheros Wi-Fi
+	- Qualcomm Atheros Bluetooth
+	- Qualcomm Hexagon Subsystem Manager
+	- Qualcomm Hexagon FastRPC Bus
+
+- Updates SSDE to remove the workaround blocking Secure Boot Signature Exclusion Database (DBX)
+
+- Updates Adaptation kit scripts to remove the workaround preventing the provisioning of Secure Boot variable on first use
+
+- Addresses an issue where the OS would unexpectedly bugcheck while installing Windows Updates containing DBX updates, or BlackLotus mitigations
+
+- Addresses an issue where Windows Core OS based products would bug check on first run
+
+- Mitigates an issue temporarily with Gallium Semester Windows Insider Builds
 
 - General system stability improvements to enhance the user's experience.
 
-- **_Important!_** New definition files are present, here's a summary of how to proceed:
 
+- **_Important!_** New definition files are present, here's a summary of how to proceed:
 
 I am running a build < 17763, you are unsupported.
 
@@ -43,7 +60,9 @@ I am running a build < 18362, use Driver Updater with ```\definitions\Desktop\AR
 
 I am running a build < 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ti.txt```
 
-I am running a build >= 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon.txt```
+I am running a build < 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon.txt```
+
+I am running a build >= 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ga.txt```
 
 
 Known issues
