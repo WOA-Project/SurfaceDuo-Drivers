@@ -1,21 +1,19 @@
 ## Surface Duo Drivers BSP - Version 2308.12 (Rainbow Road)
+
+<details>
+  <summary>General information</summary>
+  <p>
 **Released:** 08/04/2023 11:00 PM UTC+0
 
 **Quality:** Preview
 
-![Surface Duo Dual Screen Windows](https://user-images.githubusercontent.com/3755345/197420866-d3bb0534-c848-4cc2-a242-04dae48b0f6e.png)
-
-### General information
-
 You can view compatibility for this release, along with important information and what works, and what doesn't at this link: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Status.md
+  </p>
+</details>
 
-
-### Release notes
-
-____________________________________________________________________________________________________________________________
-
-#### Important information
-
+<details>
+  <summary>Important information</summary>
+  <p>
 - ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2308.12.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please follow the following migration guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest DriverUpdater release as well: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0
@@ -23,8 +21,12 @@ ________________________________________________________________________________
 - ⚠️ If you need dual boot, you will have to make your own image. Please follow this guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/DualBoot.md
 
 - ⚠️ You need to backup your original boot image for OTAs to work with Android. When you get an OTA, you will want to revert your boot image for the update to work, or you'll have to use an official OTA recovery package.
+  </p>
+</details>
 
-### Changelog
+---
+
+### Release notes
 
 #### Surface Duo 1
 
@@ -53,59 +55,92 @@ What's new?
 
 - General system stability improvements to enhance the user's experience.
 
+<details>
+  <summary>**_Important!_** New definition files are present, here's a summary of how to proceed:</summary>
+  <p>
+- I am running a build < 17763, you are unsupported.
 
-- **_Important!_** New definition files are present, here's a summary of how to proceed:
+- I am running a build < 18362, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_rs5.txt```
 
-I am running a build < 17763, you are unsupported.
+- I am running a build < 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ti.txt```
 
-I am running a build < 18362, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_rs5.txt```
+- I am running a build < 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon.txt```
 
-I am running a build < 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ti.txt```
+- I am running a build >= 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ga.txt```
+  </p>
+</details>
 
-I am running a build < 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon.txt```
-
-I am running a build >= 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ga.txt```
-
-
-Known issues
-
+<details>
+  <summary>Known issues</summary>
+  <p>
 - Sensors are temporarily unavailable on Windows 11 Canary Channel Insider Builds (Gallium)
+
 - Booting Windows 10 18362/18363 will lead to "static screen" effects on the right display, much like driver releases from last year did on any version of Windows. A fix is being worked on for the next release.
+
 - The TPM driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
+
 - The Posture driver is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
+
 - Enhanced auto rotation is not working for Windows 10 18362/18363. A fix is being worked on for the next release.
+
 - Brightness control is glitchy on both displays.
-- Audio speakers are not functional.
+
+- On device speakers are not functional.
+
 - Dongles are not detected correctly when plugged into the USB Type-C port.
+
 - Battery charging remains unstable and not recommended.
+
 - Updating drivers may lead to weird configurations if done on old driver releases.
+
 - MAC addresses do not reflect the real addresses asigned to the device.
+
 - BitLocker drive encryption is not available.
+
 - USB dongles that are not externally powered may not currently work.
+
 - USB-C Billboard devices will not currently work.
+
 - External Display Stream support will not currently work.
+
 - Additional information provided by the posture sensor is currently not available for public consumption. This includes peek events.
+
 - Digitizers will not react to the device being folded over.
+
 - Displays will not react to the device being folded over most of the time.
+
 - Physical device data is incorrect.
+
 - Digitizers aren't calibrated correctly.
+
 - Flipping the device, however, is not smooth.
+
 - Charging remains unavailable in Windows. Please charge in Android.
+
 - Users upgrading from releases older than the January ones may want to clean install again.
+
 - Booting Windows 10 18362/18363 with Secure Boot enabled is not currently supported and will result in a broken installation.
+
 - In some cases, booting the UEFI image may lead to "static screen" effects on the left display. Please do not force reboot the device as it may interrupt the installation process, if ongoing, and instead please wait a few minutes.
+
 - Windows Recovery environment lacks drivers unless Windows has performed a Feature Update at least once.
+
 - sRGB is not available currently, and displays will not react to ICC profiles being applied.
+  </p>
+</details>
 
 
 #### Surface Duo 2
 
+What's new?
+
 - Nothing New. Surface Duo 2 is still a Proof of Concept (PoC), don't expect much.
 
+---
 
-### Accessing Foldable Sensors from your applications
-
-
+<details>
+  <summary>Accessing Foldable Sensors from your applications</summary>
+  <p>
 In order to currently access the sensor data given by the foldable sensors, you need to use the following apis:
 
 
@@ -324,12 +359,12 @@ int main()
 	catch (...) {}
 }
 ```
+  </p>
+</details>
 
-____________________________________________________________________________________________________________________________
-
-
-How to offline update an existing Windows Desktop installation
-
+<details>
+  <summary>How to offline update an existing Windows Desktop installation</summary>
+  <p>
 - Switch the device into mass storage.
 - Take note of the drive letter the Windows partition is using, here we will assume it got mounted as I:
 
@@ -343,19 +378,23 @@ How to offline update an existing Windows Desktop installation
   DriverUpdater.exe -d C:\UpdatedDrivers\SurfaceDuo-Drivers-XXXX\definitions\Desktop\ARM64\Internal\epsilon.txt -r C:\UpdatedDrivers\SurfaceDuo-Drivers-XXXX\ -p I:\
 
 - Reboot the device, the device will now begin PnP setup once again, and hopefully you will be back soon enough to your desktop
+  </p>
+</details>
 
-____________________________________________________________________________________________________________________________
+<details>
+  <summary>How to install Windows Desktop on internal Storage</summary>
+  <p>
+Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Guides
+  </p>
+</details>
 
-
-How to install Windows Desktop on internal Storage
-
-- Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Guides
-
-____________________________________________________________________________________________________________________________
-
-
-### Bug reporting
-
+<details>
+  <summary>Bug reporting</summary>
+  <p>
 This release is a Preview release. Bug exists and may happen. If you notice a bug not present in the following bug list, please report them on our Telegram Group.
+  </p>
+</details>
 
--- WOA-Project Team
+Seems Faster(TM)
+
+-- The DuoWoA authors
