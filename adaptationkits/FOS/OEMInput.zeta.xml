@@ -14,20 +14,20 @@
     <Language Default="true">en-US</Language>
   </Languages>
   <AdditionalFMs>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\WindowsCoreProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\WindowsCoreNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\MobileDeviceSpaceFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\CommonContainerFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\ArgonContainerFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\FOSNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\FactoryOSArgonProductSpecificFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\FactoryOSFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\FactoryOSProductSpecificFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\FactoryOS\FMFiles\FactoryOSRamBootFM.xml</AdditionalFM>
-    <AdditionalFM>E:\Andromeda888DeviceFM.xml</AdditionalFM>
-    <AdditionalFM>E:\Andromeda888DeviceDriversFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\WindowsCoreProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\WindowsCoreNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\MobileDeviceSpaceFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\CommonContainerFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\ArgonContainerFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FOSNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FactoryOSArgonProductSpecificFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FactoryOSFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FactoryOSProductSpecificFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FactoryOSRamBootFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\Andromeda888DeviceFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\Andromeda888DeviceDriversFM.xml</AdditionalFM>
   </AdditionalFMs>
-  <MachineInfoFile>E:\machineinfo.zeta.xml</MachineInfoFile>
+  <MachineInfoFile>%_NTTREE%\machineinfo.zeta.xml</MachineInfoFile>
   <Features>
     <Microsoft>
       <Feature>ALLOW_CONNECTEDSTANDBY</Feature>

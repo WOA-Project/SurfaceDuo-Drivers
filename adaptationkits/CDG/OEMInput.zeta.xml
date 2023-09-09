@@ -34,18 +34,18 @@
     <Language>zh-TW</Language>
   </Languages>
   <AdditionalFMs>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WindowsCoreProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WindowsCoreNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WindowsCoreInternalOnlyFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\ModernPCAppsFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\ModernPCSelfhostFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\ModernPCNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\WCOSCDGFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\MobileDeviceSpaceFM.xml</AdditionalFM>
-    <AdditionalFM>E:\Andromeda888DeviceFM.xml</AdditionalFM>
-    <AdditionalFM>E:\Andromeda888DeviceDriversFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\ModernPC\WindowsCoreProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\ModernPC\WindowsCoreNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\ModernPC\WindowsCoreInternalOnlyFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\ModernPC\ModernPCAppsFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\ModernPC\ModernPCSelfhostFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\ModernPC\ModernPCNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\ModernPC\WCOSCDGFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\ModernPC\MobileDeviceSpaceFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\Andromeda888DeviceFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\Andromeda888DeviceDriversFM.xml</AdditionalFM>
   </AdditionalFMs>
-  <MachineInfoFile>E:\machineinfo.zeta.xml</MachineInfoFile>
+  <MachineInfoFile>%_NTTREE%\machineinfo.zeta.xml</MachineInfoFile>
   <Features>
     <Microsoft>
         <Feature>ALLOW_CONNECTEDSTANDBY</Feature>

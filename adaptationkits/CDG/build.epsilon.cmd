@@ -1,4 +1,2 @@
-set _NTTREE=E:
-cd /d "C:\Program Files (x86)\Windows Kits\10\tools\bin\i386\"
-call imggen.cmd E:\Output\Flash.vhdx E:\OEMInput.xml E: ARM64
-cd /d E:
+set _NTTREE=%CD%
+"%WSKContentRoot%\tools\bin\i386\ImageApp.exe" "%CD%\Output\Flash.ffu" "%CD%\OEMInput.epsilon.xml" "%CD%\MSPackages" /CPUType:arm64 /RandomizeGptIDs /BSPProductName:MSASOEM.AND55.Selfhost.en-us

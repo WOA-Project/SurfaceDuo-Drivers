@@ -1,6 +1,6 @@
 # Treat everything as binary, as cat files require binary identity for signatures to match
 * -text
 components/QC8150/Graphics/GRAPHICS.SOC_QC8150.EPSILON_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
-adaptationkits/AOS/appx/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
-adaptationkits/CDG/appx/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
-adaptationkits/FOS/appx/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
+adaptationkits/AOS/MSPackages/appx/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
+adaptationkits/CDG/MSPackages/appx/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
+adaptationkits/FOS/MSPackages/appx/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
