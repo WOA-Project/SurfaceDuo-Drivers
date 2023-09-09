@@ -6,6 +6,7 @@
   <DevicePlatformIDs>
     <DevicePlatformID>Microsoft Corporation.Surface.Surface Duo.1930</DevicePlatformID>
     <DevicePlatformID>OEMB1.*.OEMB1 Product.*</DevicePlatformID>
+    <DevicePlatformID>OEMEP.*.OEMEP Product.*</DevicePlatformID>
   </DevicePlatformIDs>
   <ReleaseType>Test</ReleaseType>
   <BuildType>fre</BuildType>
