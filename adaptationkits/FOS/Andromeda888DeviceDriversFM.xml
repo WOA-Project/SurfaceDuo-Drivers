@@ -15,11 +15,6 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FFirmwareUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953CfuOverBleLcExtnPackage.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953FirmwareUpdate.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Settings\Version" Name="phonereleaseversion.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Signature\DesktopSignature" Name="desktopsignature.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\MobileBridgeUser" Name="MobileHapticsService.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\EMB" Name="emb.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="QcTreeExtOem8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="SurfaceDuo2_ext_QcTree8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Customizations" Name="SurfaceDuo2_MTPOEM.inf" />
@@ -29,16 +24,13 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Bluetooth" Name="SurfaceDuo2_btfmuart_hsp8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camisp.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Cellular" Name="surfaceduo2_ipa.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Graphics" Name="SurfaceDisplayConfiguratorService.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Graphics" Name="SurfaceOemPanel.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Graphics" Name="SurfacePanel.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Integration" Name="SurfaceIntegrationDriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Integration" Name="SurfacePowerMeter.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Integration" Name="SurfaceSarManager.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Integration" Name="SurfaceServiceNullDriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\NFC" Name="NxpNfcClientDriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\SecurityProcessor" Name="SurfaceDuo2_sp8350.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Sensors\Posture" Name="PostureSensor.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Sensors\SSC" Name="SurfaceDuo2_sensors.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Touch" Name="SurfaceTouchPanelAlignment.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Touch" Name="SurfaceTouchPenProcessorUpdate.inf" />
@@ -50,7 +42,6 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\BatteryCurrentLimiter" Name="SurfaceDuo2_fgbclext8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Bluetooth" Name="qcbtfmuart_ext8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Bluetooth" Name="SurfaceDuo2_btfmuart_ext_SwiftPairEnable8350.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Graphics" Name="SurfaceDisplayConfiguratorExtension.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\HexagonLoader" Name="SurfaceDuo2_pilext8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Sensors" Name="SurfaceDuo2_sensorsconfig.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_adsp8350.inf" />
@@ -61,9 +52,6 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_mcfg8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Touch" Name="SurfaceDigitizerHidSpiExtnPackage.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Firmware" Name="SurfaceTouchG6FwUpdateExtnPackage.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Settings" Name="MultiScreenExperience.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Settings" Name="oled.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Settings" Name="SurfaceDuo2_Deviceinfo.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.ZETA_DESKTOP" Name="SurfaceDuo2_dx.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.ZETA_DESKTOP" Name="SurfaceDuo2_dxext_mtp8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ACPI" Name="qcabd.inf" />
