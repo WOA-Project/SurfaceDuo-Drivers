@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Revision="1" SchemaVersion="1.3" ReleaseType="Test" OwnerType="Microsoft" ID="MODERNPCLAB" BuildInfo="fe_release_10x.20279.1002.201214-1532" BuildID="42bb36b7-9aee-f77e-289a-158efbe711a3" OwnerName="Microsoft" OSVersion="10.0.20279.1002" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+  <BasePackages>
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Validation-LabConfiguration-Base-Package" />
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Validation-LabConfiguration-Base-EFIESP-Package" />
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Validation-LabConfiguration-DeviceFormOther-Package" />
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Validation-LabConfiguration-FilesOnData-Package" />
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-WindowsCore-ImageCustomization-DevTools-Package" />
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-Composable-ModernUX-SystemSupportedOrientations-All-Package" />
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.ModernPCLabFM~31bf3856ad364e35~ARM64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.ModernPCLabFM" />
+  </BasePackages>
+  <Features>
+    <Microsoft>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Validation-LabConfiguration-ContainerHost-Package">
+        <FeatureIDs>
+          <FeatureID>CONTAINERHOST_LABCONFIG</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" CPUType="AMD64" ID="Microsoft-Composable-VAIL-Lab-Autologger-Package">
+        <FeatureIDs>
+          <FeatureID>CONTAINERHOST_LABCONFIG</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Multimedia-AudioUnitTestDrivers-Package">
+        <FeatureIDs>
+          <FeatureID>VIRTUAL_DRIVERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Multimedia-TabletAudioSampleDriver-Package">
+        <FeatureIDs>
+          <FeatureID>VIRTUAL_DRIVERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Multimedia-VirtualCameraDriver-Package">
+        <FeatureIDs>
+          <FeatureID>VIRTUAL_DRIVERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_CONTAINERHOST_LABCONFIG.MODERNPCLAB.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_CONTAINERHOST_LABCONFIG.MODERNPCLAB.FIP">
+        <FeatureIDs>
+          <FeatureID>CONTAINERHOST_LABCONFIG</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_VIRTUAL_DRIVERS.MODERNPCLAB.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_VIRTUAL_DRIVERS.MODERNPCLAB.FIP">
+        <FeatureIDs>
+          <FeatureID>VIRTUAL_DRIVERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+    </Microsoft>
+  </Features>
+</FeatureManifest>

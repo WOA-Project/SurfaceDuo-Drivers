@@ -24,10 +24,10 @@
     <Resolution>1350x1800</Resolution>
   </Resolutions>
   <AdditionalFMs>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\AndromedaAppsFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\AndromedaSelfHostFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\AOSNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%_NTTREE%\DeviceImaging\ModernPC\FMFiles\MobileDeviceSpaceFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\AndromedaOS\FMFiles\AndromedaAppsFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\AndromedaOS\FMFiles\AndromedaSelfHostFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\AndromedaOS\FMFiles\AOSNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%_NTTREE%\DeviceImaging\AndromedaOS\FMFiles\MobileDeviceSpaceFM.xml</AdditionalFM>
     <AdditionalFM>E:\Andromeda888DeviceFM.xml</AdditionalFM>
     <AdditionalFM>E:\Andromeda888DeviceDriversFM.xml</AdditionalFM>
   </AdditionalFMs>

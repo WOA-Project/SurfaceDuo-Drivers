@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Revision="1" SchemaVersion="1.3" ReleaseType="Production" OwnerType="Microsoft" ID="WCPFM" BuildInfo="fe_release_10x.20279.1002.201214-1532" BuildID="42bb36b7-9aee-f77e-289a-158efbe711a3" OwnerName="Microsoft" OSVersion="10.0.20279.1002" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+  <BasePackages>
+    <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.WindowsCoreProductionFM~31bf3856ad364e35~ARM64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.WindowsCoreProductionFM" />
+  </BasePackages>
+  <Features>
+    <Microsoft>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" ID="Microsoft-OneCore-Narrator-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_ACCESSIBLITY_NARRATOR</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-WindowsCore-CentennialRuntime-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_APP_CENTENNIALRUNTIME</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Wow="*" ID="Microsoft-OneCore-Containers-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_CONTAINERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" CPUType="AMD64" ID="Microsoft-Composable-Vail-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_APP_WIN32SUPPORT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" CPUType="AMD64" ID="Microsoft-Composable-VailArgonCommon-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_APP_WIN32SUPPORT</FeatureID>
+          <FeatureID>WCOS_APP_WIN32SUPPORT_ARGON</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Audio-MMECore-Onecore-Other-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_AUDIO_MMESUPPORT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft-OneCore-Audio-MMECore-Onecore-Other-Package~31bf3856ad364e35~wow64~~.cab" CPUType="amd64" ID="Microsoft-OneCore-Audio-MMECore-Onecore-Other-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_AUDIO_MMESUPPORT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft-OneCore-Audio-MMECore-Onecore-Other-Package~31bf3856ad364e35~arm64.arm~~.cab" CPUType="arm64" ID="Microsoft-OneCore-Audio-MMECore-Onecore-Other-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_AUDIO_MMESUPPORT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Wow="*" ID="Microsoft-OneCore-CloudFiles-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_CLOUD_FILES</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" ID="WindowsDevicePortal-WCOS-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_DEVICEPORTAL</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="WindowsDevicePortal-WCOS-Package~31bf3856ad364e35~arm64.arm~~.cab" CPUType="arm64" ID="WindowsDevicePortal-WCOS-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_DEVICEPORTAL_WOW</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="WindowsDevicePortal-WCOS-Package~31bf3856ad364e35~wow64~~.cab" CPUType="amd64" ID="WindowsDevicePortal-WCOS-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_DEVICEPORTAL_WOW</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" CPUType="arm64;amd64" ID="Microsoft-OneCore-DiagHost-HostService-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_DIAGHOST_HOST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Graphics-Display-DisplayEnhancementService-WCOS-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_DISPLAY_ENHANCEMENT_SERVICE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-WindowsCore-UsbNetDongle-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_DRIVERS_USB_ETHERNET</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" ID="Microsoft-WindowsCore-EventLog-Service-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_EVENTLOG_SERVICE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft-WindowsCore-EventLog-Service-Package~31bf3856ad364e35~arm64.arm~~.cab" CPUType="arm64" ID="Microsoft-WindowsCore-EventLog-Service-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_EVENTLOG_SERVICE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft-WindowsCore-EventLog-Service-Package~31bf3856ad364e35~wow64~~.cab" CPUType="amd64" ID="Microsoft-WindowsCore-EventLog-Service-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_EVENTLOG_SERVICE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Graphics-Dxdiag-WCOS-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_FEEDBACKHUB_DXDIAG</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" CPUType="X86;AMD64" ID="Microsoft-OneCore-Graphics-HyperV-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_HYPERV_GUEST_UEFI</FeatureID>
+          <FeatureID>WCOS_HYPERV_GUEST_BIOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" CPUType="X86;AMD64" ID="Microsoft-OneCore-HyperV-Guest-Networking-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_HYPERV_GUEST_UEFI</FeatureID>
+          <FeatureID>WCOS_HYPERV_GUEST_BIOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" CPUType="X86;AMD64" ID="Microsoft-OneCore-HyperV-Guest-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_HYPERV_GUEST_UEFI</FeatureID>
+          <FeatureID>WCOS_HYPERV_GUEST_BIOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" CPUType="X86;AMD64" ID="Microsoft-OneCore-HyperV-Guest-UpdateOS-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_HYPERV_GUEST_UEFI</FeatureID>
+          <FeatureID>WCOS_HYPERV_GUEST_BIOS</FeatureID>
+          <FeatureID>WCOS_APP_WIN32SUPPORT</FeatureID>
+          <FeatureID>WCOS_APP_WIN32SUPPORT_ARGON</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" ID="Microsoft-OneCore-Provisioning-Packages-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_MDM_PROVISIONING</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" ID="Microsoft-OneCore-Cellcore-Data-Platform-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_NET_CELLULAR_DATA</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft-OneCore-Cellcore-Data-Platform-Package~31bf3856ad364e35~wow64~~.cab" CPUType="amd64" ID="Microsoft-OneCore-Cellcore-Data-Platform-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_NET_CELLULAR_DATA</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft-OneCore-Cellcore-Data-Platform-Package~31bf3856ad364e35~arm64.arm~~.cab" CPUType="arm64" ID="Microsoft-OneCore-Cellcore-Data-Platform-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_NET_CELLULAR_DATA</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" ID="Microsoft-OneCore-464XLAT-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_NET_CELLULAR_DATA</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-Windows-Proximity-Wcos-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_NET_PROXIMITY_SERVICE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" ID="Microsoft-OneCore-RadioManagement-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_NET_RADIO_MANAGEMENT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-CD-DVD-CoreDrivers-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_STORAGE_CDDVD</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Wow="*" ID="Microsoft-OneCore-VoiceAgentServices-WCOS-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_SPEECH_VOICEAGENT_SUPPORT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Autotime-Service-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_TIMESYNC_MOBILE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Language="*" ID="Microsoft-OneCore-TimeService-Client-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_TIMESYNC_NETWORK</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft-OneCore-TimeService-Client-Package~31bf3856ad364e35~arm64.arm~~.cab" CPUType="arm64" ID="Microsoft-OneCore-TimeService-Client-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_TIMESYNC_NETWORK_WOW</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft-OneCore-TimeService-Client-Package~31bf3856ad364e35~wow64~~.cab" CPUType="amd64" ID="Microsoft-OneCore-TimeService-Client-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_TIMESYNC_NETWORK_WOW</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Wow="*" ID="Microsoft-OneCore-XBox-AuthManager-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_XBOX_AUTHENTICATION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Mtp-UserService-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_MTP</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-DeviceUpdate-MtpDuServices-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_MTP</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" ID="Microsoft-OneCore-Provisioning-Packages-Package">
+        <FeatureIDs>
+          <FeatureID>WCOS_MTP</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_ACCESSIBLITY_NARRATOR.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_ACCESSIBLITY_NARRATOR.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_ACCESSIBLITY_NARRATOR</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_AUDIO_MMESUPPORT.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_AUDIO_MMESUPPORT.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_AUDIO_MMESUPPORT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_DEVICEPORTAL.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_DEVICEPORTAL.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_DEVICEPORTAL</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_APP_CENTENNIALRUNTIME.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_APP_CENTENNIALRUNTIME.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_APP_CENTENNIALRUNTIME</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_CONTAINERS.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_CONTAINERS.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_CONTAINERS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_NET_RADIO_MANAGEMENT.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_NET_RADIO_MANAGEMENT.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_NET_RADIO_MANAGEMENT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_NET_PROXIMITY_SERVICE.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_NET_PROXIMITY_SERVICE.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_NET_PROXIMITY_SERVICE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_DRIVERS_USB_ETHERNET.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_DRIVERS_USB_ETHERNET.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_DRIVERS_USB_ETHERNET</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_DEVICEPORTAL_WOW.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_DEVICEPORTAL_WOW.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_DEVICEPORTAL_WOW</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_MDM_PROVISIONING.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_MDM_PROVISIONING.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_MDM_PROVISIONING</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_DISPLAY_ENHANCEMENT_SERVICE.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_DISPLAY_ENHANCEMENT_SERVICE.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_DISPLAY_ENHANCEMENT_SERVICE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_TIMESYNC_MOBILE.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_TIMESYNC_MOBILE.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_TIMESYNC_MOBILE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_TIMESYNC_NETWORK.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_TIMESYNC_NETWORK.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_TIMESYNC_NETWORK</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_FEEDBACKHUB_DXDIAG.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_FEEDBACKHUB_DXDIAG.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_FEEDBACKHUB_DXDIAG</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_NET_CELLULAR_DATA.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_NET_CELLULAR_DATA.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_NET_CELLULAR_DATA</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_EVENTLOG_SERVICE.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_EVENTLOG_SERVICE.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_EVENTLOG_SERVICE</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_MTP.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_MTP.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_MTP</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_STORAGE_CDDVD.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_STORAGE_CDDVD.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_STORAGE_CDDVD</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_DIAGHOST_HOST.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_DIAGHOST_HOST.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_DIAGHOST_HOST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_TIMESYNC_NETWORK_WOW.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_TIMESYNC_NETWORK_WOW.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_TIMESYNC_NETWORK_WOW</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_XBOX_AUTHENTICATION.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_XBOX_AUTHENTICATION.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_XBOX_AUTHENTICATION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_SPEECH_VOICEAGENT_SUPPORT.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_SPEECH_VOICEAGENT_SUPPORT.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_SPEECH_VOICEAGENT_SUPPORT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="$(mspackageroot)\Retail\$(cputype)\$(buildtype)" Name="Microsoft.ModernPC.MS_WCOS_CLOUD_FILES.WCPFM.FIP~31bf3856ad364e35~arm64~~.cab" FeatureIdentifierPackage="true" ID="Microsoft.ModernPC.MS_WCOS_CLOUD_FILES.WCPFM.FIP">
+        <FeatureIDs>
+          <FeatureID>WCOS_CLOUD_FILES</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+    </Microsoft>
+    <MSFeatureGroups>
+      <FeatureGroup Constraint="ZeroOrOne">
+        <FeatureIDs>
+          <FeatureID>MS_WCOS_HYPERV_GUEST_UEFI</FeatureID>
+          <FeatureID>MS_WCOS_HYPERV_GUEST_BIOS</FeatureID>
+          <FeatureID>MS_WCOS_APP_WIN32SUPPORT</FeatureID>
+          <FeatureID>MS_WCOS_APP_WIN32SUPPORT_ARGON</FeatureID>
+        </FeatureIDs>
+      </FeatureGroup>
+      <FeatureGroup Constraint="ZeroOrOne">
+        <FeatureIDs>
+          <FeatureID>MS_WCOS_MDM_PROVISIONING</FeatureID>
+          <FeatureID>MS_WCOS_MTP</FeatureID>
+        </FeatureIDs>
+      </FeatureGroup>
+    </MSFeatureGroups>
+  </Features>
+</FeatureManifest>
