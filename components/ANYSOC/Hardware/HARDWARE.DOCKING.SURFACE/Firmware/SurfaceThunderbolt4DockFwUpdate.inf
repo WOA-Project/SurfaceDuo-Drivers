@@ -1,0 +1,143 @@
+﻿;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File:               SurfaceThunderbolt4DockFwUpdate.inx
+;
+; Description:        Driver installation file for Surface Thunderbolt(TM) 4 Dock firmware update.
+;
+; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+;
+; Firmware package 2.28, 20230223
+;
+; 1. AMC:               1.89.139
+; 2. UFP PD:            1.38.139
+; 3. USB3 Hub:          64.14.139
+; 4. SAudio:            1.15.139
+; 5. RAudio:            N/A
+; 6. TBT4 Controller:   40.85.1
+; 7. DFP PD:            1.23.139
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceThunderbolt4DockFwUpdate.cat
+DriverVer = 03/03/2023,2.26.4.0
+PnPLockDown=1
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64
+
+[Standard.NTARM64]
+%SurfaceThunderbolt4DockFwUpdate.DeviceDesc%=SurfaceThunderbolt4DockFwUpdate, HID\VID_045E&PID_0855&Col01
+%SurfaceThunderbolt4DockFwUpdate.DeviceDesc%=SurfaceThunderbolt4DockFwUpdate, HID\VID_045E&PID_0855&MI_00&Col01
+
+[SourceDisksNames]
+1 = %DiskName%
+
+; =================== UMDF Device ==================================
+
+[SurfaceThunderbolt4DockFwUpdate.NT]
+Include            = HidCfu.inf
+Needs              = HidCfu.NT
+CopyFiles          = SurfaceThunderbolt4DockFwUpdate.CopyFiles
+
+[SurfaceThunderbolt4DockFwUpdate.NT.hw]
+AddReg = SurfaceThunderbolt4DockFwUpdate_HWAddReg
+
+[SurfaceThunderbolt4DockFwUpdate_HWAddReg]
+HKR,,FriendlyName,,%FwUpdateFriendlyName%
+HKR,,UseHidSetOutputReport,0x00010001,1
+HKR,,Alignment,0x00010001,1
+HKR,,OfferInputValueCapabilityUsageRangeMinimum,0x00010001,0x8A
+HKR,,OfferOutputValueCapabilityUsageRangeMinimum,0x00010001, 0x8E
+HKR,,PayloadInputValueCapabilityUsageRangeMinimum,0x00010001,0x66
+HKR,,PayloadOutputValueCapabilityUsageRangeMinimum,0x00010001,0x61
+HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0x62
+
+; Specify the location of the firmware offer and payload file in the registry.
+; The files are kept in driver store. When deployed, %13% would be expanded to the actual path in driver store.
+
+; The driver process offers alphanumerically, so below registry keys are named specially to update firmware in a preferred order.
+; Although firmware does not require a specific update order, it is better not to change this order without a good reason.
+; The registry keys are written at driver installation and will stay there even after driver uninstallation, so HidCfu always 
+; process those pairs indicated by those registry keys once they are written.
+
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_1,Offer,   0x00000000, %13%\SurfaceThunderbolt4Dock_1_AMC1.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_1,Payload,   0x00000000, %13%\SurfaceThunderbolt4Dock_1_AMC1.payload.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_2,Offer,   0x00000000, %13%\SurfaceThunderbolt4Dock_1_AMC2.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_2,Payload,   0x00000000, %13%\SurfaceThunderbolt4Dock_1_AMC2.payload.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_3,Offer,   0x00000000, %13%\SurfaceThunderbolt4Dock_2_UFPPD1.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_3,Payload,   0x00000000, %13%\SurfaceThunderbolt4Dock_2_UFPPD1.payload.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_4,Offer,   0x00000000, %13%\SurfaceThunderbolt4Dock_2_UFPPD2.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_4,Payload,   0x00000000, %13%\SurfaceThunderbolt4Dock_2_UFPPD2.payload.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_5,Offer,   0x00000000, %13%\SurfaceThunderbolt4Dock_3_U3HUB1.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_5,Payload,   0x00000000, %13%\SurfaceThunderbolt4Dock_3_U3HUB1.payload.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_6,Offer,   0x00000000, %13%\SurfaceThunderbolt4Dock_4_AUDIOS1.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_6,Payload,   0x00000000, %13%\SurfaceThunderbolt4Dock_4_AUDIOS1.payload.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_7,Offer,   0x00000000, %13%\SurfaceThunderbolt4Dock_6_TBT1.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_7,Payload,   0x00000000, %13%\SurfaceThunderbolt4Dock_6_TBT1.payload.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_8,Offer,   0x00000000, %13%\SurfaceThunderbolt4Dock_7_DFPPD1.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_8,Payload,   0x00000000, %13%\SurfaceThunderbolt4Dock_7_DFPPD1.payload.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_9,Offer,   0x00000000, %13%\SurfaceThunderbolt4Dock_7_DFPPD2.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\SurfaceThunderbolt4Dock_Pair_9,Payload,   0x00000000, %13%\SurfaceThunderbolt4Dock_7_DFPPD2.payload.bin
+
+[SourceDisksFiles]
+SurfaceThunderbolt4Dock_1_AMC1.offer.bin=1
+SurfaceThunderbolt4Dock_1_AMC1.payload.bin=1
+SurfaceThunderbolt4Dock_1_AMC2.offer.bin=1
+SurfaceThunderbolt4Dock_1_AMC2.payload.bin=1
+SurfaceThunderbolt4Dock_2_UFPPD1.offer.bin=1
+SurfaceThunderbolt4Dock_2_UFPPD1.payload.bin=1
+SurfaceThunderbolt4Dock_2_UFPPD2.offer.bin=1
+SurfaceThunderbolt4Dock_2_UFPPD2.payload.bin=1
+SurfaceThunderbolt4Dock_3_U3HUB1.offer.bin=1
+SurfaceThunderbolt4Dock_3_U3HUB1.payload.bin=1
+SurfaceThunderbolt4Dock_4_AUDIOS1.offer.bin=1
+SurfaceThunderbolt4Dock_4_AUDIOS1.payload.bin=1
+SurfaceThunderbolt4Dock_6_TBT1.offer.bin=1
+SurfaceThunderbolt4Dock_6_TBT1.payload.bin=1
+SurfaceThunderbolt4Dock_7_DFPPD1.offer.bin=1
+SurfaceThunderbolt4Dock_7_DFPPD1.payload.bin=1
+SurfaceThunderbolt4Dock_7_DFPPD2.offer.bin=1
+SurfaceThunderbolt4Dock_7_DFPPD2.payload.bin=1
+
+[SurfaceThunderbolt4DockFwUpdate.CopyFiles]
+SurfaceThunderbolt4Dock_1_AMC1.offer.bin
+SurfaceThunderbolt4Dock_1_AMC1.payload.bin
+SurfaceThunderbolt4Dock_1_AMC2.offer.bin
+SurfaceThunderbolt4Dock_1_AMC2.payload.bin
+SurfaceThunderbolt4Dock_2_UFPPD1.offer.bin
+SurfaceThunderbolt4Dock_2_UFPPD1.payload.bin
+SurfaceThunderbolt4Dock_2_UFPPD2.offer.bin
+SurfaceThunderbolt4Dock_2_UFPPD2.payload.bin
+SurfaceThunderbolt4Dock_3_U3HUB1.offer.bin
+SurfaceThunderbolt4Dock_3_U3HUB1.payload.bin
+SurfaceThunderbolt4Dock_4_AUDIOS1.offer.bin
+SurfaceThunderbolt4Dock_4_AUDIOS1.payload.bin
+SurfaceThunderbolt4Dock_6_TBT1.offer.bin
+SurfaceThunderbolt4Dock_6_TBT1.payload.bin
+SurfaceThunderbolt4Dock_7_DFPPD1.offer.bin
+SurfaceThunderbolt4Dock_7_DFPPD1.payload.bin
+SurfaceThunderbolt4Dock_7_DFPPD2.offer.bin
+SurfaceThunderbolt4Dock_7_DFPPD2.payload.bin
+
+[SurfaceThunderbolt4DockFwUpdate.NT.Services]
+Include            = HidCfu.inf
+Needs              = HidCfu.NT.Services
+
+[SurfaceThunderbolt4DockFwUpdate.NT.Wdf]
+Include            = HidCfu.inf
+Needs              = HidCfu.NT.Wdf
+
+[DestinationDirs]
+SurfaceThunderbolt4DockFwUpdate.CopyFiles=13
+
+; =================== Generic ==================================
+
+[Strings]
+ManufacturerName="Surface"
+SurfaceThunderbolt4DockFwUpdate.DeviceDesc = "Surface Thunderbolt(TM) 4 Dock Firmware Update"
+DiskName = "Surface Thunderbolt(TM) 4 Dock Firmware Update Installation Disk"
+FwUpdateFriendlyName= "Microsoft Surface Thunderbolt(TM) 4 Dock Firmware Update"

@@ -1,0 +1,112 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File:             DevicesTelemetryServiceDriver.inf
+;
+; Description:      Installation file for Devices Telemetry Service.
+;                   This INX will install a driver on UP:FF08_U:0053 TLC to 
+;                   install DevicesTelemetryService.exe, AppLaunch.exe and
+;                   SurfaceApp (from Store). The later two entities are involved 
+;                   to show graphic interface for user consent of sharing 
+;                   telemetry.
+;
+; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+Class=Extension
+ClassGuid={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider=%ManufacturerName%
+ExtensionId={3E0ED7D3-04CF-4A72-BA82-28F1E5D5BFEB}
+CatalogFile=DevicesTelemetryServiceDriver.cat
+DriverVer = 02/16/2023,6.196.139.0
+PnPLockDown=1
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+DevicesTelemetryService.exe=1
+AppLauncher.exe=1
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64
+
+[Standard.NTARM64]
+%DeviceName%=DevicesTelemetryServiceDriver, HID\VID_045E&PID_0855&Col04
+%DeviceName%=DevicesTelemetryServiceDriver, HID\VID_045E&PID_0855&MI_00&Col04
+
+[DevicesTelemetryServiceDriver.NT]
+CopyFiles=ServiceCopy
+
+[DevicesTelemetryServiceDriver.NT.hw]
+AddReg = DevicesTelemetryServiceDriver_AddReg
+
+[DevicesTelemetryServiceDriver_AddReg]
+HKR,,FriendlyName,,%DriverFriendlyName%
+
+[DevicesTelemetryServiceDriver.NT.Events]
+AddEventProvider = {1E8D5623-6573-47F2-B69E-EEA8923CE036},EventProviderInstall
+
+[DevicesTelemetryServiceDriver.NT.Services]
+AddService=DevicesTelemetryService,0x00000800,DevicesTelemetryServiceInstall
+
+
+[DevicesTelemetryServiceInstall]
+DisplayName   = %ServiceDisplayName%
+Description   = %ServiceDescription%
+ServiceType   = %SERVICE_WIN32_SHARE_PROCESS%
+StartType     = %SERVICE_AUTO_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %13%\DevicesTelemetryService.exe
+
+[EventProviderInstall]
+ProviderName=Microsoft-Devices-DevicesTelemetryService
+ResourceFile=%13%\DevicesTelemetryService.exe
+MessageFile=%13%\DevicesTelemetryService.exe
+AddChannel=Microsoft-Devices-DevicesTelemetryService/Operational,0x2,Channel_Install
+
+[Channel_Install]
+Isolation = 1
+Enabled   = 1
+
+[DestinationDirs]
+ServiceCopy=13
+
+[ServiceCopy]
+DevicesTelemetryService.exe
+AppLauncher.exe
+
+[DevicesTelemetryServiceDriver.NT.Software]
+AddSoftware=MicrosoftSurfaceApp,%PROCESSED_ONCE_FOR_EACH_DEVICE%,DevicesTelemetryServiceDriver_SoftwareInstall
+
+[DevicesTelemetryServiceDriver_SoftwareInstall]
+SoftwareType = %UWP_APP%
+SoftwareID = pfn://Microsoft.SurfaceHub_8wekyb3d8bbwe
+
+[Strings]
+ManufacturerName="Surface"
+DiskName = "Devices Telemetry Service Driver Installation Disk"
+DeviceName="Devices Telemetry Service"
+ServiceDisplayName="Devices Telemetry Service"
+ServiceDescription="Provides support specific for Microsoft devices"
+DriverFriendlyName="Microsoft Devices Telemetry Service"
+
+
+;
+; Non-localizable
+;
+NULL_DRIVER                     = 2
+SPSVCINST_ASSOCSERVICE          = 0x00000002
+SERVICE_KERNEL_DRIVER           = 1
+SERVICE_BOOT_START              = 0
+SERVICE_SYSTEM_START            = 1
+SERVICE_AUTO_START              = 2
+SERVICE_DEMAND_START            = 3
+SERVICE_ERROR_NORMAL            = 1
+SERVICE_ERROR_IGNORE            = 0
+SERVICE_WIN32_SHARE_PROCESS     = 0x00000020
+PROCESSED_ONCE_FOR_EACH_DEVICE  = 0x00000001
+UWP_APP                         = 2
+
+;; eof: DevicesTelemetryServiceDriver.inx
+;;
