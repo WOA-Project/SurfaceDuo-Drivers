@@ -1,9 +1,9 @@
-## Surface Duo Drivers BSP - Version 2308.12 (Rainbow Road)
+## Surface Duo Drivers BSP - Version 2309.40 (Nebula)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 08/04/2023 11:00 PM UTC+0
+**Released:** 09/14/2023 12:20 AM UTC+1
 
 **Quality:** Preview
 
@@ -14,7 +14,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2308.12.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2309.40.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please follow the following migration guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest DriverUpdater release as well: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0
 
@@ -32,26 +32,17 @@ You can view compatibility for this release, along with important information an
 
 What's new?
 
-- Updates Qualcomm Drivers to version 1.0.1980.0000, this includes updates to:
+- Updates System firmware binaries for Surface Duo 1 to the latest version ever for this device as shipped by Microsoft.
 
-	- Qualcomm Adreno 640
-	- Qualcomm Aqstic Audio Miniport
-	- Qualcomm Atheros Wi-Fi
-	- Qualcomm Atheros Bluetooth
-	- Qualcomm Hexagon Subsystem Manager
-	- Qualcomm Hexagon FastRPC Bus
+- Addresses an issue where Audio peripherals such as mics or bluetooth speakers would be broken under Windows 10 Version 2004 or lower
 
-- Updates SSDE to remove the workaround blocking Secure Boot Signature Exclusion Database (DBX)
+- Enables support for the Surface Thunderbolt(TM) 4 Docking accessory
 
-- Updates Adaptation kit scripts to remove the workaround preventing the provisioning of Secure Boot variable on first use
+- Further work comitted towards WCOS enablement, nothing to share at the moment
 
-- Addresses an issue where the OS would unexpectedly bugcheck while installing Windows Updates containing DBX updates, or BlackLotus mitigations
+- (UEFI change) Resolved an issue where the OS may crash and not boot anymore properly on Windows 11 Moment 2 and Moment 3 updates after installing the blacklotus mitigation updates.
 
-- Addresses an issue where Windows Core OS based products would bug check on first run
-
-- Mitigates an issue temporarily with Gallium Semester Windows Insider Builds
-
-- Addresses an issue where Miracast was not functional in the past driver releases
+- (UEFI change) Resolved an issue where Windows 10 Version 1809 and lower builds may fail to boot under the uefi environment
 
 - General system stability improvements to enhance the user's experience.
 
