@@ -38,6 +38,23 @@ What's new?
 
 - The Surface App now displays the correct image for Surface Duo and provides options for eSIM, regulator, and pen pressure calibration options
 
+- Updates the following drivers to version 1.0.2000.0:
+	- Qualcomm Audio Miniport Driver for OEMB1 devices
+	- Qualcomm Audio Sound Listening Model for Voice Activation System Service for OEMB1 devices
+	- Qualcomm Audio System Configuration Package for OEMB1 devices
+	- Qualcomm Audio Miniport Configuration Package for OEMB1 devices
+	- Qualcomm Sensor Configuration Package for OEMB1 devices
+	- Qualcomm Modem Configuration Package for OEMB1 devices
+	- Qualcomm Audio DSP Extension Package for OEMB1 devices
+	- Qualcomm Compute DSP Extension Package for OEMB1 devices
+	- Qualcomm Modem DSP Extension Package for OEMB1 devices
+	- Qualcomm Sensor DSP Extension Package for OEMB1 devices
+	- Qualcomm Trusted Runtime Environment Driver for OEMB1 devices
+	- Qualcomm Adreno 640 Driver for OEMB1 devices (Desktop & WCOS)
+	- Qualcomm JPEG Encoder Driver
+	- Qualcomm Subsystem Manager Driver
+	- Qualcomm IOMMU Bridge for Microsoft Hyper-V Hypervisor Platform Driver
+
 - General system stability improvements to enhance the user's experience.
 
 <details>
