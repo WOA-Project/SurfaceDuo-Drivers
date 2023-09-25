@@ -117,8 +117,6 @@ What's new?
 
 - Flipping the device, however, is not smooth.
 
-- Charging remains unavailable in Windows. Please charge in Android.
-
 - Users upgrading from releases older than the January ones may want to clean install again.
 
 - Booting Windows 10 18362/18363 with Secure Boot enabled is not currently supported and will result in a broken installation.
