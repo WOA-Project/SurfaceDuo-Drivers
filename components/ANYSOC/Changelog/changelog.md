@@ -1,4 +1,4 @@
-## Surface Duo Drivers BSP - Version 2309.80 (Monza)
+## Surface Duo Drivers BSP - Version 2310.1 (Sunflower)
 
 <details>
   <summary>General information</summary>
