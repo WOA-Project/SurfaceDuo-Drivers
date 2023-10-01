@@ -32,13 +32,17 @@ You can view compatibility for this release, along with important information an
 
 What's new?
 
-- Charging. (That's all)
+- Hopefully fixes an issue where some people had a bugcheck (BOUND_IMAGE_UNSUPPORTED) with qcbattminiclass installed. Please let us know if you still get this issue because we were never able to reproduce that one. If you get this issue on clean installs, please remove the qcbattminiclass driver temporarily for installation.
 
-- The Surface App now comes preinstalled
+- We fixed the issue that prevented Gallium Windows builds from cleaninstalling with sensor drivers installed. For now you may get a black screen on the second boot, but you can press the power button when you do and the installation will continue. We hope to address further of the issues linked to this with a later release. For now this means, epsilon_ga.txt is no more. Use epsilon.txt :) (Note: you may need to wait 15s before it starts to really work and show just a moment, or plug in a charger/unplug it, but it will work, do not long press power or you'll reboot the device and get into a broken state)
 
-- The Surface App now displays the correct image for Surface Duo and provides options for eSIM, regulator, and pen pressure calibration options
+- Added support for servicing UFS storage chip firmwares in the Operating System
 
-- Updates the following drivers to version 1.0.2000.0:
+- Introducing the Thermal Framework Proxy driver stack, this aims to solve a few issues with thermals and efficiency when the device is closed all the way, folded all the way, or fully open flat. More improvements regarding thermals are expected soon.
+
+- Introducing the driver to enable eSIM module firmware updates under Windows
+
+- Updates the following drivers to version 1.0.2020.0:
 	- Qualcomm Audio Miniport Driver for OEMB1 devices
 	- Qualcomm Audio Sound Listening Model for Voice Activation System Service for OEMB1 devices
 	- Qualcomm Audio System Configuration Package for OEMB1 devices
@@ -51,9 +55,11 @@ What's new?
 	- Qualcomm Sensor DSP Extension Package for OEMB1 devices
 	- Qualcomm Trusted Runtime Environment Driver for OEMB1 devices
 	- Qualcomm Adreno 640 Driver for OEMB1 devices (Desktop & WCOS)
-	- Qualcomm JPEG Encoder Driver
 	- Qualcomm Subsystem Manager Driver
-	- Qualcomm IOMMU Bridge for Microsoft Hyper-V Hypervisor Platform Driver
+	- Qualcomm Atheros Bluetooth Driver for OEMB1 devices
+	- Qualcomm Atheros Bluetooth Configuration Package for OEMB1 devices
+	- Qualcomm Atheros Bluetooth Subdevice Extension Package
+	- Qualcomm Atheros WLAN Driver for OEMB1 devices
 
 - General system stability improvements to enhance the user's experience.
 
@@ -66,16 +72,16 @@ What's new?
 
 - I am running a build < 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ti.txt```
 
-- I am running a build < 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon.txt```
-
-- I am running a build >= 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ga.txt```
+- I am running a build >= 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon.txt```
   </p>
 </details>
 
 <details>
   <summary>Known issues</summary>
   <p>
-- Sensors are temporarily unavailable on Windows 11 Canary Channel Insider Builds (Gallium)
+- Dialer and the underlying phone stack are not available under Gallium Semester OS builds (Canary Channel)
+
+- Installing Gallium Semester Insider builds may lead to a black screen on second boot of the OS, simply press the power button to continue.
 
 - Booting Windows 10 18362/18363 will lead to "static screen" effects on the right display, much like driver releases from last year did on any version of Windows. A fix is being worked on for the next release.
 
