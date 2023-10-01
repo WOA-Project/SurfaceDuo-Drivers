@@ -1,0 +1,61 @@
+;/*++
+;
+;Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;Module Name:
+;    SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.inx
+;
+;Abstract:
+;    INF file for installing the SurfaceSfuKLUDG4UHDBB2D1ExtnPackage. This will create a SWC\ DevNode
+;    which will service as the target HWID for the Disk storage firmware package.
+;    This package supports 128gb UFS3.0 storage disk.
+;--*/
+
+[Version]
+Signature="$Windows NT$"
+Class = Extension
+ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider=%ManufacturerName%
+ExtensionId = {EB9431B8-92E7-4008-8DB4-883DB84BE1D9}
+CatalogFile=SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.cat
+DriverVer = 01/24/2020,1.1.139.0
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTarm64
+
+[Standard.NTarm64]
+%SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.DeviceDesc%=StorageKLUDG4UHDB-B2D1, SCSI\Disk_SAMSUNG_KLUDG4UHDB-B2D1
+
+
+[StorageKLUDG4UHDB-B2D1.NT]
+[StorageKLUDG4UHDB-B2D1.NT.Components]
+AddComponent = StorageKLUDG4UHDB-B2D1_component,,StorageKLUDG4UHDB-B2D1_ComponentInstall
+
+[StorageKLUDG4UHDB-B2D1_ComponentInstall]
+ComponentIds=StorageKLUDG4UHDB-B2D1
+
+;*****************************************
+; Strings section
+;*****************************************
+
+[Strings]
+ManufacturerName = "Surface"
+DiskName = "Surface Ufs Extn package Installation"
+SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.DeviceDesc = "KLUDG4UHDBB2D1 Ufs Extn Package"
+SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.SVCDESC = "KLUDG4UHDBB2D1 Ufs Extn Package"
+
+;Non-Localizable
+REG_EXPAND_SZ          = 0x00020000
+REG_DWORD              = 0x00010001
+REG_MULTI_SZ           = 0x00010000
+REG_BINARY             = 0x00000001
+REG_SZ                 = 0x00000000
+
+SERVICE_KERNEL_DRIVER  = 0x1
+SERVICE_ERROR_IGNORE   = 0x0
+SERVICE_ERROR_NORMAL   = 0x1
+SERVICE_ERROR_SEVERE   = 0x2
+SERVICE_ERROR_CRITICAL = 0x3
