@@ -1,0 +1,69 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File:               SurfaceSfuTHGJFCT0T44BAILBFwPackage.inx
+;
+; Description:        Driver installation file for firmware update.
+;
+; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+; Licensed under the MIT license.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+Class=Firmware
+ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceSfuTHGJFCT0T44BAILBFwPackage.cat
+DriverVer = 01/24/2020,1.1.139.0
+PnPLockDown=1
+
+[SourceDisksNames]
+1= %DiskName%
+
+[DestinationDirs]
+StorFwUpdateSurface.CopyFiles=13
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTarm64
+
+[Standard.NTarm64]
+%StorFwUpdateSurface.DeviceDesc%=StorFwUpdateSurface, SWC\StorageTHGJFCT0T44BAILB
+
+[StorFwUpdateSurface.NT]
+;Include            = StorFwUpdate.inf
+;Needs              = StorFwUpdate.NT
+CopyFiles          = StorFwUpdateSurface.CopyFiles
+
+[StorFwUpdateSurface.NT.Wdf]
+;Include            = StorFwUpdate.inf
+;Needs              = StorFwUpdate.NT.Wdf
+
+[StorFwUpdateSurface.NT.HW]
+AddReg = StorFwUpdateSurface_HWAddReg
+
+[StorFwUpdateSurface_HWAddReg]
+HKR,,FriendlyName,,%FwUpdateFriendlyName%
+
+; Specify the location of the firmware offer and payload file in the registry.
+; The files are kept in driver store. When deployed, %13% would be expanded to the actual path
+; in driver store.
+;
+HKR,0D9EB3D6-6F14-4E8A-811B-F3B19F7ED98A\0,FirmwareImageVersion, 0x00000000, "1000"
+HKR,0D9EB3D6-6F14-4E8A-811B-F3B19F7ED98A\0,FirmwareFileName, 0x00000000, %13%\THGJFCT0T44BAILB_General_P10.bin
+
+[SourceDisksFiles]
+;THGJFCT0T44BAILB_General_P10.bin=1
+
+[StorFwUpdateSurface.CopyFiles]
+;THGJFCT0T44BAILB_General_P10.bin
+
+[StorFwUpdateSurface.NT.Services]
+;Include            = StorFwUpdate.inf
+;Needs              = StorFwUpdate.NT.Services
+
+; =================== Generic ==================================
+
+[Strings]
+ManufacturerName="Surface"
+StorFwUpdateSurface.DeviceDesc = "Storage Firmware Update THGJFCT0T44BAILB"
+DiskName = "Storage Firmware Update Installation Disk"
+FwUpdateFriendlyName= "THGJFCT0T44BAILB Firmware Update"

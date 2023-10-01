@@ -3,12 +3,12 @@
 ;Copyright (c) Microsoft Corporation.  All rights reserved.
 ;
 ;Module Name:
-;    SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.inx
+;    SurfaceSfuTHGJFCT1T84BAICBExtnPackage.inx
 ;
 ;Abstract:
-;    INF file for installing the SurfaceSfuKLUDG4UHDBB2D1ExtnPackage. This will create a SWC\ DevNode
+;    INF file for installing the SurfaceSfuTHGJFCT1T84BAICBExtnPackage. This will create a SWC\ DevNode
 ;    which will service as the target HWID for the Disk storage firmware package.
-;    This package supports 128gb UFS3.0 storage disk.
+;    This package supports 256gb UFS3.0 storage disk.
 ;--*/
 
 [Version]
@@ -16,8 +16,8 @@ Signature="$Windows NT$"
 Class = Extension
 ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider=%ManufacturerName%
-ExtensionId = {7246E775-E478-498C-B51B-D3485AE76252}
-CatalogFile=SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.cat
+ExtensionId = {8C82D03A-4D2F-4A7E-ABAC-43315217C861}
+CatalogFile=SurfaceSfuTHGJFCT1T84BAICBExtnPackage.cat
 DriverVer = 01/24/2020,1.1.139.0
 
 [SourceDisksNames]
@@ -27,15 +27,15 @@ DriverVer = 01/24/2020,1.1.139.0
 %ManufacturerName%=Standard,NTarm64
 
 [Standard.NTarm64]
-%SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.DeviceDesc%=StorageKLUDG4UHDB-B2D1, SCSI\Disk_SAMSUNG_KLUDG4UHDB-B2D1
+%SurfaceSfuTHGJFCT1T84BAICBExtnPackage.DeviceDesc%=StorageTHGJFCT1T84BAICB, SCSI\Disk_TOSHIBA_THGJFCT1T84BAICB
 
 
-[StorageKLUDG4UHDB-B2D1.NT]
-[StorageKLUDG4UHDB-B2D1.NT.Components]
-AddComponent = StorageKLUDG4UHDB-B2D1_component,,StorageKLUDG4UHDB-B2D1_ComponentInstall
+[StorageTHGJFCT1T84BAICB.NT]
+[StorageTHGJFCT1T84BAICB.NT.Components]
+AddComponent = StorageTHGJFCT1T84BAICB_component,,StorageTHGJFCT1T84BAICB_ComponentInstall
 
-[StorageKLUDG4UHDB-B2D1_ComponentInstall]
-ComponentIds=StorageKLUDG4UHDB-B2D1
+[StorageTHGJFCT1T84BAICB_ComponentInstall]
+ComponentIds=StorageTHGJFCT1T84BAICB
 
 ;*****************************************
 ; Strings section
@@ -44,8 +44,8 @@ ComponentIds=StorageKLUDG4UHDB-B2D1
 [Strings]
 ManufacturerName = "Surface"
 DiskName = "Surface Ufs Extn package Installation"
-SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.DeviceDesc = "KLUDG4UHDBB2D1 Ufs Extn Package"
-SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.SVCDESC = "KLUDG4UHDBB2D1 Ufs Extn Package"
+SurfaceSfuTHGJFCT1T84BAICBExtnPackage.DeviceDesc = "THGJFCT1T84BAICB Ufs Extn Package"
+SurfaceSfuTHGJFCT1T84BAICBExtnPackage.SVCDESC = "THGJFCT1T84BAICB Ufs Extn Package"
 
 ;Non-Localizable
 REG_EXPAND_SZ          = 0x00020000

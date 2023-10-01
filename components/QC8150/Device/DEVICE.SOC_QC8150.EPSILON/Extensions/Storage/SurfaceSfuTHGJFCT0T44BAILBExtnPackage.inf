@@ -3,10 +3,10 @@
 ;Copyright (c) Microsoft Corporation.  All rights reserved.
 ;
 ;Module Name:
-;    SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.inx
+;    SurfaceSfuTHGJFCT0T44BAILBExtnPackage.inx
 ;
 ;Abstract:
-;    INF file for installing the SurfaceSfuKLUDG4UHDBB2D1ExtnPackage. This will create a SWC\ DevNode
+;    INF file for installing the SurfaceSfuTHGJFCT0T44BAILBExtnPackage. This will create a SWC\ DevNode
 ;    which will service as the target HWID for the Disk storage firmware package.
 ;    This package supports 128gb UFS3.0 storage disk.
 ;--*/
@@ -16,8 +16,8 @@ Signature="$Windows NT$"
 Class = Extension
 ClassGuid = {e2f84ce7-8efa-411c-aa69-97454ca4cb57}
 Provider=%ManufacturerName%
-ExtensionId = {7246E775-E478-498C-B51B-D3485AE76252}
-CatalogFile=SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.cat
+ExtensionId = {BCF46217-1EEF-429F-BF1E-29BCC536E621}
+CatalogFile=SurfaceSfuTHGJFCT0T44BAILBExtnPackage.cat
 DriverVer = 01/24/2020,1.1.139.0
 
 [SourceDisksNames]
@@ -27,15 +27,15 @@ DriverVer = 01/24/2020,1.1.139.0
 %ManufacturerName%=Standard,NTarm64
 
 [Standard.NTarm64]
-%SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.DeviceDesc%=StorageKLUDG4UHDB-B2D1, SCSI\Disk_SAMSUNG_KLUDG4UHDB-B2D1
+%SurfaceSfuTHGJFCT0T44BAILBExtnPackage.DeviceDesc%=StorageTHGJFCT0T44BAILB, SCSI\Disk_TOSHIBA_THGJFCT0T44BAILB
 
 
-[StorageKLUDG4UHDB-B2D1.NT]
-[StorageKLUDG4UHDB-B2D1.NT.Components]
-AddComponent = StorageKLUDG4UHDB-B2D1_component,,StorageKLUDG4UHDB-B2D1_ComponentInstall
+[StorageTHGJFCT0T44BAILB.NT]
+[StorageTHGJFCT0T44BAILB.NT.Components]
+AddComponent = StorageTHGJFCT0T44BAILB_component,,StorageTHGJFCT0T44BAILB_ComponentInstall
 
-[StorageKLUDG4UHDB-B2D1_ComponentInstall]
-ComponentIds=StorageKLUDG4UHDB-B2D1
+[StorageTHGJFCT0T44BAILB_ComponentInstall]
+ComponentIds=StorageTHGJFCT0T44BAILB
 
 ;*****************************************
 ; Strings section
@@ -44,8 +44,8 @@ ComponentIds=StorageKLUDG4UHDB-B2D1
 [Strings]
 ManufacturerName = "Surface"
 DiskName = "Surface Ufs Extn package Installation"
-SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.DeviceDesc = "KLUDG4UHDBB2D1 Ufs Extn Package"
-SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.SVCDESC = "KLUDG4UHDBB2D1 Ufs Extn Package"
+SurfaceSfuTHGJFCT0T44BAILBExtnPackage.DeviceDesc = "THGJFCT0T44BAILB Ufs Extn Package"
+SurfaceSfuTHGJFCT0T44BAILBExtnPackage.SVCDESC = "THGJFCT0T44BAILB Ufs Extn Package"
 
 ;Non-Localizable
 REG_EXPAND_SZ          = 0x00020000
