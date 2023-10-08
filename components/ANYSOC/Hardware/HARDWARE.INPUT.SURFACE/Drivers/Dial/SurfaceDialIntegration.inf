@@ -1,0 +1,96 @@
+;
+; SurfaceDialIntegration.inf
+;
+; Copyright (c) Microsoft Corporation. All rights reserved
+;
+
+[Version]
+Signature="$Windows NT$"
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Class=HIDClass
+Provider=%ManufacturerName%
+CatalogFile=SurfaceDialIntegration.cat
+DriverSet={D5B6947A-F5A6-4B05-B699-61C6E3B56633}
+PnPLockDown=1
+
+DriverVer=07/25/2016,2.0.8.0
+
+[DestinationDirs]
+DefaultDestDir   = 13
+;
+; Driver information
+;
+;************************************************************
+; Install Section
+;************************************************************
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64
+
+[Standard.NTARM64]
+%SurfaceDialIntegration.DeviceDesc% = SurfaceDialIntegration, HID\{00001812-0000-1000-8000-00805f9b34fb}_Dev_VID&02045e_PID&091b&Col02
+
+
+;************************************************************
+; General installation section
+;************************************************************
+[SurfaceDialIntegration.NT]
+CopyFiles=SurfaceDialIntegration.CopyFiles
+
+
+;************************************************************
+; File sections
+;************************************************************
+[SurfaceDialIntegration.CopyFiles]
+;SurfaceDialIntegration.sys
+
+;************************************************************
+; Service Installation
+;************************************************************
+[SurfaceDialIntegration.NT.Services]
+;AddService = SurfaceDialIntegration, 0x000001f8, SurfaceDialIntegration_Service_Inst
+AddService = ,%SPSVCINST_ASSOCSERVICE% ; null service install
+
+[SurfaceDialIntegration.NT.HW]
+; Add as device upper filter
+AddReg = SurfaceDialIntegration.HW.AddReg
+
+[SurfaceDialIntegration_Service_Inst]
+DisplayName    = %SurfaceDialIntegration.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 0                  ; SERVICE_ERROR_IGNORE
+ServiceBinary  = %13%\SurfaceDialIntegration.sys
+
+[SurfaceDialIntegration.HW.AddReg]
+HKR,,"UpperFilters",0x00010008,"SurfaceDialIntegration"
+
+
+;************************************************************
+; Source file information
+;************************************************************
+
+[SourceDisksNames]
+1 = %DiskId1%,,,
+
+[SourceDisksFiles]
+;SurfaceDialIntegration.sys = 1,,
+
+;************************************************************
+; Strings
+;************************************************************
+
+[Strings]
+;
+; Non-Localizable Strings
+;
+SERVICEROOT    = "System\CurrentControlSet\Services"
+SPSVCINST_ASSOCSERVICE= 0x00000002
+
+;
+; Localizable Strings
+;
+DiskId1="SurfaceDialIntegration Installation Disk"
+SurfaceDialIntegration.DeviceDesc = "Surface Dial Integration"
+SurfaceDialIntegration.SvcDesc = "SurfaceDialIntegration Service"
+ManufacturerName="Microsoft"

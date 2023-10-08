@@ -1,0 +1,81 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File:               SurfaceDialFwUpdate.inf
+;
+; Description:        Driver installation file for Surface Dial firmware update.
+;
+; Component00: Version 166.1291.373 (0x29942D75)
+;
+; Copyright (C) 2016 Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+Class=System
+ClassGUID={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%ManufacturerName%
+CatalogFile=SurfaceDialFwUpdate.cat
+DriverSet={76131A3A-E353-4A13-8157-7DDE57A3C7CE}
+DriverVer=08/12/2016,2.0.68.0
+PnPLockDown=1
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[SourceDisksFiles]
+;SurfaceDialFwUpdate.dll=1
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTARM64
+
+[Standard.NTARM64]
+%DeviceName%=SurfaceDialFwUpdate, {5E9A8CDC-14AB-4609-A017-68BCE594AB68}\SurfaceDialFwUpdate
+
+; =================== UMDF Device ==================================
+
+[SurfaceDialFwUpdate.NT]
+CopyFiles=SurfaceDialFwUpdate.CopyFiles
+
+[SurfaceDialFwUpdate.NT.HW]
+;Section required to prevent warnings
+
+[SurfaceDialFwUpdate.NT.Services]
+AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall     ; This sets the device as a function
+
+[SurfaceDialFwUpdate.NT.Wdf]
+UmdfService=SurfaceDialFwUpdate,SurfaceDialFwUpdate_Install
+UmdfServiceOrder=SurfaceDialFwUpdate
+
+[SurfaceDialFwUpdate_Install]
+UmdfLibraryVersion=2.0.0
+;ServiceBinary=%13%\SurfaceDialFwUpdate.dll
+
+[WUDFRD_ServiceInstall]
+DisplayName = %WudfRdDisplayName%
+ServiceType  = %SERVICE_KERNEL_DRIVER%
+StartType    = %SERVICE_DEMAND_START%
+ErrorControl = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\WUDFRd.sys
+
+[DestinationDirs]
+SurfaceDialFwUpdate.CopyFiles=13 ; copy to drivers\umdf
+
+[SurfaceDialFwUpdate.CopyFiles]
+;SurfaceDialFwUpdate.dll
+
+; =================== Generic ==================================
+
+[Strings]
+ManufacturerName="Microsoft"
+DiskName = "SurfaceDialFwUpdate Installation Disk"
+WudfRdDisplayName="Windows Driver Foundation - User-mode Driver Framework Reflector"
+DeviceName="Surface Dial Firmware Update"
+
+; non-localizable
+SERVICE_KERNEL_DRIVER = 1
+SERVICE_BOOT_START    = 0
+SERVICE_SYSTEM_START  = 1
+SERVICE_AUTO_START    = 2
+SERVICE_DEMAND_START  = 3
+SERVICE_ERROR_NORMAL  = 1
+SERVICE_ERROR_IGNORE  = 0
+
