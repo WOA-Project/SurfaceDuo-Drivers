@@ -42,8 +42,8 @@ CopyFiles=SurfaceDialFwUpdate.CopyFiles
 AddService=WUDFRd,0x000001fa,WUDFRD_ServiceInstall     ; This sets the device as a function
 
 [SurfaceDialFwUpdate.NT.Wdf]
-UmdfService=SurfaceDialFwUpdate,SurfaceDialFwUpdate_Install
-UmdfServiceOrder=SurfaceDialFwUpdate
+;UmdfService=SurfaceDialFwUpdate,SurfaceDialFwUpdate_Install
+;UmdfServiceOrder=SurfaceDialFwUpdate
 
 [SurfaceDialFwUpdate_Install]
 UmdfLibraryVersion=2.0.0
