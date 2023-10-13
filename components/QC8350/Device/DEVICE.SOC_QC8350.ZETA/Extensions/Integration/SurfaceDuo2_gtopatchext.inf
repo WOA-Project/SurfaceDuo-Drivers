@@ -1,0 +1,56 @@
+; File:               GtoPatchDrvUMDF_Extension.inf
+;
+; Description:        Extension inf for GtoPatchDrvUMDF
+;
+; Copyright (C) 2019 Microsoft Corporation.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Extension
+ClassGuid={e2f84ce7-8efa-411c-aa69-97454ca4cb57}
+Provider=%ManufacturerName%
+ExtensionId={314B202B-0951-4CAA-B611-34AADC7ADF5B}
+CatalogFile=SurfaceDuo2_gtopatchext.cat
+DriverVer = 06/21/2022,1.0.0.1
+
+[DestinationDirs]
+ProvisioningPackage_CopyFiles = 10,Provisioning\Packages      ; %WinDir%\Provisioning\Packages
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+surface_esim.ppkg  = 1,,
+
+[Manufacturer]
+%ManufacturerName% = Extension, NTARM64
+
+[Extension.NTARM64]
+%DeviceName%=GTOPatchExtension_Install, MBFW\{03A7E313-8933-40CF-A04B-8E4DF50B689C}
+%DeviceName%=GTOPatchExtension_Install, MBFW\{B9AB7698-10E5-4A4B-B7DB-9DA397EAC12D}
+%DeviceName%=GTOPatchExtension_Install, MBFW\{C9300BF0-A8CC-4E6D-9F0E-A2EC0A461571}
+%DeviceName%=GTOPatchExtension_Install, MBFW\{817C5AF7-E4FC-45BE-8962-80A1BA5DA2F0}
+%DeviceName%=GTOPatchExtension_Install, MBFW\{774825A1-9193-4D3F-B49D-314DB7C1A2F3}
+%DeviceName%=GTOPatchExtension_Install, MBFW\{F272FD6E-7CD3-4BD1-A8F8-1C185D07F080}
+%DeviceName%=GTOPatchExtension_Install, MBFW\{DEB4F091-5B13-433A-9F4B-DDD0B88880EE}
+%DeviceName%=GTOPatchExtension_Install, MBFW\{39CA0E35-3210-4761-BAEE-101062DBFD90}
+%DeviceName%=GTOPatchExtension_Install, MBFW\{AB00592F-0D29-4BD6-8579-5662F416F76D}
+%DeviceName%=GTOPatchExtension_Install, MBFW\{FE020E72-D332-4C60-86C1-8B793150745D}
+
+[GTOPatchExtension_Install.NT]
+CopyFiles=ProvisioningPackage_CopyFiles
+
+[ProvisioningPackage_CopyFiles]
+surface_esim.ppkg
+
+[GTOPatchExtension_Install.NT.Components]
+AddComponent = eSIMPatchSWComponent,,Component_Inst
+
+[Component_Inst]
+ComponentIDs = VEN_GEM&DEV_ESIM&SUBSYS_MSLC7002&REV_01
+
+[Strings]
+ManufacturerName="Surface"
+DeviceName="Gemalto eSIM Update Device Extension
+DiskName = "Gemalto eSIM Update Device Extension Installation Disk"
