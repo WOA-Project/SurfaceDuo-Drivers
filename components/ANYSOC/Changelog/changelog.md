@@ -1,4 +1,4 @@
-## Surface Duo Drivers BSP - Version 2310.1 (Sunflower)
+## Surface Duo Drivers BSP - Version 2310.45 (Merlin)
 
 <details>
   <summary>General information</summary>
