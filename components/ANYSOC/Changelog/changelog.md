@@ -3,7 +3,7 @@
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 09/24/2023 11:00 PM UTC+1
+**Released:** 10/14/2023 11:00 PM UTC+1
 
 **Quality:** Preview
 
@@ -14,9 +14,9 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2309.80.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2310.45.
 
-- ⚠️ For users who are updating from an earlier release than version 2301.93, please follow the following migration guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/MigrationGuidanceForSecureBoot.md and please download the latest DriverUpdater release as well: https://github.com/WOA-Project/DriverUpdater/releases/tag/v1.9.0.0
+- ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
 - ⚠️ If you need dual boot, you will have to make your own image. Please follow this guidance: https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/DualBoot.md
 
@@ -26,40 +26,25 @@ You can view compatibility for this release, along with important information an
 
 ---
 
+[▶️ Install Surface Duo (1st Gen) UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo1.md)
+
+[▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
+
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2310.45)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+
+---
+
 ### Release notes
 
-#### Surface Duo 1
+#### Surface Duo (1st Gen)
 
 What's new?
 
-- Hopefully fixes an issue where some people had a bugcheck (BOUND_IMAGE_UNSUPPORTED) with qcbattminiclass installed. Please let us know if you still get this issue because we were never able to reproduce that one. If you get this issue on clean installs, please remove the qcbattminiclass driver temporarily for installation.
+- Preliminary WIP support for Surface Dial
 
-- We fixed the issue that prevented Gallium Windows builds from cleaninstalling with sensor drivers installed. For now you may get a black screen on the second boot, but you can press the power button when you do and the installation will continue. We hope to address further of the issues linked to this with a later release. For now this means, epsilon_ga.txt is no more. Use epsilon.txt :) (Note: you may need to wait 15s before it starts to really work and show just a moment, or plug in a charger/unplug it, but it will work, do not long press power or you'll reboot the device and get into a broken state)
+- Addresses an issue where the phone may take longer to shutdown/reboot or show a bugcheck screen during shutdown/reboot
 
-- Added support for servicing UFS storage chip firmwares in the Operating System
-
-- Introducing the Thermal Framework Proxy driver stack, this aims to solve a few issues with thermals and efficiency when the device is closed all the way, folded all the way, or fully open flat. More improvements regarding thermals are expected soon.
-
-- Introducing the driver to enable eSIM module firmware updates under Windows
-
-- Updates the following drivers to version 1.0.2020.0:
-	- Qualcomm Audio Miniport Driver for OEMB1 devices
-	- Qualcomm Audio Sound Listening Model for Voice Activation System Service for OEMB1 devices
-	- Qualcomm Audio System Configuration Package for OEMB1 devices
-	- Qualcomm Audio Miniport Configuration Package for OEMB1 devices
-	- Qualcomm Sensor Configuration Package for OEMB1 devices
-	- Qualcomm Modem Configuration Package for OEMB1 devices
-	- Qualcomm Audio DSP Extension Package for OEMB1 devices
-	- Qualcomm Compute DSP Extension Package for OEMB1 devices
-	- Qualcomm Modem DSP Extension Package for OEMB1 devices
-	- Qualcomm Sensor DSP Extension Package for OEMB1 devices
-	- Qualcomm Trusted Runtime Environment Driver for OEMB1 devices
-	- Qualcomm Adreno 640 Driver for OEMB1 devices (Desktop & WCOS)
-	- Qualcomm Subsystem Manager Driver
-	- Qualcomm Atheros Bluetooth Driver for OEMB1 devices
-	- Qualcomm Atheros Bluetooth Configuration Package for OEMB1 devices
-	- Qualcomm Atheros Bluetooth Subdevice Extension Package
-	- Qualcomm Atheros WLAN Driver for OEMB1 devices
+- Addresses an issue preventing Operating System upgrades from working for OS flights in the Windows Insider Canary Channel
 
 - General system stability improvements to enhance the user's experience.
 
@@ -140,7 +125,15 @@ What's new?
 
 What's new?
 
-- Nothing New. Surface Duo 2 is still a Proof of Concept (PoC), don't expect much.
+- Merges most generic changes from Surface Duo (1st Gen) to Surface Duo 2
+
+- Resolves an issue where touch would not be functional in the most recent releases
+
+- Updates some system drivers to their latest october versions
+
+- General system stability improvements to enhance the user's experience.
+
+- Surface Duo 2 is still a Proof of Concept (PoC), don't expect much.
 
 ---
 
