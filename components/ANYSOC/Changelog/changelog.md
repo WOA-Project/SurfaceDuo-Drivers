@@ -3,7 +3,7 @@
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 10/14/2023 11:00 PM UTC+1
+**Released:** 10/22/2023 11:59 PM UTC+1
 
 **Quality:** Preview
 
@@ -40,11 +40,21 @@ You can view compatibility for this release, along with important information an
 
 What's new?
 
-- Preliminary WIP support for Surface Dial
+- We made some improvements in order to enable more consistent single screen mode posture experiences. There is still some rough edges, but the experience is drastically better
 
-- Addresses an issue where the phone may take longer to shutdown/reboot or show a bugcheck screen during shutdown/reboot
+- We also made further changes to ensure the apps you use and love open on the screen you opened them from. This is still beta quality and sometimes apps may still open on the wrong screen. again, room for improvements
 
-- Addresses an issue preventing Operating System upgrades from working for OS flights in the Windows Insider Canary Channel
+- We fixed an issue with Windows 11 ShyTaskbar (compact taskbar) preventing from maximizing fully apps on the second display as well
+
+- We also fixed numerous issues impacting the use of phone calls on latest Canary channel insider builds
+
+- The watermark also now only displays in a single screen, and ShyTaskbar enablement is more reliable
+
+- We fixed an issue where the device serial number reported in settings (& firmware) would not match the device serial number, as a result, the surface app is now able to automatically register your device with your microsoft account and give status on your warranty information
+
+- As part of the serial number changes, we also enabled roaming of device status across every device with the surface app installed, as you can see, here is shown another Surface Duo registered and charging
+
+- We fixed some issues that impacted accurate battery status reporting, we also fixed an issue impacting the use of specific debug utilities to view battery information on Surface Duo devices, we may release an utility another day as well for public consumption
 
 - General system stability improvements to enhance the user's experience.
 
@@ -124,14 +134,6 @@ What's new?
 #### Surface Duo 2
 
 What's new?
-
-- Merges most generic changes from Surface Duo (1st Gen) to Surface Duo 2
-
-- Resolves an issue where touch would not be functional in the most recent releases
-
-- Updates some system drivers to their latest october versions
-
-- General system stability improvements to enhance the user's experience.
 
 - Surface Duo 2 is still a Proof of Concept (PoC), don't expect much.
 
