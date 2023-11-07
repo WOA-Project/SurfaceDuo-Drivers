@@ -1,9 +1,9 @@
-## Surface Duo Drivers BSP - Version 2310.70 (Andromeda)
+## Surface Duo Drivers BSP - Version 2311.23 (Suzuki)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 10/22/2023 11:59 PM UTC+1
+**Released:** 11/07/2023 11:59 PM UTC+1
 
 **Quality:** Preview
 
@@ -14,7 +14,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2310.70.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2311.23.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -30,7 +30,7 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2310.70)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2311.23)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
@@ -40,23 +40,18 @@ You can view compatibility for this release, along with important information an
 
 What's new?
 
-- We made some improvements in order to enable more consistent single screen mode posture experiences. There is still some rough edges, but the experience is drastically better
-
-- We also made further changes to ensure the apps you use and love open on the screen you opened them from. This is still beta quality and sometimes apps may still open on the wrong screen. again, room for improvements
-
-- We fixed an issue with Windows 11 ShyTaskbar (compact taskbar) preventing from maximizing fully apps on the second display as well
-
-- We also fixed numerous issues impacting the use of phone calls on latest Canary channel insider builds
-
-- The watermark also now only displays in a single screen, and ShyTaskbar enablement is more reliable
-
-- We fixed an issue where the device serial number reported in settings (& firmware) would not match the device serial number, as a result, the surface app is now able to automatically register your device with your microsoft account and give status on your warranty information
-
-- As part of the serial number changes, we also enabled roaming of device status across every device with the surface app installed, as you can see, here is shown another Surface Duo registered and charging
-
-- We fixed some issues that impacted accurate battery status reporting, we also fixed an issue impacting the use of specific debug utilities to view battery information on Surface Duo devices, we may release an utility another day as well for public consumption
+- We made lots of bug fixes and improvements regarding USB-C to resolve issues when using Dock like devices. We also disabled VBUS power out due to numerous issues, and it not being usable anyway currently with powerless USB dongles. We aim to come up with a fix later this week for this as well.
 
 - General system stability improvements to enhance the user's experience.
+
+__New!__: We are now providing smaller download packages, specifically tailored towards a given device and OS target.
+
+- Please download ```SurfaceDuo-Drivers-v2311.20-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1 on Vibranium OS builds (19041 VB_RELEASE) or higher
+- Please download ```SurfaceDuo-Drivers-v2311.20-Desktop-Epsilon-TI.zip``` if you want drivers for Surface Duo 1 on Titanium OS builds (18362 19H1_RELEASE) or higher
+- Please download ```SurfaceDuo-Drivers-v2311.20-Desktop-Epsilon-RS5.zip``` if you want drivers for Surface Duo 1 on RS5 OS builds (17763 RS5_RELEASE) or higher
+- Please download ```SurfaceDuo-Drivers-v2311.20-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2 on Germanium OS builds (RS_PRERELEASE 2023) or higher
+
+Note: We are aware of people being impacted by issues with battery drivers causing a bugcheck (mistakenly called BSOD by most) during a clean installation. You can work around the problem for now by deleting the /components/QC8150/Device/DEVICE.SOC_QC8150.EPSILON/Drivers/Battery/qcbattminiclass8150.inf file prior to reinstalling (if you hit the issue), then let the device be setup all the way to the desktop, and add back the file, and update drivers again
 
 <details>
   <summary><b><i>Important!</i></b> New definition files are present, here's a summary of how to proceed:</summary>
