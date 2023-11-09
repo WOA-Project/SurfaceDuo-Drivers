@@ -1,9 +1,9 @@
-## Surface Duo Drivers BSP - Version 2311.23 (Suzuki)
+## Surface Duo Drivers BSP - Version 2311.30 (Ethos)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 11/07/2023 11:59 PM UTC+1
+**Released:** 11/09/2023 11:59 PM UTC+1
 
 **Quality:** Preview
 
@@ -14,7 +14,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2311.23.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2311.30.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -30,7 +30,7 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2311.23)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2311.30)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
@@ -40,37 +40,26 @@ You can view compatibility for this release, along with important information an
 
 What's new?
 
-- We made lots of bug fixes and improvements regarding USB-C to resolve issues when using Dock like devices. We also disabled VBUS power out due to numerous issues, and it not being usable anyway currently with powerless USB dongles. We aim to come up with a fix later this week for this as well.
+- Fixes an issue where connecting to external wireless displays using Miracast would crash the device
+
+- Rendering of both displays is now faster thanks to not having to rely on MDP BLT Engine anymore
+
+- Both displays now have vsync working so one doesn't lag with the other anymore
+
+- Fixed a crash issue when decoding/encoding videos like on youtube or when recording the desktop using the snipping tool application
+
+- Workarounded a crash issue regarding the battery miniport interface driver during clean installations of Windows Desktop
 
 - General system stability improvements to enhance the user's experience.
 
 __New!__: We are now providing smaller download packages, specifically tailored towards a given device and OS target.
 
-- Please download ```SurfaceDuo-Drivers-v2311.20-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1 on Vibranium OS builds (19041 VB_RELEASE) or higher
-- Please download ```SurfaceDuo-Drivers-v2311.20-Desktop-Epsilon-TI.zip``` if you want drivers for Surface Duo 1 on Titanium OS builds (18362 19H1_RELEASE) or higher
-- Please download ```SurfaceDuo-Drivers-v2311.20-Desktop-Epsilon-RS5.zip``` if you want drivers for Surface Duo 1 on RS5 OS builds (17763 RS5_RELEASE) or higher
-- Please download ```SurfaceDuo-Drivers-v2311.20-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2 on Germanium OS builds (RS_PRERELEASE 2023) or higher
-
-Note: We are aware of people being impacted by issues with battery drivers causing a bugcheck (mistakenly called BSOD by most) during a clean installation. You can work around the problem for now by deleting the /components/QC8150/Device/DEVICE.SOC_QC8150.EPSILON/Drivers/Battery/qcbattminiclass8150.inf file prior to reinstalling (if you hit the issue), then let the device be setup all the way to the desktop, and add back the file, and update drivers again
-
-<details>
-  <summary><b><i>Important!</i></b> New definition files are present, here's a summary of how to proceed:</summary>
-  <p>
-- I am running a build < 17763, you are unsupported.
-
-- I am running a build < 18362, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_rs5.txt```
-
-- I am running a build < 19041, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon_ti.txt```
-
-- I am running a build >= 25905, use Driver Updater with ```\definitions\Desktop\ARM64\epsilon.txt```
-  </p>
-</details>
+- Please download ```SurfaceDuo-Drivers-v2311.30-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2311.30-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 <details>
   <summary>Known issues</summary>
   <p>
-- Dialer and the underlying phone stack are not available under Gallium Semester OS builds (Canary Channel)
-
 - Installing Gallium Semester Insider builds may lead to a black screen on second boot of the OS, simply press the power button to continue.
 
 - Booting Windows 10 18362/18363 will lead to "static screen" effects on the right display, much like driver releases from last year did on any version of Windows. A fix is being worked on for the next release.
@@ -86,8 +75,6 @@ Note: We are aware of people being impacted by issues with battery drivers causi
 - On device speakers are not functional.
 
 - Dongles are not detected correctly when plugged into the USB Type-C port.
-
-- Battery charging remains unstable and not recommended.
 
 - Updating drivers may lead to weird configurations if done on old driver releases.
 
@@ -111,7 +98,7 @@ Note: We are aware of people being impacted by issues with battery drivers causi
 
 - Digitizers aren't calibrated correctly.
 
-- Flipping the device, however, is not smooth.
+- Flipping the device is not smooth.
 
 - Users upgrading from releases older than the January ones may want to clean install again.
 
