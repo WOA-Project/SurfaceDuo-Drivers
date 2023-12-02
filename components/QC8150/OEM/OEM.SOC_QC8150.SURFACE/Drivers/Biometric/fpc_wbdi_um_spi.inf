@@ -1,0 +1,183 @@
+;
+;  Biometric Sensor Device - SPI 
+;
+;  Copyright (c) Fingerprint Cards AB 
+; ------------------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Class       = Biometric
+ClassGuid   = {53D29EF7-377C-4D14-864B-EB3A85769359}
+Provider    = %FPC%
+CatalogFile = fpc_wbdi_um_spi.cat
+DriverVer = 08/29/2018,1.1.23.2
+PnpLockdown = 1
+
+; =================== Manufacturer/Models sections =======================
+
+[Manufacturer]
+%FPC% = Fingerprint, NTamd64, NTarm, NTARM64
+
+[Fingerprint.NTamd64]
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1020
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1021
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1022
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1140
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1150
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC2200
+
+[Fingerprint.NTarm]
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1000
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1020
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1021
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1022
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1140
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1150
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC2200
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\MSHW1023
+
+[Fingerprint.NTARM64]
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1000
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1020
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1021
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1022
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1140
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC1150
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\FPC2200
+"Surface Fingerprint Sensor"    = FpcSpb_Install_T, ACPI\MSHW0133
+
+; ------------------------------------------------------------------------
+
+[FpcSpb_Install_T.NT]
+CopyFiles    = UMDriverCopy
+CopyFiles    = WinBioEngineAdapterCopy_Touch
+AddProperty  = Device_Properties
+
+; ------------------------------------------------------------------------
+
+[FpcSpb_Install_T.NT.hw]
+AddReg       = Biometric_Device_AddReg
+AddReg       = Biometric_Device_AddSensorReg
+AddReg       = DriverPlugInAddReg
+AddReg       = DatabaseAddReg_T
+;AddReg       = FMAAddReg
+
+; ------------------------------------------------------------------------
+
+[FpcSpb_Install_T.NT.Services]
+AddService   = WUDFRd,0x000001fa,WUDFRD_ServiceInstall
+
+; ------------------------------------------------------------------------
+
+[FpcSpb_Install_T.NT.CoInstallers]
+AddReg = WUDF_CoInstallers_AddReg
+
+; ------------------------------------------------------------------------
+
+[FpcSpb_Install_T.NT.Wdf]
+UmdfService              = FpcSpb,UMDFFpcSpb_Install
+UmdfServiceOrder         = FpcSpb
+UmdfImpersonationLevel   = Impersonation
+UmdfDirectHardwareAccess = AllowDirectHardwareAccess
+
+; ------------------------------------------------------------------------
+
+[UMDFFpcSpb_Install]
+UmdfLibraryVersion = 2.0.0
+;DriverCLSID        = {7004B9B7-C377-4654-934C-5CB9F1E7C42B}
+ServiceBinary      = %13%\fpc_wbdi.dll
+
+[WUDFRD_ServiceInstall]
+DisplayName        = %WudfRdDisplayName%
+ServiceType        = 1
+StartType          = 3
+ErrorControl       = 1
+ServiceBinary      = %12%\WUDFRd.sys
+LoadOrderGroup     = Base
+
+; ------------------------------------------------------------------------
+
+[Device_Properties]
+DeviceIcon,,,,"%%SystemRoot%%\System32\SysClass.dll,-201"
+
+; ------------------------------------------------------------------------
+
+[Biometric_Device_AddReg]
+HKR,,"DeviceCharacteristics",0x10001,0x0100     ; Use same security checks on relative opens
+HKR,,"Security",,"D:P(A;;GA;;;BA)(A;;GA;;;SY)"  ; Allow generic-all access to Built-in administrators and Local system
+HKR,,"Exclusive",0x10001,1
+
+[Biometric_Device_AddSensorReg]
+HKR,"WBF","SensorModel",0x10001,1
+HKR,"WBF","Swing",0x10001,1
+HKR,"WBF","Navigation",0x10001,0
+HKR,"WBF","bc",0x10001,0
+HKR,"WBF","sTbl",0x01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 
+HKR,"WBF","gTbl",0x01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 
+HKR,"WBF","dpTbl",0x01,0 
+
+[Biometric_Device_AddSensorReg.security]
+"D:P(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;LS)"
+
+[DriverPlugInAddReg]
+HKR,WinBio\Configurations,DefaultConfiguration,,"0"
+HKR,WinBio\Configurations\0,SensorMode,0x10001,2      ; Basic - 1, Advanced - 2
+HKR,WinBio\Configurations\0,SystemSensor,0x10001,1    ; UAC/Winlogon - 1
+HKR,WinBio\Configurations\0,StorageAdapterBinary,,"WinBioStorageAdapter.DLL"
+HKR,WinBio\Configurations\0,DatabaseId,,"DB192749-088D-2130-03F0-E6129F1E2BEA"
+HKR,WinBio\Configurations\0,SensorAdapterBinary,,"%13%\FpcSensorAdapter.dll"
+HKR,WinBio\Configurations\0,EngineAdapterBinary,,"%13%\FpcEngineAdapter.dll"
+
+; ------------------------------------------------------------------------
+
+[DatabaseAddReg_T]
+HKR,WinBio\Databases\{DB192749-088D-2130-03F0-E6129F1E2BEA},BiometricType,0x00010001,0x00000008
+HKR,WinBio\Databases\{DB192749-088D-2130-03F0-E6129F1E2BEA},Attributes,0x00010001,0x00000001
+HKR,WinBio\Databases\{DB192749-088D-2130-03F0-E6129F1E2BEA},Format,,"00000000-0000-0000-0000-000000000000"
+HKR,WinBio\Databases\{DB192749-088D-2130-03F0-E6129F1E2BEA},InitialSize,0x00010001,0x00000020
+HKR,WinBio\Databases\{DB192749-088D-2130-03F0-E6129F1E2BEA},AutoCreate,0x00010001,0x00000001
+HKR,WinBio\Databases\{DB192749-088D-2130-03F0-E6129F1E2BEA},AutoName,0x00010001,0x00000001
+HKR,WinBio\Databases\{DB192749-088D-2130-03F0-E6129F1E2BEA},FilePath,,""
+HKR,WinBio\Databases\{DB192749-088D-2130-03F0-E6129F1E2BEA},ConnectionString,,""
+
+HKR,WinBio\Service Providers\Fingerprint\Sensor Layout\ACPI MSHW0133,Location,0x00010001,0x00000004
+HKR,WinBio\Service Providers\Fingerprint\Sensor Layout\ACPI MSHW0133,Shape,0x00010001,0x00000002
+
+;[FMAAddReg]
+;HKLM,Software\Microsoft\Windows\CurrentVersion\Control Panel\WinBio\FMA,CommandLine,,"%SYSTEMROOT%\FpcFma.exe"
+
+; ------------------------------------------------------------------------
+
+[SourceDisksFiles]
+fpc_wbdi.dll=1
+FpcSensorAdapter.dll=1
+FpcEngineAdapter.dll=1
+;fpc_ea_null.dll=1
+
+[SourceDisksNames]
+1 = %MediaDescription%
+
+[WUDF_CoInstallers_AddReg]
+HKR,,CoInstallers32,0x00010000,"WUDFCoInstaller.dll"
+
+[DestinationDirs]
+UMDriverCopy                  = 13
+WinBioEngineAdapterCopy_Touch = 13
+
+[UMDriverCopy]
+fpc_wbdi.dll
+
+[WinBioEngineAdapterCopy_Touch]
+FpcSensorAdapter.dll
+FpcEngineAdapter.dll
+;fpc_ea_null.dll
+
+
+; ------------------------------------------------------------------------
+
+[Strings]
+FPC                 = "Fingerprint Cards AB"
+MediaDescription    = "Fingerprint Cards Driver Installation Media"
+ClassName           = "Biometric Sensor Driver"
+WudfRdDisplayName   = "Windows Driver Foundation - User-mode Driver Framework Reflector"
+
