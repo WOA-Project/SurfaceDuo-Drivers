@@ -6,6 +6,7 @@ echo CODE_OF_CONDUCT.md >> filelist_e.txt
 echo components\ANYSOC\Changelog > filelist_e.txt
 echo components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE >> filelist_e.txt
 echo components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE >> filelist_e.txt
+echo components\ANYSOC\Hardware\HARDWARE.POSTURES.DESKTOP >> filelist_e.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE >> filelist_e.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.EXTRAS >> filelist_e.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE >> filelist_e.txt

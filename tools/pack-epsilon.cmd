@@ -6,6 +6,7 @@ echo CODE_OF_CONDUCT.md >> filelist_epsilon.txt
 echo components\ANYSOC\Changelog > filelist_epsilon.txt
 echo components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE >> filelist_epsilon.txt
 echo components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE >> filelist_epsilon.txt
+echo components\ANYSOC\Hardware\HARDWARE.POSTURES.DESKTOP >> filelist_epsilon.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE >> filelist_epsilon.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.EXTRAS >> filelist_epsilon.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE >> filelist_epsilon.txt
@@ -17,8 +18,10 @@ echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.SURFACE_EXTRAS >> filelis
 echo components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON >> filelist_epsilon.txt
 echo components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL >> filelist_epsilon.txt
 echo components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_DESKTOP >> filelist_epsilon.txt
+echo components\QC8150\OEM\OEM.SOC_QC8150.SURFACE >> filelist_epsilon.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE >> filelist_epsilon.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL >> filelist_epsilon.txt
+echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BATTERY_SURFACE >> filelist_epsilon.txt
 echo definitions\Desktop\ARM64\Internal\epsilon.txt >> filelist_epsilon.txt
 echo definitions\Desktop\ARM64\PE\epsilon.txt >> filelist_epsilon.txt
 echo LICENSE.md >> filelist_epsilon.txt

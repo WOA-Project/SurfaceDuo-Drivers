@@ -6,6 +6,7 @@ echo CODE_OF_CONDUCT.md >> filelist_zeta.txt
 echo components\ANYSOC\Changelog > filelist_zeta.txt
 echo components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE >> filelist_zeta.txt
 echo components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE >> filelist_zeta.txt
+echo components\ANYSOC\Hardware\HARDWARE.POSTURES.DESKTOP >> filelist_zeta.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE_ZETA_TEMP >> filelist_zeta.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.EXTRAS >> filelist_zeta.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE >> filelist_zeta.txt
