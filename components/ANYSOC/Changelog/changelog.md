@@ -1,9 +1,9 @@
-## Surface Duo Drivers BSP - Version 2311.30 (Ethos)
+## Surface Duo Drivers BSP - Version 2312.6 (''Gamma'') (Prerelease) 
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 11/09/2023 11:59 PM UTC+1
+**Released:** 12/02/2023 11:59 PM UTC+1
 
 **Quality:** Preview
 
@@ -14,7 +14,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2311.30.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2312.6.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -30,7 +30,7 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2311.30)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2312.6)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
@@ -54,8 +54,8 @@ What's new?
 
 __New!__: We are now providing smaller download packages, specifically tailored towards a given device and OS target.
 
-- Please download ```SurfaceDuo-Drivers-v2311.30-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
-- Please download ```SurfaceDuo-Drivers-v2311.30-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- Please download ```SurfaceDuo-Drivers-v2312.6-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2312.6-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 <details>
   <summary>Known issues</summary>
