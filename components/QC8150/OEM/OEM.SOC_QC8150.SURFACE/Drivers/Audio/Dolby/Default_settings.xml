@@ -91,14 +91,13 @@
             <DabsAutoEnablement value="true" />
             <DahpAutoEnablement value="true" />
             <IsShowMirroringButton value="false" />
+            <IsCompensateVolume value="false" />
             <volume_feedback_enable value="true" />
             <AsSeparatedDevice value="false" />
         </APIState>
         <operator value="Default"/>
         <max_apo_instance_count value="5"/>
         <DualScreenMultiMode value="0"/>
-        <volume_based_eq_enable value="false"/>
-        <low_volume_threshold value="40"/>
-        <high_volume_threshold value="80"/>
+        <override_device_volume value="false"/>
     </DefaultSettings>
 </Config>
