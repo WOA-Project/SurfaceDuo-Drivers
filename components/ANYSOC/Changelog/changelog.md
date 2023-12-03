@@ -1,4 +1,4 @@
-## Surface Duo Drivers BSP - Version 2312.6 (''Gamma'') (Prerelease) 
+## Surface Duo Drivers BSP - Version 2312.6 (''Gamma'') (Prerelease)
 
 <details>
   <summary>General information</summary>
