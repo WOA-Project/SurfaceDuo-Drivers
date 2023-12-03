@@ -121,12 +121,14 @@
         },
         "ns": {
             "load_ns_apo": false,
+            "ns_version": "3.0",
             "enabled_profiles": [
                 {
                     "endpoint": "internal_speaker",
                     "profile": ["voice"]
                 }
-            ]
+            ],
+            "default_mode": "low"
         },
         "show_online_course_button": false,
         "dabs_auto_enablement": true,
@@ -138,6 +140,12 @@
         "max_apo_instance_count": 5,
         "dual_screen_multi_mode": 0,
         "override_device_volume": false,
-        "compensate_volume": false
+        "compensate_volume": false,
+        "eyes_tracking": {
+            "is_supported": false,
+            "default_enabled": false,
+            "vendor": "morpho",
+            "refresh_interval": 200
+        }
     }
 }
