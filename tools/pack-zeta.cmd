@@ -17,6 +17,7 @@ echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.POST_UPGRADE_ENABLEMENT >
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.SURFACE_EXTRAS >> filelist_zeta.txt
 echo components\QC8350\Device\DEVICE.SOC_QC8350.ZETA >> filelist_zeta.txt
 echo components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL >> filelist_zeta.txt
+echo components\QC8350\OEM\OEM.SOC_QC8350.SURFACE >> filelist_zeta.txt
 echo components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE >> filelist_zeta.txt
 echo components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL >> filelist_zeta.txt
 echo definitions\Desktop\ARM64\Internal\zeta.txt >> filelist_zeta.txt
