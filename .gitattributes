@@ -3,5 +3,5 @@
 adaptationkits/AOS/MSPackages/appx/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
 adaptationkits/CDG/MSPackages/appx/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
 adaptationkits/FOS/MSPackages/appx/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
-components/ANYSOC/Support/Desktop/SUPPORT.DESKTOP.SURFACE_EXTRAS/Source/Applications/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
+components/ANYSOC/Support/Desktop/SUPPORT.DESKTOP.SURFACE_EXTRAS/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
 components/QC8150/Graphics/GRAPHICS.SOC_QC8150.EPSILON_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text

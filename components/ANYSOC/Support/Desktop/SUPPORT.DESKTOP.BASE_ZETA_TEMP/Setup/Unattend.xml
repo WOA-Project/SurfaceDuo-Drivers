@@ -11,15 +11,6 @@
       <ShowPowerButtonOnStartScreen>true</ShowPowerButtonOnStartScreen>
       <ConvertibleSlateModePromptPreference>0</ConvertibleSlateModePromptPreference>
     </component>
-    <component name="Microsoft-Windows-Deployment" processorArchitecture="arm64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <RunSynchronous>
-        <RunSynchronousCommand wcm:action="add">
-          <Order>1</Order>
-          <Path>\Windows\OEM\SilentProvisioner.exe</Path>
-          <Description>Commands </Description>
-        </RunSynchronousCommand>
-      </RunSynchronous>
-    </component>
   </settings>
   <settings pass="oobeSystem">
     <component name="Microsoft-Windows-Deployment" processorArchitecture="arm64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
@@ -71,38 +62,33 @@
           <CommandLine><![CDATA[powershell -ExecutionPolicy RemoteSigned %SystemDrive%\Users\Default\AppData\Local\Microsoft\Surface\OOBE\ImageConfiguration.ps1]]></CommandLine>
         </SynchronousCommand>
         <SynchronousCommand wcm:action="add">
-          <Description>Commands </Description>
-          <Order>2</Order>
-          <CommandLine>cmd.exe /c \Windows\OEM\SilentProvisionerL.exe</CommandLine>
-        </SynchronousCommand>
-        <SynchronousCommand wcm:action="add">
           <Description>Enable RDP</Description>
-          <Order>3</Order>
+          <Order>2</Order>
           <CommandLine>reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f</CommandLine>
         </SynchronousCommand>
         <SynchronousCommand wcm:action="add">
           <Description>Allow Multiple Sessions</Description>
-          <Order>4</Order>
+          <Order>3</Order>
           <CommandLine>reg add "HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fSingleSessionPerUser /t REG_DWORD /d 0 /f</CommandLine>
         </SynchronousCommand>
         <SynchronousCommand wcm:action="add">
           <Description>Allow No Password Sessions</Description>
-          <Order>5</Order>
+          <Order>4</Order>
           <CommandLine>reg add "HKLM\SYSTEM\CurrentControlSet\Control\Lsa" /v LimitBlankPasswordUse /t REG_DWORD /d 0 /f</CommandLine>
         </SynchronousCommand>
         <SynchronousCommand wcm:action="add">
           <Description>Allow RDP on the network</Description>
-          <Order>6</Order>
+          <Order>5</Order>
           <CommandLine>netsh advfirewall firewall set rule group="remote desktop" new enable=yes</CommandLine>
         </SynchronousCommand>
         <SynchronousCommand wcm:action="add">
           <Description>Disable firewall</Description>
-          <Order>7</Order>
+          <Order>6</Order>
           <CommandLine>reg add "HKLM\SYSTEM\CurrentControlSet\Services\MpsSvc" /v Start /t REG_DWORD /d 4 /f</CommandLine>
         </SynchronousCommand>
         <SynchronousCommand wcm:action="add">
           <Description>Disable Password Expiration</Description>
-          <Order>8</Order>
+          <Order>7</Order>
           <CommandLine>wmic UserAccount where Name="Zeta" set PasswordExpires=False</CommandLine>
         </SynchronousCommand>
       </FirstLogonCommands>
