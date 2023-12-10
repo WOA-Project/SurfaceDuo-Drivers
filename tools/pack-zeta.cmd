@@ -2,12 +2,12 @@
 REM rmdir /Q /S ..\..\SurfaceDuo-Drivers-Release
 mkdir ..\..\SurfaceDuo-Drivers-Release
 
-echo "DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\zeta.txt" >> ..\OnlineUpdater.cmd
-copy ..\..\DriverUpdater\DriverUpdater\bin\arm64\Release\net8.0\publish\win-arm64\DriverUpdater.exe ..\
+echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\zeta.txt >> ..\OnlineUpdater.cmd
+copy DriverUpdater.exe ..\
 
-echo apps >> filelist_zeta.txt
+echo apps\IPA > filelist_zeta.txt
 echo CODE_OF_CONDUCT.md >> filelist_zeta.txt
-echo components\ANYSOC\Changelog > filelist_zeta.txt
+echo components\ANYSOC\Changelog >> filelist_zeta.txt
 echo components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE >> filelist_zeta.txt
 echo components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE >> filelist_zeta.txt
 echo components\ANYSOC\Hardware\HARDWARE.POSTURES.DESKTOP >> filelist_zeta.txt

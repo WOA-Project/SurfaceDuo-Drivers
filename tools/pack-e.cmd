@@ -2,9 +2,9 @@
 REM rmdir /Q /S ..\..\SurfaceDuo-Drivers-Release
 mkdir ..\..\SurfaceDuo-Drivers-Release
 
-echo apps >> filelist_e.txt
+echo apps\IPA > filelist_e.txt
 echo CODE_OF_CONDUCT.md >> filelist_e.txt
-echo components\ANYSOC\Changelog > filelist_e.txt
+echo components\ANYSOC\Changelog >> filelist_e.txt
 echo components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE >> filelist_e.txt
 echo components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE >> filelist_e.txt
 echo components\ANYSOC\Hardware\HARDWARE.POSTURES.DESKTOP >> filelist_e.txt
