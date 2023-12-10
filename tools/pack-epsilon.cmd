@@ -2,9 +2,13 @@
 REM rmdir /Q /S ..\..\SurfaceDuo-Drivers-Release
 mkdir ..\..\SurfaceDuo-Drivers-Release
 
-echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.txt > ..\OnlineUpdater.cmd
-echo set /P DrivePath=Enter Drive letter ^^^(with the semi-column!^^^) of the connected device in mass storage mode ^^^(e.g. D:^^^): > ..\OfflineUpdater.cmd
-echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.txt -p ^%DrivePath^% >> ..\OfflineUpdater.cmd
+echo @echo off > ..\OnlineUpdater.cmd
+echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.txt >> ..\OnlineUpdater.cmd
+
+echo @echo off > ..\OfflineUpdater.cmd
+echo set /P DrivePath=Enter Drive letter ^^^(with the semi-column!^^^) of the connected device in mass storage mode ^^^(e.g. D:^^^): >> ..\OfflineUpdater.cmd
+echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.txt -p %%DrivePath%% >> ..\OfflineUpdater.cmd
+
 copy DriverUpdater.exe ..\
 
 echo apps\IPA > filelist_epsilon.txt
@@ -37,6 +41,7 @@ cd ..
 "%ProgramFiles%\7-zip\7z.exe" a -tzip ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.zip @tools\filelist_epsilon.txt -scsWIN
 cd tools
 
+del ..\OfflineUpdater.cmd
 del ..\OnlineUpdater.cmd
 del ..\DriverUpdater.exe
 del filelist_epsilon.txt
