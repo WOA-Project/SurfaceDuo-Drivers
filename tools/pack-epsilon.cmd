@@ -2,7 +2,9 @@
 REM rmdir /Q /S ..\..\SurfaceDuo-Drivers-Release
 mkdir ..\..\SurfaceDuo-Drivers-Release
 
-echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.txt >> ..\OnlineUpdater.cmd
+echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.txt > ..\OnlineUpdater.cmd
+echo set /P DrivePath=Enter Drive letter ^^^(with the semi-column!^^^) of the connected device in mass storage mode ^^^(e.g. D:^^^): > ..\OfflineUpdater.cmd
+echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.txt -p ^%DrivePath^% >> ..\OfflineUpdater.cmd
 copy DriverUpdater.exe ..\
 
 echo apps\IPA > filelist_epsilon.txt
@@ -27,6 +29,7 @@ echo definitions\Desktop\ARM64\Internal\epsilon.txt >> filelist_epsilon.txt
 echo definitions\Desktop\ARM64\PE\epsilon.txt >> filelist_epsilon.txt
 echo DriverUpdater.exe >> filelist_epsilon.txt
 echo LICENSE.md >> filelist_epsilon.txt
+echo OfflineUpdater.cmd >> filelist_epsilon.txt
 echo OnlineUpdater.cmd >> filelist_epsilon.txt
 echo README.md >> filelist_epsilon.txt
 
