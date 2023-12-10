@@ -1,9 +1,9 @@
-## Surface Duo Drivers BSP - Version 2312.29 (''Theta'') (Prerelease)
+## Surface Duo Drivers BSP - Version 2312.29 (Theta)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 12/02/2023 11:59 PM UTC+1
+**Released:** 12/10/2023 08:00 PM UTC+1
 
 **Quality:** Preview
 
@@ -14,7 +14,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2312.6.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2312.29.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -30,32 +30,46 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2312.6)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2312.29)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
 ### Release notes
 
+What's new?
+
+- **_New!_**: You can now install drivers offline more easily, simply run "OfflineUpdater.cmd" at the root of the zip archive you downloaded, and follow instructions
+
+- **_New!_**: You can now install drivers online! In other words, you can update the drivers on the device itself, while the OS is running. Currently this is work in progress and only supported if you have secure boot off (which normally is not the case). To update your drivers online within the os, simply run "OnlineUpdater.cmd" at the root of the zip archive you downloaded, and follow instructions
+
+- **_New!_**: We added better application installation support
+
+- **_New!_**: We now provide the matching version of driver updater so you can install the release more easily
+
 #### Surface Duo (1st Gen)
 
 What's new?
 
-- Fixes an issue where connecting to external wireless displays using Miracast would crash the device
+- **_New!_**: We updated the audio calibration board configuration files. For now, you will notice audio is not yet enabled due to SPKR issues, we hope to bring this in next week for the anniversary release
 
-- Rendering of both displays is now faster thanks to not having to rely on MDP BLT Engine anymore
+- **_New!_**: We updated the fingerprint sensor driver. The driver is now 100% functional with _Secure Boot disabled_. We will try to find a way out of this caveat for the next release.
 
-- Both displays now have vsync working so one doesn't lag with the other anymore
+- **_New!_**: We improved the installation process to be faster and not depend on extra install steps online. This should result in less errors and more reliability.
 
-- Fixed a crash issue when decoding/encoding videos like on youtube or when recording the desktop using the snipping tool application
+- **_New!_**: We updated most Qualcomm Drivers to their latest version (v2040)
 
-- Workarounded a crash issue regarding the battery miniport interface driver during clean installations of Windows Desktop
+- **_New!_**: We added support for additional Surface Docking Accessories (Surface Audio Dock) by default
 
-- General system stability improvements to enhance the user's experience.
+- **_New!_**: We updated all Surface Drivers to their latest version when applicable
+
+- **_New!_**: We introduced a prerelease driver for Surface Dial support. Support remains disabled in this release.
+
+- **_New!_**: We introduced touch support for Redstone 5 and earlier Windows Versions.
 
 __New!__: We are now providing smaller download packages, specifically tailored towards a given device and OS target.
 
-- Please download ```SurfaceDuo-Drivers-v2312.6-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
-- Please download ```SurfaceDuo-Drivers-v2312.6-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- Please download ```SurfaceDuo-Drivers-v2312.29-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2312.29-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 <details>
   <summary>Known issues</summary>
