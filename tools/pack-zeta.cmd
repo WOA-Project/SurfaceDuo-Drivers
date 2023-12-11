@@ -3,13 +3,15 @@ REM rmdir /Q /S ..\..\SurfaceDuo-Drivers-Release
 mkdir ..\..\SurfaceDuo-Drivers-Release
 
 echo @echo off > ..\OnlineUpdater.cmd
-echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\zeta.txt >> ..\OnlineUpdater.cmd
+echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\zeta.txt >> ..\OnlineUpdater.cmd
 
 echo @echo off > ..\OfflineUpdater.cmd
 echo set /P DrivePath=Enter Drive letter ^^^(with the semi-column!^^^) of the connected device in mass storage mode ^^^(e.g. D:^^^): >> ..\OfflineUpdater.cmd
-echo DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\zeta.txt -p %%DrivePath%% >> ..\OfflineUpdater.cmd
+echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\zeta.txt -p %%DrivePath%% >> ..\OfflineUpdater.cmd
 
-copy DriverUpdater.exe ..\
+copy DriverUpdater.ARM64.exe ..\
+copy DriverUpdater.AMD64.exe ..\
+copy DriverUpdater.X86.exe ..\
 
 echo apps\IPA > filelist_zeta.txt
 echo CODE_OF_CONDUCT.md >> filelist_zeta.txt
@@ -28,7 +30,9 @@ echo components\QC8350\OEM\OEM.SOC_QC8350.SURFACE >> filelist_zeta.txt
 echo components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE >> filelist_zeta.txt
 echo components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL >> filelist_zeta.txt
 echo definitions\Desktop\ARM64\Internal\zeta.txt >> filelist_zeta.txt
-echo DriverUpdater.exe >> filelist_zeta.txt
+echo DriverUpdater.ARM64.exe >> filelist_zeta.txt
+echo DriverUpdater.AMD64.exe >> filelist_zeta.txt
+echo DriverUpdater.X86.exe >> filelist_zeta.txt
 echo LICENSE.md >> filelist_zeta.txt
 echo OfflineUpdater.cmd >> filelist_zeta.txt
 echo OnlineUpdater.cmd >> filelist_zeta.txt
@@ -40,5 +44,7 @@ cd tools
 
 del ..\OfflineUpdater.cmd
 del ..\OnlineUpdater.cmd
-del ..\DriverUpdater.exe
+del ..\DriverUpdater.ARM64.exe
+del ..\DriverUpdater.AMD64.exe 
+del ..\DriverUpdater.X86.exe
 del filelist_zeta.txt
