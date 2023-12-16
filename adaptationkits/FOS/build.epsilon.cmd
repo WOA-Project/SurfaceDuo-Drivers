@@ -1,2 +1,2 @@
 set _NTTREE=%CD%
-"%WSKContentRoot%\tools\bin\i386\ImageApp.exe" "%CD%\Output\Flash.ffu" "%CD%\OEMInput.epsilon.xml" "%CD%\MSPackages" /CPUType:arm64 /RandomizeGptIDs /BSPProductName:MSASOEM.AND55.Selfhost.en-us
+"%WSKContentRoot%\tools\bin\i386\ImageApp.exe" "%CD%\Output\Flash.vhdx" "%CD%\OEMInput.epsilon.xml" "%CD%\MSPackages" /CPUType:arm64 /RandomizeGptIDs

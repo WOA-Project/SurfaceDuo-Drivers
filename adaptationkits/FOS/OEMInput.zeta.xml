@@ -14,16 +14,16 @@
     <Language Default="true">en-US</Language>
   </Languages>
   <AdditionalFMs>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\WindowsCoreProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\WindowsCoreNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\MobileDeviceSpaceFM.xml</AdditionalFM>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\CommonContainerFM.xml</AdditionalFM>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\ArgonContainerFM.xml</AdditionalFM>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FOSNonProductionFM.xml</AdditionalFM>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FactoryOSArgonProductSpecificFM.xml</AdditionalFM>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FactoryOSFM.xml</AdditionalFM>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FactoryOSProductSpecificFM.xml</AdditionalFM>
-    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOS\FactoryOSRamBootFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\WindowsCoreProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\WindowsCoreNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\MobileDeviceSpaceFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\CommonContainerFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\ArgonContainerFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\FOSNonProductionFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\FactoryOSArgonProductSpecificFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\FactoryOSFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\FactoryOSProductSpecificFM.xml</AdditionalFM>
+    <AdditionalFM>%WSKContentRoot%\FMFiles\arm64\FactoryOSArgon\FactoryOSRamBootFM.xml</AdditionalFM>
     <AdditionalFM>%_NTTREE%\Andromeda888DeviceFM.xml</AdditionalFM>
     <AdditionalFM>%_NTTREE%\Andromeda888DeviceDriversFM.xml</AdditionalFM>
   </AdditionalFMs>
@@ -44,11 +44,12 @@
       <Feature>MICROSOFT_EDGE</Feature>
       <Feature>OEM_IMAGE</Feature>
       <Feature>OFFLINE_CRASH_DUMP_SUPPORTED</Feature>
-      <Feature>RESOLUTION_1440X2560</Feature>
+      <Feature>RESOLUTION_1350X1800</Feature>
       <Feature>SERVICING_STACK</Feature>
       <Feature>SETTINGS_APP</Feature>
       <Feature>SHELL_BOOT</Feature>
       <Feature>STATESEPARATION_ON</Feature>
+      <Feature>STATESEPARATION_845_EXEMPT</Feature>
       <Feature>TELEMETRY_OPT_OUT</Feature>
       <Feature>WCOS_ACCESSIBLITY_NARRATOR</Feature>
       <Feature>WCOS_APP_CENTENNIALRUNTIME</Feature>
