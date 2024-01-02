@@ -1,0 +1,90 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; File:               RealtekFwUpdate.inf
+;
+; Description:        Banny firmware update.
+;
+;
+; Copyright (C) Realtek Semiconductor Corp.  All Rights Reserved.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[Version]
+Signature="$Windows NT$"
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Class=HIDClass
+Provider=%ManufacturerName%
+CatalogFile=RealtekFwUpdate.cat
+DriverVer= 05/08/2020,2.10.0.8;
+PnPLockDown=1
+
+[Manufacturer]
+%ManufacturerName%=Standard,NTamd64,NTx86,ntarm64
+
+[Standard.NTamd64]
+%RealtekFirmwareUpdate.ExtensionDesc%=RealtekFirmwareUpdate, HID\VID_045e&PID_09bc; Specify HWID of the firmware update collection
+
+[Standard.NTx86]
+%RealtekFirmwareUpdate.ExtensionDesc%=RealtekFirmwareUpdate, HID\VID_045e&PID_09bc; Specify HWID of the firmware update collection
+
+[Standard.ntarm64]
+%RealtekFirmwareUpdate.ExtensionDesc%=RealtekFirmwareUpdate, HID\VID_045e&PID_09bc; Specify HWID of the firmware update collection
+
+; =================== UMDF Device ==================================
+
+[RealtekFirmwareUpdate.NT]
+Include            = HidCfu.inf
+Needs              = HidCfu.NT
+CopyFiles          = RealtekFirmwareUpdate.CopyFiles
+
+[RealtekFirmwareUpdate.NT.Wdf]
+Include            = HidCfu.inf
+Needs              = HidCfu.NT.Wdf
+
+[RealtekFirmwareUpdate.NT.HW]
+AddReg = RealtekFirmwareUpdate_HWAddReg
+
+[SourceDisksNames]
+1 = %DiskName%
+
+[DestinationDirs]
+RealtekFirmwareUpdate.CopyFiles=13
+
+; =================== FW Information ===========================
+[RealtekFirmwareUpdate_HWAddReg]
+HKR,,FriendlyName,,%FwUpdateFriendlyName%
+HKR,,Alignment,0x00010001,8; (No Alignment)
+HKR,,OfferInputValueCapabilityUsageRangeMinimum,0x00010001,0xD8
+HKR,,OfferOutputValueCapabilityUsageRangeMinimum,0x00010001,0xDC
+HKR,,PayloadInputValueCapabilityUsageRangeMinimum,0x00010001,0xCC
+HKR,,PayloadOutputValueCapabilityUsageRangeMinimum,0x00010001,0xC7
+HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0xC8
+
+; FirmwareAddReg.begin   !DO NOT DELETE!
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\MCU_FW,Offer, 0x00000000, %13%\%RealtekBannyFWoffer%
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\MCU_FW,Payload, 0x00000000, %13%\%RealtekBannyFW%
+; FirmwareAddReg.end   !DO NOT DELETE!
+
+[SourceDisksFiles]
+; SourceDisksFiles.begin   !DO NOT DELETE!
+Banny_CFU_USB_V209_DP_V8_202041_Offer.bin=1 
+Banny_CFU_USB_V209_DP_V8_202041_FW.bin=1 
+; SourceDisksFiles.end   !DO NOT DELETE!
+
+[RealtekFirmwareUpdate.CopyFiles]
+; CopyFiles.begin   !DO NOT DELETE!
+%RealtekBannyFWoffer%
+%RealtekBannyFW%
+; CopyFiles.end   !DO NOT DELETE!
+
+[RealtekFirmwareUpdate.NT.Services]
+Include            = HidCfu.inf
+Needs              = HidCfu.NT.Services
+
+; =================== Generic ==================================
+
+[Strings]
+ManufacturerName="Realtek"
+RealtekFirmwareUpdate.ExtensionDesc="Realtek Firmware Update"
+DiskName = "Realtek Firmware Update Installation Disk"
+FwUpdateFriendlyName= "Realtek Firmware Update"
+RealtekBannyFWoffer= "Banny_CFU_USB_V209_DP_V8_202041_Offer.bin"
+RealtekBannyFW= "Banny_CFU_USB_V209_DP_V8_202041_FW.bin"
