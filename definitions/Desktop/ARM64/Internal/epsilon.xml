@@ -211,7 +211,6 @@
             <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.x64.14.00.appx" ID="Microsoft.VCLibs.x64.14.00"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\SurfaceApp" Name="DuoWOA.SurfaceApp_btf4vqatnxdpt.msixbundle" ID="DuoWOA.SurfaceApp_btf4vqatnxdpt"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\SurfaceHub_Desktop" Name="Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle" ID="Microsoft.SurfaceHub_8wekyb3d8bbwe" LicenseFile="Microsoft.SurfaceHub_8wekyb3d8bbwe.xml"/>
-            <PackageFile Path="$(mspackageroot)\apps\IPA\SurfaceHub_WCOS" Name="Microsoft.SurfaceHub_8wekyb3d8bbwe.AppxBundle" ID="Microsoft.SurfaceHub_8wekyb3d8bbwe" LicenseFile="Microsoft.SurfaceHub_8wekyb3d8bbwe.xml"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\TruePaint" Name="Microsoft.5967852151392_8wekyb3d8bbwe.AppxBundle" ID="Microsoft.5967852151392_8wekyb3d8bbwe"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\zStore" Name="47134AttachGenerator.AtStore_8gjk0gpazptrr.AppxBundle" ID="47134AttachGenerator.AtStore_8gjk0gpazptrr"/>
         </AppXPackages>
