@@ -4,7 +4,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Drivers" Name="AccessoryCenterHSADriver.inf"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Drivers" Name="DevicesTelemetryServiceDriver.inf"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Firmware" Name="RealtekFwUpdate.inf"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Firmware" Name="realtekfwupdate.inf_amd64_c26c0f6ae903a360"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Firmware" Name="SurfaceThunderbolt4DockFwUpdate.inf"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\BleLc" Name="SurfacePenBleLcAddrAdaptationDriver.inf"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfaceCFUOverHid.inf"/>
