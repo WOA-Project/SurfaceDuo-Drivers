@@ -1,0 +1,186 @@
+<FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" Revision="1" SchemaVersion="1.3">
+    <Drivers>
+        <BaseDriverPackages>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Drivers" Name="AccessoryCenterHSADriver.inf" ID="AccessoryCenterHSADriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Drivers" Name="DevicesTelemetryServiceDriver.inf" ID="DevicesTelemetryServiceDriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Firmware" Name="RealtekFwUpdate.inf" ID="RealtekFwUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Firmware" Name="SurfaceThunderbolt4DockFwUpdate.inf" ID="SurfaceThunderbolt4DockFwUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\BleLc" Name="SurfacePenBleLcAddrAdaptationDriver.inf" ID="SurfacePenBleLcAddrAdaptationDriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfaceCFUOverHid.inf" ID="SurfaceCFUOverHid"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfacePenCfuOverBleLc.inf" ID="SurfacePenCfuOverBleLc"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialFilter.inf" ID="SurfaceDialFilter"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialFwUpdate.inf" ID="SurfaceDialFwUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialIntegration.inf" ID="SurfaceDialIntegration"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Firmware" Name="SurfacePen217FwUpdate.inf" ID="SurfacePen217FwUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen" Name="SurfacePen217Integration.inf" ID="SurfacePen217Integration"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceDuoHIDFriendlyNames.inf" ID="SurfaceDuoHIDFriendlyNames"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceHIDFriendlyNames.inf" ID="SurfaceHIDFriendlyNames"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\PenWirelessCharger" Name="SurfacePenWirelessChargerHotkey.inf" ID="SurfacePenWirelessChargerHotkey"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Charger" Name="SurfaceSlimPenChargerFwUpdate.inf" ID="SurfaceSlimPenChargerFwUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953CfuOverBleLcExtnPackage.inf" ID="SurfacePen0953CfuOverBleLcExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953FirmwareUpdate.inf" ID="SurfacePen0953FirmwareUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FCfuOverBleLcExtnPackage.inf" ID="SurfacePen0C0FCfuOverBleLcExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FFirmwareUpdate.inf" ID="SurfacePen0C0FFirmwareUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.POSTURES.DESKTOP" Name="PostureSensor.inf" ID="PostureSensor"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE_ZETA_TEMP\Settings\Version" Name="phonereleaseversion.inf" ID="phonereleaseversion"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE_ZETA_TEMP\Setup" Name="desktopsetup.inf" ID="desktopsetup"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE_ZETA_TEMP\Signature\DesktopSignature" Name="desktopsignature.inf" ID="desktopsignature"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE_ZETA_TEMP\Signature\SSDE" Name="ssde.inf" ID="ssde"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE\Services\MobileBridgeUser" Name="MobileHapticsService.inf" ID="MobileHapticsService"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Drivers\sTPM" Name="mismptf.inf" ID="mismptf"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Drivers\UsbNcmFn" Name="UsbNcmFn.inf" ID="UsbNcmFn"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Services\MTP" Name="MTPDesktop.inf" ID="MTPDesktop"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Settings\Bluetooth" Name="bthdefaults.inf" ID="bthdefaults"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Settings\USBFn" Name="usbdefaults.inf" ID="usbdefaults"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS\EMBDeviceMetadata" Name="EMBDeviceMetadata.inf" ID="EMBDeviceMetadata"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\AudioCoreExt" Name="AudioCoreExt.inf" ID="AudioCoreExt"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\EMB" Name="emb.inf" ID="emb"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" ID="WindowsPhone"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="QcTreeExtOem8350.inf" ID="QcTreeExtOem8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="SurfaceDuo2_ext_QCTree8350.inf" ID="SurfaceDuo2_ext_QCTree8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Bluetooth" Name="SurfaceDuo2_btfmuart_hsp8350.inf" ID="SurfaceDuo2_btfmuart_hsp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camisp.inf" ID="SurfaceDuo2_camisp"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Cellular" Name="surfaceduo2_ipa.inf" ID="surfaceduo2_ipa"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\SecurityProcessor" Name="SurfaceDuo2_sp8350.inf" ID="SurfaceDuo2_sp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Sensors\SSC" Name="SurfaceDuo2_sensors.inf" ID="SurfaceDuo2_sensors"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\ACDB" Name="SurfaceDuo2_acsp_mtp8350.inf" ID="SurfaceDuo2_acsp_mtp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\AudCodec" Name="SurfaceDuo2_aucdext_mtp8350.inf" ID="SurfaceDuo2_aucdext_mtp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\AudMiniport" Name="SurfaceDuo2_audiominiext_mtp8350.inf" ID="SurfaceDuo2_audiominiext_mtp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\BatteryCurrentLimiter" Name="surfaceduo2_fgbclext8350.inf" ID="surfaceduo2_fgbclext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Bluetooth" Name="qcbtfmuart_ext8350.inf" ID="qcbtfmuart_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Bluetooth" Name="SurfaceDuo2_btfmuart_ext_swiftpairenable8350.inf" ID="SurfaceDuo2_btfmuart_ext_swiftpairenable8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\HexagonLoader" Name="SurfaceDuo2_pilext8350.inf" ID="SurfaceDuo2_pilext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Sensors" Name="SurfaceDuo2_sensorsconfig.inf" ID="SurfaceDuo2_sensorsconfig"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_adsp8350.inf" ID="SurfaceDuo2_ext_adsp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_cdsp8350.inf" ID="SurfaceDuo2_ext_cdsp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_mpss8350.inf" ID="SurfaceDuo2_ext_mpss8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_scss8350.inf" ID="SurfaceDuo2_ext_scss8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_spss8350.inf" ID="SurfaceDuo2_ext_spss8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_mcfg8350.inf" ID="SurfaceDuo2_mcfg8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ACPI" Name="qcabd.inf" ID="qcabd"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Buses" Name="qcglink8350.inf" ID="qcglink8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Buses" Name="qcgpi8350.inf" ID="qcgpi8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Diagnostic" Name="qwpp8350.inf" ID="qwpp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\GPIO" Name="qcgpio8350.inf" ID="qcgpio8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\HexagonLoader" Name="qcpil.inf" ID="qcpil"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\HexagonLoader" Name="qcpilfilterext.inf" ID="qcpilfilterext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\HexagonLoader" Name="QcSkExt8350.inf" ID="QcSkExt8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\I2C" Name="qci2c8350.inf" ID="qci2c8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\IOMMU" Name="qciommu.inf" ID="qciommu"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\IOMMU" Name="qciommuext8350.inf" ID="qciommuext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\IPCC" Name="qcipcc8350.inf" ID="qcipcc8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PCIe" Name="qcppx8350.inf" ID="qcppx8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmic8350.inf" ID="qcpmic8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PMIC" Name="QcPmicApps8350.inf" ID="QcPmicApps8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicext8350.inf" ID="qcpmicext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PMIC" Name="QcPmicGlink8350.inf" ID="QcPmicGlink8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicgpio8350.inf" ID="qcpmicgpio8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PowerManagement" Name="qcpep.wp8350.inf" ID="qcpep.wp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Provisioning" Name="QcSOCPartition.inf" ID="QcSOCPartition"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qccdi8350.inf" ID="qccdi8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qcrpen.inf" ID="qcrpen"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\SMMU" Name="qcsmmu8350.inf" ID="qcsmmu8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\SPI" Name="qcspi8350.inf" ID="qcspi8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\SPMI" Name="qcspmi8350.inf" ID="qcspmi8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\System" Name="qckmbam8350.inf" ID="qckmbam8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\System" Name="qcscm.inf" ID="qcscm"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\System" Name="qcsecapp.inf" ID="qcsecapp"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\System" Name="qcsyscache8350.inf" ID="qcsyscache8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Transports" Name="QcTftpKmdf.inf" ID="QcTftpKmdf"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\TrEE" Name="QcTrEE.inf" ID="QcTrEE"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\UART" Name="qcuart8350.inf" ID="qcuart8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\VoltageCurrentMonitoring" Name="qcadc8350.inf" ID="qcadc8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\ADCM" Name="qcadcm8350.inf" ID="qcadcm8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Device" Name="qcaucd8350.inf" ID="qcaucd8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\ListenSoundModel" Name="QCListenSM_swc8350.inf" ID="QCListenSM_swc8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Miniport" Name="qcaudminiport_Base8350.inf" ID="qcaudminiport_Base8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\RPC" Name="qcadsprpc8350.inf" ID="qcadsprpc8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\RPC" Name="qcadsprpcd8350.inf" ID="qcadsprpcd8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Battery" Name="qcbattminiclass8350.inf" ID="qcbattminiclass8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Battery" Name="qcfgbcl8350.inf" ID="qcfgbcl8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Bluetooth\AddVSCRegistry" Name="qcbtaddvscregistry8350.inf" ID="qcbtaddvscregistry8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamflash_ext8350.inf" ID="qccamflash_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamflash8350.inf" ID="qccamflash8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamisp_ext8350.inf" ID="qccamisp_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamjpege_ext8350.inf" ID="qccamjpege_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamjpege8350.inf" ID="qccamjpege8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccammipicsi_ext8350.inf" ID="qccammipicsi_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccammipicsi8350.inf" ID="qccammipicsi8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamplatform8350.inf" ID="qccamplatform8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\5GNRCoexistanceManager" Name="qc5gnrcoexmgr_ext8350.inf" ID="qc5gnrcoexmgr_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\5GNRCoexistanceManager" Name="qc5gnrcoexmgr8350.inf" ID="qc5gnrcoexmgr8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\CCID" Name="qcccidbridge8350.inf" ID="qcccidbridge8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\DataBus" Name="qcdatabus8350.inf" ID="qcdatabus8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\DeepStandby" Name="qcdeepstandbymdm8350.inf" ID="qcdeepstandbymdm8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\DiagBridge" Name="QCDiagBridge.inf" ID="QCDiagBridge"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\DiagCSI" Name="qcdiagcsi8350.inf" ID="qcdiagcsi8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\DiagRouter" Name="qcdiagrouter8350.inf" ID="qcdiagrouter8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\DPL" Name="qcdplbridge8350.inf" ID="qcdplbridge8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\IPA" Name="qcipaext8350.inf" ID="qcipaext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\IPCRouter" Name="qcipcrouter8350.inf" ID="qcipcrouter8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\LinkLocal" Name="qclinklocal.wp8350.inf" ID="qclinklocal.wp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\MBBNetAdapter" Name="qcmbbnetadapter_ext8350.inf" ID="qcmbbnetadapter_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\MBBNetAdapter" Name="qcmbbnetadapter8350.inf" ID="qcmbbnetadapter8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\ModemBridge" Name="qcmbrg8350.inf" ID="qcmbrg8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\PowerDown" Name="qcwwanpowerdown.inf" ID="qcwwanpowerdown"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\PSAutoReg" Name="qcpsautoreg8350.inf" ID="qcpsautoreg8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\QMUX" Name="QmuxMdm.inf" ID="QmuxMdm"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\QMUX" Name="QmuxMdmExtension.inf" ID="QmuxMdmExtension"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\RemoteAT" Name="qcremoteat8350.inf" ID="qcremoteat8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\RemoteFS" Name="qcremotefs8350.inf" ID="qcremotefs8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\RevRmnet" Name="qcrevrmnet8350.inf" ID="qcrevrmnet8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\RmNetBridge" Name="qcrmnetbridge8350.inf" ID="qcrmnetbridge8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\ThermalMDM" Name="qcthermalmdm.inf" ID="qcthermalmdm"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\UDE" Name="qcude.inf" ID="qcude"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\GPS" Name="qcgnss8350.inf" ID="qcgnss8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Haptics" Name="qchwnhaptics8350.inf" ID="qchwnhaptics8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\HumanPresence" Name="qcAlwaysOnCVSensor_ext8350.inf" ID="qcAlwaysOnCVSensor_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\HumanPresence" Name="qcAlwaysOnCVSensor.inf" ID="qcAlwaysOnCVSensor"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\HumanPresence" Name="qcHumanPresenceSensor.inf" ID="qcHumanPresenceSensor"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\SAR" Name="qSarMgr.inf" ID="qSarMgr"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Shutdown" Name="qcshutdownsvc.inf" ID="qcshutdownsvc"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Subsystems" Name="qcconnectionsecurity8350.inf" ID="qcconnectionsecurity8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Subsystems" Name="qcpdsr.inf" ID="qcpdsr"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Subsystems" Name="qcSSGServicesUMD.inf" ID="qcSSGServicesUMD"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Subsystems" Name="qcsubsys8350.inf" ID="qcsubsys8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Subsystems" Name="qcSubsysThermalMgr.inf" ID="qcSubsysThermalMgr"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\USB" Name="qcursext.inf" ID="qcursext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\USBFn" Name="qcusbfn8350.inf" ID="qcusbfn8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\USBFn" Name="QcUsbFnSsFilter8350.inf" ID="QcUsbFnSsFilter8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\USBFn" Name="ufnserialcomposite.inf" ID="ufnserialcomposite"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\USBHost" Name="QcXhciFilter8350.inf" ID="QcXhciFilter8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\WLAN" Name="qcwifinotifiersrvc.inf" ID="qcwifinotifiersrvc"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\WLAN" Name="qcWlanSleepMgr8350.inf" ID="qcWlanSleepMgr8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions" Name="qcpepextension8350.inf" ID="qcpepextension8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions" Name="qcWMRil_mbb_ext8350.inf" ID="qcWMRil_mbb_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions" Name="qcwmrilextension8350.inf" ID="qcwmrilextension8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions\Audio\ListenSoundModel" Name="QCListenSM_swc_ext8350.inf" ID="QCListenSM_swc_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions\Audio\ListenSoundModel" Name="QCListenSM8350.inf" ID="QCListenSM8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Libraries\Cellular" Name="qcimssink_mbb_ext8350.inf" ID="qcimssink_mbb_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Libraries\Cellular" Name="qcimssrc_mbb_ext8350.inf" ID="qcimssrc_mbb_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Libraries\Cellular" Name="qcWMRil8350.inf" ID="qcWMRil8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\ProvisioningPkgs" Name="qcppmsettings8350.inf" ID="qcppmsettings8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Services\Cellular" Name="QcIMSDataDaemon_mbb_ext8350.inf" ID="QcIMSDataDaemon_mbb_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Services\Cellular" Name="QcIMSQMIDaemon_mbb_ext8350.inf" ID="QcIMSQMIDaemon_mbb_ext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Services\RCS" Name="QcRCSPresSvc_mbb_ext8350.inf" ID="QcRCSPresSvc_mbb_ext8350"/>
+        </BaseDriverPackages>
+    </Drivers>
+    <AppX>
+        <AppXPackages>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Chat" Name="LumiaWOA.Chat_btf4vqatnxdpt.msixbundle"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Dialer" Name="LumiaWOA.Dialer_mgf8b6qyy0nb4.msixbundle"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Framework.2.2.appx"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Framework.x64.1.3.Appx"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Runtime.2.2.appx"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Runtime.x64.1.4.Appx"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.UI.Xaml.2.8.appx"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM64.14.00.appx"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM64.14.00.Desktop.appx"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.x64.14.00.appx"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\SurfaceApp" Name="DuoWOA.SurfaceApp_btf4vqatnxdpt.msixbundle"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\SurfaceHub_Desktop" Name="Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle" LicenseFile="Microsoft.SurfaceHub_8wekyb3d8bbwe.xml"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\TruePaint" Name="Microsoft.5967852151392_8wekyb3d8bbwe.AppxBundle"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\zStore" Name="47134AttachGenerator.AtStore_8gjk0gpazptrr.AppxBundle"/>
+        </AppXPackages>
+    </AppX>
+</FeatureManifest>
