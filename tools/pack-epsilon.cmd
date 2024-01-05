@@ -3,11 +3,11 @@ REM rmdir /Q /S ..\..\SurfaceDuo-Drivers-Release
 mkdir ..\..\SurfaceDuo-Drivers-Release
 
 echo @echo off > ..\OnlineUpdater.cmd
-echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.txt >> ..\OnlineUpdater.cmd
+echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.xml >> ..\OnlineUpdater.cmd
 
 echo @echo off > ..\OfflineUpdater.cmd
 echo set /P DrivePath=Enter Drive letter ^^^(with the semi-column!^^^) of the connected device in mass storage mode ^^^(e.g. D:^^^): >> ..\OfflineUpdater.cmd
-echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.txt -p %%DrivePath%% >> ..\OfflineUpdater.cmd
+echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.xml -p %%DrivePath%% >> ..\OfflineUpdater.cmd
 
 copy DriverUpdater.ARM64.exe ..\
 copy DriverUpdater.AMD64.exe ..\
@@ -31,8 +31,8 @@ echo components\QC8150\OEM\OEM.SOC_QC8150.SURFACE >> filelist_epsilon.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE >> filelist_epsilon.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL >> filelist_epsilon.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BATTERY_SURFACE >> filelist_epsilon.txt
-echo definitions\Desktop\ARM64\Internal\epsilon.txt >> filelist_epsilon.txt
-echo definitions\Desktop\ARM64\PE\epsilon.txt >> filelist_epsilon.txt
+echo definitions\Desktop\ARM64\Internal\epsilon.xml >> filelist_epsilon.txt
+echo definitions\Desktop\ARM64\PE\epsilon.xml >> filelist_epsilon.txt
 echo DriverUpdater.ARM64.exe >> filelist_epsilon.txt
 echo DriverUpdater.AMD64.exe >> filelist_epsilon.txt
 echo DriverUpdater.X86.exe >> filelist_epsilon.txt
