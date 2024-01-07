@@ -36,37 +36,17 @@ You can view compatibility for this release, along with important information an
 
 ### Release notes
 
-What's new?
-
-- **_New!_**: You can now install drivers offline more easily, simply run "OfflineUpdater.cmd" at the root of the zip archive you downloaded, and follow instructions
-
-- **_New!_**: You can now install drivers online! In other words, you can update the drivers on the device itself, while the OS is running. Currently this is work in progress and only supported if you have secure boot off (which normally is not the case). To update your drivers online within the os, simply run "OnlineUpdater.cmd" at the root of the zip archive you downloaded, and follow instructions
-
-- **_New!_**: We added better application installation support
-
-- **_New!_**: We now provide the matching version of driver updater so you can install the release more easily
-
 #### Surface Duo (1st Gen)
 
 What's new?
 
-- **_New!_**: We updated the audio calibration board configuration files. For now, you will notice audio is not yet enabled due to SPKR issues, we hope to bring this in next week for the anniversary release
+- **_New!_**: We fixed a few issues with USB-C dongles and chargers and USB C accessories in general
 
-- **_New!_**: We updated the fingerprint sensor driver. The driver is now 100% functional with _Secure Boot disabled_. We will try to find a way out of this caveat for the next release.
+- **_New!_**: We added support for new surface docking accessories again
 
-- **_New!_**: We improved the installation process to be faster and not depend on extra install steps online. This should result in less errors and more reliability.
+- **_New!_**: We improved the behavior of automatic brightness, it should be better than ever
 
-- **_New!_**: We updated most Qualcomm Drivers to their latest version (v2040)
-
-- **_New!_**: We added support for additional Surface Docking Accessories (Surface Audio Dock) by default
-
-- **_New!_**: We updated all Surface Drivers to their latest version when applicable
-
-- **_New!_**: We introduced a prerelease driver for Surface Dial support. Support remains disabled in this release.
-
-- **_New!_**: We introduced touch support for Redstone 5 and earlier Windows Versions.
-
-__New!__: We are now providing smaller download packages, specifically tailored towards a given device and OS target.
+- **_New!_**: We updated drivers related to PCIe for a future release, this change will also enable better energy consumption when PCIe is not in use, and requires the very latest uefi available as of this release.
 
 - Please download ```SurfaceDuo-Drivers-v2401.22-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
 - Please download ```SurfaceDuo-Drivers-v2401.22-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
