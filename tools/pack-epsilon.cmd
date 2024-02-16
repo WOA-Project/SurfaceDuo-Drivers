@@ -1,7 +1,7 @@
 @echo off
 
 mkdir ..\..\SurfaceDuo-Drivers-Release
-del ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.zip
+del ..\..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.zip
 
 echo @echo off > ..\OnlineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OnlineUpdater.cmd
@@ -37,7 +37,6 @@ echo components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_DESKTOP >> filelist_
 echo components\QC8150\OEM\OEM.SOC_QC8150.SURFACE >> filelist_epsilon.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE >> filelist_epsilon.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL >> filelist_epsilon.txt
-echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BATTERY_SURFACE >> filelist_epsilon.txt
 echo definitions\Desktop\ARM64\Internal\epsilon.xml >> filelist_epsilon.txt
 echo definitions\Desktop\ARM64\PE\epsilon.xml >> filelist_epsilon.txt
 echo DriverUpdater.ARM64.exe >> filelist_epsilon.txt

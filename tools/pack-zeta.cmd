@@ -1,7 +1,7 @@
 @echo off
 
 mkdir ..\..\SurfaceDuo-Drivers-Release
-del ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Zeta.zip
+del ..\..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Zeta.zip
 
 echo @echo off > ..\OnlineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OnlineUpdater.cmd
@@ -33,9 +33,11 @@ echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL >> filelist_ze
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS >> filelist_zeta.txt
 echo components\QC8350\Device\DEVICE.SOC_QC8350.ZETA >> filelist_zeta.txt
 echo components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL >> filelist_zeta.txt
+echo components\QC8350\Graphics\GRAPHICS.SOC_QC8350.ZETA_DESKTOP >> filelist_zeta.txt
 echo components\QC8350\OEM\OEM.SOC_QC8350.SURFACE >> filelist_zeta.txt
 echo components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE >> filelist_zeta.txt
 echo components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL >> filelist_zeta.txt
+echo components\QC8350\Platform\PLATFORM.SOC_QC8350.POST >> filelist_zeta.txt
 echo definitions\Desktop\ARM64\Internal\zeta.xml >> filelist_zeta.txt
 echo DriverUpdater.ARM64.exe >> filelist_zeta.txt
 echo DriverUpdater.AMD64.exe >> filelist_zeta.txt

@@ -1,7 +1,7 @@
 @echo off
 
 mkdir ..\..\SurfaceDuo-Drivers-Release
-del ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-E.zip
+del ..\..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-E.zip
 
 echo apps\IPA > filelist_e.txt
 echo CODE_OF_CONDUCT.md >> filelist_e.txt
@@ -14,10 +14,9 @@ echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE >> filelist
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS >> filelist_e.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL >> filelist_e.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS >> filelist_e.txt
-echo components\QC8550\Device >> filelist_e.txt
-echo components\QC8550\Graphics >> filelist_e.txt
 echo components\QC8550\Platform\PLATFORM.SOC_QC8550.BASE >> filelist_e.txt
 echo components\QC8550\Platform\PLATFORM.SOC_QC8550.BASE_MINIMAL >> filelist_e.txt
+echo components\QC8550\Platform\PLATFORM.SOC_QC8550.POST >> filelist_e.txt
 echo LICENSE.md >> filelist_e.txt
 echo README.md >> filelist_e.txt
 
