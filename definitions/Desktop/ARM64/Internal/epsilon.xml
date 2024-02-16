@@ -206,9 +206,6 @@
     </Drivers>
     <AppX>
         <AppXPackages>
-            <PackageFile Path="$(mspackageroot)\apps\IPA\Airwaves" Name="LumiaWOA.Airwaves_btf4vqatnxdpt.appxbundle" ID="LumiaWOA.Airwaves_btf4vqatnxdpt"/>
-            <PackageFile Path="$(mspackageroot)\apps\IPA\Chat" Name="LumiaWOA.Chat_btf4vqatnxdpt.msixbundle" ID="LumiaWOA.Chat_btf4vqatnxdpt"/>
-            <PackageFile Path="$(mspackageroot)\apps\IPA\Dialer" Name="LumiaWOA.Dialer_mgf8b6qyy0nb4.msixbundle" ID="LumiaWOA.Dialer_mgf8b6qyy0nb4"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Framework.2.2.appx" ID="Microsoft.NET.Native.Framework.2.2"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Framework.x64.1.3.Appx" ID="Microsoft.NET.Native.Framework.x64.1.3"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.NET.Native.Runtime.2.2.appx" ID="Microsoft.NET.Native.Runtime.2.2"/>
@@ -218,11 +215,17 @@
             <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM64.14.00.appx" ID="Microsoft.VCLibs.ARM64.14.00"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.ARM64.14.00.Desktop.appx" ID="Microsoft.VCLibs.ARM64.14.00.Desktop"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\Frameworks" Name="Microsoft.VCLibs.x64.14.00.appx" ID="Microsoft.VCLibs.x64.14.00"/>
-            <PackageFile Path="$(mspackageroot)\apps\IPA\Phone" Name="Microsoft.CommsPhone_8wekyb3d8bbwe.appxbundle" ID="Microsoft.CommsPhone_8wekyb3d8bbwe"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Airwaves" Name="LumiaWOA.Airwaves_btf4vqatnxdpt.appxbundle" ID="LumiaWOA.Airwaves_btf4vqatnxdpt"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Chat" Name="LumiaWOA.Chat_btf4vqatnxdpt.msixbundle" ID="LumiaWOA.Chat_btf4vqatnxdpt"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Dialer" Name="LumiaWOA.Dialer_mgf8b6qyy0nb4.msixbundle" ID="LumiaWOA.Dialer_mgf8b6qyy0nb4"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\SurfaceApp" Name="DuoWOA.SurfaceApp_btf4vqatnxdpt.msixbundle" ID="DuoWOA.SurfaceApp_btf4vqatnxdpt"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\CommsEnhancement" Name="Comms.Apps.CommsEnhancement_ARM.appxbundle" ID="Microsoft.BlockandFilterglobal_8wekyb3d8bbwe" LicenseFile="Comms.Apps.Calls_License.xml"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\CommsEnhancement" Name="Comms.Apps.CommsEnhancement.CN_ARM.appxbundle" ID="Microsoft.BlockandFilter_8wekyb3d8bbwe"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Messaging" Name="Comms.Apps.Messaging_ARM64.AppxBundle" ID="Microsoft.Messaging_8wekyb3d8bbwe" LicenseFile="Comms.Apps.Messaging_License.xml"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\Phone" Name="Comms.Apps.Calls_ARM.appxbundle" ID="Microsoft.CommsPhone_8wekyb3d8bbwe" LicenseFile="Comms.Apps.Calls_License.xml"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\SurfaceHub_Desktop" Name="Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle" ID="Microsoft.SurfaceHub_8wekyb3d8bbwe" LicenseFile="Microsoft.SurfaceHub_8wekyb3d8bbwe.xml"/>
             <PackageFile Path="$(mspackageroot)\apps\IPA\TruePaint" Name="Microsoft.5967852151392_8wekyb3d8bbwe.AppxBundle" ID="Microsoft.5967852151392_8wekyb3d8bbwe"/>
-            <PackageFile Path="$(mspackageroot)\apps\IPA\zStore" Name="47134AttachGenerator.AtStore_8gjk0gpazptrr.AppxBundle" ID="47134AttachGenerator.AtStore_8gjk0gpazptrr"/>
+            <PackageFile Path="$(mspackageroot)\apps\IPA\zStore" Name="zStore_ARM.appxbundle" ID="zStore_ARM" LicenseFile="zStore_License.xml"/>
         </AppXPackages>
     </AppX>
 </FeatureManifest>
