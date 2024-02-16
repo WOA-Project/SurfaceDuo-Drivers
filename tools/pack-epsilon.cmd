@@ -1,13 +1,16 @@
 @echo off
-REM rmdir /Q /S ..\..\SurfaceDuo-Drivers-Release
+
 mkdir ..\..\SurfaceDuo-Drivers-Release
+del ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.zip
 
 echo @echo off > ..\OnlineUpdater.cmd
 echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.xml >> ..\OnlineUpdater.cmd
+echo pause >> ..\OnlineUpdater.cmd
 
 echo @echo off > ..\OfflineUpdater.cmd
 echo set /P DrivePath=Enter Drive letter ^^^(with the semi-column!^^^) of the connected device in mass storage mode ^^^(e.g. D:^^^): >> ..\OfflineUpdater.cmd
 echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.xml -p %%DrivePath%% >> ..\OfflineUpdater.cmd
+echo pause >> ..\OfflineUpdater.cmd
 
 copy DriverUpdater.ARM64.exe ..\
 copy DriverUpdater.AMD64.exe ..\

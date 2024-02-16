@@ -1,6 +1,7 @@
 @echo off
-REM rmdir /Q /S ..\..\SurfaceDuo-Drivers-Release
+
 mkdir ..\..\SurfaceDuo-Drivers-Release
+del ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-E.zip
 
 echo apps\IPA > filelist_e.txt
 echo CODE_OF_CONDUCT.md >> filelist_e.txt
