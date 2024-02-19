@@ -40,11 +40,19 @@ You can view compatibility for this release, along with important information an
 
 What's new?
 
-- **_New!_**: We fixed a few issues with USB-C dongles and chargers and USB C accessories in general
+- Stability Fixes
 
-- **_New!_**: We added support for new surface docking accessories again
+- Resolves a recent regression with USB host mode peripherals/OTG not being functional
 
-- **_New!_**: We improved the behavior of automatic brightness, it should be better than ever
+- Updates to key Surface owned drivers to their latest versions
+
+- Fixes an issue where Surface Duo devices with Toshiba/Kioxia made UFS storage did not get proper firmware update capsule targeting
+
+- Updates the platform id of Surface Duo from MTP08150 to AND08150
+
+- Fixes, improvements to Audio (but no working Audio just yet)
+
+- Updated App pack
 
 - **_New!_**: We updated drivers related to PCIe for a future release, this change will also enable better energy consumption when PCIe is not in use, and requires the very latest uefi available as of this release.
 
