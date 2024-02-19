@@ -1,4 +1,4 @@
-## Surface Duo Drivers BSP - Version 2401.90 (Choco Island)
+## Surface Duo Drivers BSP - Version 2402.65 (Apollo)
 
 <details>
   <summary>General information</summary>
@@ -14,7 +14,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2401.90.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2402.65.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -30,7 +30,7 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2401.90)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2402.65)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
@@ -48,8 +48,8 @@ What's new?
 
 - **_New!_**: We updated drivers related to PCIe for a future release, this change will also enable better energy consumption when PCIe is not in use, and requires the very latest uefi available as of this release.
 
-- Please download ```SurfaceDuo-Drivers-v2401.90-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
-- Please download ```SurfaceDuo-Drivers-v2401.90-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- Please download ```SurfaceDuo-Drivers-v2402.65-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2402.65-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 <details>
   <summary>Known issues</summary>
