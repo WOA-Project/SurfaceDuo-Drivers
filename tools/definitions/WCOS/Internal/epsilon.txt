@@ -1,0 +1,15 @@
+[Drivers]
+\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE=""
+\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE=""
+\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE=""
+\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE=""
+\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL=""
+\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON=""
+\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL=""
+\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_WCOS=""
+\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE=""
+\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE=""
+\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL=""
+
+[Apps]
+\apps\IPA=""
