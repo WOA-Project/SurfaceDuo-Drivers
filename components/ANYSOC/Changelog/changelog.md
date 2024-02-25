@@ -1,9 +1,9 @@
-## Surface Duo Drivers BSP - Version 2402.65 (Apollo)
+## Surface Duo Drivers BSP - Version 2402.86 (Astro)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 01/28/2024 11:00 PM UTC+1
+**Released:** 02/25/2024 11:00 PM UTC+1
 
 **Quality:** Preview
 
@@ -14,7 +14,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2402.65.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2402.86.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -30,7 +30,7 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2402.65)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2402.86)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
@@ -42,22 +42,12 @@ What's new?
 
 - Stability Fixes
 
-- Resolves a recent regression with USB host mode peripherals/OTG not being functional
+- Updated most drivers to the latest versions from Qualcomm
 
-- Updates to key Surface owned drivers to their latest versions
+- We fixed issues that would make devices be unstable or stop working after taking a driver update using driver updater. You should never get update issues from now on.
 
-- Fixes an issue where Surface Duo devices with Toshiba/Kioxia made UFS storage did not get proper firmware update capsule targeting
-
-- Updates the platform id of Surface Duo from MTP08150 to AND08150
-
-- Fixes, improvements to Audio (but no working Audio just yet)
-
-- Updated App pack
-
-- **_New!_**: We updated drivers related to PCIe for a future release, this change will also enable better energy consumption when PCIe is not in use, and requires the very latest uefi available as of this release.
-
-- Please download ```SurfaceDuo-Drivers-v2402.65-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
-- Please download ```SurfaceDuo-Drivers-v2402.65-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- Please download ```SurfaceDuo-Drivers-v2402.86-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2402.86-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 <details>
   <summary>Known issues</summary>
@@ -350,19 +340,7 @@ int main()
 <details>
   <summary>How to offline update an existing Windows Desktop installation</summary>
   <p>
-- Switch the device into mass storage.
-- Take note of the drive letter the Windows partition is using, here we will assume it got mounted as I:
-
-- Download [SurfaceDuo-Drivers-Full.zip] from https://github.com/WOA-Project/SurfaceDuo-Drivers/releases/latest
-- Extract said zip file to a folder of your choice, we will assume here we extracted it to C:\UpdatedDrivers
-- Download the DriverUpdater utility from https://github.com/WOA-Project/DriverUpdater/releases/latest
-- Open a command prompt as administrator, where the driver utility got downloaded
-
-- Execute the following command:
-  
-  DriverUpdater.exe -d C:\UpdatedDrivers\SurfaceDuo-Drivers-XXXX\definitions\Desktop\ARM64\Internal\epsilon.txt -r C:\UpdatedDrivers\SurfaceDuo-Drivers-XXXX\ -p I:\
-
-- Reboot the device, the device will now begin PnP setup once again, and hopefully you will be back soon enough to your desktop
+Please follow the steps detailed at https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md
   </p>
 </details>
 
