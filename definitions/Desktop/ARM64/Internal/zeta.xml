@@ -122,7 +122,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\UART" Name="qcuart8350.inf" ID="qcuart8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\VoltageCurrentMonitoring" Name="qcadc8350.inf" ID="qcadc8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\ADCM" Name="qcadcm8350.inf" ID="qcadcm8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Device" Name="qcaucd8350.inf" ID="qcaucd8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\ListenSoundModel" Name="QCListenSM_swc8350.inf" ID="QCListenSM_swc8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Miniport" Name="qcaudminiport_Base8350.inf" ID="qcaudminiport_Base8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\RPC" Name="qcadsprpc8350.inf" ID="qcadsprpc8350"/>
