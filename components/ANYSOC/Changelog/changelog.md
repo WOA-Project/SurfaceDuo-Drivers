@@ -1,9 +1,9 @@
-## Surface Duo Drivers BSP - Version 2402.86 (Astro)
+## Surface Duo Drivers BSP - Version 2403.41 (Hephaestus)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 02/25/2024 11:00 PM UTC+1
+**Released:** 03/13/2024 11:00 PM UTC+1
 
 **Quality:** Preview
 
@@ -14,7 +14,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2402.86.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2403.41.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -30,7 +30,7 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2402.86)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2403.41)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
@@ -40,14 +40,24 @@ You can view compatibility for this release, along with important information an
 
 What's new?
 
-- Stability Fixes
+- Introducing Vulkan and OpenCL support (preliminary)
+  This uses the actual GPU and no compat pack, if you have the compatibility pack installed, it can conflict, so please remove it before first use.
+  This remains a bit experimental if there's issues in loading Vulkan or OpenCL please let us know!
 
-- Updated most drivers to the latest versions from Qualcomm
+- Stability Fixes (again)
 
-- We fixed issues that would make devices be unstable or stop working after taking a driver update using driver updater. You should never get update issues from now on.
+- Updated most drivers to the latest versions from Qualcomm (again) and Surface
 
-- Please download ```SurfaceDuo-Drivers-v2402.86-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
-- Please download ```SurfaceDuo-Drivers-v2402.86-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- We fixed issues that would make devices be unstable or stop working after taking a driver update using driver updater. You should never get update issues from now on. (again)
+
+- We fixed a big issue that made Surface Duo 2 not work as expected for quite a while, while things aren't still back to where they should be, they're definitely better. We're working on it
+
+- We fixed an issue that resulted in pen input being swapped incorrectly across displays on Surface Duo (1st Gen)
+
+- Please download ```SurfaceDuo-Drivers-v2403.41-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2403.41-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+
+- We are aware auto pairing of the pen will not work anymore on Windows 10, a fix is due in the next update.
 
 <details>
   <summary>Known issues</summary>
