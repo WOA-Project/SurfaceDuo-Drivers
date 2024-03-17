@@ -4,6 +4,7 @@
     <BaseDriverPackages>
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Drivers" Name="AccessoryCenterHSADriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Drivers" Name="DevicesTelemetryServiceDriver.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Firmware" Name="RealtekFwUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.DOCKING.SURFACE\Firmware" Name="SurfaceThunderbolt4DockFwUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\BleLc" Name="SurfacePenBleLcAddrAdaptationDriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfaceCFUOverHid.inf" />
@@ -23,6 +24,8 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FFirmwareUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Settings\Version" Name="phonereleaseversion.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Signature\DesktopSignature" Name="desktopsignature.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\FMRadio" Name="FM Radio Interface.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\MobileBridge" Name="MobileFrequencyModulationService.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\MobileBridgeUser" Name="MobileHapticsService.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\EMB" Name="emb.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" />
@@ -65,8 +68,9 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Audio\SurfaceIHVAudioFilter" Name="SurfaceIhvAudioFilterDriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Integration" Name="SurfaceDuo2_gtopatchext.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Touch" Name="SurfaceDigitizerHidSpiExtnPackage.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Touch" Name="SurfaceDuoTouchPenProcessorFriendlyNames.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceTouchG6FwUpdateExtnPackage.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Settings" Name="SurfaceDuo2_Deviceinfo.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Settings" Name="SurfaceDuo2_DeviceInfo.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ACPI" Name="qcabd.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Buses" Name="qcglink8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Buses" Name="qcgpi8350.inf" />
@@ -101,7 +105,6 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\UART" Name="qcuart8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\VoltageCurrentMonitoring" Name="qcadc8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\ADCM" Name="qcadcm8350.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Device" Name="qcaucd8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\ListenSoundModel" Name="QCListenSM_swc8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Miniport" Name="qcaudminiport_Base8350.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda888\$(cputype)\$(buildtype)\Drivers\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\RPC" Name="qcadsprpc8350.inf" />

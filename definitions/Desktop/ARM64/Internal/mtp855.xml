@@ -56,7 +56,7 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Services\RCS" Name="QcRCSPresSvc_mbb_ext8150.inf" ID="QcRCSPresSvc_mbb_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.MTP_DESKTOP" Name="qcdx8150.inf" ID="qcdx8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.QCOM\Drivers\Touch" Name="qcImproveTouch8150.inf" ID="qcImproveTouch8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\USB" Name="SurfaceUsbCMuxAcpiFilterDriver.inf" ID="SurfaceUsbCMuxAcpiFilterDriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.QCOM\Drivers\USB" Name="SurfaceUsbCMuxAcpiFilterDriver.inf" ID="SurfaceUsbCMuxAcpiFilterDriver"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCTimer8150.inf" ID="HalExtQCTimer8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCWdogTimer8150.inf" ID="HalExtQCWdogTimer8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\ACPI" Name="qcabd.inf" ID="qcabd"/>

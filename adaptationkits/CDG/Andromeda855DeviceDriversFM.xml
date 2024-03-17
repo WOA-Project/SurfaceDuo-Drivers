@@ -27,6 +27,8 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\FMRadio" Name="FM Radio Interface.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\MobileBridge" Name="MobileFrequencyModulationService.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\MobileBridgeUser" Name="MobileHapticsService.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\EMB" Name="emb.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\I2C" Name="surfaceduo_i2c.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\PMIC" Name="qcpmiceic8150.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\PowerManagement" Name="SurfaceDuo_pep.inf" />
@@ -87,7 +89,7 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceThermalProxyFilter.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Touch" Name="SurfaceTouchPanelAlignment.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Touch\RS6" Name="SurfaceTouchPenProcessorUpdateRs6.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\USB" Name="fsa4480.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\USB" Name="SurfaceUsbCMuxAcpiFilterDriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Audio\Dolby" Name="dax3_ext_qc_dolbyatmos_dolbyaccessoem.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Audio\Dolby" Name="dax3_qc_ext_bt.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Integration" Name="SurfaceDuo_gtopatchext.inf" />
@@ -171,7 +173,6 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Subsystems" Name="qcpdsr.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USB" Name="qcursext.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USB" Name="QcUSBAudio8150.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USB" Name="qcusbctcpm8150.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USB" Name="qcusbcucsi8150.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USBFn" Name="qcusbfn8150.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USBFn" Name="QcUsbFnSsFilter8150.inf" />
