@@ -69,6 +69,10 @@
         }
       }
     },
+    "camAudEffects": {
+      "name": "camAudEffects",
+      "visibility": "Show"
+    },
     "deviceColor": {
       "name": "deviceColor",
       "visibility": "Discover",
