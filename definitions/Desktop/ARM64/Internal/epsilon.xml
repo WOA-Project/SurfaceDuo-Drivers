@@ -12,6 +12,7 @@
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialFwUpdate.inf" ID="SurfaceDialFwUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialIntegration.inf" ID="SurfaceDialIntegration"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Firmware" Name="SurfacePen217FwUpdate.inf" ID="SurfacePen217FwUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HidSpi" Name="hidspi_km.inf" ID="hidspi_km"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HidSpi" Name="hidspi_non_workstation.inf" ID="hidspi_non_workstation"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen" Name="SurfacePen217Integration.inf" ID="SurfacePen217Integration"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceDuoHIDFriendlyNames.inf" ID="SurfaceDuoHIDFriendlyNames"/>
@@ -55,6 +56,7 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Camera" Name="SurfaceDuo_camisp.inf" ID="SurfaceDuo_camisp"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Camera" Name="SurfaceDuo_camrear.inf" ID="SurfaceDuo_camrear"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Cellular" Name="surfaceduo_ipa.inf" ID="surfaceduo_ipa"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\NPU" Name="qcnspmcdm8150.inf" ID="qcnspmcdm8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\SecurityProcessor" Name="surfaceduo_sp.inf" ID="surfaceduo_sp"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Sensors\SSC" Name="SurfaceDuo_sensors.inf" ID="SurfaceDuo_sensors"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Subsystems" Name="SurfaceDuo_subsys.inf" ID="SurfaceDuo_subsys"/>
@@ -97,10 +99,14 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceServiceNullDriver.inf" ID="SurfaceServiceNullDriver"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceThermalProxy.inf" ID="SurfaceThermalProxy"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceThermalProxyFilter.inf" ID="SurfaceThermalProxyFilter"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_audio_component.inf" ID="mep_audio_component"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_camera_component.inf" ID="mep_camera_component"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_priorityarbiter_component.inf" ID="mep_priorityarbiter_component"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="MicrosoftEffectPack_extension.inf" ID="MicrosoftEffectPack_extension"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Touch" Name="SurfaceTouchPanelAlignment.inf" ID="SurfaceTouchPanelAlignment"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Touch\RS5" Name="SurfaceTouchPenProcessorUpdateRs5.inf" ID="SurfaceTouchPenProcessorUpdateRs5"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Touch\RS6" Name="SurfaceTouchPenProcessorUpdateRs6.inf" ID="SurfaceTouchPenProcessorUpdateRs6"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\USB" Name="SurfaceUsbCMuxAcpiFilterDriver.inf" ID="SurfaceUsbCMuxAcpiFilterDriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\USB" Name="fsa4480.inf" ID="fsa4480"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Audio\Dolby" Name="dax3_ext_qc_dolbyatmos_dolbyaccessoem.inf" ID="dax3_ext_qc_dolbyatmos_dolbyaccessoem"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Audio\Dolby" Name="dax3_qc_ext_bt.inf" ID="dax3_qc_ext_bt"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Graphics" Name="SurfaceDisplayConfiguratorExtension.inf" ID="SurfaceDisplayConfiguratorExtension"/>
@@ -188,6 +194,7 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\Subsystems" Name="qcpdsr.inf" ID="qcpdsr"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USB" Name="qcursext.inf" ID="qcursext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USB" Name="QcUSBAudio8150.inf" ID="QcUSBAudio8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USB" Name="qcusbctcpm8150.inf" ID="qcusbctcpm8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USB" Name="qcusbcucsi8150.inf" ID="qcusbcucsi8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USBFn" Name="qcusbfn8150.inf" ID="qcusbfn8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE\Source\Drivers\USBFn" Name="QcUsbFnSsFilter8150.inf" ID="QcUsbFnSsFilter8150"/>
