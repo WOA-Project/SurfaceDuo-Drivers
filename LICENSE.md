@@ -1,8 +1,8 @@
-Copyright (c) 2017-2023 The DuoWoA authors
+Copyright (c) 2017-2024 The DuoWoA authors
 
-Copyright (c) 2011-2023 Qualcomm Incorporated
+Copyright (c) 2011-2024 Qualcomm Incorporated
 
-Copyright (c) 2019-2023 Microsoft Corporation
+Copyright (c) 2019-2024 Microsoft Corporation
 
 
 This repository contains binary files sourced from Qualcomm Snapdragon 8cx
