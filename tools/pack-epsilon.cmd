@@ -6,19 +6,15 @@ del ..\..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.zip
 echo @echo off > ..\OnlineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OnlineUpdater.cmd
 echo pushd "%%~dp0" ^&^& cd %%~dp0 >> ..\OnlineUpdater.cmd
-echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.xml >> ..\OnlineUpdater.cmd
+echo .\tools\DriverUpdater\%%PROCESSOR_ARCHITECTURE%%\DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.xml >> ..\OnlineUpdater.cmd
 echo pause >> ..\OnlineUpdater.cmd
 
 echo @echo off > ..\OfflineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OfflineUpdater.cmd
 echo pushd "%%~dp0" ^&^& cd %%~dp0 >> ..\OfflineUpdater.cmd
 echo set /P DrivePath=Enter Drive letter ^^^(with the colon!^^^) of the connected device in mass storage mode ^^^(e.g. D:^^^): >> ..\OfflineUpdater.cmd
-echo DriverUpdater.%%PROCESSOR_ARCHITECTURE%%.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.xml -p %%DrivePath%% >> ..\OfflineUpdater.cmd
+echo .\tools\DriverUpdater\%%PROCESSOR_ARCHITECTURE%%\DriverUpdater.exe -r . -d .\definitions\Desktop\ARM64\Internal\epsilon.xml -p %%DrivePath%% >> ..\OfflineUpdater.cmd
 echo pause >> ..\OfflineUpdater.cmd
-
-copy DriverUpdater.ARM64.exe ..\
-copy DriverUpdater.AMD64.exe ..\
-copy DriverUpdater.X86.exe ..\
 
 echo apps\IPA > filelist_epsilon.txt
 echo CODE_OF_CONDUCT.md >> filelist_epsilon.txt
@@ -39,21 +35,16 @@ echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE >> filelist_epsilon.txt
 echo components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL >> filelist_epsilon.txt
 echo definitions\Desktop\ARM64\Internal\epsilon.xml >> filelist_epsilon.txt
 echo definitions\Desktop\ARM64\PE\epsilon.xml >> filelist_epsilon.txt
-echo DriverUpdater.ARM64.exe >> filelist_epsilon.txt
-echo DriverUpdater.AMD64.exe >> filelist_epsilon.txt
-echo DriverUpdater.X86.exe >> filelist_epsilon.txt
+echo tools\DriverUpdater >> filelist_epsilon.txt
 echo LICENSE.md >> filelist_epsilon.txt
 echo OfflineUpdater.cmd >> filelist_epsilon.txt
 echo OnlineUpdater.cmd >> filelist_epsilon.txt
 echo README.md >> filelist_epsilon.txt
 
 cd ..
-"%ProgramFiles%\7-zip\7z.exe" a -tzip ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.zip @tools\filelist_epsilon.txt -scsWIN
+"%ProgramFiles%\7-zip\7z.exe" a -t7z ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.7z @tools\filelist_epsilon.txt -scsWIN
 cd tools
 
 del ..\OfflineUpdater.cmd
 del ..\OnlineUpdater.cmd
-del ..\DriverUpdater.ARM64.exe
-del ..\DriverUpdater.AMD64.exe 
-del ..\DriverUpdater.X86.exe
 del filelist_epsilon.txt

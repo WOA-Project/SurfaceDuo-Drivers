@@ -21,7 +21,7 @@ echo LICENSE.md >> filelist_e.txt
 echo README.md >> filelist_e.txt
 
 cd ..
-"%ProgramFiles%\7-zip\7z.exe" a -tzip ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-E.zip @tools\filelist_e.txt -scsWIN
+"%ProgramFiles%\7-zip\7z.exe" a -t7z ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-E.7z @tools\filelist_e.txt -scsWIN
 cd tools
 
 del filelist_e.txt
