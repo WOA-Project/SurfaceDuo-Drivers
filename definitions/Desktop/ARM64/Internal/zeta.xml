@@ -132,6 +132,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Integration" Name="SurfaceThermalProxy.inf" ID="SurfaceThermalProxy"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Integration" Name="SurfaceThermalProxyFilter.inf" ID="SurfaceThermalProxyFilter"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\NFC" Name="NxpNfcClientDriver.inf" ID="NxpNfcClientDriver"/>
+            <!--<DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Touch" Name="SurfaceHIDConfigFlags.inf" ID="SurfaceHIDConfigFlags"/>-->
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Touch" Name="SurfaceNxpNfcWirelessChargingDriver.inf" ID="SurfaceNxpNfcWirelessChargingDriver"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Touch" Name="SurfaceTouchPanelAlignment.inf" ID="SurfaceTouchPanelAlignment"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Touch\RS5" Name="SurfaceTouchPenProcessorUpdateRs5.inf" ID="SurfaceTouchPenProcessorUpdateRs5"/>
@@ -140,8 +141,26 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Audio\SurfaceIHVAudioFilter" Name="SurfaceIhvAudioFilterDriver.inf" ID="SurfaceIhvAudioFilterDriver"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Graphics" Name="SurfaceDisplayConfiguratorExtension.inf" ID="SurfaceDisplayConfiguratorExtension"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Integration" Name="SurfaceDuo2_gtopatchext.inf" ID="SurfaceDuo2_gtopatchext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuHN8T05BZGKX015ExtnPackage.inf" ID="SurfaceSfuHN8T05BZGKX015ExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuHN8T15BZGKX016ExtnPackage.inf" ID="SurfaceSfuHN8T15BZGKX016ExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuHN8T25BZGKX017ExtnPackage.inf" ID="SurfaceSfuHN8T25BZGKX017ExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuKLUDG4UHDCB0E1ExtnPackage.inf" ID="SurfaceSfuKLUDG4UHDCB0E1ExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuKLUEG8UHDCB0E1ExtnPackage.inf" ID="SurfaceSfuKLUEG8UHDCB0E1ExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuKLUFG8RHDBB0E1ExtnPackage.inf" ID="SurfaceSfuKLUFG8RHDBB0E1ExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuTHGJFAT0T44BAILBExtnPackage.inf" ID="SurfaceSfuTHGJFAT0T44BAILBExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuTHGJFAT1T84BAIRBExtnPackage.inf" ID="SurfaceSfuTHGJFAT1T84BAIRBExtnPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuTHGJFAT2T84BAIRBExtnPackage.inf" ID="SurfaceSfuTHGJFAT2T84BAIRBExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Touch" Name="SurfaceDigitizerHidSpiExtnPackage.inf" ID="SurfaceDigitizerHidSpiExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Touch" Name="SurfaceDuoTouchPenProcessorFriendlyNames.inf" ID="SurfaceDuoTouchPenProcessorFriendlyNames"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceSfuHN8T05BZGKX015FwPackage.inf" ID="SurfaceSfuHN8T05BZGKX015FwPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceSfuHN8T15BZGKX016FwPackage.inf" ID="SurfaceSfuHN8T15BZGKX016FwPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceSfuHN8T25BZGKX017FwPackage.inf" ID="SurfaceSfuHN8T25BZGKX017FwPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceSfuKLUDG4UHDCB0E1FwPackage.inf" ID="SurfaceSfuKLUDG4UHDCB0E1FwPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceSfuKLUEG8UHDCB0E1FwPackage.inf" ID="SurfaceSfuKLUEG8UHDCB0E1FwPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceSfuKLUFG8RHDBB0E1FwPackage.inf" ID="SurfaceSfuKLUFG8RHDBB0E1FwPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceSfuTHGJFAT0T44BAILBFwPackage.inf" ID="SurfaceSfuTHGJFAT0T44BAILBFwPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceSfuTHGJFAT1T84BAIRBFwPackage.inf" ID="SurfaceSfuTHGJFAT1T84BAIRBFwPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceSfuTHGJFAT2T84BAIRBFwPackage.inf" ID="SurfaceSfuTHGJFAT2T84BAIRBFwPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Firmware" Name="SurfaceTouchG6FwUpdateExtnPackage.inf" ID="SurfaceTouchG6FwUpdateExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Settings" Name="MultiScreenExperience.inf" ID="MultiScreenExperience"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Settings" Name="oled.inf" ID="oled"/>
@@ -181,7 +200,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\UART" Name="qcuart8350.inf" ID="qcuart8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\VoltageCurrentMonitoring" Name="qcadc8350.inf" ID="qcadc8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\ADCM" Name="qcadcm8350.inf" ID="qcadcm8350"/>
-            <!--<DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Device" Name="qcaucd8350.inf" ID="qcaucd8350.inf"/>-->
+            <!--<DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Device" Name="qcaucd8350.inf" ID="qcaucd8350"/>-->
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\ListenSoundModel" Name="QCListenSM_swc8350.inf" ID="QCListenSM_swc8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\Miniport" Name="qcaudminiport_Base8350.inf" ID="qcaudminiport_Base8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Audio\RPC" Name="qcadsprpc8350.inf" ID="qcadsprpc8350"/>
