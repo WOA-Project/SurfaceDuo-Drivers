@@ -188,7 +188,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicgpio8350.inf" ID="qcpmicgpio8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PowerManagement" Name="qcpep.wp8350.inf" ID="qcpep.wp8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Provisioning" Name="QcSOCPartition.inf" ID="QcSOCPartition"/>
-            <!--<DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qccdi8350.inf" ID="qccdi8350"/>-->
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qccdi8350.inf" ID="qccdi8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qcrpen.inf" ID="qcrpen"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\SMMU" Name="qcsmmu8350.inf" ID="qcsmmu8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\SPI" Name="qcspi8350.inf" ID="qcspi8350"/>
