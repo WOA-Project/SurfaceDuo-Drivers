@@ -1,0 +1,1 @@
+../../build/ms/dynamic_modules/lahaina.slpi.prod/libsns_direct_channel_skel.so

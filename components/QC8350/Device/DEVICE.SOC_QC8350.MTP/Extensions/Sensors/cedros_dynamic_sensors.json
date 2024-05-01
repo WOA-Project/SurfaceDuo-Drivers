@@ -1,0 +1,11 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "RCM", "QRD","IDP"],
+    "soc_id": ["450"]
+  },
+
+  "sns_dynamic_sensors":
+  {
+    "owner":"sns_dynamic_sensors"
+  }
+}
