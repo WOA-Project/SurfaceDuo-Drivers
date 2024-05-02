@@ -180,6 +180,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\I2C" Name="qci2c8350.inf" ID="qci2c8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\IOMMU" Name="qciommu.inf" ID="qciommu"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\IPCC" Name="qcipcc8350.inf" ID="qcipcc8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\LED" Name="qchwnled8350.inf" ID="qchwnled8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PCIe" Name="qcppx8350.inf" ID="qcppx8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmic8350.inf" ID="qcpmic8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\PMIC" Name="QcPmicApps8350.inf" ID="QcPmicApps8350"/>
