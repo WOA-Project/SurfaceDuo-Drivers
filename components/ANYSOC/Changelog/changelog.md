@@ -1,11 +1,11 @@
-## Surface Duo Drivers BSP - Version 2404.03 (Coconut Mall)
+## Surface Duo Drivers BSP - Version 2405.09 (Butterfly)
 
 ![A duo of Duos](https://github.com/WOA-Project/SurfaceDuo-Drivers/assets/3755345/5848583d-a569-480e-bfdc-74d569811a53)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 04/01/2024 11:00 PM UTC+2
+**Released:** 05/03/2024 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -16,7 +16,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2404.03.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2405.09.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -32,7 +32,7 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2404.03)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2405.09)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
@@ -83,9 +83,9 @@ What's new?
 
 ---
 
-- Please download ```SurfaceDuo-Drivers-v2404.03-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2405.09-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
 
-- Please download ```SurfaceDuo-Drivers-v2404.03-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- Please download ```SurfaceDuo-Drivers-v2405.09-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 ---
 
