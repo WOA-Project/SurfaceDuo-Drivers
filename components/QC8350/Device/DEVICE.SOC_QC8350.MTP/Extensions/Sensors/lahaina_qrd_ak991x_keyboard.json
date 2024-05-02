@@ -1,10 +1,10 @@
 {
   "config":
   {
-    "hw_platform": ["MTP"],
+    "hw_platform": ["QRD"],
     "soc_id": ["415"]
   },
-  "ak0991x_0_platform":{
+  "ak0991x_1_platform":{
     "owner": "sns_ak0991x",
     ".config":{
       "owner": "sns_ak0991x",
@@ -18,7 +18,7 @@
         "data": "12"
       },
       "i3c_address":{ "type": "int", "ver": "0",
-        "data": "30"
+        "data": "40"
       },
       "max_bus_speed_khz":{ "type": "int", "ver": "0",
         "data": "400"
@@ -51,16 +51,16 @@
         "data": "/pmic/client/sensor_vddio"
       },
       "rigid_body_type":{ "type": "int", "ver": "0",
-      "data": "0"
+      "data": "1"
       }
     },
     ".orient":{
       "owner": "sns_ak0991x",
       "x":{ "type": "str", "ver": "0",
-        "data": "-x"
+        "data": "+x"
       },
       "y":{ "type": "str", "ver": "0",
-        "data": "+y"
+        "data": "-y"
       },
       "z":{ "type": "str", "ver": "0",
         "data": "-z"
@@ -73,31 +73,31 @@
         ".corr_mat":{
           "owner": "sns_ak0991x",
           "0_0":{ "type": "flt", "ver": "0",
-            "data": "1.0236"
+            "data": "1.014"
           },
           "0_1":{ "type": "flt", "ver": "0",
-            "data": "0.0006"
+            "data": "-0.002"
           },
           "0_2":{ "type": "flt", "ver": "0",
-            "data": "-0.0001"
+            "data": "0.004"
           },
           "1_0":{ "type": "flt", "ver": "0",
-            "data": "-0.0031"
+            "data": "-0.002"
           },
           "1_1":{ "type": "flt", "ver": "0",
-            "data": "1.0123"
+            "data": "1.002"
           },
           "1_2":{ "type": "flt", "ver": "0",
-            "data": "-0.0092"
+            "data": "-0.003"
           },
           "2_0":{ "type": "flt", "ver": "0",
-            "data": "-0.0012"
+            "data": "0.004"
           },
           "2_1":{ "type": "flt", "ver": "0",
-            "data": "0.0225"
+            "data": "-0.003"
           },
           "2_2":{ "type": "flt", "ver": "0",
-            "data": "1.0144"
+            "data": "0.985"
           }
         },
         ".bias":{

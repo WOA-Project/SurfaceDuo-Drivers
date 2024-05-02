@@ -1,7 +1,7 @@
 {
   "config":
   {
-    "hw_platform": ["MTP"],
+    "hw_platform": ["QRD"],
     "soc_id": ["415"]
   },
   "ak0991x_0_platform":{
@@ -12,7 +12,7 @@
         "data": "0"
       },
       "bus_instance":{ "type": "int", "ver": "0",
-        "data": "4"
+        "data": "3"
       },
       "slave_config":{ "type": "int", "ver": "0",
         "data": "12"
@@ -57,13 +57,13 @@
     ".orient":{
       "owner": "sns_ak0991x",
       "x":{ "type": "str", "ver": "0",
-        "data": "-x"
+        "data": "+x"
       },
       "y":{ "type": "str", "ver": "0",
         "data": "+y"
       },
       "z":{ "type": "str", "ver": "0",
-        "data": "-z"
+        "data": "+z"
       }
     },
     ".mag":{
@@ -73,31 +73,31 @@
         ".corr_mat":{
           "owner": "sns_ak0991x",
           "0_0":{ "type": "flt", "ver": "0",
-            "data": "1.0236"
+            "data": "1.055"
           },
           "0_1":{ "type": "flt", "ver": "0",
-            "data": "0.0006"
+            "data": "0.081"
           },
           "0_2":{ "type": "flt", "ver": "0",
-            "data": "-0.0001"
+            "data": "-0.006"
           },
           "1_0":{ "type": "flt", "ver": "0",
-            "data": "-0.0031"
+            "data": "0.081"
           },
           "1_1":{ "type": "flt", "ver": "0",
-            "data": "1.0123"
+            "data": "1.037"
           },
           "1_2":{ "type": "flt", "ver": "0",
-            "data": "-0.0092"
+            "data": "-0.008"
           },
           "2_0":{ "type": "flt", "ver": "0",
-            "data": "-0.0012"
+            "data": "-0.006"
           },
           "2_1":{ "type": "flt", "ver": "0",
-            "data": "0.0225"
+            "data": "-0.008"
           },
           "2_2":{ "type": "flt", "ver": "0",
-            "data": "1.0144"
+            "data": "0.908"
           }
         },
         ".bias":{

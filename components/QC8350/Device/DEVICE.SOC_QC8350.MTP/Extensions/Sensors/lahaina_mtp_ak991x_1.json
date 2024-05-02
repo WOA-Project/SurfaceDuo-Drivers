@@ -4,7 +4,7 @@
     "hw_platform": ["MTP"],
     "soc_id": ["415"]
   },
-  "ak0991x_0_platform":{
+  "ak0991x_1_platform":{
     "owner": "sns_ak0991x",
     ".config":{
       "owner": "sns_ak0991x",
@@ -12,13 +12,13 @@
         "data": "0"
       },
       "bus_instance":{ "type": "int", "ver": "0",
-        "data": "4"
+        "data": "3"
       },
       "slave_config":{ "type": "int", "ver": "0",
         "data": "12"
       },
       "i3c_address":{ "type": "int", "ver": "0",
-        "data": "30"
+        "data": "40"
       },
       "max_bus_speed_khz":{ "type": "int", "ver": "0",
         "data": "400"
@@ -51,7 +51,7 @@
         "data": "/pmic/client/sensor_vddio"
       },
       "rigid_body_type":{ "type": "int", "ver": "0",
-      "data": "0"
+      "data": "1"
       }
     },
     ".orient":{
