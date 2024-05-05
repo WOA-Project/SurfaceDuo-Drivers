@@ -1,11 +1,11 @@
-## Surface Duo Drivers BSP - Version 2405.09 (Butterfly)
+## Surface Duo Drivers BSP - Version 2405.16 (Butterfly)
 
 ![A duo of Duos](https://github.com/WOA-Project/SurfaceDuo-Drivers/assets/3755345/5848583d-a569-480e-bfdc-74d569811a53)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 05/03/2024 11:00 PM UTC+2
+**Released:** 05/05/2024 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -16,7 +16,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2405.09.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2405.16.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -32,66 +32,21 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2405.09)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2405.16)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
 ### Release notes
 
-What's new?
-
-#### Common to both devices
-
-- We resolved a high occurence crash issue with the SSDE driver for Surface Duo 1 and 2
-
-#### Surface Duo 1
-
-- Updated all drivers to their latest versions for Surface Duo 1
-
-- We reduced the size of the overall driver package for Surface Duo 1 by 25%
-
-- We resolved a few bugs regarding the Analog USB Mux on Surface Duo 1, expect more stable usb connectivity as a result
-
-- We enabled support for Touch on Redstone 3 to Redstone 5 on Surface Duo 1
-
-- We also started working on enabling broader hardware support on Redstone 3 to 5 for Surface Duo 1
-
-- We added support for Windows Studio Effects on Surface Duo 1. To learn more about Windows Studio Effects, open the Surface App.
-
-- We started working on NPU support for Surface Duo 1
-
-#### Surface Duo 2
-
-> [!IMPORTANT]
-> Starting with this update, only Windows Insider Program Canary Channels are supported on Surface Duo 2 devices.
->
-> If you do not use such a build, Surface Duo 2 will __not__ boot Windows successfully. Please only use Windows Insider Program Canary Channel Builds (>= 26090).
-
-- We updated most drivers for Surface Duo 2
-
-- We fixed an issue where Surface Duo 2 wouldn't boot successfully on the latest FW versions
-
-- We introduced a new wallpaper for Surface Duo 2 devices
-
-- We introduced the Modem Processor Subsystem driver for Surface Duo 2 devices
-
-- We fixed the boot issues with all cpu cores on Surface Duo 2 devices
-
-- All CPU cores are now functional on Surface Duo 2 devices provided the OS build is from the Windows Insider Program Canary Channel. As a result performance is much much better than it ever was
-
-- We fixed an issue related to USB connectivity on Surface Duo 2
-
 ---
 
-- Please download ```SurfaceDuo-Drivers-v2405.09-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2405.16-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
 
-- Please download ```SurfaceDuo-Drivers-v2405.09-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- Please download ```SurfaceDuo-Drivers-v2405.16-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 ---
 
 - We are aware auto pairing of the pen will not work anymore on Windows 10, a fix is due in the next update.
-
-- REGRESSION: Battery status and Sensors are broken in this update and will be fixed another time on Surface Duo 2 devices
 
 <details>
   <summary>Known issues</summary>
