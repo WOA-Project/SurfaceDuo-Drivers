@@ -1,11 +1,11 @@
-## Surface Duo Drivers BSP - Version 2405.16 (Butterfly)
+## Surface Duo Drivers BSP - Version 2405.38 (Butterfly)
 
 ![A duo of Duos](https://github.com/WOA-Project/SurfaceDuo-Drivers/assets/3755345/5848583d-a569-480e-bfdc-74d569811a53)
 
 <details>
   <summary>General information</summary>
   <p>
-**Released:** 05/05/2024 11:00 PM UTC+2
+**Released:** 05/12/2024 11:00 PM UTC+2
 
 **Quality:** Preview
 
@@ -16,7 +16,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2405.16.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2405.38.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -32,17 +32,25 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2405.16)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2405.38)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
 ### Release notes
 
+- Resolves an issue that prevented Surface Duo 1 devices from booting correctly on clean installs since last update.
+
+- Enables fetching of calibration data for the two display vertical alignment and feeds it to the TouchPenProcessor module at runtime.
+
+- Enables fetching of the device calibration data for Bluetooth, WiFi, Cellular so things like MAC Addresses are now accurate for your device.
+
+- Enables fetching of the sensor calibration data for all device sensors. Note: The sensors should be not only more accurate but also way more reactive after you take this update. In particular, Posture Changes may feel __too__ reactive to some degree. Improvements will come in a later update!
+
 ---
 
-- Please download ```SurfaceDuo-Drivers-v2405.16-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2405.38-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
 
-- Please download ```SurfaceDuo-Drivers-v2405.16-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- Please download ```SurfaceDuo-Drivers-v2405.38-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 ---
 
