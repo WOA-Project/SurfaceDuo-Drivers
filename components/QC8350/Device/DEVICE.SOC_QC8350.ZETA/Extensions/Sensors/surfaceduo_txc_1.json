@@ -1,8 +1,7 @@
 {
   "config": {
     "hw_platform": [ "OEMC1", "MTP" ],
-    "soc_id": ["415", "439"],
-    "surface_product_id": ["2"]
+    "soc_id": ["415", "439"]
   },
 
   "txc_1": {
