@@ -12,17 +12,6 @@
       <ConvertibleSlateModePromptPreference>0</ConvertibleSlateModePromptPreference>
     </component>
   </settings>
-  <settings pass="specialize">
-    <component name="Microsoft-Windows-Deployment" processorArchitecture="arm64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-      <RunSynchronous>
-        <RunSynchronousCommand>
-          <Order>1</Order>
-          <Path>%WINDIR%\System32\mountvol.exe D: /d</Path>
-          <Description>Commands </Description>
-        </RunSynchronousCommand>
-      </RunSynchronous>
-    </component>
-  </settings>
   <settings pass="oobeSystem">
     <component name="Microsoft-Windows-Deployment" processorArchitecture="arm64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
       <DeviceForm>1</DeviceForm>
@@ -40,7 +29,7 @@
       </FirstLogonCommands>
       <Themes>
         <ThemeName>Surface</ThemeName>
-        <DesktopBackground>%WINDIR%\web\wallpaper\oem\surface\Surface_Hero_Graphite.jpg</DesktopBackground>
+        <DesktopBackground>%WINDIR%\web\wallpaper\oem\surface\Surface_Hero_Copilot+_OLED.jpg</DesktopBackground>
         <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
       </Themes>
     </component>
