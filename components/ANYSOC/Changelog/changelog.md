@@ -1,4 +1,4 @@
-## Surface Duo Drivers BSP - Version 2405.64 (Butterfly+)
+## Surface Duo Drivers BSP - Version 2406.06 (Sagittatus)
 
 ![A duo of Duos](https://github.com/WOA-Project/SurfaceDuo-Drivers/assets/3755345/5848583d-a569-480e-bfdc-74d569811a53)
 
@@ -16,7 +16,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2405.64.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2406.06.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -32,25 +32,75 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2405.64)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2406.06)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
 ### Release notes
 
-- Resolves an issue that prevented Surface Duo 1 devices from booting correctly on clean installs since last update.
+Surface Duo (1st Gen):
 
-- Enables fetching of calibration data for the two display vertical alignment and feeds it to the TouchPenProcessor module at runtime.
+- Power Management Updates:
 
-- Enables fetching of the device calibration data for Bluetooth, WiFi, Cellular so things like MAC Addresses are now accurate for your device.
+	- Improves Surface Duo (1st Gen) thermal performance
 
-- Enables fetching of the sensor calibration data for all device sensors. Note: The sensors should be not only more accurate but also way more reactive after you take this update. In particular, Posture Changes may feel __too__ reactive to some degree. Improvements will come in a later update!
+	- Introduces Battery Current Limiter Monitoring and Mitigations to reduce power draw
+
+	- Enables proper Low Power Mode for all CPU cores
+
+	- Enables support for new thermal firmware features in UEFI vNext
+
+- Panel Driver Updates:
+
+	- Faster init
+
+	- Simpler init code
+
+	- Handles brightness control differently in conjunction with acpi updates
+
+- GPU Driver Updates
+
+	- Update Qualcomm DirectX Driver
+
+	- Update Qualcomm Elite Gaming Profile Driver
+
+	- Update Qualcomm OpenCL Driver
+
+	- Update Qualcomm Vulkan Driver
+
+- Sensor Driver Updates
+
+- WiFi Driver Updates
 
 ---
 
-- Please download ```SurfaceDuo-Drivers-v2405.64-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+Common:
 
-- Please download ```SurfaceDuo-Drivers-v2405.64-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- Posture Service Updates:
+
+	- Addresses issues that prevented the device from adapting to correct postures with recent versions of Windows (ZN+)
+
+	- Addresses a recent issue preventing the device from reacting to being flipped and not switching the displays
+
+	- Reworks the behavior of the auto rotation functionality. When rotation lock is enabled, the device will still react to posture changes, without rotation updates
+
+	- Fixes an issue where OOBE would break when a posture change was detected
+
+	- Fixes an issue where rotation lock prevented flipping the device
+
+	- Fixes an issue where the wallpaper wouldn't span properly across both displays
+
+---
+
+Misc:
+
+- Removed E
+
+---
+
+- Please download ```SurfaceDuo-Drivers-v2406.06-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+
+- Please download ```SurfaceDuo-Drivers-v2406.06-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 ---
 
