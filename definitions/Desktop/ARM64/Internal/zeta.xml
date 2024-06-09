@@ -1,6 +1,6 @@
 <!-- @@BEGIN_SDKSPLIT
   
-  Andromeda888/OEMZE BSP Definition file v2404.3B
+  Andromeda888/OEMZE BSP Definition file v2406.30
   
   This is the file that dictates which drivers to install onto Andromeda888 devices
   It also instructs which apps should be installed onto the target device.
@@ -63,14 +63,19 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HidSpi" Name="hidspi_non_workstation.inf" ID="hidspi_non_workstation"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen" Name="SurfacePen217Integration.inf" ID="SurfacePen217Integration"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\TouchPanelAlignment" Name="SurfaceTouchPanelAlignment.inf" ID="SurfaceTouchPanelAlignment"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\WirelessTypeCover" Name="SurfaceOobPairingOptInPackage.inf" ID="SurfaceOobPairingOptInPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceDuoHIDFriendlyNames.inf" ID="SurfaceDuoHIDFriendlyNames"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceHIDFriendlyNames.inf" ID="SurfaceHIDFriendlyNames"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\PenWirelessCharger" Name="SurfacePenWirelessChargerHotkey.inf" ID="SurfacePenWirelessChargerHotkey"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceAppCompanionExtensionPackage.inf" ID="SurfaceAppCompanionExtensionPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceHidClassSettingsExtensionPackage.inf" ID="SurfaceHidClassSettingsExtensionPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceTouchpadSettingsExtensionPackage.inf" ID="SurfaceTouchpadSettingsExtensionPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Charger" Name="SurfaceSlimPenChargerFwUpdate.inf" ID="SurfaceSlimPenChargerFwUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953CfuOverBleLcExtnPackage.inf" ID="SurfacePen0953CfuOverBleLcExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953FirmwareUpdate.inf" ID="SurfacePen0953FirmwareUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FCfuOverBleLcExtnPackage.inf" ID="SurfacePen0C0FCfuOverBleLcExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FFirmwareUpdate.inf" ID="SurfacePen0C0FFirmwareUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\WirelessTypeCover" Name="SurfaceTouchpadG7CfuOverHidExtnPackage.inf" ID="SurfaceTouchpadG7CfuOverHidExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.POSTURES.DESKTOP" Name="PostureSensor.inf" ID="PostureSensor"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE\Settings\Version" Name="phonereleaseversion.inf" ID="phonereleaseversion"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE\Signature\DesktopSignature" Name="desktopsignature.inf" ID="desktopsignature"/>
@@ -135,11 +140,11 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Integration" Name="SurfaceThermalProxy.inf" ID="SurfaceThermalProxy"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Integration" Name="SurfaceThermalProxyFilter.inf" ID="SurfaceThermalProxyFilter"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\NFC" Name="NxpNfcClientDriver.inf" ID="NxpNfcClientDriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Provisioning" Name="SurfaceSOCPartitionFilter.inf" ID="SurfaceSOCPartitionFilter"/>
             <!--<DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Touch" Name="SurfaceHIDConfigFlags.inf" ID="SurfaceHIDConfigFlags"/>-->
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Touch" Name="SurfaceNxpNfcWirelessChargingDriver.inf" ID="SurfaceNxpNfcWirelessChargingDriver"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Touch\RS5" Name="SurfaceTouchPenProcessorUpdateRs5.inf" ID="SurfaceTouchPenProcessorUpdateRs5"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Touch\RS6" Name="SurfaceTouchPenProcessorUpdateRs6.inf" ID="SurfaceTouchPenProcessorUpdateRs6"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Provisioning" Name="SurfaceSOCPartitionFilter.inf" ID="SurfaceSOCPartitionFilter"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Audio\Dolby" Name="dax3_ext_qc.inf" ID="dax3_ext_qc"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Audio\SurfaceIHVAudioFilter" Name="SurfaceIhvAudioFilterDriver.inf" ID="SurfaceIhvAudioFilterDriver"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Graphics" Name="SurfaceDisplayConfiguratorExtension.inf" ID="SurfaceDisplayConfiguratorExtension"/>

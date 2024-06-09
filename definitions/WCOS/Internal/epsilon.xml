@@ -1,3 +1,50 @@
+<!-- @@BEGIN_SDKSPLIT
+  
+  Andromeda855/OEMEP BSP Definition file v2406.30
+  
+  This is the file that dictates which drivers to install onto Andromeda855 devices
+  It also instructs which apps should be installed onto the target device.
+  
+  !!!WARNING!!!
+  
+  This file is both automatically generated and manually edited thereafter.
+  Get in touch before editing.
+  
+  !!!LEGAL!!!
+  
+  Use of Surface Duo 1 and Surface Duo 2 firmware files is governed by the terms
+  of the Surface Duo E-OS License, in which is specified the use of firmware files
+  is strictly only allowed for use on Surface Duo devices.
+  
+  This product incorporates copyrighted material from the DuoWoA authors.
+  The license terms for these products are provided below.
+  
+____________DuoWoA authors License Terms Begin Here___________________
+MIT License
+
+Copyright (c) 2018-2024 WOA Project
+Copyright (c) 2018-2024 The LumiaWoA authors
+Copyright (c) 2018-2024 The DuoWoA authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+__________________________________DuoWoA authors License Terms End Here____________________________________
+@@END_SDKSPLIT -->
 <FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" Revision="1" SchemaVersion="1.3">
     <Drivers>
         <BaseDriverPackages>
@@ -12,17 +59,23 @@
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialFwUpdate.inf" ID="SurfaceDialFwUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialIntegration.inf" ID="SurfaceDialIntegration"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Firmware" Name="SurfacePen217FwUpdate.inf" ID="SurfacePen217FwUpdate"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HidSpi" Name="hidspi_km.inf" ID="hidspi_km"/>
+            <!--<DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HidSpi" Name="hidspi_km.inf" ID="hidspi_km"/>-->
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HidSpi" Name="hidspi_non_workstation.inf" ID="hidspi_non_workstation"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen" Name="SurfacePen217Integration.inf" ID="SurfacePen217Integration"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\TouchPanelAlignment" Name="SurfaceTouchPanelAlignment.inf" ID="SurfaceTouchPanelAlignment"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\WirelessTypeCover" Name="SurfaceOobPairingOptInPackage.inf" ID="SurfaceOobPairingOptInPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceDuoHIDFriendlyNames.inf" ID="SurfaceDuoHIDFriendlyNames"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceHIDFriendlyNames.inf" ID="SurfaceHIDFriendlyNames"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\PenWirelessCharger" Name="SurfacePenWirelessChargerHotkey.inf" ID="SurfacePenWirelessChargerHotkey"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceAppCompanionExtensionPackage.inf" ID="SurfaceAppCompanionExtensionPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceHidClassSettingsExtensionPackage.inf" ID="SurfaceHidClassSettingsExtensionPackage"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceTouchpadSettingsExtensionPackage.inf" ID="SurfaceTouchpadSettingsExtensionPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Charger" Name="SurfaceSlimPenChargerFwUpdate.inf" ID="SurfaceSlimPenChargerFwUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953CfuOverBleLcExtnPackage.inf" ID="SurfacePen0953CfuOverBleLcExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953FirmwareUpdate.inf" ID="SurfacePen0953FirmwareUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FCfuOverBleLcExtnPackage.inf" ID="SurfacePen0C0FCfuOverBleLcExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FFirmwareUpdate.inf" ID="SurfacePen0C0FFirmwareUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\WirelessTypeCover" Name="SurfaceTouchpadG7CfuOverHidExtnPackage.inf" ID="SurfaceTouchpadG7CfuOverHidExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Settings\Version" Name="phonereleaseversion.inf" ID="phonereleaseversion"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.BASE\Signature\DesktopSignature" Name="desktopsignature.inf" ID="desktopsignature"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\WCOS\SUPPORT.WCOS.MOBILE_BRIDGE\Services\FMRadio" Name="FM Radio Interface.inf" ID="FM Radio Interface"/>
@@ -47,7 +100,6 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Camera" Name="SurfaceDuo_camisp.inf" ID="SurfaceDuo_camisp"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Camera" Name="SurfaceDuo_camrear.inf" ID="SurfaceDuo_camrear"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Cellular" Name="surfaceduo_ipa.inf" ID="surfaceduo_ipa"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\NPU" Name="qcnspmcdm8150.inf" ID="qcnspmcdm8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\SecurityProcessor" Name="surfaceduo_sp.inf" ID="surfaceduo_sp"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Sensors\SSC" Name="SurfaceDuo_sensors.inf" ID="SurfaceDuo_sensors"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Subsystems" Name="SurfaceDuo_subsys.inf" ID="SurfaceDuo_subsys"/>
@@ -94,7 +146,7 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_camera_component.inf" ID="mep_camera_component"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_priorityarbiter_component.inf" ID="mep_priorityarbiter_component"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="MicrosoftEffectPack_extension.inf" ID="MicrosoftEffectPack_extension"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Touch" Name="SurfaceTouchPanelAlignment.inf" ID="SurfaceTouchPanelAlignment"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Provisioning" Name="SurfaceSOCPartitionFilter.inf" ID="SurfaceSOCPartitionFilter"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Touch\RS5" Name="SurfaceTouchPenProcessorUpdateRs5.inf" ID="SurfaceTouchPenProcessorUpdateRs5"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Touch\RS6" Name="SurfaceTouchPenProcessorUpdateRs6.inf" ID="SurfaceTouchPenProcessorUpdateRs6"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\USB" Name="fsa4480.inf" ID="fsa4480"/>

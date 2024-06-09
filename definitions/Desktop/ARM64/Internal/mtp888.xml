@@ -1,6 +1,6 @@
 <!-- @@BEGIN_SDKSPLIT
   
-  MTP888 BSP Definition file v2404.3B
+  MTP888 BSP Definition file v2406.30
   
   This is the file that dictates which drivers to install onto MTP888 devices
   It also instructs which apps should be installed onto the target device.

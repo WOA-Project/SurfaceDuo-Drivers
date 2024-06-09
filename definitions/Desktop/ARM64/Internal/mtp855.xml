@@ -1,6 +1,6 @@
 <!-- @@BEGIN_SDKSPLIT
   
-  MTP855 BSP Definition file v2404.3B
+  MTP855 BSP Definition file v2406.30
   
   This is the file that dictates which drivers to install onto MTP855 devices
   It also instructs which apps should be installed onto the target device.
@@ -77,6 +77,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Camera" Name="qccamisp8150.inf" ID="qccamisp8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Camera" Name="qccamrearsensor8150.inf" ID="qccamrearsensor8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Cellular" Name="qcipa8150.inf" ID="qcipa8150"/>
+            <!--<DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\SecurityProcessor" Name="qcsp8150.inf" ID="qcsp8150"/>-->
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Sensors\SSC" Name="qcSensors8150.inf" ID="qcSensors8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Subsystems" Name="qcsubsys8150.inf" ID="qcsubsys8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\WLAN" Name="qcwlan8150.inf" ID="qcwlan8150"/>
@@ -102,6 +103,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Services\Cellular" Name="QcIMSQMIDaemon_mbb_ext8150.inf" ID="QcIMSQMIDaemon_mbb_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Services\RCS" Name="QcRCSPresSvc_mbb_ext8150.inf" ID="QcRCSPresSvc_mbb_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.MTP_DESKTOP" Name="qcdx8150.inf" ID="qcdx8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.QCOM\Drivers\NFC" Name="NxpNfcClientDriver.inf" ID="NxpNfcClientDriver"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.QCOM\Drivers\Touch" Name="qcImproveTouch8150.inf" ID="qcImproveTouch8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.QCOM\Drivers\USB" Name="fsa4480.inf" ID="fsa4480"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCTimer8150.inf" ID="HalExtQCTimer8150"/>
