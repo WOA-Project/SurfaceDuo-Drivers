@@ -1,4 +1,4 @@
-## Surface Duo Drivers BSP - Version 2406.06 (Sagittatus)
+## Surface Duo Drivers BSP - Version 2406.36 (Ornithoptera alexandrae)
 
 ![A duo of Duos](https://github.com/WOA-Project/SurfaceDuo-Drivers/assets/3755345/5848583d-a569-480e-bfdc-74d569811a53)
 
@@ -16,7 +16,7 @@ You can view compatibility for this release, along with important information an
 <details>
   <summary>Important information</summary>
   <p>
-- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2406.06.
+- ⚠️ This version of the drivers needs to be paired with UEFI version greater than or equal to 2406.36.
 
 - ⚠️ For users who are updating from an earlier release than version 2301.93, please reinstall.
 
@@ -32,7 +32,7 @@ You can view compatibility for this release, along with important information an
 
 [▶️ Install Surface Duo 2 UEFI and Drivers for Windows from scratch (Clean Installation)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/InstallWindows/InstallWindows-SurfaceDuo2.md)
 
-[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2406.06)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
+[▶️ Update from an older version of Surface Duo UEFI and Drivers (both got updated with v2406.36)](https://github.com/WOA-Project/SurfaceDuo-Guides/blob/main/Update/UpdateDriversAndUEFI.md)
 
 ---
 
@@ -98,9 +98,9 @@ Misc:
 
 ---
 
-- Please download ```SurfaceDuo-Drivers-v2406.06-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
+- Please download ```SurfaceDuo-Drivers-v2406.36-Desktop-Epsilon.zip``` if you want drivers for Surface Duo 1
 
-- Please download ```SurfaceDuo-Drivers-v2406.06-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
+- Please download ```SurfaceDuo-Drivers-v2406.36-Desktop-Zeta.zip``` if you want drivers for Surface Duo 2
 
 ---
 
