@@ -1,6 +1,6 @@
 <!-- @@BEGIN_SDKSPLIT
   
-  Andromeda855/OEMEP BSP Definition file v2406.30
+  Andromeda855/OEMEP BSP Definition file v2406.36
   
   This is the file that dictates which drivers to install onto Andromeda855 devices
   It also instructs which apps should be installed onto the target device.

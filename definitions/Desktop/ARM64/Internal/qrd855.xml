@@ -1,6 +1,6 @@
 <!-- @@BEGIN_SDKSPLIT
   
-  QRD855 BSP Definition file v2406.30
+  QRD855 BSP Definition file v2406.36
   
   This is the file that dictates which drivers to install onto QRD855 devices
   It also instructs which apps should be installed onto the target device.
@@ -64,46 +64,46 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\EMB" Name="emb.inf" ID="emb"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" ID="WindowsPhone"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.ST" Name="vhidmini.inf" ID="vhidmini"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP_MINIMAL\Drivers\SOC\I2C" Name="qci2c8150.inf" ID="qci2c8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP_MINIMAL\Drivers\SOC\SPI" Name="qcspi8150.inf" ID="qcspi8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP_MINIMAL\Drivers\SOC\TrEE" Name="QcTrEE8150.inf" ID="QcTrEE8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP_MINIMAL\Drivers\SOC\UART" Name="qcuart8150.inf" ID="qcuart8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Audio\AudMiniport" Name="qcaudminiport_Base8150.inf" ID="qcaudminiport_Base8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Audio\Device" Name="qcauddev8150.inf" ID="qcauddev8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Bluetooth" Name="qcbtfmuart8150.inf" ID="qcbtfmuart8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Camera" Name="qccamauxsensor8150.inf" ID="qccamauxsensor8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Camera" Name="qccamavs8150.inf" ID="qccamavs8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Camera" Name="qccamflash8150.inf" ID="qccamflash8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Camera" Name="qccamfrontsensor8150.inf" ID="qccamfrontsensor8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Camera" Name="qccamisp8150.inf" ID="qccamisp8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Camera" Name="qccamrearsensor8150.inf" ID="qccamrearsensor8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Cellular" Name="qcipa8150.inf" ID="qcipa8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\SecurityProcessor" Name="qcsp8150.inf" ID="qcsp8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Sensors\SSC" Name="qcSensors8150.inf" ID="qcSensors8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\Subsystems" Name="qcsubsys8150.inf" ID="qcsubsys8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Drivers\WLAN" Name="qcwlan8150.inf" ID="qcwlan8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Audio\ACDB-QRD" Name="qcacsp_qrd8150.inf" ID="qcacsp_qrd8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Audio\AudMiniport-QRD" Name="qcaudminiportQRD_Extension8150.inf" ID="qcaudminiportQRD_Extension8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Audio\Device" Name="qcauddev_ext8150.inf" ID="qcauddev_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\BatteryCurrentLimiter" Name="qcfgbclext8150.inf" ID="qcfgbclext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Bluetooth" Name="qcbtfmuart_ext8150.inf" ID="qcbtfmuart_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Camera" Name="qccamauxsensor_extension8150.inf" ID="qccamauxsensor_extension8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Camera" Name="qccamfrontsensor_extension8150.inf" ID="qccamfrontsensor_extension8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Camera" Name="qccamrearsensor_extension8150.inf" ID="qccamrearsensor_extension8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Cellular" Name="qcWMRil_mbb_ext8150.inf" ID="qcWMRil_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\HexagonLoader" Name="qcpilEXT8150.inf" ID="qcpilEXT8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Sensors-QRD" Name="qcSensorsConfigQrd8150.inf" ID="qcSensorsConfigQrd8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Subsystems" Name="mcfg_subsys_ext8150.inf" ID="mcfg_subsys_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Subsystems" Name="qcsubsys_ext_adsp8150.inf" ID="qcsubsys_ext_adsp8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Subsystems" Name="qcsubsys_ext_cdsp8150.inf" ID="qcsubsys_ext_cdsp8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Subsystems" Name="qcsubsys_ext_mpss8150.inf" ID="qcsubsys_ext_mpss8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Extensions\Subsystems" Name="qcsubsys_ext_scss8150.inf" ID="qcsubsys_ext_scss8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Libraries\Cellular" Name="qcimssink_mbb_ext8150.inf" ID="qcimssink_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Libraries\Cellular" Name="qcimssrc_mbb_ext8150.inf" ID="qcimssrc_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Services\Cellular" Name="QcIMSDataDaemon_mbb_ext8150.inf" ID="QcIMSDataDaemon_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Services\Cellular" Name="QcIMSQMIDaemon_mbb_ext8150.inf" ID="QcIMSQMIDaemon_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.MTP\Services\RCS" Name="QcRCSPresSvc_mbb_ext8150.inf" ID="QcRCSPresSvc_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.MTP_DESKTOP" Name="qcdx8150.inf" ID="qcdx8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA_MINIMAL\Drivers\SOC\I2C" Name="qci2c8150.inf" ID="qci2c8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA_MINIMAL\Drivers\SOC\SPI" Name="qcspi8150.inf" ID="qcspi8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA_MINIMAL\Drivers\SOC\TrEE" Name="QcTrEE8150.inf" ID="QcTrEE8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA_MINIMAL\Drivers\SOC\UART" Name="qcuart8150.inf" ID="qcuart8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Audio\AudMiniport" Name="qcaudminiport_Base8150.inf" ID="qcaudminiport_Base8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Audio\Device" Name="qcauddev8150.inf" ID="qcauddev8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Bluetooth" Name="qcbtfmuart8150.inf" ID="qcbtfmuart8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Camera" Name="qccamauxsensor8150.inf" ID="qccamauxsensor8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Camera" Name="qccamavs8150.inf" ID="qccamavs8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Camera" Name="qccamflash8150.inf" ID="qccamflash8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Camera" Name="qccamfrontsensor8150.inf" ID="qccamfrontsensor8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Camera" Name="qccamisp8150.inf" ID="qccamisp8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Camera" Name="qccamrearsensor8150.inf" ID="qccamrearsensor8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Cellular" Name="qcipa8150.inf" ID="qcipa8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\SecurityProcessor" Name="qcsp8150.inf" ID="qcsp8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Sensors\SSC" Name="qcSensors8150.inf" ID="qcSensors8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Subsystems" Name="qcsubsys8150.inf" ID="qcsubsys8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\WLAN" Name="qcwlan8150.inf" ID="qcwlan8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Audio\ACDB-QRD" Name="qcacsp_qrd8150.inf" ID="qcacsp_qrd8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Audio\AudMiniport-QRD" Name="qcaudminiportQRD_Extension8150.inf" ID="qcaudminiportQRD_Extension8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Audio\Device" Name="qcauddev_ext8150.inf" ID="qcauddev_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\BatteryCurrentLimiter" Name="qcfgbclext8150.inf" ID="qcfgbclext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Bluetooth" Name="qcbtfmuart_ext8150.inf" ID="qcbtfmuart_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Camera" Name="qccamauxsensor_extension8150.inf" ID="qccamauxsensor_extension8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Camera" Name="qccamfrontsensor_extension8150.inf" ID="qccamfrontsensor_extension8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Camera" Name="qccamrearsensor_extension8150.inf" ID="qccamrearsensor_extension8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Cellular" Name="qcWMRil_mbb_ext8150.inf" ID="qcWMRil_mbb_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader" Name="qcpilEXT8150.inf" ID="qcpilEXT8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Sensors-QRD" Name="qcSensorsConfigQrd8150.inf" ID="qcSensorsConfigQrd8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems" Name="mcfg_subsys_ext8150.inf" ID="mcfg_subsys_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems" Name="qcsubsys_ext_adsp8150.inf" ID="qcsubsys_ext_adsp8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems" Name="qcsubsys_ext_cdsp8150.inf" ID="qcsubsys_ext_cdsp8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems" Name="qcsubsys_ext_mpss8150.inf" ID="qcsubsys_ext_mpss8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems" Name="qcsubsys_ext_scss8150.inf" ID="qcsubsys_ext_scss8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Libraries\Cellular" Name="qcimssink_mbb_ext8150.inf" ID="qcimssink_mbb_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Libraries\Cellular" Name="qcimssrc_mbb_ext8150.inf" ID="qcimssrc_mbb_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Services\Cellular" Name="QcIMSDataDaemon_mbb_ext8150.inf" ID="QcIMSDataDaemon_mbb_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Services\Cellular" Name="QcIMSQMIDaemon_mbb_ext8150.inf" ID="QcIMSQMIDaemon_mbb_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Services\RCS" Name="QcRCSPresSvc_mbb_ext8150.inf" ID="QcRCSPresSvc_mbb_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.HANA_DESKTOP" Name="qcdx8150.inf" ID="qcdx8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.QCOM\Drivers\NFC" Name="NxpNfcClientDriver.inf" ID="NxpNfcClientDriver"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.QCOM\Drivers\USB" Name="fsa4480.inf" ID="fsa4480"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCTimer8150.inf" ID="HalExtQCTimer8150"/>
