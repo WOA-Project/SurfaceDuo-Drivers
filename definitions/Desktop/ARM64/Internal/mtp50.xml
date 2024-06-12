@@ -81,9 +81,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Sensors\SSC" Name="qcSensors8150.inf" ID="qcSensors8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\Subsystems" Name="qcsubsys8150.inf" ID="qcsubsys8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Drivers\WLAN" Name="qcwlan8150.inf" ID="qcwlan8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Audio\ACDB _QRD" Name="qcacsp_qrd8150.inf" ID="qcacsp_qrd8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Audio\ACDB" Name="qcacsp_mtp8150.inf" ID="qcacsp_mtp8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Audio\AudMiniport-QRD" Name="qcaudminiportQRD_Extension8150.inf" ID="qcaudminiportQRD_Extension8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Audio\AudMiniport" Name="qcaudminiportMTP_Extension8150.inf" ID="qcaudminiportMTP_Extension8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Audio\Device" Name="qcauddev_ext8150.inf" ID="qcauddev_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\BatteryCurrentLimiter" Name="qcfgbclext8150.inf" ID="qcfgbclext8150"/>
@@ -93,7 +91,6 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Camera" Name="qccamrearsensor_extension8150.inf" ID="qccamrearsensor_extension8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Cellular" Name="qcWMRil_mbb_ext8150.inf" ID="qcWMRil_mbb_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader" Name="qcpilEXT8150.inf" ID="qcpilEXT8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Sensors-QRD" Name="qcSensorsConfigQrd8150.inf" ID="qcSensorsConfigQrd8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Sensors" Name="qcSensorsConfig8150.inf" ID="qcSensorsConfig8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems" Name="mcfg_subsys_ext8150.inf" ID="mcfg_subsys_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems" Name="qcsubsys_ext_adsp8150.inf" ID="qcsubsys_ext_adsp8150"/>
