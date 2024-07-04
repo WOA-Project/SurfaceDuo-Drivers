@@ -29,8 +29,9 @@
       </FirstLogonCommands>
       <Themes>
         <ThemeName>Surface</ThemeName>
-        <DesktopBackground>%WINDIR%\web\wallpaper\oem\surface\Surface_Hero_Copilot+_OLED.jpg</DesktopBackground>
         <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
+        <SystemUsesLightTheme>false</SystemUsesLightTheme>
+        <DesktopBackground>%WINDIR%\web\wallpaper\oem\surface\Surface_Hero_Copilot+_OLED.jpg</DesktopBackground>
       </Themes>
     </component>
     <component name="Microsoft-Windows-TabletPC-Platform-Input-Core" processorArchitecture="arm64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
