@@ -53,6 +53,7 @@
         <Feature>MODERNPC_POLICY</Feature>
         <Feature>RESOLUTION_1350X1800</Feature>
         <Feature>STATESEPARATION_ON</Feature>
+        <Feature>TESTSIGNING_ON</Feature>
         <Feature>WCOS_ACCESSIBLITY_NARRATOR</Feature>
         <Feature>WCOS_APP_CENTENNIALRUNTIME</Feature>
         <Feature>WCOS_APP_WIN32SUPPORT</Feature>
@@ -70,7 +71,7 @@
         <Feature>WCOS_NET_PROXIMITY_SERVICE</Feature>
         <Feature>WCOS_NET_RADIO_MANAGEMENT</Feature>
         <Feature>WCOS_SPEECH_VOICEAGENT_SUPPORT</Feature>
-        <Feature>WCOS_TESTSIGNING_ON</Feature>
+        <Feature>WCOS_TERMINAL_INTERNAL</Feature>
         <Feature>WCOS_TIMESYNC_MOBILE</Feature>
         <Feature>WCOS_TIMESYNC_NETWORK_WOW</Feature>
         <Feature>WCOS_TIMESYNC_NETWORK</Feature>
