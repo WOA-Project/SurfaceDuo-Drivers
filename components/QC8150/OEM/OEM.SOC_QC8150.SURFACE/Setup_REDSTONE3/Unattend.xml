@@ -30,7 +30,6 @@
       <Themes>
         <ThemeName>Surface</ThemeName>
         <UWPAppsUseLightTheme>false</UWPAppsUseLightTheme>
-        <SystemUsesLightTheme>false</SystemUsesLightTheme>
         <DesktopBackground>%WINDIR%\web\wallpaper\oem\surface\Surface_Hero_Copilot+_OLED.jpg</DesktopBackground>
       </Themes>
     </component>
