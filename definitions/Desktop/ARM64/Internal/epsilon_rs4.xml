@@ -83,6 +83,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE\Services\FMRadio" Name="FM Radio Interface.inf" ID="FM Radio Interface"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE\Services\MobileBridge" Name="MobileFrequencyModulationService.inf" ID="MobileFrequencyModulationService"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE\Services\MobileBridgeUser" Name="MobileHapticsService.inf" ID="MobileHapticsService"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Drivers\sTPM" Name="mismptf.inf" ID="mismptf"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Drivers\UsbNcmFn" Name="UsbNcmFn.inf" ID="UsbNcmFn"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Services\MTP" Name="MTPDesktop.inf" ID="MTPDesktop"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS\Source\Settings\Bluetooth" Name="bthdefaults.inf" ID="bthdefaults"/>
@@ -131,7 +132,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Services\Cellular" Name="QcIMSDataDaemon_mbb_ext8150.inf" ID="QcIMSDataDaemon_mbb_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Services\Cellular" Name="QcIMSQMIDaemon_mbb_ext8150.inf" ID="QcIMSQMIDaemon_mbb_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Services\RCS" Name="QcRCSPresSvc_mbb_ext8150.inf" ID="QcRCSPresSvc_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_DESKTOP_REDSTONE3" Name="SurfaceDuo_dx.inf" ID="SurfaceDuo_dx"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_DESKTOP" Name="SurfaceDuo_dx.inf" ID="SurfaceDuo_dx"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Customizations" Name="SurfaceDuo_MTPOEM.inf" ID="SurfaceDuo_MTPOEM"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Audio\Dolby" Name="dax3_swc_aposvc_arm64.inf" ID="dax3_swc_aposvc_arm64"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Audio\Dolby" Name="dax3_swc_hsa_arm64.inf" ID="dax3_swc_hsa_arm64"/>
