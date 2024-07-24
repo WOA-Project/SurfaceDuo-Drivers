@@ -10,23 +10,30 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfaceCFUOverHid.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfacePenCfuOverBleLc.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialFilter.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialFwUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialIntegration.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0217" Name="SurfacePen217FwUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HidSpi" Name="hidspi_non_workstation.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HubCFU" Name="SurfaceCFUOverHid.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen" Name="SurfacePen217Integration.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen" Name="surfacependriver.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen\0217" Name="SurfacePen217Integration.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen\090E" Name="surfacePenClickFilter.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen\090E" Name="SurfacePenIntegration.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen\0953" Name="SurfacePen0953Integration.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\TouchPanelAlignment" Name="SurfaceTouchPanelAlignment.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\WirelessTypeCover" Name="SurfaceOobPairingOptInPackage.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceDuoHIDFriendlyNames.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceHIDFriendlyNames.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\Pen" Name="SurfacePen.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\PenWirelessCharger" Name="SurfacePenWirelessChargerHotkey.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceAppCompanionExtensionPackage.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceHidClassSettingsExtensionPackage.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceTouchpadSettingsExtensionPackage.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Charger" Name="SurfaceSlimPenChargerFwUpdate.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Dial" Name="SurfaceDialFwUpdate.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0217" Name="SurfacePen217FwUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953CfuOverBleLcExtnPackage.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953FirmwareUpdate.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953\Legacy" Name="SurfacePen0953FwUpdate.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0993" Name="SurfacePen0993BleLcFwUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FCfuOverBleLcExtnPackage.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FFirmwareUpdate.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\WirelessTypeCover" Name="SurfaceTouchpadG7CfuOverHidExtnPackage.inf" />
@@ -85,7 +92,6 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Battery" Name="SurfaceBattMiniclassFilter.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Battery" Name="SurfaceDuo_BattMiniclassExt.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Biometric" Name="fpc_wbdi_um_spi.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics" Name="SurfaceDisplayConfiguratorService.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics" Name="SurfaceOemPanel.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics" Name="SurfacePanel.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Haptics" Name="SurfaceHaptics.inf" />
@@ -107,7 +113,6 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Audio\Dolby" Name="dax3_ext_qc_dolbyatmos_dolbyaccessoem.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Audio\Dolby" Name="dax3_qc_ext_bt.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Cabinets" Name="SurfaceDuoCabinetFriendlyNames.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Graphics" Name="SurfaceDisplayConfiguratorExtension.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Integration" Name="SurfaceDuo_gtopatchext.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Storage" Name="SurfaceSfuKLUDG4UHDBB2D1ExtnPackage.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Extensions\Storage" Name="SurfaceSfuKLUEG8UHDBC2D1ExtnPackage.inf" />
@@ -125,7 +130,6 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Settings" Name="MultiScreenExperience.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Settings" Name="oled.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Settings" Name="SurfaceDuo_DeviceInfo.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Setup" Name="desktopsetup.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCTimer8150.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCWdogTimer8150.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\ACPI" Name="qcabd.inf" />
