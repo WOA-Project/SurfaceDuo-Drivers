@@ -21,12 +21,10 @@
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\PCIe" Name="qcppx8150.inf" ID="qcppx8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmic8150.inf" ID="qcpmic8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicapps8150.inf" ID="qcpmicapps8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicEIC8150.inf" ID="qcpmicEIC8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicext8150.inf" ID="qcpmicext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\PMIC" Name="QcPmicGlink8150.inf" ID="QcPmicGlink8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmicgpio8150.inf" ID="qcpmicgpio8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\PMIC" Name="qcpmictcc8150.inf" ID="qcpmictcc8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\PowerManagement" Name="qcpep.wp8150.inf" ID="qcpep.wp8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\Provisioning" Name="QcSOCPartition.inf" ID="QcSOCPartition"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qccdi8150.inf" ID="qccdi8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\ResetPower" Name="qcrpen8150.inf" ID="qcrpen8150"/>

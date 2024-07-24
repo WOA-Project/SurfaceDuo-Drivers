@@ -56,12 +56,14 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfaceCFUOverHid.inf" ID="SurfaceCFUOverHid"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\CFU" Name="SurfacePenCfuOverBleLc.inf" ID="SurfacePenCfuOverBleLc"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialFilter.inf" ID="SurfaceDialFilter"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialFwUpdate.inf" ID="SurfaceDialFwUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Dial" Name="SurfaceDialIntegration.inf" ID="SurfaceDialIntegration"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HidSpi" Name="hidspi_km.inf" ID="hidspi_km"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\HidSpi" Name="hidspi_non_workstation.inf" ID="hidspi_non_workstation"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen" Name="SurfacePen217Integration.inf" ID="SurfacePen217Integration"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen" Name="surfacependriver.inf" ID="surfacependriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen\0217" Name="SurfacePen217Integration.inf" ID="SurfacePen217Integration"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen\090E" Name="surfacePenClickFilter.inf" ID="surfacePenClickFilter"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen\090E" Name="SurfacePenIntegration.inf" ID="SurfacePenIntegration"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\Pen\0953" Name="SurfacePen0953Integration.inf" ID="SurfacePen0953Integration"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\TouchPanelAlignment" Name="SurfaceTouchPanelAlignment.inf" ID="SurfaceTouchPanelAlignment"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Drivers\WirelessTypeCover" Name="SurfaceOobPairingOptInPackage.inf" ID="SurfaceOobPairingOptInPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\FriendlyNames" Name="SurfaceDuoHIDFriendlyNames.inf" ID="SurfaceDuoHIDFriendlyNames"/>
@@ -72,9 +74,11 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceHidClassSettingsExtensionPackage.inf" ID="SurfaceHidClassSettingsExtensionPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Extensions\WirelessTypeCover" Name="SurfaceTouchpadSettingsExtensionPackage.inf" ID="SurfaceTouchpadSettingsExtensionPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Charger" Name="SurfaceSlimPenChargerFwUpdate.inf" ID="SurfaceSlimPenChargerFwUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Dial" Name="SurfaceDialFwUpdate.inf" ID="SurfaceDialFwUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0217" Name="SurfacePen217FwUpdate.inf" ID="SurfacePen217FwUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953CfuOverBleLcExtnPackage.inf" ID="SurfacePen0953CfuOverBleLcExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953" Name="SurfacePen0953FirmwareUpdate.inf" ID="SurfacePen0953FirmwareUpdate"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0953\Legacy" Name="SurfacePen0953FwUpdate.inf" ID="SurfacePen0953FwUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0993" Name="SurfacePen0993BleLcFwUpdate.inf" ID="SurfacePen0993BleLcFwUpdate"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FCfuOverBleLcExtnPackage.inf" ID="SurfacePen0C0FCfuOverBleLcExtnPackage"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Hardware\HARDWARE.INPUT.SURFACE\Firmware\Pen\0C0F" Name="SurfacePen0C0FFirmwareUpdate.inf" ID="SurfacePen0C0FFirmwareUpdate"/>
