@@ -151,7 +151,6 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Touch\RS6" Name="SurfaceTouchPenProcessorUpdateRs6.inf" ID="SurfaceTouchPenProcessorUpdateRs6"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Audio\Dolby" Name="dax3_ext_qc.inf" ID="dax3_ext_qc"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Audio\SurfaceIHVAudioFilter" Name="SurfaceIhvAudioFilterDriver.inf" ID="SurfaceIhvAudioFilterDriver"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Cabinets" Name="SurfaceDuoCabinetFriendlyNames.inf" ID="SurfaceDuoCabinetFriendlyNames"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Graphics" Name="SurfaceDisplayConfiguratorExtension.inf" ID="SurfaceDisplayConfiguratorExtension"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Integration" Name="SurfaceDuo2_gtopatchext.inf" ID="SurfaceDuo2_gtopatchext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Extensions\Storage" Name="SurfaceSfuHN8T05BZGKX015ExtnPackage.inf" ID="SurfaceSfuHN8T05BZGKX015ExtnPackage"/>
