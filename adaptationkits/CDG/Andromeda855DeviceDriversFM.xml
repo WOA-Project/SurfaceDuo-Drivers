@@ -91,8 +91,8 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Battery" Name="SurfaceBattMiniclassFilter.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Battery" Name="SurfaceDuo_BattMiniclassExt.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Biometric" Name="fpc_wbdi_um_spi.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics" Name="SurfaceOemPanel.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics" Name="SurfacePanel.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics\Monitor" Name="SurfaceOemPanel.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics\OemPanel" Name="SurfaceOemPanel.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Haptics" Name="SurfaceHaptics.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\eSIM" Name="gtopatchdrvumdf.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Power" Name="SurfacePowerMeter.inf" />
