@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WindowsCustomizations>
+  <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
+    <ID>{3BEF8658-F67E-4676-9A76-57AF22058A1E}</ID>
+    <Name>Surface_eSIM</Name>
+    <Version>1.1</Version>
+    <OwnerType>OEM</OwnerType>
+    <Rank>0</Rank>
+    <Notes></Notes>
+  </PackageConfig>
+  <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
+    <Customizations>
+      <Common>
+        <CellCore>
+          <PerDevice>
+            <eSIM>
+              <FwUpdate>
+                <AllowedAppIdList>A00000001850424C;A00000001810010801000000BAFE02;A000000030FF5550;A000000030FF555001;A000000030FF555002</AllowedAppIdList>
+              </FwUpdate>
+              <EuiccDeviceCapabilities>
+                <GSMVersionForDeviceCapabilities>0</GSMVersionForDeviceCapabilities>
+                <UTRANVersionForDeviceCapabilities>9</UTRANVersionForDeviceCapabilities>
+                <EUTRANVersionForDeviceCapabilities>15</EUTRANVersionForDeviceCapabilities>
+                <NREPCVersionForDeviceCapabilities>15</NREPCVersionForDeviceCapabilities>
+                <EUTRAN5GCVersionForDeviceCapabilities>15</EUTRAN5GCVersionForDeviceCapabilities>
+                <NR5GCVersionForDeviceCapabilities>15</NR5GCVersionForDeviceCapabilities>
+              </EuiccDeviceCapabilities>              
+            </eSIM>
+            <CellUX>
+              <SlotSelectionSim2Name>eSIM</SlotSelectionSim2Name>
+            </CellUX>
+          </PerDevice>
+        </CellCore>
+      </Common>
+    </Customizations>
+  </Settings>
+</WindowsCustomizations>

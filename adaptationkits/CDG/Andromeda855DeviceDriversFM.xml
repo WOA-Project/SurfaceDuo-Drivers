@@ -95,7 +95,7 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics\OemPanel" Name="SurfaceOemPanel.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Haptics" Name="SurfaceHaptics.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\eSIM" Name="gtopatchdrvumdf.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Power" Name="SurfacePowerMeter.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Power" Name="SurfacePowerMeterDriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\SAR" Name="SurfaceSarManager.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Service" Name="SurfaceServiceNullDriver.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\System" Name="SurfaceIntegrationDriver.inf" />
