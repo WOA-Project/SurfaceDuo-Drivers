@@ -1,6 +1,6 @@
 <!-- @@BEGIN_SDKSPLIT
   
-  QRD855 BSP Definition file v2408.XX
+  QRD855 BSP Definition file v2408.1
   
   This is the file that dictates which drivers to install onto QRD855 devices
   It also instructs which apps should be installed onto the target device.
