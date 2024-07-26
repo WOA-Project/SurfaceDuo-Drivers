@@ -1,4 +1,5 @@
 [Drivers]
+\components\ANYSOC\Hardware\HARDWARE.INPUT.ST=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS=""

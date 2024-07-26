@@ -1,6 +1,6 @@
 <!-- @@BEGIN_SDKSPLIT
   
-  Andromeda855/OEMEP BSP Definition file v2406.36
+  Andromeda855/OEMEP BSP Definition file v2408.XX
   
   This is the file that dictates which drivers to install onto Andromeda855 devices
   It also instructs which apps should be installed onto the target device.
@@ -121,6 +121,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Camera" Name="SurfaceDuo_camrearext.inf" ID="SurfaceDuo_camrearext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Cellular" Name="qcWMRil_mbb_ext8150.inf" ID="qcWMRil_mbb_ext8150"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\HexagonLoader" Name="surfaceduo_pilext.inf" ID="surfaceduo_pilext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\PowerManagement" Name="surfaceduo_pmicappsext.inf" ID="surfaceduo_pmicappsext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Sensors" Name="SurfaceDuo_sensorsconfig.inf" ID="SurfaceDuo_sensorsconfig"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Subsystems" Name="surfaceduo_mcfg.inf" ID="surfaceduo_mcfg"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Subsystems" Name="surfaceduo_subextadsp.inf" ID="surfaceduo_subextadsp"/>
