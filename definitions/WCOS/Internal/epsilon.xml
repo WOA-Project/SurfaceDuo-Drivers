@@ -143,13 +143,14 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics" Name="SurfaceOemPanel.inf" ID="SurfaceOemPanel"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics" Name="SurfacePanel.inf" ID="SurfacePanel"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Haptics" Name="SurfaceHaptics.inf" ID="SurfaceHaptics"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="gtopatchdrvumdf.inf" ID="gtopatchdrvumdf"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceIntegrationDriver.inf" ID="SurfaceIntegrationDriver"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfacePowerMeter.inf" ID="SurfacePowerMeter"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceSarManager.inf" ID="SurfaceSarManager"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceServiceNullDriver.inf" ID="SurfaceServiceNullDriver"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceThermalProxy.inf" ID="SurfaceThermalProxy"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceThermalProxyFilter.inf" ID="SurfaceThermalProxyFilter"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\eSIM" Name="gtopatchdrvumdf.inf" ID="gtopatchdrvumdf"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Power" Name="SurfacePowerMeter.inf" ID="SurfacePowerMeter"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\SAR" Name="SurfaceSarManager.inf" ID="SurfaceSarManager"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Service" Name="SurfaceServiceNullDriver.inf" ID="SurfaceServiceNullDriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\System" Name="SurfaceIntegrationDriver.inf" ID="SurfaceIntegrationDriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Telemetry" Name="SurfaceSystemTelemetryDriver.inf" ID="SurfaceSystemTelemetryDriver"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Thermal" Name="SurfaceThermalProxy.inf" ID="SurfaceThermalProxy"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Thermal" Name="SurfaceThermalProxyFilter.inf" ID="SurfaceThermalProxyFilter"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_audio_component.inf" ID="mep_audio_component"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_camera_component.inf" ID="mep_camera_component"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_priorityarbiter_component.inf" ID="mep_priorityarbiter_component"/>

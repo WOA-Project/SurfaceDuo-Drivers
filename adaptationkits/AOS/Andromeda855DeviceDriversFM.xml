@@ -94,13 +94,14 @@
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics" Name="SurfaceOemPanel.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Graphics" Name="SurfacePanel.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Haptics" Name="SurfaceHaptics.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="gtopatchdrvumdf.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceIntegrationDriver.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfacePowerMeter.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceSarManager.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceServiceNullDriver.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceThermalProxy.inf" />
-      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration" Name="SurfaceThermalProxyFilter.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\eSIM" Name="gtopatchdrvumdf.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Power" Name="SurfacePowerMeter.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\SAR" Name="SurfaceSarManager.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Service" Name="SurfaceServiceNullDriver.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\System" Name="SurfaceIntegrationDriver.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Telemetry" Name="SurfaceSystemTelemetryDriver.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Thermal" Name="SurfaceThermalProxy.inf" />
+      <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Integration\Thermal" Name="SurfaceThermalProxyFilter.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_audio_component.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_camera_component.inf" />
       <DriverPackageFile Path="$(mspackageroot)\Microsoft\Andromeda855\$(cputype)\$(buildtype)\Drivers\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\MEP" Name="mep_priorityarbiter_component.inf" />
