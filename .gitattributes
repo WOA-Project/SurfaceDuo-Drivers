@@ -4,3 +4,6 @@ apps/IPA/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter
 components/QC8150/OEM/OEM.SOC_QC8150.SURFACE/Drivers/MEP/PerceptionCoreResources.dll filter=lfs diff=lfs merge=lfs -text
 components/QC8150/Graphics/GRAPHICS.SOC_QC8150.EPSILON_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
 components/QC8150/Graphics/GRAPHICS.SOC_QC8150.HANA_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
+tools/DriverUpdater/AMD64/DriverUpdater.exe filter=lfs diff=lfs merge=lfs -text
+tools/DriverUpdater/ARM64/DriverUpdater.exe filter=lfs diff=lfs merge=lfs -text
+tools/DriverUpdater/X86/DriverUpdater.exe filter=lfs diff=lfs merge=lfs -text
