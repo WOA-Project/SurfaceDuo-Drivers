@@ -1,7 +1,7 @@
 @echo off
 
 mkdir ..\..\SurfaceDuo-Drivers-Release
-del ..\..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.zip
+del ..\..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.7z
 
 echo @echo off > ..\OnlineUpdater.cmd
 echo ^(NET FILE^|^|^(powershell -command Start-Process '%%0' -Verb runAs -ArgumentList '%%* '^&EXIT /B^)^)^>NUL 2^>^&1 >> ..\OnlineUpdater.cmd
@@ -42,7 +42,7 @@ echo OnlineUpdater.cmd >> filelist_epsilon.txt
 echo README.md >> filelist_epsilon.txt
 
 cd ..
-"%ProgramFiles%\7-zip\7z.exe" a -t7z ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.7z @tools\filelist_epsilon.txt -scsWIN
+"tools\7z.exe" a -t7z ..\SurfaceDuo-Drivers-Release\SurfaceDuo-Drivers-Desktop-Epsilon.7z @tools\filelist_epsilon.txt -scsWIN
 cd tools
 
 del ..\OfflineUpdater.cmd
