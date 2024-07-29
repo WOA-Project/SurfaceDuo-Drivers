@@ -107,9 +107,9 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\TrEE" Name="surfaceduo_tree.inf" ID="surfaceduo_tree"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\UART" Name="surfaceduo_uart.inf" ID="surfaceduo_uart"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Audio\AudMiniport" Name="SurfaceDuo_audmini.inf" ID="SurfaceDuo_audmini"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Audio\Device" Name="qcauddev8150.inf" ID="qcauddev8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Battery" Name="qcbattminiclass8150.inf" ID="qcbattminiclass8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Battery" Name="qcbattmngr8150.inf" ID="qcbattmngr8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Audio\Device" Name="SurfaceDuo_auddev.inf" ID="SurfaceDuo_auddev"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Battery" Name="SurfaceDuo_battminiclass.inf" ID="SurfaceDuo_battminiclass"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Battery" Name="SurfaceDuo_battmngr.inf" ID="SurfaceDuo_battmngr"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Bluetooth" Name="surfaceduo_btfmuart.inf" ID="surfaceduo_btfmuart"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Camera" Name="SurfaceDuo_camavs.inf" ID="SurfaceDuo_camavs"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Drivers\Camera" Name="SurfaceDuo_camflash.inf" ID="SurfaceDuo_camflash"/>
@@ -128,7 +128,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Bluetooth" Name="surfaceduo_btext.inf" ID="surfaceduo_btext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Camera" Name="SurfaceDuo_camfrontext.inf" ID="SurfaceDuo_camfrontext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Camera" Name="SurfaceDuo_camrearext.inf" ID="SurfaceDuo_camrearext"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Cellular" Name="qcWMRil_mbb_ext8150.inf" ID="qcWMRil_mbb_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Cellular" Name="SurfaceDuo_WMRil_mbbext.inf" ID="SurfaceDuo_WMRil_mbbext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\HexagonLoader" Name="surfaceduo_pilext.inf" ID="surfaceduo_pilext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\PowerManagement" Name="surfaceduo_pmicappsext.inf" ID="surfaceduo_pmicappsext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Sensors" Name="SurfaceDuo_sensorsconfig.inf" ID="SurfaceDuo_sensorsconfig"/>
@@ -137,11 +137,11 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Subsystems" Name="surfaceduo_subextcdsp.inf" ID="surfaceduo_subextcdsp"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Subsystems" Name="surfaceduo_subextmpss.inf" ID="surfaceduo_subextmpss"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Extensions\Subsystems" Name="surfaceduo_subextscss.inf" ID="surfaceduo_subextscss"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Libraries\Cellular" Name="qcimssink_mbb_ext8150.inf" ID="qcimssink_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Libraries\Cellular" Name="qcimssrc_mbb_ext8150.inf" ID="qcimssrc_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Services\Cellular" Name="QcIMSDataDaemon_mbb_ext8150.inf" ID="QcIMSDataDaemon_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Services\Cellular" Name="QcIMSQMIDaemon_mbb_ext8150.inf" ID="QcIMSQMIDaemon_mbb_ext8150"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Services\RCS" Name="QcRCSPresSvc_mbb_ext8150.inf" ID="QcRCSPresSvc_mbb_ext8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Libraries\Cellular" Name="SurfaceDuo_imssink_mbbext.inf" ID="SurfaceDuo_imssink_mbbext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Libraries\Cellular" Name="SurfaceDuo_imssrc_mbbext.inf" ID="SurfaceDuo_imssrc_mbbext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Services\Cellular" Name="SurfaceDuo_IMSDataDaemon_mbbext.inf" ID="SurfaceDuo_IMSDataDaemon_mbbext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Services\Cellular" Name="SurfaceDuo_IMSQMIDaemon_mbbext.inf" ID="SurfaceDuo_IMSQMIDaemon_mbbext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON\Services\RCS" Name="SurfaceDuo_RCSPresSvc_mbbext.inf" ID="SurfaceDuo_RCSPresSvc_mbbext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.EPSILON_DESKTOP" Name="SurfaceDuo_dx.inf" ID="SurfaceDuo_dx"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Customizations" Name="SurfaceDuo_MTPOEM.inf" ID="SurfaceDuo_MTPOEM"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\OEM\OEM.SOC_QC8150.SURFACE\Drivers\Audio\Dolby" Name="dax3_swc_aposvc_arm64.inf" ID="dax3_swc_aposvc_arm64"/>

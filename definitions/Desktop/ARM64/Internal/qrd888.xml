@@ -197,7 +197,6 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\FMRadio" Name="qcfmtransport8350.inf" ID="qcfmtransport8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\GPS" Name="qcgnss8350.inf" ID="qcgnss8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Graphics" Name="qdcmlib8350.inf" ID="qdcmlib8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\HumanPresence" Name="qcAlwaysOnCVSensor_ext8350.inf" ID="qcAlwaysOnCVSensor_ext8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\HumanPresence" Name="qcAlwaysOnCVSensor.inf" ID="qcAlwaysOnCVSensor"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\HumanPresence" Name="qcHumanPresenceSensor.inf" ID="qcHumanPresenceSensor"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\SAR" Name="qSarMgr.inf" ID="qSarMgr"/>
@@ -216,7 +215,6 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\WLAN" Name="qcwifinotifiersrvc.inf" ID="qcwifinotifiersrvc"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\WLAN" Name="qcWlanSleepMgr8350.inf" ID="qcWlanSleepMgr8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions\Audio\ListenSoundModel" Name="QCListenSM_swc_ext8350.inf" ID="QCListenSM_swc_ext8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions\Audio\ListenSoundModel" Name="QCListenSM8350.inf" ID="QCListenSM8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions\Cellular" Name="qcwmrilextension8350.inf" ID="qcwmrilextension8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions\FMRadio" Name="qcfmtransportextension8350.inf" ID="qcfmtransportextension8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Extensions\PowerManagement" Name="qcpepextension8350.inf" ID="qcpepextension8350"/>
