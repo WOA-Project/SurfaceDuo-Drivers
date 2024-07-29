@@ -2,7 +2,7 @@
     <Drivers>
         <BaseDriverPackages>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\I2C" Name="surfaceduo_i2c.inf" ID="surfaceduo_i2c"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\PMIC" Name="qcpmiceic8150.inf" ID="qcpmiceic8150"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\PMIC" Name="SurfaceDuo_pmiceic.inf" ID="SurfaceDuo_pmiceic"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\PowerManagement" Name="SurfaceDuo_pep.inf" ID="SurfaceDuo_pep"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\SPI" Name="surfaceduo_spi.inf" ID="surfaceduo_spi"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8150\Device\DEVICE.SOC_QC8150.EPSILON_MINIMAL\Drivers\SOC\TrEE" Name="surfaceduo_tree.inf" ID="surfaceduo_tree"/>

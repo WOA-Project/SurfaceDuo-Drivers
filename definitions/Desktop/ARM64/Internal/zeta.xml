@@ -100,9 +100,9 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\AudioCoreExt" Name="AudioCoreExt.inf" ID="AudioCoreExt"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\EMB" Name="emb.inf" ID="emb"/>
             <DriverPackageFile Path="$(mspackageroot)\components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL\WindowsPhone" Name="WindowsPhone.inf" ID="WindowsPhone"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\IOMMU" Name="qciommuext8350.inf" ID="qciommuext8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="QcTreeExtOem8350.inf" ID="QcTreeExtOem8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\IOMMU" Name="SurfaceDuo2_iommuext.inf" ID="SurfaceDuo2_iommuext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="SurfaceDuo2_ext_QCTree8350.inf" ID="SurfaceDuo2_ext_QCTree8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="SurfaceDuo2_TreeExtOem.inf" ID="SurfaceDuo2_TreeExtOem"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Battery" Name="SurfaceDuo2_battminiclass.inf" ID="SurfaceDuo2_battminiclass"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Bluetooth" Name="SurfaceDuo2_btfmuart_hsp8350.inf" ID="SurfaceDuo2_btfmuart_hsp8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camisp.inf" ID="SurfaceDuo2_camisp"/>
@@ -112,9 +112,9 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\HumanPresence" Name="SurfaceDuo2_AlwaysOnCVSensorext.inf" ID="SurfaceDuo2_AlwaysOnCVSensorext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\SecurityProcessor" Name="SurfaceDuo2_sp8350.inf" ID="SurfaceDuo2_sp8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Sensors\SSC" Name="SurfaceDuo2_sensors.inf" ID="SurfaceDuo2_sensors"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\ACDB" Name="SurfaceDuo2_acsp_mtp8350.inf" ID="SurfaceDuo2_acsp_mtp8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\AudCodec" Name="SurfaceDuo2_aucdext_mtp8350.inf" ID="SurfaceDuo2_aucdext_mtp8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\AudMiniport" Name="SurfaceDuo2_audiominiext_mtp8350.inf" ID="SurfaceDuo2_audiominiext_mtp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\ACDB" Name="SurfaceDuo2_acsp_and8350.inf" ID="SurfaceDuo2_acsp_and8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\AudCodec" Name="SurfaceDuo2_aucdext_and8350.inf" ID="SurfaceDuo2_aucdext_and8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\AudMiniport" Name="SurfaceDuo2_audiominiext_and8350.inf" ID="SurfaceDuo2_audiominiext_and8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\ListenSoundModel" Name="SurfaceDuo2_ListenSM.inf" ID="SurfaceDuo2_ListenSM"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\BatteryCurrentLimiter" Name="surfaceduo2_fgbclext8350.inf" ID="surfaceduo2_fgbclext8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Bluetooth" Name="SurfaceDuo2_btfmuart_ext_swiftpairenable8350.inf" ID="SurfaceDuo2_btfmuart_ext_swiftpairenable8350"/>
@@ -132,7 +132,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_spss8350.inf" ID="SurfaceDuo2_ext_spss8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_mcfg8350.inf" ID="SurfaceDuo2_mcfg8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.ZETA_DESKTOP" Name="SurfaceDuo2_dx.inf" ID="SurfaceDuo2_dx"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.ZETA_DESKTOP" Name="SurfaceDuo2_dxext_mtp8350.inf" ID="SurfaceDuo2_dxext_mtp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.ZETA_DESKTOP" Name="SurfaceDuo2_dxext_and8350.inf" ID="SurfaceDuo2_dxext_and8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Customizations" Name="SurfaceDuo2_MTPOEM.inf" ID="SurfaceDuo2_MTPOEM"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Audio\Dolby" Name="dax3_swc_aposvc_arm64.inf" ID="dax3_swc_aposvc_arm64"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Audio\Dolby" Name="dax3_swc_hsa_arm64.inf" ID="dax3_swc_hsa_arm64"/>
@@ -186,7 +186,6 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ACPI" Name="qcabd.inf" ID="qcabd"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Buses" Name="qcglink8350.inf" ID="qcglink8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Buses" Name="qcgpi8350.inf" ID="qcgpi8350"/>
-            <!--<DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Diagnostic" Name="qcqdss8350.inf" ID="qcqdss8350"/>-->
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Diagnostic" Name="qwpp8350.inf" ID="qwpp8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\GPIO" Name="qcgpio8350.inf" ID="qcgpio8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\HexagonLoader" Name="qcpil.inf" ID="qcpil"/>
