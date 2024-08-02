@@ -67,7 +67,6 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA_MINIMAL\Drivers\SOC\TrEE" Name="QcTreeExtOem8350.inf" ID="QcTreeExtOem8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA_MINIMAL\Drivers\SOC\TrEE" Name="QcTreeExtQcom8350.inf" ID="QcTreeExtQcom8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA\Drivers\Audio\AudMiniport" Name="qcaudminiport_Base8350.inf" ID="qcaudminiport_Base8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA\Drivers\Audio\Device" Name="qcaucd8350.inf" ID="qcaucd8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA\Drivers\Bluetooth" Name="qcbtfmuart_hsp8350.inf" ID="qcbtfmuart_hsp8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA\Drivers\Camera" Name="qccamauxsensor8350.inf" ID="qccamauxsensor8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA\Drivers\Camera" Name="qccamavs8350.inf" ID="qccamavs8350"/>
@@ -118,12 +117,10 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA\Services\Cellular" Name="QcIMSDataDaemon_mbb_ext8350.inf" ID="QcIMSDataDaemon_mbb_ext8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA\Services\Cellular" Name="QcIMSQMIDaemon_mbb_ext8350.inf" ID="QcIMSQMIDaemon_mbb_ext8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA\Services\RCS" Name="QcRCSPresSvc_mbb_ext8350.inf" ID="QcRCSPresSvc_mbb_ext8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.LAHAINA_DESKTOP" Name="qcdx8350.inf" ID="qcdx8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.LAHAINA_DESKTOP" Name="qcdxext_mtp8350.inf" ID="qcdxext_mtp8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.QCOM\Drivers\NFC" Name="NxpNfcClientDriver.inf" ID="NxpNfcClientDriver"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.QCOM\Drivers\USB" Name="fsa4480.inf" ID="fsa4480"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.QCOM\Setup" Name="desktopsetup.inf" ID="desktopsetup"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\HALs" Name="HalExtQCWdogTimer8350.inf" ID="HalExtQCWdogTimer8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\ACPI" Name="qcabd.inf" ID="qcabd"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Buses" Name="qcglink8350.inf" ID="qcglink8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL\Drivers\SOC\Buses" Name="qcgpi8350.inf" ID="qcgpi8350"/>
@@ -167,7 +164,6 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Bluetooth\AddVSCRegistry" Name="qcbtaddvscregistry8350.inf" ID="qcbtaddvscregistry8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamjpege8350.inf" ID="qccamjpege8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccammipicsi8350.inf" ID="qccammipicsi8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamplatform8350.inf" ID="qccamplatform8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\5GNRCoexistanceManager" Name="qc5gnrcoexmgr_ext8350.inf" ID="qc5gnrcoexmgr_ext8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\5GNRCoexistanceManager" Name="qc5gnrcoexmgr8350.inf" ID="qc5gnrcoexmgr8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\CCID" Name="qcccidbridge8350.inf" ID="qcccidbridge8350"/>
