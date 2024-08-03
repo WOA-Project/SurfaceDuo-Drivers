@@ -14,6 +14,16 @@ The entire PIL region **allocated** by the UEFI firmware is:
 
 ### Breakdown of the different subsections of the PIL region:
 
+| FW Name      | ICP        | WCNSS      | GAP0       | ADSP       | MODEM      | VENUS      | SLPI       | IPA        | SPSS       | CDSP       | GAP1       | DHMS       |
+|--------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|------------|
+| Memory Set   | Hardcoded  | Hardcoded  | PGCM       | PGCM       | PGCM       | PGCM       | PGCM       | PGCM       | PGCM       | PGCM       | PGCM       | Hardcoded  |
+| Memory Start | 0x8B700000 | 0x8BC00000 | 0x8BD80000 | 0x8BE00000 | 0x8D800000 | 0x96E00000 | 0x97300000 | 0x98700000 | 0x98800000 | 0x98900000 | 0x99D00000 | 0x9A500000 |
+| Memory End   | 0x8BC00000 | 0x8BD80000 | 0x8BE00000 | 0x8D800000 | 0x96E00000 | 0x97300000 | 0x98700000 | 0x98800000 | 0x98900000 | 0x99D00000 | 0x9A500000 | 0x9AB00000 |
+| Memory Size  | 0x00500000 | 0x00180000 | 0x00080000 | 0x01A00000 | 0x09600000 | 0x00500000 | 0x01400000 | 0x00100000 | 0x00100000 | 0x01400000 | 0x00800000 | 0x00600000 |
+| Config       | ACPI       | ACPI, PILE |            | SUBA, PILE | SUBM       | PILE       | SUBS, PILE | PILE       | PILE       | SUBC, PILE |            | ACPI       |
+
+PGCM area is configured in PILE (qcpilEXT8150) and must match above table allocation plan.
+
 **Below regions are hardcoded in ACPI tables / firmware and are therefore not dynamically used by the Operating System**
 
 - ICP:   Start 0x8B700000, End 0x8BC00000, Size 0x00500000
