@@ -62,6 +62,60 @@
 | QRDA8150                                 | 361                    | 0                                | APQ™               |
 | QRDB8150                                 | 361                    | 1                                | APQ™ + SDX50M      |
 
+## Snapdragon 888
+
+### ATP
+
+| ACPI _SUB String (Subsystem/Platform ID) | Matching SOID (SoC ID) | Matching PLST (Platform Subtype) | Friendly Name      |
+|------------------------------------------|------------------------|----------------------------------|--------------------|
+| ATP08350                                 | 415, 456, 501          | 0                                | MSM™               |
+| ATPA8350                                 | 439, 502               | 0                                | APQ™               |
+
+### CDP
+
+| ACPI _SUB String (Subsystem/Platform ID) | Matching SOID (SoC ID) | Matching PLST (Platform Subtype) | Friendly Name      |
+|------------------------------------------|------------------------|----------------------------------|--------------------|
+| CDP08350                                 | 415, 456, 501          | 0                                | MSM™               |
+| CDP18350                                 | 415, 456, 501          | 3                                | MSM™ + HSP PRO     |
+| CDPA8350                                 | 439, 502               | 0                                | APQ™               |
+
+### HDK
+
+| ACPI _SUB String (Subsystem/Platform ID) | Matching SOID (SoC ID) | Matching PLST (Platform Subtype) | Friendly Name      |
+|------------------------------------------|------------------------|----------------------------------|--------------------|
+| HDK08350                                 | 415, 456, 501          | 0                                | MSM™               |
+| HHG08350                                 | 415, 456, 501          | 1                                | MSM™               |
+| HHGA8350                                 | 439, 502               | 2                                | APQ™ + HSP PRO     |
+
+*HHG: Handheld Gaming Reference Device
+
+### MTP
+
+| ACPI _SUB String (Subsystem/Platform ID) | Matching SOID (SoC ID) | Matching PLST (Platform Subtype) | Friendly Name      |
+|------------------------------------------|------------------------|----------------------------------|--------------------|
+| MTP08350                                 | 415, 456, 501          | 0                                | MSM™               |
+| MTP18350                                 | 415, 456, 501          | 1                                | MSM™ + HSP         |
+| MTP28350                                 | 415, 456, 501          | 2                                | MSM™ + HSP PRO     |
+| MTPA8350                                 | 439, 502               | 0                                | APQ™               |
+
+### QRD
+
+| ACPI _SUB String (Subsystem/Platform ID) | Matching SOID (SoC ID) | Matching PLST (Platform Subtype) | Friendly Name      |
+|------------------------------------------|------------------------|----------------------------------|--------------------|
+| QRD08350                                 | 415, 456, 501          | 0                                | MSM™               |
+| QRD18350                                 | 415, 456, 501          | 1                                | MSM™ + HSP         |
+| QRD28350                                 | 415, 456, 501          | 2                                | MSM™ + HSP PRO     |
+| SIP08350                                 | 415, 456, 501          | 8                                | MSM™               |
+| QRDA8350                                 | 439, 502               | 0                                | APQ™               |
+
+*SIP: System In Package Module Reference Card
+
+### RUMI
+
+| ACPI _SUB String (Subsystem/Platform ID) | Matching SOID (SoC ID) | Matching PLST (Platform Subtype) | Friendly Name      |
+|------------------------------------------|------------------------|----------------------------------|--------------------|
+| RUMI8350                                 | 415, 456, 501          | 0                                | MSM™               |
+
 # Device Tree Platform Identifiers
 
 ## Snapdragon 855
@@ -225,3 +279,46 @@ lahaina-qrd-module-overlay.dts           | Lequal(\\\_SB_.PSUB, "QRD08350") && L
 lahaina-qrd-module.dts                   | Lequal(\\\_SB_.PSUB, "QRD08350") && Lequal(\\\_SB_.PLST, 8)         |
 lahaina-v2-qrd-module.dts                | Lequal(\\\_SB_.PSUB, "QRD08350") && Lequal(\\\_SB_.PLST, 8)         |
 lahaina-v2.1-qrd-module.dts              | Lequal(\\\_SB_.PSUB, "QRD08350") && Lequal(\\\_SB_.PLST, 8)         |
+
+---
+
+## Snapdragon 888 (MSM)
+
+| Device Tree Source File Name | Chip ID                        | Foundry ID | Reserved | PlatformID | RevID         |
+|------------------------------|--------------------------------|------------|----------|------------|---------------|
+| lahaina.dtsi                 | SM_LAHAINA (415)               | 0          | 0        | 0          | 1.0 (0x10000) |
+| lahaina-vm.dtsi              | SM_LAHAINA (415)               | 0          | 0        | 0          | 1.0 (0x10000) |
+| lahaina-v2.dtsi              | SM_LAHAINA (415)               | 0          | 0        | 0          | 2.0 (0x20000) |
+| lahaina-vm-v2.dtsi           | SM_LAHAINA (415)               | 0          | 0        | 0          | 2.0 (0x20000) |
+| lahaina-v2.1.dtsi            | SM_LAHAINA (415)               | 0          | 0        | 0          | 2.1 (0x20001) |
+| lahaina.dtsi                 | SM_LAHAINA_MODULE (456)        | 0          | 0        | 0          | 1.0 (0x10000) |
+| lahaina-v2.dtsi              | SM_LAHAINA_MODULE (456)        | 0          | 0        | 0          | 2.0 (0x20000) |
+| lahaina-v2.1.dtsi            | SM_LAHAINA_MODULE (456)        | 0          | 0        | 0          | 2.1 (0x20001) |
+| lahaina.dtsi                 | SM_LAHAINA_LTE_ONLY (501)      | 0          | 0        | 0          | 1.0 (0x10000) |
+| lahaina-vm.dtsi              | SM_LAHAINA_LTE_ONLY (501)      | 0          | 0        | 0          | 1.0 (0x10000) |
+| lahaina-v2.dtsi              | SM_LAHAINA_LTE_ONLY (501)      | 0          | 0        | 0          | 2.0 (0x20000) |
+| lahaina-vm-v2.dtsi           | SM_LAHAINA_LTE_ONLY (501)      | 0          | 0        | 0          | 2.0 (0x20000) |
+| lahaina-v2.1.dtsi            | SM_LAHAINA_LTE_ONLY (501)      | 0          | 0        | 0          | 2.1 (0x20001) |
+
+## Snapdragon 888 (APQ)
+
+| Device Tree Source File Name | Chip ID                        | Foundry ID | Reserved | PlatformID | RevID         |
+|------------------------------|--------------------------------|------------|----------|------------|---------------|
+| lahainap.dtsi                | SMP_LAHAINA (439)              | 0          | 0        | 0          | 1.0 (0x10000) |
+| lahainap-v2.dtsi             | SMP_LAHAINA (439)              | 0          | 0        | 0          | 2.0 (0x20000) |
+| lahainap-v2.1.dtsi           | SMP_LAHAINA (439)              | 0          | 0        | 0          | 2.1 (0x20001) |
+| lahainap.dtsi                | SMP_LAHAINA_OEM_SPECIFIC (502) | 0          | 0        | 0          | 1.0 (0x10000) |
+| lahainap-v2.dtsi             | SMP_LAHAINA_OEM_SPECIFIC (502) | 0          | 0        | 0          | 2.0 (0x20000) |
+| lahainap-v2.1.dtsi           | SMP_LAHAINA_OEM_SPECIFIC (502) | 0          | 0        | 0          | 2.1 (0x20001) |
+
+---
+
+_**© 2020-2024 The Duo WOA Authors**_
+
+_Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the Microsoft Corporate Logo, Windows, Surface, Surface Duo, Windows Hello, Continuum, Hyper-V, and DirectX are registered trademarks of Microsoft Corporation in the United States. Android is a registered trademark of Google LLC. Miracast is a registered trademark of the Wi-Fi Alliance. Other binaries may be copyright Qualcomm Incorporated and Microsoft Surface._
+
+_**Limited emergency calling**_
+
+_Running Windows on your Surface Duo is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
+
+_**Hello from Seattle (US), France, Italy.**_

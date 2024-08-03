@@ -57,3 +57,15 @@
 | COL3  | Surface Firmware Update                | HID\\{00001812-0000-1000-8000-00805f9b34fb}\_Dev\_VID&02045e\_PID&0c0f\_REV&0596&Col03 - HID\\{00001812-0000-1000-8000-00805f9b34fb}\_Dev\_VID&02045e\_PID&0c0f&Col03 - HID\\{00001812-0000-1000-8000-00805f9b34fb}\_LOCALMFG&001d&Col03 - HID\\VID\_045E&UP:FF0B\_U:0101 - HID\_DEVICE\_UP:FF0B\_U:0101 - HID\_DEVICE\_UPR:FF00-FFFF |
 | COL4  | HID-compliant vendor-defined device    | HID\\{00001812-0000-1000-8000-00805f9b34fb}\_Dev\_VID&02045e\_PID&0c0f\_REV&0596&Col04 - HID\\{00001812-0000-1000-8000-00805f9b34fb}\_Dev\_VID&02045e\_PID&0c0f&Col04 - HID\\{00001812-0000-1000-8000-00805f9b34fb}\_LOCALMFG&001d&Col04 - HID\\VID\_045E&UP:FF0B\_U:0053 - HID\_DEVICE\_UP:FF0B\_U:0053 - HID\_DEVICE\_UPR:FF00-FFFF |
 | COL5  | HID-compliant device                   | HID\\{00001812-0000-1000-8000-00805f9b34fb}\_Dev\_VID&02045e\_PID&0c0f\_REV&0596&Col05 - HID\\{00001812-0000-1000-8000-00805f9b34fb}\_Dev\_VID&02045e\_PID&0c0f&Col05 - HID\\{00001812-0000-1000-8000-00805f9b34fb}\_LOCALMFG&001d&Col05 - HID\\VID\_045E&UP:000D\_U:0020 - HID\_DEVICE\_UP:000D\_U:0020 |
+
+---
+
+_**© 2020-2024 The Duo WOA Authors**_
+
+_Snapdragon is a registered trademark of Qualcomm Incorporated. Microsoft, the Microsoft Corporate Logo, Windows, Surface, Surface Duo, Windows Hello, Continuum, Hyper-V, and DirectX are registered trademarks of Microsoft Corporation in the United States. Android is a registered trademark of Google LLC. Miracast is a registered trademark of the Wi-Fi Alliance. Other binaries may be copyright Qualcomm Incorporated and Microsoft Surface._
+
+_**Limited emergency calling**_
+
+_Running Windows on your Surface Duo is not a replacement for a proper phone operating system and does not have emergency calling capabilities._
+
+_**Hello from Seattle (US), France, Italy.**_
