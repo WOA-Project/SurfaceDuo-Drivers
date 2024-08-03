@@ -4,8 +4,6 @@
 
 ### Windows Firmware Information
 
-#### Summary
-
 The entire PIL region **allocated** by the UEFI firmware is:
 
 - Start: 0x8B700000
@@ -14,43 +12,59 @@ The entire PIL region **allocated** by the UEFI firmware is:
 
 (Refer to the section named UEFI Memory Map for more information on how this is defined).
 
-#### Breakdown of the different subsections of the PIL region:
+### Breakdown of the different subsections of the PIL region:
 
 **Below regions are hardcoded in ACPI tables / firmware and are therefore not dynamically used by the Operating System**
 
-- ICP:   Start 0x8B700000, End 0x8BC00000, Size 0x00500000 (Defined in ACPI DSDT, Device(VFE0))
-- WCNSS: Start 0x8BC00000, End 0x8BD80000, Size 0x00180000 (Defined in ACPI DSDT, Device(QWLN)) (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf)
+- ICP:   Start 0x8B700000, End 0x8BC00000, Size 0x00500000
+    - Defined in ACPI DSDT, Device(VFE0)
+- WCNSS: Start 0x8BC00000, End 0x8BD80000, Size 0x00180000
+    - Defined in ACPI DSDT, Device(QWLN)
+    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 
 **Below regions are not hardcoded in ACPI tables / firmware and are therefore dynamically used by the Operating System**
 
 For this kind of region, the PIL driver is instructed the total size of the region in use dynamically below using "PGCM":
 
-- PGCM:  Start 0x8BD80000, End 0x9A500000, Size 0x0E780000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf)
+- PGCM:  Start 0x8BD80000, End 0x9A500000, Size 0x0E780000
+    - Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
 
 We then define every firmware binary meant to load in such region:
 
 **Gap Here From 0x8BD80000 to 0x8BE00000**
 
-- ADSP:  Start 0x8BE00000, End 0x8D800000, Size 0x01A00000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf) (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_adsp8150.inf)
-- MODEM: Start 0x8D800000, End 0x96E00000, Size 0x09600000 (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_mpss8150.inf)
-- VENUS: Start 0x96E00000, End 0x97300000, Size 0x00500000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf)
-- SLPI:  Start 0x97300000, End 0x98700000, Size 0x01400000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf) (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_scss8150.inf)
-- IPA:   Start 0x98700000, End 0x98800000, Size 0x00100000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf)
-- SPSS:  Start 0x98800000, End 0x98900000, Size 0x00100000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf)
-- CDSP:  Start 0x98900000, End 0x99D00000, Size 0x01400000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf) (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_cdsp8150.inf)
+- ADSP:  Start 0x8BE00000, End 0x8D800000, Size 0x01A00000
+    - Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
+    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_adsp8150.inf
+- MODEM: Start 0x8D800000, End 0x96E00000, Size 0x09600000
+    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_mpss8150.inf
+- VENUS: Start 0x96E00000, End 0x97300000, Size 0x00500000
+    - Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
+- SLPI:  Start 0x97300000, End 0x98700000, Size 0x01400000
+    - Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
+    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_scss8150.inf
+- IPA:   Start 0x98700000, End 0x98800000, Size 0x00100000 
+    - Defined \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
+- SPSS:  Start 0x98800000, End 0x98900000, Size 0x00100000
+    - Defined \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
+- CDSP:  Start 0x98900000, End 0x99D00000, Size 0x01400000
+    - Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
+    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_cdsp8150.inf
 
 **Gap Here From 0x99D00000 to 0x9A500000**
 
 You will notice we have some fully dynamic regions, these usually fill in above mentioned gaps:
 
-- GFXSUC: Size: 0x00005000 (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf)
+- GFXSUC: Size: 0x00005000
+    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 
 ```ini
 HKR, SubsystemLoad\GFXSUC, MemoryAlignment,   %REG_DWORD%, 0x00001000
 HKR, SubsystemLoad\GFXSUC, MemoryReservation, %REG_DWORD%, 0x00005000
 ```
 
-- MBA: Size: 0x00100000 (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf)
+- MBA: Size: 0x00100000
+    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 
 ```ini
 HKR, SubsystemLoad\MBA,    MemoryAlignment,   %REG_DWORD%, 0x00100000
@@ -58,11 +72,14 @@ HKR, SubsystemLoad\MBA,    MemoryAlignment,   %REG_DWORD%, 0x00100000
 
 **Below region is the communication buffer region to allow QMI messaging between MPSS and the OS and must be reserved**
 
-- DHMS:  Start 0x9A500000, End 0x9AB00000, Size 0x00600000 (Defined in ACPI DSDT, Device(QSM))
+- DHMS:  Start 0x9A500000, End 0x9AB00000, Size 0x00600000
+    - Defined in ACPI DSDT, Device(QSM)
 
 We reached the end of the whole reserved region in our UEFI firmware.
 
-#### INF Packages
+---
+
+### INF Packages
 
 \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
 
@@ -186,7 +203,7 @@ HKR, SubsystemLoad\SLPI, MemoryReservation, %REG_DWORD%, 0x1400000
 HKR, SubsystemLoad\SLPI, MemoryReservation, %REG_DWORD%, 0x1400000
 ```
 
-#### UEFI Memory Map
+### UEFI Memory Map
 
 ```c
 {"MPSS_EFS",          0x85D00000, 0x00200000, AddMem, SYS_MEM, SYS_MEM_CAP, Reserv, UNCACHED_UNBUFFERED_XN},
@@ -198,7 +215,7 @@ HKR, SubsystemLoad\SLPI, MemoryReservation, %REG_DWORD%, 0x1400000
 {"TGCM",              0x9E400000, 0x01400000, AddMem, MEM_RES, WRITE_COMBINEABLE, Reserv, UNCACHED_UNBUFFERED_XN},
 ```
 
-#### ACPI DSDT
+### ACPI DSDT
 
 ```asl
 Device (QSM)
