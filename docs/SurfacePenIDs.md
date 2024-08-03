@@ -13,7 +13,7 @@
 
 | Index | Description                            | Compatibles |
 |-------|----------------------------------------|-------------|
-|       |                                        |             |
+| COL1  | HID Keyboard Device                    | HID\\{00001812-0000-1000-8000-00805f9b34fb}\_Dev\_VID&02045e\_PID&07c5\_REV&0001 - HID\\{00001812-0000-1000-8000-00805f9b34fb}\_Dev\_VID&02045e\_PID&07c5 - HID\\{00001812-0000-1000-8000-00805f9b34fb}\_LOCALMFG&001d - HID\\VID\_045E&UP:0001\_U:0006 - HID\_DEVICE\_SYSTEM\_KEYBOARD - HID\_DEVICE\_UP:0001\_U:0006 |
 
 ## Surface Pen V3 Collections
 
