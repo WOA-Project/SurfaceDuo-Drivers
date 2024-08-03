@@ -4,7 +4,7 @@
 
 ### Windows Firmware Information
 
-### Summary
+#### Summary
 
 The entire PIL region **allocated** by the UEFI firmware is:
 
@@ -14,9 +14,7 @@ The entire PIL region **allocated** by the UEFI firmware is:
 
 (Refer to the section named UEFI Memory Map for more information on how this is defined).
 
---
-
-Breakdown of the different subsections of the PIL region:
+#### Breakdown of the different subsections of the PIL region:
 
 **Below regions are hardcoded in ACPI tables / firmware and are therefore not dynamically used by the Operating System**
 
@@ -32,6 +30,7 @@ For this kind of region, the PIL driver is instructed the total size of the regi
 We then define every firmware binary meant to load in such region:
 
 **Gap Here From 0x8BD80000 to 0x8BE00000**
+
 - ADSP:  Start 0x8BE00000, End 0x8D800000, Size 0x01A00000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf) (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_adsp8150.inf)
 - MODEM: Start 0x8D800000, End 0x96E00000, Size 0x09600000 (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_mpss8150.inf)
 - VENUS: Start 0x96E00000, End 0x97300000, Size 0x00500000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf)
@@ -39,6 +38,7 @@ We then define every firmware binary meant to load in such region:
 - IPA:   Start 0x98700000, End 0x98800000, Size 0x00100000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf)
 - SPSS:  Start 0x98800000, End 0x98900000, Size 0x00100000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf)
 - CDSP:  Start 0x98900000, End 0x99D00000, Size 0x01400000 (Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf) (Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_cdsp8150.inf)
+
 **Gap Here From 0x99D00000 to 0x9A500000**
 
 You will notice we have some fully dynamic regions, these usually fill in above mentioned gaps:
