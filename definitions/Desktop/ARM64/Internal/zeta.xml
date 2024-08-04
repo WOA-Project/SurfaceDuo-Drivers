@@ -103,15 +103,25 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\IOMMU" Name="SurfaceDuo2_iommuext.inf" ID="SurfaceDuo2_iommuext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="SurfaceDuo2_ext_QCTree8350.inf" ID="SurfaceDuo2_ext_QCTree8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL\Drivers\SOC\TrEE" Name="SurfaceDuo2_TreeExtOem.inf" ID="SurfaceDuo2_TreeExtOem"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Audio\AudMiniport" Name="SurfaceDuo2_audminiport_Base.inf" ID="SurfaceDuo2_audminiport_Base"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Battery" Name="SurfaceDuo2_battminiclass.inf" ID="SurfaceDuo2_battminiclass"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Bluetooth" Name="SurfaceDuo2_btfmuart_hsp8350.inf" ID="SurfaceDuo2_btfmuart_hsp8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camauxsensor.inf" ID="SurfaceDuo2_camauxsensor"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camavs.inf" ID="SurfaceDuo2_camavs"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camflash.inf" ID="SurfaceDuo2_camflash"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camfrontsensor.inf" ID="SurfaceDuo2_camfrontsensor"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camisp.inf" ID="SurfaceDuo2_camisp"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camrearsensor.inf" ID="SurfaceDuo2_camrearsensor"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camtelesensor.inf" ID="SurfaceDuo2_camtelesensor"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Camera" Name="SurfaceDuo2_camultrawidesensor.inf" ID="SurfaceDuo2_camultrawidesensor"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Cellular" Name="surfaceduo2_ipa.inf" ID="surfaceduo2_ipa"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\EVA" Name="SurfaceDuo2_eva.inf" ID="SurfaceDuo2_eva"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\EVA" Name="SurfaceDuo2_evaext.inf" ID="SurfaceDuo2_evaext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\HumanPresence" Name="SurfaceDuo2_AlwaysOnCVSensorext.inf" ID="SurfaceDuo2_AlwaysOnCVSensorext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\SecurityProcessor" Name="SurfaceDuo2_sp8350.inf" ID="SurfaceDuo2_sp8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Sensors\SSC" Name="SurfaceDuo2_sensors.inf" ID="SurfaceDuo2_sensors"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\Subsystems" Name="SurfaceDuo2_subsys.inf" ID="SurfaceDuo2_subsys"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Drivers\WLAN" Name="SurfaceDuo2_wlan.inf" ID="SurfaceDuo2_wlan"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\ACDB" Name="SurfaceDuo2_acsp_and8350.inf" ID="SurfaceDuo2_acsp_and8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\AudCodec" Name="SurfaceDuo2_aucdext_and8350.inf" ID="SurfaceDuo2_aucdext_and8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Audio\AudMiniport" Name="SurfaceDuo2_audiominiext_and8350.inf" ID="SurfaceDuo2_audiominiext_and8350"/>
@@ -119,11 +129,20 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\BatteryCurrentLimiter" Name="surfaceduo2_fgbclext8350.inf" ID="surfaceduo2_fgbclext8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Bluetooth" Name="SurfaceDuo2_btfmuart_ext_swiftpairenable8350.inf" ID="SurfaceDuo2_btfmuart_ext_swiftpairenable8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Bluetooth" Name="SurfaceDuo2_btfmuartext.inf" ID="SurfaceDuo2_btfmuartext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camauxsensorextension.inf" ID="SurfaceDuo2_camauxsensorextension"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camavsext.inf" ID="SurfaceDuo2_camavsext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camflashext.inf" ID="SurfaceDuo2_camflashext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camfrontsensorextension.inf" ID="SurfaceDuo2_camfrontsensorextension"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camispext.inf" ID="SurfaceDuo2_camispext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camjpegeext.inf" ID="SurfaceDuo2_camjpegeext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_cammipicsiext.inf" ID="SurfaceDuo2_cammipicsiext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camplatformext.inf" ID="SurfaceDuo2_camplatformext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camrearsensorextension.inf" ID="SurfaceDuo2_camrearsensorextension"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camtelesensorextension.inf" ID="SurfaceDuo2_camtelesensorextension"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Camera" Name="SurfaceDuo2_camultrawidesensorextension.inf" ID="SurfaceDuo2_camultrawidesensorextension"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Cellular" Name="SurfaceDuo2_WMRil_mbbext.inf" ID="SurfaceDuo2_WMRil_mbbext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\HexagonLoader" Name="SurfaceDuo2_pilext8350.inf" ID="SurfaceDuo2_pilext8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\PowerManagement" Name="SurfaceDuo2_pmicappsext.inf" ID="SurfaceDuo2_pmicappsext"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Sensors" Name="SurfaceDuo2_sensorsconfig.inf" ID="SurfaceDuo2_sensorsconfig"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_adsp8350.inf" ID="SurfaceDuo2_ext_adsp8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_cdsp8350.inf" ID="SurfaceDuo2_ext_cdsp8350"/>
@@ -131,6 +150,13 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_scss8350.inf" ID="SurfaceDuo2_ext_scss8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_ext_spss8350.inf" ID="SurfaceDuo2_ext_spss8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\Subsystems" Name="SurfaceDuo2_mcfg8350.inf" ID="SurfaceDuo2_mcfg8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Extensions\WLAN" Name="SurfaceDuo2_wlanext.inf" ID="SurfaceDuo2_wlanext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Libraries\Cellular" Name="SurfaceDuo2_imssink_mbbext.inf" ID="SurfaceDuo2_imssink_mbbext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Libraries\Cellular" Name="SurfaceDuo2_imssrc_mbbext.inf" ID="SurfaceDuo2_imssrc_mbbext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Services\Cellular" Name="SurfaceDuo2_IMSDataDaemon_mbbext.inf" ID="SurfaceDuo2_IMSDataDaemon_mbbext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Services\Cellular" Name="SurfaceDuo2_IMSQMIDaemon_mbbext.inf" ID="SurfaceDuo2_IMSQMIDaemon_mbbext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Device\DEVICE.SOC_QC8350.ZETA\Services\RCS" Name="SurfaceDuo2_RCSPresSvc_mbbext.inf" ID="SurfaceDuo2_RCSPresSvc_mbbext"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.ZETA_DESKTOP" Name="SurfaceDuo2_dx.inf" ID="SurfaceDuo2_dx"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.ZETA_DESKTOP" Name="SurfaceDuo2_dxext_and8350.inf" ID="SurfaceDuo2_dxext_and8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Customizations" Name="SurfaceDuo2_MTPOEM.inf" ID="SurfaceDuo2_MTPOEM"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\OEM\OEM.SOC_QC8350.SURFACE\Drivers\Audio\Dolby" Name="dax3_swc_aposvc_arm64.inf" ID="dax3_swc_aposvc_arm64"/>
@@ -223,6 +249,7 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Bluetooth\AddVSCRegistry" Name="qcbtaddvscregistry8350.inf" ID="qcbtaddvscregistry8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamjpege8350.inf" ID="qccamjpege8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccammipicsi8350.inf" ID="qccammipicsi8350"/>
+            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamplatform8350.inf" ID="qccamplatform8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\5GNRCoexistanceManager" Name="qc5gnrcoexmgr_ext8350.inf" ID="qc5gnrcoexmgr_ext8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\5GNRCoexistanceManager" Name="qc5gnrcoexmgr8350.inf" ID="qc5gnrcoexmgr8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\CCID" Name="qcccidbridge8350.inf" ID="qcccidbridge8350"/>
