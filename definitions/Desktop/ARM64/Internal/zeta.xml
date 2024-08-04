@@ -249,7 +249,6 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Bluetooth\AddVSCRegistry" Name="qcbtaddvscregistry8350.inf" ID="qcbtaddvscregistry8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamjpege8350.inf" ID="qccamjpege8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccammipicsi8350.inf" ID="qccammipicsi8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Camera" Name="qccamplatform8350.inf" ID="qccamplatform8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\5GNRCoexistanceManager" Name="qc5gnrcoexmgr_ext8350.inf" ID="qc5gnrcoexmgr_ext8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\5GNRCoexistanceManager" Name="qc5gnrcoexmgr8350.inf" ID="qc5gnrcoexmgr8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE\Source\Drivers\Cellular\CCID" Name="qcccidbridge8350.inf" ID="qcccidbridge8350"/>
