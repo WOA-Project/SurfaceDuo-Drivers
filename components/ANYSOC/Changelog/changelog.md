@@ -1,13 +1,7 @@
 ## Surface Duo BSP - Version 2408.1 (Chucky)
 
-> [!CAUTION]
-> When booting windows for the second time, after the "Getting ready" phase, it is **Normal** for your device to end in a black screen
-> DO NOT panic, DO NOT TRY TO FORCE REBOOT THE DEVICE! Leave it for 5 mins, press the power button once, or close it and reopen it, or plug in an usb cable and unplug it, do this as many times as you want, EVENTUALLY, the device will wake up. DO NOT try to reboot. Just try a few times and it will work, we promise it will not stay in a black screen. Just be a bit patient.
-
 > [!NOTE]
 > Higher thermals in Windows is currently expected and is not dangerous
-
-![image](https://github.com/WOA-Project/SurfaceDuo-Releases/assets/3755345/8682d8e4-015b-4179-9dfe-434f868754ba)
 
 <details>
   <summary>General information</summary>
