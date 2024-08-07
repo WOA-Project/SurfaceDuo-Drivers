@@ -4,9 +4,8 @@
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS=""
-\components\QC8250\OEM\OEM.SOC_QC8250.QCOM=""
-\components\QC8250\Platform\PLATFORM.SOC_QC8250.BASE=""
-\components\QC8250\Platform\PLATFORM.SOC_QC8250.BASE_MINIMAL=""
+\components\Devices\Kona=""
+\components\QC8250=""
 
 [Apps]
 \apps\IPA=""
