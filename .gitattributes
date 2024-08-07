@@ -1,6 +1,6 @@
 # Treat everything as binary, as cat files require binary identity for signatures to match
 * -text
 apps/IPA/SurfaceHub_Desktop/Microsoft.SurfaceHub_8wekyb3d8bbwe.Msixbundle filter=lfs diff=lfs merge=lfs -text
-components/QC8150/OEM/OEM.SOC_QC8150.SURFACE/Drivers/MEP/PerceptionCoreResources.dll filter=lfs diff=lfs merge=lfs -text
-components/QC8150/Graphics/GRAPHICS.SOC_QC8150.EPSILON_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
-components/QC8150/Graphics/GRAPHICS.SOC_QC8150.HANA_DESKTOP/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
+components/Devices/Epsilon/Drivers/MEP/PerceptionCoreResources.dll filter=lfs diff=lfs merge=lfs -text
+components/Devices/Epsilon/Platform/Drivers/Graphics/DXKM/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
+components/QC8150/Drivers/Graphics/DXKM/qcdxwsaum.img filter=lfs diff=lfs merge=lfs -text
