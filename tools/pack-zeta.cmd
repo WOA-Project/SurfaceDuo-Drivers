@@ -27,13 +27,8 @@ echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE >> filelist
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS >> filelist_zeta.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL >> filelist_zeta.txt
 echo components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS >> filelist_zeta.txt
-echo components\QC8350\Device\DEVICE.SOC_QC8350.ZETA >> filelist_zeta.txt
-echo components\QC8350\Device\DEVICE.SOC_QC8350.ZETA_MINIMAL >> filelist_zeta.txt
-echo components\QC8350\Graphics\GRAPHICS.SOC_QC8350.ZETA_DESKTOP >> filelist_zeta.txt
-echo components\QC8350\OEM\OEM.SOC_QC8350.SURFACE >> filelist_zeta.txt
-echo components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE >> filelist_zeta.txt
-echo components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL >> filelist_zeta.txt
-echo components\QC8350\Platform\PLATFORM.SOC_QC8350.POST >> filelist_zeta.txt
+echo components\Devices\Zeta >> filelist_zeta.txt
+echo components\QC8350 >> filelist_zeta.txt
 echo definitions\Desktop\ARM64\Internal\zeta.xml >> filelist_zeta.txt
 echo tools\DriverUpdater >> filelist_zeta.txt
 echo LICENSE.md >> filelist_zeta.txt

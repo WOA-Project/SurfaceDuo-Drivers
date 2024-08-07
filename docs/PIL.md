@@ -30,43 +30,43 @@ PGCM area is configured in PILE (qcpilEXT8150) and must match above table alloca
     - Defined in ACPI DSDT, Device(VFE0)
 - WCNSS: Start 0x8BC00000, End 0x8BD80000, Size 0x00180000
     - Defined in ACPI DSDT, Device(QWLN)
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 
 **Below regions are not hardcoded in ACPI tables / firmware and are therefore dynamically used by the Operating System**
 
 For this kind of region, the PIL driver is instructed the total size of the region in use dynamically below using "PGCM":
 
 - PGCM:  Start 0x8BD80000, End 0x9A500000, Size 0x0E780000
-    - Defined in \components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
+    - Defined in \components\QC8150\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
 
 We then define every firmware binary meant to load in such region:
 
 **Gap Here From 0x8BD80000 to 0x8BE00000**
 
 - ADSP:  Start 0x8BE00000, End 0x8D800000, Size 0x01A00000
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_adsp8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_adsp8150.inf
 - MODEM: Start 0x8D800000, End 0x96E00000, Size 0x09600000
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_mpss8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_mpss8150.inf
 - VENUS: Start 0x96E00000, End 0x97300000, Size 0x00500000
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 - SLPI:  Start 0x97300000, End 0x98700000, Size 0x01400000
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_scss8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_scss8150.inf
 - IPA:   Start 0x98700000, End 0x98800000, Size 0x00100000 
-    - Defined \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+    - Defined \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 - SPSS:  Start 0x98800000, End 0x98900000, Size 0x00100000
-    - Defined \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+    - Defined \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 - CDSP:  Start 0x98900000, End 0x99D00000, Size 0x01400000
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_cdsp8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_cdsp8150.inf
 
 **Gap Here From 0x99D00000 to 0x9A500000**
 
 You will notice we have some fully dynamic regions, these usually fill in above mentioned gaps:
 
 - GFXSUC: Size: 0x00005000
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 
 ```ini
 HKR, SubsystemLoad\GFXSUC, MemoryAlignment,   %REG_DWORD%, 0x00001000
@@ -74,7 +74,7 @@ HKR, SubsystemLoad\GFXSUC, MemoryReservation, %REG_DWORD%, 0x00005000
 ```
 
 - MBA: Size: 0x00100000
-    - Defined in \components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+    - Defined in \components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 
 ```ini
 HKR, SubsystemLoad\MBA,    MemoryAlignment,   %REG_DWORD%, 0x00100000
@@ -91,7 +91,7 @@ We reached the end of the whole reserved region in our UEFI firmware.
 
 ### INF Packages
 
-\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
+\components\QC8150\PLATFORM.SOC_QC8150.BASE_MINIMAL\Drivers\SOC\HexagonLoader\qcpil8150.inf
 
 ```ini
 [SubsysReg_8150]
@@ -109,7 +109,7 @@ HKR, PGCM, Size,        %REG_DWORD%, 0xE780000
 
 The main PIL driver configures a region named PGCM starting at address 0x8BD80000 and ending at address 0x9A500000 (Size: 0x0E780000)
 
-\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
+\components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\HexagonLoader\qcpilEXT8150.inf
 
 ```ini
 [SubsysReg_common]
@@ -148,7 +148,7 @@ HKR, SubsystemLoad\VENUS, MemoryAddress, %REG_DWORD%, 0x96e00000
 HKR, SubsystemLoad\WCNSS, MemoryAddress, %REG_DWORD%, 0x8bc00000
 ```
 
-\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_adsp8150.inf
+\components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_adsp8150.inf
 
 ```ini
 [PIL_Reg_common]
@@ -163,7 +163,7 @@ HKR, SubsystemLoad\ADSP, MemoryReservation, %REG_DWORD%, 0x1a00000
 HKR, SubsystemLoad\ADSP, MemoryReservation, %REG_DWORD%, 0x1a00000
 ```
 
-\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_cdsp8150.inf
+\components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_cdsp8150.inf
 
 ```ini
 [PIL_Reg_common]
@@ -178,7 +178,7 @@ HKR, SubsystemLoad\CDSP, MemoryReservation, %REG_DWORD%, 0x1400000
 HKR, SubsystemLoad\CDSP, MemoryReservation, %REG_DWORD%, 0x1400000
 ```
 
-\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_mpss8150.inf
+\components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_mpss8150.inf
 
 ```ini
 [PIL_Reg_common]
@@ -198,7 +198,7 @@ HKR, SubsystemLoad\MODEM, MemoryReservation, %REG_DWORD%, 0x9600000
 HKR, SubsystemLoad\MODEM, MemoryReservation, %REG_DWORD%, 0x9600000
 ```
 
-\components\QC8150\Device\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_scss8150.inf
+\components\Devices\DEVICE.SOC_QC8150.HANA\Extensions\Subsystems\qcsubsys_ext_scss8150.inf
 
 ```ini
 [PIL_Reg_common]

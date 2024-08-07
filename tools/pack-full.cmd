@@ -7,6 +7,7 @@ mkdir SurfaceDuo-Drivers-Full
 mkdir SurfaceDuo-Drivers-Full\components
 mkdir SurfaceDuo-Drivers-Full\definitions
 xcopy /cheriky ..\components\ANYSOC SurfaceDuo-Drivers-Full\components\ANYSOC
+xcopy /cheriky ..\components\Devices SurfaceDuo-Drivers-Full\components\Devices
 xcopy /cheriky ..\components\QC8150 SurfaceDuo-Drivers-Full\components\QC8150
 xcopy /cheriky ..\components\QC8350 SurfaceDuo-Drivers-Full\components\QC8350
 xcopy /cheriky ..\definitions\Desktop SurfaceDuo-Drivers-Full\definitions\Desktop

@@ -1,16 +1,14 @@
 [Drivers]
+\components\ANYSOC\Hardware\HARDWARE.INPUT.FOCALTECH=""
+\components\ANYSOC\Hardware\HARDWARE.NFC.NXP=""
+\components\ANYSOC\Hardware\HARDWARE.USB.FSA4480=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS=""
-\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA=""
-\components\QC8350\Device\DEVICE.SOC_QC8350.LAHAINA_MINIMAL=""
-\components\QC8350\Graphics\GRAPHICS.SOC_QC8350.LAHAINA_DESKTOP=""
-\components\QC8350\OEM\OEM.SOC_QC8350.QCOM=""
-\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE=""
-\components\QC8350\Platform\PLATFORM.SOC_QC8350.BASE_MINIMAL=""
-\components\QC8350\Platform\PLATFORM.SOC_QC8350.POST=""
+\components\Devices\Lahaina=""
+\components\QC8350=""
 
 [Apps]
 \apps\IPA=""

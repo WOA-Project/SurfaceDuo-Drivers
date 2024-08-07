@@ -1,16 +1,14 @@
 [Drivers]
 \components\ANYSOC\Hardware\HARDWARE.INPUT.ST=""
+\components\ANYSOC\Hardware\HARDWARE.NFC.NXP=""
+\components\ANYSOC\Hardware\HARDWARE.USB.FSA4480=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.BASE=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_BRIDGE=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_COMPONENTS=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL=""
 \components\ANYSOC\Support\Desktop\SUPPORT.DESKTOP.MOBILE_RIL_EXTRAS=""
-\components\QC8150\Device\DEVICE.SOC_QC8150.HANA=""
-\components\QC8150\Device\DEVICE.SOC_QC8150.HANA_MINIMAL=""
-\components\QC8150\Graphics\GRAPHICS.SOC_QC8150.HANA_DESKTOP=""
-\components\QC8150\OEM\OEM.SOC_QC8150.QCOM=""
-\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE=""
-\components\QC8150\Platform\PLATFORM.SOC_QC8150.BASE_MINIMAL=""
+\components\Devices\Hana=""
+\components\QC8150=""
 
 [Apps]
 \apps\IPA=""
