@@ -66,3 +66,23 @@ For specific Snapdragon 855 BSP related inquiries, feel free to reach out on thi
 - t.me/woa_msmnile_issues (if your question is not Surface Duo related, or concerns a specific third party OEM made phone, or is about the Snapdragon 855 BSP in general)
 
 (Wait for an answer as well, we are not always available for inquiries)
+
+## Misc
+
+These driver files are not perfect, typos may exist, feel free to file an issue on GitHub in case you found any.
+
+## Resources
+
+## Copyright, License, Disclaimers and end user license agreement
+
+**Below notice must be present in all redistributed portions of this software**
+
+Please see [LICENSE](LICENSE.md)
+
+## Installing manually
+
+For preserving charset encoding, please checkout with using:
+
+```
+git clone -c core.autocrlf=false https://github.com/WOA-Project/windows-hana-platforms
+```
