@@ -1,0 +1,3 @@
+[submodule "components/QC8150"]
+	path = components/QC8150
+	url = https://github.com/WOA-Project/windows_hana_platforms
