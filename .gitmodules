@@ -7,3 +7,6 @@
 [submodule "components/QC8250"]
 	path = components/QC8250
 	url = https://github.com/WOA-Project/windows_kona_platforms
+[submodule "components/QC8550"]
+	path = components/QC8550
+	url = https://github.com/WOA-Project/windows_kailua_platforms
