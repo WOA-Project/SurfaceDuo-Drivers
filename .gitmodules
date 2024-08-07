@@ -1,3 +1,6 @@
 [submodule "components/QC8150"]
 	path = components/QC8150
 	url = https://github.com/WOA-Project/windows_hana_platforms
+[submodule "components/QC8350"]
+	path = components/QC8350
+	url = https://github.com/WOA-Project/windows_lahaina_platforms
