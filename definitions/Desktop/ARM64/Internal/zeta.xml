@@ -242,7 +242,6 @@ __________________________________DuoWoA authors License Terms End Here_________
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Drivers\FMRadio" Name="qcfmtransport8350.inf" ID="qcfmtransport8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Drivers\GPS" Name="qcgnss8350.inf" ID="qcgnss8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Drivers\Graphics\QDCM" Name="qdcmlib8350.inf" ID="qdcmlib8350"/>
-            <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Drivers\HALs\WatchDog" Name="HalExtQCWdogTimer8350.inf" ID="HalExtQCWdogTimer8350"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Drivers\HumanPresence\AlwaysOnCVSensor" Name="qcAlwaysOnCVSensor.inf" ID="qcAlwaysOnCVSensor"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Drivers\HumanPresence\HumanPresenceSensor" Name="qcHumanPresenceSensor.inf" ID="qcHumanPresenceSensor"/>
             <DriverPackageFile Path="$(mspackageroot)\components\QC8350\Drivers\SAR" Name="qSarMgr.inf" ID="qSarMgr"/>
