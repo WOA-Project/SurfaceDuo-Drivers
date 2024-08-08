@@ -1,12 +1,12 @@
 [submodule "components/QC8150"]
 	path = components/QC8150
-	url = https://github.com/WOA-Project/windows_hana_platforms
+	url = https://github.com/WOA-Project/windows_silicon_qcom_hana
 [submodule "components/QC8350"]
 	path = components/QC8350
-	url = https://github.com/WOA-Project/windows_lahaina_platforms
+	url = https://github.com/WOA-Project/windows_silicon_qcom_lahaina
 [submodule "components/QC8250"]
 	path = components/QC8250
-	url = https://github.com/WOA-Project/windows_kona_platforms
+	url = https://github.com/WOA-Project/windows_silicon_qcom_kona
 [submodule "components/QC8550"]
 	path = components/QC8550
-	url = https://github.com/WOA-Project/windows_kailua_platforms
+	url = https://github.com/WOA-Project/windows_silicon_qcom_kailua
