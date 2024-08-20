@@ -10,3 +10,9 @@
 [submodule "components/QC8550"]
 	path = components/QC8550
 	url = https://github.com/WOA-Project/windows_silicon_qcom_kailua
+[submodule "components/Devices/Epsilon"]
+	path = components/Devices/Epsilon
+	url = https://github.com/WOA-Project/windows_oem_surface_dual_screen_epsilon
+[submodule "components/Devices/Zeta"]
+	path = components/Devices/Zeta
+	url = https://github.com/WOA-Project/windows_oem_surface_dual_screen_zeta
