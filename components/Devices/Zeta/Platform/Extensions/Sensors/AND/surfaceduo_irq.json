@@ -1,9 +1,0 @@
-{
-  "config": {
-    "hw_platform": ["Surface", "OEMC1", "MTP"],
-    "soc_id": ["415", "439"]
-  },
-  "sns_irq": {
-    "owner": "sns_irq"
-  }
-}
